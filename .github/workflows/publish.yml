@@ -25,15 +25,40 @@ jobs:
 
       - name: Render module slides
         run: |
-          quarto render module1-slides.qmd
-          quarto render module2-slides.qmd
+          for slide in module0-slides.qmd module1-slides.qmd module2-slides.qmd module3-slides.qmd module4-slides.qmd module5-slides.qmd module6-slides.qmd module7-slides.qmd; do
+            quarto render "$slide"
+            base="${slide%.qmd}"
+            rm -rf "_book/${base}.html" "_book/${base}_files"
+            mv "${base}.html" _book/
+            mv "${base}_files" _book/
+          done
 
       - name: Verify slides are rendered and linked
         run: |
+          test -f _book/module0-slides.html
           test -f _book/module1-slides.html
           test -f _book/module2-slides.html
+          test -f _book/module3-slides.html
+          test -f _book/module4-slides.html
+          test -f _book/module5-slides.html
+          test -f _book/module6-slides.html
+          test -f _book/module7-slides.html
+          test -d _book/module0-slides_files
+          test -d _book/module1-slides_files
+          test -d _book/module2-slides_files
+          test -d _book/module3-slides_files
+          test -d _book/module4-slides_files
+          test -d _book/module5-slides_files
+          test -d _book/module6-slides_files
+          test -d _book/module7-slides_files
+          grep -q 'href="module0-slides.html"' _book/index.html
           grep -q 'href="module1-slides.html"' _book/index.html
           grep -q 'href="module2-slides.html"' _book/index.html
+          grep -q 'href="module3-slides.html"' _book/index.html
+          grep -q 'href="module4-slides.html"' _book/index.html
+          grep -q 'href="module5-slides.html"' _book/index.html
+          grep -q 'href="module6-slides.html"' _book/index.html
+          grep -q 'href="module7-slides.html"' _book/index.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
