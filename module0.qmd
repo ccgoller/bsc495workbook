@@ -142,6 +142,7 @@ Use this last step as a requirement for course credit to ensure the process is c
 This checklist will help you track your progress in managing Myco-Ed project data using iNaturalist.
 
 #### For Instructors
+
 - [ ] Create an iNaturalist Account. (Module 0.2)
 - [ ] Create an iNaturalist Traditional Project for your course. (Module 0.2) You may need to request the assistance of the Myco-Ed team to create this if you do not have the pre-requisite number of observations.
 - [ ] Tell your students the name of the iNaturalist Project, and request their iNaturalist user IDs.
@@ -150,6 +151,7 @@ This checklist will help you track your progress in managing Myco-Ed project dat
 
 #### For Students/Participants
 **Homework Assignment 1 (Module 1.2)**
+
 - [ ] Create an iNaturalist Account.
 - [ ] Get the iNaturalist App for your phone
 - [ ] Give your instructor your iNaturalist User Name.
@@ -158,6 +160,7 @@ This checklist will help you track your progress in managing Myco-Ed project dat
 - [ ] Join the course project once you receive an invitation from the instructor/TA.
 
 **Make an Observation (Module 1.2)**
+
 - [ ] Take multiple images of the plant host (or habitat photos of the environment) and include at least one image with a unique field number. (e.g., MycoEd_004)
 - [ ] Add the observation to your course project.
 - [ ] Save and upload the observation to the cloud once you're connected to wifi.
