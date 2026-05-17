@@ -16,14 +16,8 @@ Core project configuration is in [`_quarto.yml`](./_quarto.yml), where the book 
 
 ## Module slides
 
-- [Module 0 Slides](https://ccgoller.github.io/bsc-fungal-genomics-lab/module0.html)
-- [Module 1 Slides](https://ccgoller.github.io/bsc-fungal-genomics-lab/module1.html)
-- [Module 2 Slides](https://ccgoller.github.io/bsc-fungal-genomics-lab/module2.html)
-- [Module 3 Slides](https://ccgoller.github.io/bsc-fungal-genomics-lab/module3.html)
-- [Module 4 Slides](https://ccgoller.github.io/bsc-fungal-genomics-lab/module4.html)
-- [Module 5 Slides](https://ccgoller.github.io/bsc-fungal-genomics-lab/module5.html)
-- [Module 6 Slides](https://ccgoller.github.io/bsc-fungal-genomics-lab/module6.html)
-- [Module 7 Slides](https://ccgoller.github.io/bsc-fungal-genomics-lab/module7.html)
+- [Module 1 Slides](https://ccgoller.github.io/bsc-fungal-genomics-lab/module1-slides.html)
+- [Module 2 Slides](https://ccgoller.github.io/bsc-fungal-genomics-lab/module2-slides.html)
 
 ## Repository structure
 

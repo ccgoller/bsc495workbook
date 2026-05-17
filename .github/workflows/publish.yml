@@ -18,10 +18,22 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Install TinyTeX
-        run: quarto install tinytex
+        run: quarto install tinytex --no-prompt
 
       - name: Render Quarto book
         run: quarto render
+
+      - name: Render module slides
+        run: |
+          quarto render module1-slides.qmd
+          quarto render module2-slides.qmd
+
+      - name: Verify slides are rendered and linked
+        run: |
+          test -f _book/module1-slides.html
+          test -f _book/module2-slides.html
+          grep -q 'href="module1-slides.html"' _book/index.html
+          grep -q 'href="module2-slides.html"' _book/index.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
