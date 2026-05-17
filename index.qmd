@@ -4,3 +4,14 @@ This is a Quarto book created from the MycoEd curriculum. The Mycological Curric
 
 To learn more about Quarto books visit <https://quarto.org/docs/books>.
 To learn more about the MycoEd curriculum visit <https://myco-ed.github.io/myco-ed/>.
+
+## Module Slides
+
+- [Module 0 Slides](module0.html)
+- [Module 1 Slides](module1.html)
+- [Module 2 Slides](module2.html)
+- [Module 3 Slides](module3.html)
+- [Module 4 Slides](module4.html)
+- [Module 5 Slides](module5.html)
+- [Module 6 Slides](module6.html)
+- [Module 7 Slides](module7.html)
