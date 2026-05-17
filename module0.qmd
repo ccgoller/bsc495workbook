@@ -24,11 +24,11 @@ This document lists the materials and equipment required for implementing the My
 
 ### Module 2- Fungal Isolation
 - 60x15mm Petri Dishes
-- Potato Dextrose Agar
+- Potato Dextrose Agar (PDA)
 - Autoclave
 - Laminar Flow Hood (not necessary, if not available)
 - Gloves
-- Sharpie (fine tip is preferable)
+- Sharpie or equivalent lab narker (fine tip is preferable)
 - 70% ethanol
 - Kimwipes
 
@@ -45,8 +45,8 @@ This list may vary depending on your preferred extraction, amplification, and se
 - Heat block
 - 1.5mL microcentrifuge tubes
 - 0.2 mL PCR tubes
-- Micro and PCR tube racks
-- Label tape
+- Microfuge and PCR tube racks
+- Labeling tape
 - Extraction Buffer (EB)
 - 3% BSA solution
 - Parafilm
@@ -55,13 +55,13 @@ This list may vary depending on your preferred extraction, amplification, and se
 - 1-10 and 20-200 µL micropipette tips
 - Kimwipes
 - PCR Primers (ITS1f, ITS4, 5.8SR, fITS7)
-- Taq polymerase mix
+- Polymerase master mix
 - PCR water
 
 ### Module 5 - Tissue Preparation for Genome Sequencing
-- Cellophane
+- Cellophane induvidually rinsed and autoclaved in gauze)
 - 60x15mm Petri Dishes
-- Potato Dextrose Agar
+- Potato Dextrose Agar (PDA)
 - Silica beads
 - Gloves
 - Transfer hood/Bunsen burner
