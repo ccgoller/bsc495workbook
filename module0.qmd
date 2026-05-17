@@ -5,80 +5,78 @@
 This document lists the materials and equipment required for implementing the Myco-Ed program.
 
 ### Module 1- Fungal sampling and Culturing
-- 100x15mm Petri Dishes
-- Agar, Bacteriological
-- Autoclave
-- Laminar Flow Hood (not necessary, if not available)
-- Alcohol Lamp or Bunsen Burner
-- Forceps
-- Scalpel (make sure handle is metal, this will be flame sterilized, plastic will melt)
-- 150ml Beaker (or similar, 2 per student)
-- Parafilm
-- Gloves
-- Hole punch (all metal, for cutting leaf discs, scalpel will work in lieu of hole punch)
-- Kimwipes
-- Paper bags
-- 10% bleach
-- 70% ethanol
-- Paper towels
+* 100x15mm Petri dishes
+* Bacteriological agar
+* Autoclave
+* Laminar flow hood (not necessary, if not available)
+* Forceps
+* Scalpels
+* 150ml beaker (or similar container for ethanol, 2 per student)
+* Parafilm
+* Gloves
+* Hole punch (all metal, for cutting leaf discs; scalpel will work in lieu of hole punch)
+* Kimwipes
+* Paper bags for samples
+* 10% bleach (prepared with autoclaved water)
+* 70% ethanol
+* Paper towels
 
 ### Module 2- Fungal Isolation
-- 60x15mm Petri Dishes
-- Potato Dextrose Agar (PDA)
-- Autoclave
-- Laminar Flow Hood (not necessary, if not available)
-- Gloves
-- Sharpie or equivalent lab narker (fine tip is preferable)
-- 70% ethanol
-- Kimwipes
+* 60x15mm Petri Dishes
+* Potato Dextrose Agar (PDA)
+* Autoclave
+* Laminar flow hood (not necessary, if not available)
+* Gloves
+* Sharpie or equivalent lab narker (fine tip is preferable)
+* 70% ethanol
+* Kimwipes
 
 ### Module 3 - Phenotypic Assays
 Materials and equipment will vary based on the phenotypic assay choice.
 
 ### Module 4 – DNA Sequencing and Species Identification
 This list may vary depending on your preferred extraction, amplification, and sequencing protocols.
-- Gloves
-- Sharpie
-- Thermal cycler
-- Vortex
-- Centrifuge for PCR and microfuge tubes
-- Heat block/thermomixer for 1.5-2.0 ml microfuge tubes
-- 1.5mL microcentrifuge tubes (Eppendorf DNA LoBind)
-- 0.2 mL PCR tubes
-- Microfuge and PCR tube racks
-- Labeling tape
-- Extraction Buffer (EB)
-- 3% BSA solution
-- Parafilm
-- 70% ETOH
-- 1-10 and 20-200 µL micropipettors
-- 1-10 and 20-200 µL micropipette tips (preferably filtered)
-- Kimwipes
-- PCR Primers (ITS1f, ITS4, 5.8SR, fITS7)
-- Polymerase master mix (New England BioLabs Q5 2x Master Mix)
-- PCR water
+* Gloves
+* Sharpie
+* Thermal cycler
+* Vortex
+* Centrifuge for PCR and microfuge tubes
+* Heat block/thermomixer for 1.5-2.0 ml microfuge tubes
+* 1.5mL microcentrifuge tubes (Eppendorf DNA LoBind)
+* 0.2 mL PCR tubes
+* Microfuge and PCR tube racks
+* Labeling tape
+* Extraction Buffer (EB)
+* 3% BSA solution
+* Parafilm
+* 70% ETOH
+* 1-10 and 20-200 µL micropipettors
+* 1-10 and 20-200 µL micropipette tips (preferably filtered)
+* Kimwipes
+* PCR primers (ITS1f, ITS4, 5.8SR, fITS7)
+* Polymerase master mix (New England BioLabs Q5 2x Master Mix)
+* PCR water
 
 ### Module 5 - Tissue Preparation for Genome Sequencing
-- Cellophane induvidually rinsed and autoclaved in gauze)
-- 60x15mm Petri Dishes
-- Potato Dextrose Agar (PDA)
-- Silica beads
-- Gloves
-- Transfer hood/Bunsen burner
-- Incubator
-- Balance
-- Forceps
-- Scalpel
-- Small jar with lid or plates with lids
-- Pure fungal culture
+* Cellophane discs, induvidually rinsed and autoclaved in gauze
+* 60x15mm Petri Dishes
+* Potato Dextrose Agar (PDA)
+* Silica beads
+* Gloves
+* Incubator
+* Balance
+* Forceps
+* Scalpel
+* Small jar with lid or plates with lids
+* Pure fungal culture
 
 ### Module 6 – Sample Submission
-- Shipping samples
-- Sample form printout
+* Shipping samples
+* Sample form printout
 
 ### Module 7 – Genomic Analyses
-- Access to Mycocosm
-- Computer with internet access
+* Access to Mycocosm
+* Computer with internet access
 
 ## Module 0.2 – Create iNaturalist Traditional Project Instructions
 
