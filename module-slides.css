@@ -50,6 +50,9 @@
 .reveal table tr:nth-child(even) {
   background-color: #f0f3fb;
 }
+.reveal table {
+  font-size: 0.82em;
+}
 
 /* Slide number */
 .reveal .slide-number {
