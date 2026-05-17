@@ -5,18 +5,17 @@
 ### Instructor Laboratory Preparation Instructions
 
 **Materials:**
-- Cellophane
-- 100x15mm Petri Dishes
-- 60x15mm Petri Dishes
+- Cellophane discs (rinsed and individually wrapped before autoclaving)
+- 100x15mm Petri dishes
+- 60x15mm Petri dishes
 - Agar, Bacteriological
-- Alcohol Lamp or Bunsen Burner
 - Forceps
-- Scalpel (make sure the handle is metal, this will be flame sterilized, plastic will melt)
+- Scalpel (disposable in sharps container)
 
 **Lab Prep:**
 
 **Sterility:**
-If you don't have a laminar flow hood, you may create a similar environment by setting up two torches over your workspace. First, clean your work area with bleach, and/or ethanol. Set the torches facing each other with enough space to work underneath. Light the torches and pour media into plates under the flames. We will use clean benches and laminar flow hoods when available, but this is a good alternative for those without access to these resources.
+We will be working at the bench and without Bunsen burners. First, clean your work area with bleach, and/or ethanol. We will use clean benches and laminar flow hoods when available, but this is a good alternative for those without access to these resources.
 
 ::: {.callout-warning}
 Note that we will be working with fungi, which are generally not harmful to humans, but can cause allergic reactions in some individuals. Always practice good sterile technique and handle all materials with care. If you have any concerns about allergies or sensitivities, please consult with your instructor before beginning the lab.
@@ -28,12 +27,12 @@ Additionally, we may not be able to work in a laminar flow hood, which increases
 Students isolate fungal endophytes from leaves on water agar. We use one 100x15mm Petri dish to plate up to 6 leaf discs.
 
 **Water Agar Recipe:**
-Suspend 39 grams Agar, Bacteriological in 1000 mL (1 L) distilled water. Heat to boiling to dissolve the medium completely (in most cases, this step can be skipped as autoclaving will dissolve media). Sterilize by autoclaving at 15 lbs pressure at 121 °C for 15 minutes.
+Suspend 39 grams bacteriological agar in 1000 mL (1 L) distilled water. Heat to boiling to dissolve the medium completely (in most cases, this step can be skipped as autoclaving will dissolve media). Sterilize by autoclaving at 15 lbs pressure at 121 °C for 15 minutes.
 
-When the media is cool enough to handle with autoclave gloves, pour 100x15mm plates in a sterile environment. Do not let it cool too long as the media will solidify. Each 100x15mm plate holds approximately 20 ml media. If plates will be used immediately smaller amounts of media can be poured into plates. If plates will be stored, use larger amounts. Store plates in the original petri dish sleeve in a refrigerator (~4 °C) until use.
+When the media is cool enough to handle with autoclave gloves, pour 100x15mm plates in a sterile environment. Do not let it cool too long as the media will solidify. Each 100x15mm plate holds approximately 20 ml media. If plates will be used immediately smaller amounts of media can be poured into plates. If plates will be stored, use larger amounts. Store plates in the original dish sleeve in a refrigerator (~4 °C) until use.
 
 **Disposal:**
-Place all petri dishes in an autoclavable bag and sterilize at 15 lbs. pressure at 121 °C for 15 minutes. Follow institutional protocol for post-sterilization disposal. Be sure that the disposal of any heavy metals or other chemicals is properly handled.
+Place all Petri dishes in an autoclavable bag and sterilize at 15 lbs. pressure at 121 °C for 15 minutes. Follow institutional protocol for post-sterilization disposal. Be sure that the disposal of any heavy metals or other chemicals is properly handled.
 
 ## Module 1.2 – Metadata Directions
 
@@ -42,10 +41,10 @@ Metadata is the data providing information about other data. In this project, me
 
 Once you have selected the plant(s) that you will isolate fungi from, upload an image of each plant to your course's iNaturalist Project page. This part of the larger MycoEd Fungal Genomics Education Project. The fungi you isolate from this plant and the data associated with the fungal isolates will be linked back to this observation. These data will then be freely available to you and any other researchers interested in investigating fungal endophyte ecology and genomics.
 
-Record metadata on the Endophyte Excel spreadsheet. Below are descriptions for each category where necessary.
+Record metadata on the Endophyte spreadsheet. Below are descriptions for each category where necessary.
 
 ### iNaturalist plant observation:
-Provide the url link for your iNaturalist plant observation.
+Provide the URL link for your iNaturalist plant observation.
 
 ### Sample Naming:
 Your individual fungal isolates will be identified using several identifiers. The first will be the unique Host ID number that identifies the host for the fungi you isolate. Second will be your initials. Please use at least 3 initials since some large courses may have students with shared initials. Third, each individual leaf you cultured fungi from will be a separate number. If you take multiple samples from the same leaf, they will be identified by letters. For example, if you have one leaf or needle with 3 different sections, they would be 1a, 1b, and 1c.
@@ -94,12 +93,11 @@ Every species of plant surveyed to date hosts a multitude of fungal **endophytes
 5. Characterize morphology of fungal cultures
 
 ### Student Lab Supplies
-- 3 Large Water Agar Petri Plates - these are for initial isolation
+- 3 large water agar Petri plates - these are for initial isolation
 - Sharpie
 - Parafilm
-- Paper Towels
+- Paper towels
 - Gloves
-- Flame (alcohol lamp or Bunsen burner)
 - Bleach
 - Ethanol
 - Scalpel
