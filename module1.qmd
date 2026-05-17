@@ -5,27 +5,26 @@
 ### Instructor Laboratory Preparation Instructions
 
 **Materials:**
-
 - [ ] Cellophane discs (rinsed and individually wrapped before autoclaving)
 - [ ] 100x15mm Petri dishes
 - [ ] 60x15mm Petri dishes
 - [ ] Bacteriological agar
 - [ ] Forceps
-- [ ] Scalpel (disposable in sharps container)
+- [ ] Scalpels or metal hole punch
 
 **Lab Prep:**
 
 **Sterility:**
-We will be working at the bench and without Bunsen burners. First, clean your work area with bleach, and/or ethanol. We will use clean benches and laminar flow hoods when available, but this is a good alternative for those without access to these resources.
+We will be working at the bench and without Bunsen burners. **Be very careful and do not leave plates open for long periods.** First, clean your work area with bleach, and/or ethanol. We will use clean benches and laminar flow hoods when available, but this is a good alternative for those without access to these resources.
 
 ::: {.callout-warning}
 Note that we will be working with fungi, which are generally not harmful to humans, but can cause allergic reactions in some individuals. Always practice good sterile technique and handle all materials with care. If you have any concerns about allergies or sensitivities, please consult with your instructor before beginning the lab.
 
-Additionally, we may not be able to work in a laminar flow hood, which increases the risk of contamination. Be extra cautious with sterile technique and be prepared for some contamination in your plates. If you have access to a laminar flow hood, please use it for this lab.
+Additionally, we may not be able to work in a laminar flow hood, which increases the risk of contamination. Be extra cautious with sterile technique and be prepared for some contamination in your plates. **Work carefully and do not leave plates open for long periods of time.**
 :::
 
 **Water Agar Plates:**
-Students isolate fungal endophytes from leaves on water agar. We use one 100x15mm Petri dish to plate up to 6 leaf discs.
+Student scholars isolate fungal endophytes from leaves on water agar. We use one 100x15mm Petri dish to plate up to 6 leaf discs.
 
 **Water Agar Recipe:**
 Suspend 39 grams bacteriological agar in 1000 mL (1 L) distilled water. Heat to boiling to dissolve the medium completely (in most cases, this step can be skipped as autoclaving will dissolve media). Sterilize by autoclaving at 15 lbs pressure at 121 °C for 15 minutes.
@@ -38,19 +37,24 @@ Place all Petri dishes in an autoclavable bag and sterilize at 15 lbs. pressure 
 ## Module 1.2 – Metadata Directions
 
 ### Metadata
-Metadata is the data providing information about other data. In this project, metadata refers to information related to the fungi you will study, including information about the substrate (e.g. plant host for fungal endophytes), location (latitude and longitude), elevation, images, fungal species, growth rates, assay information, images, etc. This document guides you through capturing this data and where to document it.
+Metadata 
+:  is the data providing information about other data. 
+
+In this project, metadata refers to information related to the fungi you will study, including information about the substrate (e.g., plant host for fungal endophytes), location (latitude and longitude), elevation, images, fungal species, growth rates, assay information, images, and other variables. This document guides you through capturing this data and where to document it.
 
 Once you have selected the plant(s) that you will isolate fungi from, upload an image of each plant to your course's iNaturalist Project page. This part of the larger MycoEd Fungal Genomics Education Project. The fungi you isolate from this plant and the data associated with the fungal isolates will be linked back to this observation. These data will then be freely available to you and any other researchers interested in investigating fungal endophyte ecology and genomics.
 
-Record metadata on the Endophyte spreadsheet. Below are descriptions for each category where necessary.
+Record metadata on the **Endophyte spreadsheet**. Below are descriptions for each category where necessary.
 
 ### iNaturalist plant observation:
-Provide the URL link for your iNaturalist plant observation.
+
+[NC State Myco Ed on iNaturalist] (https://www.inaturalist.org/projects/nc-state-myco-ed)
+https://www.inaturalist.org/projects/nc-state-myco-ed
 
 ### Sample Naming:
-Your individual fungal isolates will be identified using several identifiers. The first will be the unique Host ID number that identifies the host for the fungi you isolate. Second will be your initials. Please use at least 3 initials since some large courses may have students with shared initials. Third, each individual leaf you cultured fungi from will be a separate number. If you take multiple samples from the same leaf, they will be identified by letters. For example, if you have one leaf or needle with 3 different sections, they would be 1a, 1b, and 1c.
+Your individual fungal isolates will be identified using several identifiers. The first will be the unique **Host ID number** that identifies the host for the fungi you isolate. Second will be **your initials**. Please use at least 3 initials since some large courses may have students with shared initials. Third, **each individual leaf you cultured fungi from will be a separate number**. If you take multiple samples from the same leaf, they will be identified by letters. For example, if you have one leaf or needle with 3 different sections, they would be 1a, 1b, and 1c.
 
-**EXAMPLE:** You have leaves collected from a maple tree on your campus. This tree was logged in iNaturalist and given a unique field number MycoED_004 (or whatever format the field numbers are provided in by your instructor/TA) (See the next module 1.2 for details). Let's assume your initials are ABC. From this collection, you have three leaves that you culture from: leaf 1, leaf 2, and leaf 3. From each of these leaves, you take six segments, so these are letters a-f. So, if you isolate a fungus from the second leaf, third section, and your initials are ABC, the name of the isolate would look like MycoED_004_ABC_2c.
+**Example:** You have leaves collected from a maple tree on your campus. This tree was logged in iNaturalist and given a unique field number MycoED_004 (or whatever format the field numbers are provided in by your instructor/TA) (See the next module 1.2 for details). Let's assume your initials are ABC. From this collection, you have three leaves that you culture from: leaf 1, leaf 2, and leaf 3. From each of these leaves, you take six segments, so these are letters a-f. So, if you isolate a fungus from the second leaf, third section, and your initials are ABC, the name of the isolate would look like MycoED_004_ABC_2c.
 
 With this naming scheme, anyone can trace the 1) plant host, 2) the researcher, 3) and the leaf and section the fungal isolate came from. NO other fungus will have this precise labeling unless additional fungi were isolated from this leaf section. After that step you will need to add additional identifiers.
 
@@ -143,7 +147,7 @@ Materials needed:
 5. Put the leaf samples into the bag.
 
 **Culturing Fungi From Leaves**
-You have 3 larger (100x15mm) Petri dishes that contain water agar. Water agar media is more clear (whitish to translucent) than the smaller petri dishes which contain Potato Dextrose Agar (PDA). These water agar plates will be used for Part I of this exercise. Section each of these into 6 regions as depicted in Figure 1. This will provide you space to culture 18 leaf sections.
+You have 3 larger (100x15mm) Petri dishes that contain water agar. Water agar media is more clear (whitish to translucent) than the smaller Petri dishes which contain Potato Dextrose Agar (PDA). These water agar plates will be used for Part I of this exercise. Section each of these into 6 regions as depicted in Figure 1. This will provide you space to culture 18 leaf sections.
 
 Gather all supplies including sterilized water, 70% EtOH, and 10% bleach solution. Label the Petri dishes and read through procedures before starting. Place bleach solution and sterile water in a container with enough space to dip leaf tissue. Use the provided scalpel or metal paper hole punch from your lab kit to take leaf subsamples.
 
@@ -188,7 +192,7 @@ iNaturalist makes documenting samples easy through observations. We will use thi
 - [ ] [Getting Started] (https://www.inaturalist.org/pages/getting+started)
 - [ ] [iNaturalist Videos] (https://www.inaturalist.org/pages/video+tutorials)
 - [ ] [NAMA/FunDiS How To Collect Research Specimens] (https://youtu.be/EgZw37NjxkA)
-{{ video https://youtu.be/EgZw37NjxkA }}
+{{ <video https://youtu.be/EgZw37NjxkA >}}
 - [ ] [FunDiS Photography] (https://fundis.org/get-started/photograph)
 
 Our protocol will be specific to our project, but will borrow from any/all of the video guides shown above.
@@ -239,8 +243,8 @@ Protocols for making observations of fungal cultures that follow the same steps 
 15. Add MycoEd ID. This will attach the field label ID number to this host observation.
     a. Follow the above directions.
     b. The format of the MycoEd ID of fungal isolates should be in the form of: MycoEd Host ID_Your Initials_Leaf and Fragment number.
-    EXAMPLE: MycoEd_004_ABC_2c
+    Example: MycoEd_004_ABC_2c
     See: Myco-Ed Module 1.1 - Metadata, under the Sample Naming section
 16. Add other iNaturalist Observation Fields
     a. For ITS sequence data from fungal isolates, use DNA Sequence ITS
-    b. To link to the host iNaturalist observation for this fungus, use the Host Observation Observation Field and add the url to the host observation.
+    b. To link to the host iNaturalist observation for this fungus, use the Host Observation Observation Field and add the URL to the host observation.

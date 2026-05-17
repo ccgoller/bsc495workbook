@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="This lab-based course is a high-impact experience based on The Mycological Curriculum for Education and Discovery (Myco-Ed), a Course-Based Undergraduate Research Experience (CURE) that features team-based, hands-on experiments in fungal biology and genomics. You will learn new laboratory techniques and data analysis by starting with sample collection, fungal isolation, and the characterization of the resulting data to improve fungal genomic resources. Genomic DNA will be extracted from samples for genome sequencing, assembly, and annotation. By isolating and sequencing new fungal species, your team will help produce high-quality fungal reference genomes. This course will prepare you with workforce training in fungal biology and genomics and empower you to be a contributor to fungal genomics! Importantly, you will practice lab and bioinformatics skills that are broadly applicable!">
+
+<title>3&nbsp; Module 1: Fungal Sampling – BSC 495: The Hidden World's Code</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./module2.html" rel="next">
+<link href="./module0.html" rel="prev">
+<link href="./BSC495logo-transparent.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-49489c2781850ec994ba169baa4d5e4b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-965ff2152bf93917fdcd90229f264310.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-49489c2781850ec994ba169baa4d5e4b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">BSC 495: The Hidden World’s Code</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> <i class="bi bi-book" role="img">
+</i> 
+<span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/BSC495-HWC"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="./BSC-495--The-Hidden-World-s-Code.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="./BSC-495--The-Hidden-World-s-Code.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="./BSC-495--The-Hidden-World-s-Code.docx">
+              <i class="bi bi-file-word pe-1"></i>
+            Download Docx
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./module1.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Module 1: Fungal Sampling</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./BSC495logo-transparent.png" alt="The Hidden World's Code" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="./BSC495logo-transparent.png" alt="The Hidden World's Code" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./module0.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Module 0: Getting Started and Data Management [Instructor Instructions]</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./module1.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Module 1: Fungal Sampling</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./module2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Module 2: Fungal Isolation</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./module3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Module 3: Phenotypic Assays</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./module4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Module 4: DNA Sequencing</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./module5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Module 5: Tissue Preparation</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./module6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Module 6: Sample Submission</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./module7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Module 7: Genomic Analyses</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Carlos C. Goller</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#module-1.1-lab-prep-overview" id="toc-module-1.1-lab-prep-overview" class="nav-link active" data-scroll-target="#module-1.1-lab-prep-overview"><span class="header-section-number">3.1</span> Module 1.1 – Lab Prep Overview</a>
+  <ul class="collapse">
+  <li><a href="#instructor-laboratory-preparation-instructions" id="toc-instructor-laboratory-preparation-instructions" class="nav-link" data-scroll-target="#instructor-laboratory-preparation-instructions"><span class="header-section-number">3.1.1</span> Instructor Laboratory Preparation Instructions</a></li>
+  </ul></li>
+  <li><a href="#module-1.2-metadata-directions" id="toc-module-1.2-metadata-directions" class="nav-link" data-scroll-target="#module-1.2-metadata-directions"><span class="header-section-number">3.2</span> Module 1.2 – Metadata Directions</a>
+  <ul class="collapse">
+  <li><a href="#metadata" id="toc-metadata" class="nav-link" data-scroll-target="#metadata"><span class="header-section-number">3.2.1</span> Metadata</a></li>
+  <li><a href="#inaturalist-plant-observation" id="toc-inaturalist-plant-observation" class="nav-link" data-scroll-target="#inaturalist-plant-observation"><span class="header-section-number">3.2.2</span> iNaturalist plant observation:</a></li>
+  <li><a href="#sample-naming" id="toc-sample-naming" class="nav-link" data-scroll-target="#sample-naming"><span class="header-section-number">3.2.3</span> Sample Naming:</a></li>
+  <li><a href="#sample-location" id="toc-sample-location" class="nav-link" data-scroll-target="#sample-location"><span class="header-section-number">3.2.4</span> Sample location:</a></li>
+  <li><a href="#elevation" id="toc-elevation" class="nav-link" data-scroll-target="#elevation"><span class="header-section-number">3.2.5</span> Elevation:</a></li>
+  <li><a href="#canopy" id="toc-canopy" class="nav-link" data-scroll-target="#canopy"><span class="header-section-number">3.2.6</span> Canopy:</a></li>
+  </ul></li>
+  <li><a href="#module-1.3---fungal-sampling-and-culturing" id="toc-module-1.3---fungal-sampling-and-culturing" class="nav-link" data-scroll-target="#module-1.3---fungal-sampling-and-culturing"><span class="header-section-number">3.3</span> Module 1.3 - Fungal Sampling and Culturing</a>
+  <ul class="collapse">
+  <li><a href="#purpose" id="toc-purpose" class="nav-link" data-scroll-target="#purpose"><span class="header-section-number">3.3.1</span> Purpose</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">3.3.2</span> Introduction</a></li>
+  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link" data-scroll-target="#learning-goals"><span class="header-section-number">3.3.3</span> Learning Goals</a></li>
+  <li><a href="#lab-supplies" id="toc-lab-supplies" class="nav-link" data-scroll-target="#lab-supplies"><span class="header-section-number">3.3.4</span> Lab Supplies</a></li>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions"><span class="header-section-number">3.3.5</span> Instructions</a></li>
+  </ul></li>
+  <li><a href="#module-1.4-using-inaturalist" id="toc-module-1.4-using-inaturalist" class="nav-link" data-scroll-target="#module-1.4-using-inaturalist"><span class="header-section-number">3.4</span> Module 1.4 – Using iNaturalist</a>
+  <ul class="collapse">
+  <li><a href="#using-inaturalist" id="toc-using-inaturalist" class="nav-link" data-scroll-target="#using-inaturalist"><span class="header-section-number">3.4.1</span> Using iNaturalist</a></li>
+  <li><a href="#making-observations-for-your-mycology-course-myco-ed" id="toc-making-observations-for-your-mycology-course-myco-ed" class="nav-link" data-scroll-target="#making-observations-for-your-mycology-course-myco-ed"><span class="header-section-number">3.4.2</span> Making observations for your mycology course (Myco-Ed)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Module 1: Fungal Sampling</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="module-1.1-lab-prep-overview" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="module-1.1-lab-prep-overview"><span class="header-section-number">3.1</span> Module 1.1 – Lab Prep Overview</h2>
+<section id="instructor-laboratory-preparation-instructions" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="instructor-laboratory-preparation-instructions"><span class="header-section-number">3.1.1</span> Instructor Laboratory Preparation Instructions</h3>
+<p><strong>Materials:</strong> - [ ] Cellophane discs (rinsed and individually wrapped before autoclaving) - [ ] 100x15mm Petri dishes - [ ] 60x15mm Petri dishes - [ ] Bacteriological agar - [ ] Forceps - [ ] Scalpels or metal hole punch</p>
+<p><strong>Lab Prep:</strong></p>
+<p><strong>Sterility:</strong> We will be working at the bench and without Bunsen burners. <strong>Be very careful and do not leave plates open for long periods.</strong> First, clean your work area with bleach, and/or ethanol. We will use clean benches and laminar flow hoods when available, but this is a good alternative for those without access to these resources.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note that we will be working with fungi, which are generally not harmful to humans, but can cause allergic reactions in some individuals. Always practice good sterile technique and handle all materials with care. If you have any concerns about allergies or sensitivities, please consult with your instructor before beginning the lab.</p>
+<p>Additionally, we may not be able to work in a laminar flow hood, which increases the risk of contamination. Be extra cautious with sterile technique and be prepared for some contamination in your plates. <strong>Work carefully and do not leave plates open for long periods of time.</strong></p>
+</div>
+</div>
+<p><strong>Water Agar Plates:</strong> Student scholars isolate fungal endophytes from leaves on water agar. We use one 100x15mm Petri dish to plate up to 6 leaf discs.</p>
+<p><strong>Water Agar Recipe:</strong> Suspend 39 grams bacteriological agar in 1000 mL (1 L) distilled water. Heat to boiling to dissolve the medium completely (in most cases, this step can be skipped as autoclaving will dissolve media). Sterilize by autoclaving at 15 lbs pressure at 121 °C for 15 minutes.</p>
+<p>When the media is cool enough to handle with autoclave gloves, pour 100x15mm plates in a sterile environment. Do not let it cool too long as the media will solidify. Each 100x15mm plate holds approximately 20 ml media. If plates will be used immediately smaller amounts of media can be poured into plates. If plates will be stored, use larger amounts. Store plates in the original dish sleeve in a refrigerator (~4 °C) until use.</p>
+<p><strong>Disposal:</strong> Place all Petri dishes in an autoclavable bag and sterilize at 15 lbs. pressure at 121 °C for 15 minutes. Follow institutional protocol for post-sterilization disposal. Be sure that the disposal of any heavy metals or other chemicals is properly handled.</p>
+</section>
+</section>
+<section id="module-1.2-metadata-directions" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="module-1.2-metadata-directions"><span class="header-section-number">3.2</span> Module 1.2 – Metadata Directions</h2>
+<section id="metadata" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="metadata"><span class="header-section-number">3.2.1</span> Metadata</h3>
+<dl>
+<dt>Metadata</dt>
+<dd>
+is the data providing information about other data.
+</dd>
+</dl>
+<p>In this project, metadata refers to information related to the fungi you will study, including information about the substrate (e.g., plant host for fungal endophytes), location (latitude and longitude), elevation, images, fungal species, growth rates, assay information, images, and other variables. This document guides you through capturing this data and where to document it.</p>
+<p>Once you have selected the plant(s) that you will isolate fungi from, upload an image of each plant to your course’s iNaturalist Project page. This part of the larger MycoEd Fungal Genomics Education Project. The fungi you isolate from this plant and the data associated with the fungal isolates will be linked back to this observation. These data will then be freely available to you and any other researchers interested in investigating fungal endophyte ecology and genomics.</p>
+<p>Record metadata on the <strong>Endophyte spreadsheet</strong>. Below are descriptions for each category where necessary.</p>
+</section>
+<section id="inaturalist-plant-observation" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="inaturalist-plant-observation"><span class="header-section-number">3.2.2</span> iNaturalist plant observation:</h3>
+<p>[NC State Myco Ed on iNaturalist] (https://www.inaturalist.org/projects/nc-state-myco-ed) https://www.inaturalist.org/projects/nc-state-myco-ed</p>
+</section>
+<section id="sample-naming" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="sample-naming"><span class="header-section-number">3.2.3</span> Sample Naming:</h3>
+<p>Your individual fungal isolates will be identified using several identifiers. The first will be the unique <strong>Host ID number</strong> that identifies the host for the fungi you isolate. Second will be <strong>your initials</strong>. Please use at least 3 initials since some large courses may have students with shared initials. Third, <strong>each individual leaf you cultured fungi from will be a separate number</strong>. If you take multiple samples from the same leaf, they will be identified by letters. For example, if you have one leaf or needle with 3 different sections, they would be 1a, 1b, and 1c.</p>
+<p><strong>Example:</strong> You have leaves collected from a maple tree on your campus. This tree was logged in iNaturalist and given a unique field number MycoED_004 (or whatever format the field numbers are provided in by your instructor/TA) (See the next module 1.2 for details). Let’s assume your initials are ABC. From this collection, you have three leaves that you culture from: leaf 1, leaf 2, and leaf 3. From each of these leaves, you take six segments, so these are letters a-f.&nbsp;So, if you isolate a fungus from the second leaf, third section, and your initials are ABC, the name of the isolate would look like MycoED_004_ABC_2c.</p>
+<p>With this naming scheme, anyone can trace the 1) plant host, 2) the researcher, 3) and the leaf and section the fungal isolate came from. NO other fungus will have this precise labeling unless additional fungi were isolated from this leaf section. After that step you will need to add additional identifiers.</p>
+</section>
+<section id="sample-location" class="level3" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="sample-location"><span class="header-section-number">3.2.4</span> Sample location:</h3>
+<p>Record latitude and longitude in decimal format. On a computer, go to iNaturalist observation. On the map, click on details at the bottom.</p>
+<p>From the dropdown menu. The Lat/Long is now shown. Click the copy button and paste it into the Excel Spreadsheet.</p>
+<p>You can also find Lat/Long coordinates on Google Maps. For Android phones: tap location and copy and paste in a text and it’s automatically in decimal degree format. For the iPhones: 1. Open the Google maps app. Tap the “black triangle in a circle” icon to zoom to your location. 2. Long touch on your location. This should open a tab at the bottom of the screen. 3. Scroll up. You should see the latitude and longitude coordinates of that position, looking something like this: (45.1234567, -122.1234567). 4. Long touch the coordinates, tap copy and then paste into an email or text.</p>
+</section>
+<section id="elevation" class="level3" data-number="3.2.5">
+<h3 data-number="3.2.5" class="anchored" data-anchor-id="elevation"><span class="header-section-number">3.2.5</span> Elevation:</h3>
+<p>Record the elevation of the plant in meters. On a computer, go to iNaturalist observation and again, click on details at the bottom. 1. On a computer, go to iNaturalist observation and again, click on details at the bottom. 2. At the bottom of the details window, click macrostrat. 3. The next window will display elevation in meters in the upper right. Record this elevation.</p>
+</section>
+<section id="canopy" class="level3" data-number="3.2.6">
+<h3 data-number="3.2.6" class="anchored" data-anchor-id="canopy"><span class="header-section-number">3.2.6</span> Canopy:</h3>
+<p>Record the portion of the canopy where the leaf was collected (L-lower 1/3 of plant, M-middle 1/3 of plant, or U-upper 1/3 of plant).</p>
+</section>
+</section>
+<section id="module-1.3---fungal-sampling-and-culturing" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="module-1.3---fungal-sampling-and-culturing"><span class="header-section-number">3.3</span> Module 1.3 - Fungal Sampling and Culturing</h2>
+<section id="purpose" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="purpose"><span class="header-section-number">3.3.1</span> Purpose</h3>
+<p>This lab will introduce you to sterile/aseptic technique, culturing fungi, isolating cultures, and documenting fungal growth.</p>
+</section>
+<section id="introduction" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="introduction"><span class="header-section-number">3.3.2</span> Introduction</h3>
+<p>Every species of plant surveyed to date hosts a multitude of fungal <strong>endophytes</strong>. These symbiotic fungi exist in all plant tissues, including leaves, bark, roots, and reproductive structures such as flowers and seeds. All lineages of fungi contain endophytic species, however the majority of fungal endophytes described to date are Ascomycetes. Research has shown that fungal endophytes impact both plant species fitness and plant community fitness. Fungal endophytes can confer abiotic and biotic stress tolerance, influence biomass and water consumption, and alter resource allocation. The fungi live either between the plant cells, between the cell wall and the cell membrane, or sometimes even within the cell membrane. This project is part of the MycoEd Fungal Genomics Education Project. The goal of this long-term research project is to produce fungal reference genomes to better understand their biology.</p>
+</section>
+<section id="learning-goals" class="level3" data-number="3.3.3">
+<h3 data-number="3.3.3" class="anchored" data-anchor-id="learning-goals"><span class="header-section-number">3.3.3</span> Learning Goals</h3>
+<ol type="1">
+<li>Documentation using iNaturalist</li>
+<li>Practice sterile technique</li>
+<li>Culture and isolate fungi</li>
+<li>Investigate fungal endophytes</li>
+<li>Characterize morphology of fungal cultures</li>
+</ol>
+</section>
+<section id="lab-supplies" class="level3" data-number="3.3.4">
+<h3 data-number="3.3.4" class="anchored" data-anchor-id="lab-supplies"><span class="header-section-number">3.3.4</span> Lab Supplies</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">3 large water agar Petri plates - these are for initial isolation</label></li>
+<li><label><input type="checkbox">Sharpie</label></li>
+<li><label><input type="checkbox">Parafilm</label></li>
+<li><label><input type="checkbox">Paper towels</label></li>
+<li><label><input type="checkbox">Gloves</label></li>
+<li><label><input type="checkbox">Bleach</label></li>
+<li><label><input type="checkbox">Ethanol</label></li>
+<li><label><input type="checkbox">Scalpel</label></li>
+<li><label><input type="checkbox">Metal hole punch</label></li>
+<li><label><input type="checkbox">Forceps</label></li>
+</ul>
+</section>
+<section id="instructions" class="level3" data-number="3.3.5">
+<h3 data-number="3.3.5" class="anchored" data-anchor-id="instructions"><span class="header-section-number">3.3.5</span> Instructions</h3>
+<section id="isolation-of-fungi-from-leaves" class="level4" data-number="3.3.5.1">
+<h4 data-number="3.3.5.1" class="anchored" data-anchor-id="isolation-of-fungi-from-leaves"><span class="header-section-number">3.3.5.1</span> Isolation of Fungi from Leaves</h4>
+<p>Before you begin, read through the entire instructions. Be sure to consult your instructor if you have any questions.</p>
+<p><strong>Formulate your Research Question</strong> You will attempt to culture fungi from a total of 18 leaf sections. You may use any combination of plant species, individual plants, leaf portions, or leaf cuttings in your setup. Choose a combination that interests you. Are you interested in capturing the diversity within an individual plant? If so, are you interested in looking at the diversity of endophytes within the canopy of individual plants? For this question, you would plate leaves from lower, middle, and upper canopies. Are you interested in documenting the fungal endophyte diversity within a plant species? For this investigation, collect leaves from multiple individuals of the same species. Perhaps you want to compare species diversity between different plant species. To investigate this question, collect plant leaves from a variety of plant species.</p>
+<p><strong>Design your Experimental Setup</strong> Once you have decided what endophyte communities you would like to explore, obtain green leaves from your target host plants. These can be from deciduous or evergreen plants, including needles from conifers. You should plate your leaves within 24 hours of collection. Refrigerate your leaves if you need to store them between collection and plating.</p>
+<p><strong>Metadata</strong> Upload an image of the plants you have chosen to your course’s iNaturalist Project page. Follow the instructions in Module 1.1 - Metadata Directions to be sure you have documented all necessary metadata.</p>
+<p><strong>Sampling Endophytes</strong> Materials needed: - [ ] Your phone with iNaturalist. - [ ] Sample labels with unique ID numbers. - [ ] Paper bags for samples. - [ ] Clippers, scissors, or a knife to sample leaves.</p>
+<p><strong>Protocol:</strong> 1. Find a tree, or other plant to sample. Ideally, one that has healthy leaves. 2. Make an iNaturalist observation of the plant on your phone. a. Take multiple images. i. At least one of the entire plant. ii. Multiple closer pictures of the leaves, bark, any flowers or fruit, etc. iii. At least one observation must include one sample label with an ID number. b. Go to the projects section on iNaturalist. i. Select “Your iNaturalist Project”. c.&nbsp;Save the observation on iNaturalist. i. Follow instructions in Module 1.2 Using iNaturalist 3. Place the label in a paper bag. 4. Sample up to three leaves using your cutting instrument. 5. Put the leaf samples into the bag.</p>
+<p><strong>Culturing Fungi From Leaves</strong> You have 3 larger (100x15mm) Petri dishes that contain water agar. Water agar media is more clear (whitish to translucent) than the smaller Petri dishes which contain Potato Dextrose Agar (PDA). These water agar plates will be used for Part I of this exercise. Section each of these into 6 regions as depicted in Figure 1. This will provide you space to culture 18 leaf sections.</p>
+<p>Gather all supplies including sterilized water, 70% EtOH, and 10% bleach solution. Label the Petri dishes and read through procedures before starting. Place bleach solution and sterile water in a container with enough space to dip leaf tissue. Use the provided scalpel or metal paper hole punch from your lab kit to take leaf subsamples.</p>
+<ol type="1">
+<li>Sanitize/sterilize all work surfaces. Wipe surfaces with ethanol. Choose a working location with the least amount of airflow to prevent contamination. If available, set up torches on either side of your work area with the flames aimed toward the middle of your workspace. The heat generated from the torches creates an the potential of airborne contaminants.</li>
+<li>Sterilize tools (scalpel or hole punch and forceps)
+<ol type="a">
+<li>Heat your tool using a flame (candle, alcohol lamp, torch, or something similar).</li>
+<li>Let cool – you can dip the tool (scalpel or hole punch) into the bleach solution to cool.</li>
+</ol></li>
+<li>Cut leaf tissues. You may take as many cuttings from each leaf as desired. Be sure to label cuttings appropriately as described above. Cuttings should be ~1 cm.</li>
+<li>Surface sterilize leaf tissue. Using sterilized forceps (heat and cool as above), immerse each cutting in 10% bleach solution for 10 seconds.
+<ol type="a">
+<li>To prepare the bleach solution, sterilize water by boiling water for 10 minutes. You will need enough water for the bleach solution and rinse step. Distilled water is preferred. If unavailable, use tap water. Let water cool to room temperature before coming into contact with plant tissue.</li>
+<li>Mix 1ml (1/4 teaspoon) household bleach with 500 ml (2 cups) sterilized water.</li>
+</ol></li>
+<li>Rinse leaf tissue. Transfer leaf cutting from bleach solution using forceps and swirl in sterile water or %70 EtOH to rinse. Let excess water drip off leaf cutting or place on clean kimwipes to dry.</li>
+<li>Add tissue to water agar. Place up to 6 leaf cuttings per plate of water agar labeled as described above (Figure 1). The water agar plates are the larger plates that contain clear to whitish media. Use sterile technique. Be sure to sterilize forceps (heat with flame and cool) in between each leaf transfer.</li>
+<li>Seal Petri dish with Parafilm. This is a stretchy material similar to Saran Wrap. Cut a strip a little wider than the petri dish. Remove the paper backing. Hold one end of the Parafilm strip on the lip of the petri dish so that the gap between the lid and base is covered by the Parafilm. Keeping one end fixed with one hand, stretch and wrap the parafilm around the petri dish, sealing the gap between the lid and base of the petri dish. The stretching of the Parafilm will facilitate the seal, you will not need any tape to keep the Parafilm in place.</li>
+<li>Incubate at room temperature in the dark and examine for growth each day.</li>
+</ol>
+</section>
+</section>
+</section>
+<section id="module-1.4-using-inaturalist" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="module-1.4-using-inaturalist"><span class="header-section-number">3.4</span> Module 1.4 – Using iNaturalist</h2>
+<section id="using-inaturalist" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="using-inaturalist"><span class="header-section-number">3.4.1</span> Using iNaturalist</h3>
+<p>For this semester we will be sampling plant tissue and isolating endophytic fungi for an experiment in fungal genomics. Part of this research will include the collection of important meta-data which includes latitude and longitude information, sampled material/host, and taxonomic information. To facilitate this we are using iNaturalist.</p>
+<p><strong>Homework Assignment 1: Get set up to use iNaturalist.</strong> - Go to https://www.inaturalist.org/ and make an account if you don’t already have one. - Download the iNaturalist App to your phone. - Give your iNaturalist user ID to your course instructor or TA. They will need this to add you to the course project. Be sure to ask your instructor for the name of the course project. - Join your course project. Within your iNaturalist account, go to: Community&gt;Projects Assuming you’re invited you should see the name of your course project. Join the project. If you don’t see it, send your iNaturalist user ID to your Instructor or TA to receive an invitation. - Add your Real Name to iNaturalist - For your name to display properly you need it spelled out in your profile. - Log into iNat. - Go to your profile icon in the top right. - Select Account Settings. - Type your real name into the space under Display Name. - iNaturalist Application Settings on your phone. - Go to settings on your phone. - Turn off “Automatic Upload” (recommended). - Adjust settings as they suit you.</p>
+<p><strong>Learn how to use iNaturalist to make observations for scientific research.</strong> iNaturalist makes documenting samples easy through observations. We will use this to help collect the metadata on our specimens in the upcoming lab. To prepare yourself, please review the following resources.</p>
+<p><strong>Homework Assignment 2: Review videos on how to document fungi.</strong> - [ ] [Getting Started] (https://www.inaturalist.org/pages/getting+started) - [ ] [iNaturalist Videos] (https://www.inaturalist.org/pages/video+tutorials) - [ ] [NAMA/FunDiS How To Collect Research Specimens] (https://youtu.be/EgZw37NjxkA) {{ &lt;video https://youtu.be/EgZw37NjxkA &gt;}} - [ ] [FunDiS Photography] (https://fundis.org/get-started/photograph)</p>
+<p>Our protocol will be specific to our project, but will borrow from any/all of the video guides shown above.</p>
+</section>
+<section id="making-observations-for-your-mycology-course-myco-ed" class="level3" data-number="3.4.2">
+<h3 data-number="3.4.2" class="anchored" data-anchor-id="making-observations-for-your-mycology-course-myco-ed"><span class="header-section-number">3.4.2</span> Making observations for your mycology course (Myco-Ed)</h3>
+<p>To make the best use of iNaturalist as a tool for this course, and the broader MycoEd Project, you need to make quality observations of plant hosts, and the fungal endophyte cultures that come from these plants.</p>
+<p><strong>Required Ingredients</strong></p>
+<p><strong>Observations of Plant Hosts</strong> 1. Open your iNaturalist Application. 2. Make an observation of one host plant by taking a picture of it. a. Find the camera icon in the app and take a picture of your plant. b. Include one field label in an image of the plant. (see examples) c.&nbsp;Take images from multiple perspectives: whole plant, leaves, flowers+fruits, branches, trunk, etc. 3. Alternatively, take images on your phone and upload them to iNaturalist. Again, make sure you are including a field label in your images. 4. Before saving the observation, add it to your course project using the app. a. Go to “Projects” b. Select the course project. NOTE: You must join the course project before this step. See the third bullet point at the beginning of these instructions. 5. Click Done to save your observation. 6. Assuming you’ve turned “automatic upload” off, you will need to manually upload your observation. This will appear green on your phone until it is uploaded. 7. Double-check your observation online. a. It will appear on your account if it was uploaded correctly. 8. Add Myco-Ed ID. This will attach the field label ID number to this host observation. a. Under Observations Fields, on the lower right portion of the page, type “MycoEd” b. Select “MycoEd ID” from the dropdown that appears. c.&nbsp;Add the field label ID number assigned to this host in the blank field under MycoEd ID. d.&nbsp;Click “Add”.</p>
+<p>Under Project you should see the name for your course project. If not, click on the open field and the course project’s name should appear in the drop-down menu. Select the</p>
+<p><strong>Observations of Fungal Cultures</strong> Protocols for making observations of fungal cultures that follow the same steps as above with some added metadata that will go in as “Observation Fields”.</p>
+<ol start="9" type="1">
+<li>Open your iNaturalist Application.
+<ol type="a">
+<li>Alternatively, take images on your phone and upload them to iNaturalist.</li>
+</ol></li>
+<li>Make an observation of the fungal isolate by taking a picture of it.
+<ol type="a">
+<li>Take pictures from the top and bottom, including the label.</li>
+</ol></li>
+<li>Before saving the observation, add it to your course project using the app.
+<ol type="a">
+<li>Follow the instructions detailed above.</li>
+</ol></li>
+<li>Click Done to save your observation.</li>
+<li>Manually upload your observation. This will appear green on your phone until it is uploaded.</li>
+<li>Double-check your observation online.
+<ol type="a">
+<li>It will appear on your account if it was uploaded correctly.</li>
+</ol></li>
+</ol>
+<p><strong>Adding iNaturalist Observation Fields</strong> 15. Add MycoEd ID. This will attach the field label ID number to this host observation. a. Follow the above directions. b. The format of the MycoEd ID of fungal isolates should be in the form of: MycoEd Host ID_Your Initials_Leaf and Fragment number. Example: MycoEd_004_ABC_2c See: Myco-Ed Module 1.1 - Metadata, under the Sample Naming section 16. Add other iNaturalist Observation Fields a. For ITS sequence data from fungal isolates, use DNA Sequence ITS b. To link to the host iNaturalist observation for this fungus, use the Host Observation Observation Field and add the URL to the host observation.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+(function () {
+  'use strict';
+
+  /* ─── Announcement Banner ──────────────────────────────────────────────── */
+  function insertBanner() {
+    var header = document.getElementById('quarto-header');
+    if (!header) return;
+
+    var banner = document.createElement('div');
+    banner.id = 'course-announcement-banner';
+    banner.setAttribute('role', 'region');
+    banner.setAttribute('aria-label', 'Course Announcement');
+    banner.innerHTML =
+      '<div class="announcement-inner">' +
+        '<span class="announcement-icon" aria-hidden="true">&#128226;</span>' +
+        '<p class="announcement-text">' +
+          '<strong>Spring 2026 &nbsp;|&nbsp; BSC 495: The Hidden World\'s Code</strong>' +
+          ' &mdash; Welcome! The course schedule is posted on the ' +
+          '<a href="index.html">Preface</a> page. Reach out on the course discussion board with questions.' +
+        '</p>' +
+        '<button class="announcement-close" aria-label="Dismiss announcement" title="Dismiss">' +
+          '<span aria-hidden="true">&times;</span>' +
+        '</button>' +
+      '</div>';
+
+    banner.querySelector('.announcement-close').addEventListener('click', function () {
+      banner.style.transition = 'opacity 0.3s ease, max-height 0.3s ease, padding 0.3s ease';
+      banner.style.opacity = '0';
+      banner.style.maxHeight = '0';
+      banner.style.padding = '0';
+      banner.style.overflow = 'hidden';
+      setTimeout(function () {
+        banner.remove();
+      }, 320);
+    });
+
+    header.insertAdjacentElement('afterend', banner);
+  }
+
+  /* ─── Floating reader-controls container ──────────────────────────────── */
+  // Shown when deep reader mode hides the navbar so the toggle stays reachable.
+  function getFloatingContainer() {
+    var c = document.getElementById('reader-controls-floating');
+    if (!c) {
+      c = document.createElement('div');
+      c.id = 'reader-controls-floating';
+      document.body.appendChild(c);
+    }
+    return c;
+  }
+
+  /* ─── Deep Reader Mode ─────────────────────────────────────────────────── */
+  var DEEP_READER_MODE_KEY = 'bsc495-deep-reader-mode';
+
+  function setupDeepReaderMode() {
+    var btn = document.createElement('button');
+    btn.id = 'deep-reader-mode-toggle';
+    btn.setAttribute('aria-pressed', 'false');
+    btn.title = 'Toggle Deep Reader Mode';
+    btn.innerHTML = '<i class="bi bi-layout-text-sidebar-reverse" aria-hidden="true"></i>';
+
+    var navItem = document.createElement('li');
+    navItem.className = 'nav-item compact';
+    navItem.appendChild(btn);
+
+    function getNavbarList() {
+      return document.querySelector('.navbar-nav.ms-auto') ||
+             document.querySelector('ul.navbar-nav');
+    }
+
+    function placeDeepBtn(isOn) {
+      if (isOn) {
+        // Navbar is hidden in deep reader mode — move button to the floating overlay
+        getFloatingContainer().appendChild(btn);
+      } else {
+        // Place the button as the last item in the right-side navbar list
+        var navList = getNavbarList();
+        if (navList) {
+          navItem.appendChild(btn);
+          navList.appendChild(navItem);
+        }
+      }
+    }
+
+    btn.addEventListener('click', function () {
+      var isOn = document.body.classList.toggle('deep-reader-mode');
+      btn.setAttribute('aria-pressed', isOn ? 'true' : 'false');
+      localStorage.setItem(DEEP_READER_MODE_KEY, isOn ? 'on' : 'off');
+      placeDeepBtn(isOn);
+    });
+
+    var initiallyOn = localStorage.getItem(DEEP_READER_MODE_KEY) === 'on';
+    if (initiallyOn) {
+      document.body.classList.add('deep-reader-mode');
+      btn.setAttribute('aria-pressed', 'true');
+    }
+    placeDeepBtn(initiallyOn);
+  }
+
+  /* ─── Init ─────────────────────────────────────────────────────────────── */
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      insertBanner();
+      setupDeepReaderMode();
+    });
+  } else {
+    insertBanner();
+    setupDeepReaderMode();
+  }
+}());
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./module0.html" class="pagination-link" aria-label="Module 0: Getting Started and Data Management [Instructor Instructions]">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Module 0: Getting Started and Data Management [Instructor Instructions]</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./module2.html" class="pagination-link" aria-label="Module 2: Fungal Isolation">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Module 2: Fungal Isolation</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>CC BY, Carlos C. Goller</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
