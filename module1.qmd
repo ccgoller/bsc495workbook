@@ -5,12 +5,12 @@
 ### Instructor Laboratory Preparation Instructions
 
 **Materials:**
-- Cellophane discs (rinsed and individually wrapped before autoclaving)
-- 100x15mm Petri dishes
-- 60x15mm Petri dishes
-- Agar, Bacteriological
-- Forceps
-- Scalpel (disposable in sharps container)
+- [ ] Cellophane discs (rinsed and individually wrapped before autoclaving)
+- [ ] 100x15mm Petri dishes
+- [ ] 60x15mm Petri dishes
+- [ ] Bacteriological agar
+- [ ] Forceps
+- [ ] Scalpel (disposable in sharps container)
 
 **Lab Prep:**
 
@@ -92,17 +92,17 @@ Every species of plant surveyed to date hosts a multitude of fungal **endophytes
 4. Investigate fungal endophytes
 5. Characterize morphology of fungal cultures
 
-### Student Lab Supplies
-- 3 large water agar Petri plates - these are for initial isolation
-- Sharpie
-- Parafilm
-- Paper towels
-- Gloves
-- Bleach
-- Ethanol
-- Scalpel
-- Metal hole punch
-- Forceps
+### Lab Supplies
+- [ ] 3 large water agar Petri plates - these are for initial isolation
+- [ ] Sharpie
+- [ ] Parafilm
+- [ ] Paper towels
+- [ ] Gloves
+- [ ] Bleach
+- [ ] Ethanol
+- [ ] Scalpel
+- [ ] Metal hole punch
+- [ ] Forceps
 
 ### Instructions
 
@@ -120,10 +120,10 @@ Upload an image of the plants you have chosen to your course's iNaturalist Proje
 
 **Sampling Endophytes**
 Materials needed:
-- Your phone with iNaturalist.
-- Sample labels with unique ID numbers.
-- Paper bags.
-- Clippers, scissors, or a knife to sample leaves.
+- [ ] Your phone with iNaturalist.
+- [ ] Sample labels with unique ID numbers.
+- [ ] Paper bags for samples.
+- [ ] Clippers, scissors, or a knife to sample leaves.
 
 **Protocol:**
 1. Find a tree, or other plant to sample. Ideally, one that has healthy leaves.
@@ -145,7 +145,7 @@ You have 3 larger (100x15mm) Petri dishes that contain water agar. Water agar me
 
 Gather all supplies including sterilized water, 70% EtOH, and 10% bleach solution. Label the Petri dishes and read through procedures before starting. Place bleach solution and sterile water in a container with enough space to dip leaf tissue. Use the provided scalpel or metal paper hole punch from your lab kit to take leaf subsamples.
 
-1. Sanitize/sterilize work surfaces. If available, wipe surfaces with ethanol. Choose a working location with the least amount of airflow to prevent contamination. If available, set up torches on either side of your work area with the flames aimed toward the middle of your workspace. The heat generated from the torches creates an upward airflow which decreases the potential of airborne contaminants falling onto your workspace or into your petri dishes.
+1. Sanitize/sterilize all work surfaces. Wipe surfaces with ethanol. Choose a working location with the least amount of airflow to prevent contamination. If available, set up torches on either side of your work area with the flames aimed toward the middle of your workspace. The heat generated from the torches creates an the potential of airborne contaminants.
 2. Sterilize tools (scalpel or hole punch and forceps)
    a. Heat your tool using a flame (candle, alcohol lamp, torch, or something similar).
    b. Let cool – you can dip the tool (scalpel or hole punch) into the bleach solution to cool.
