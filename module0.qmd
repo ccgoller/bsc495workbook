@@ -140,26 +140,26 @@ Use this last step as a requirement for course credit to ensure the process is c
 This checklist will help you track your progress in managing Myco-Ed project data using iNaturalist.
 
 #### For Instructors
-- Create an iNaturalist Account. (Module 0.2)
-- Create an iNaturalist Traditional Project for your course. (Module 0.2) You may need to request the assistance of the Myco-Ed team to create this if you do not have the pre-requisite number of observations.
-- Tell your students the name of the iNaturalist Project, and request their iNaturalist user IDs.
-- Add the students to the course project once they've completed Module 1.2. (Module 0.2)
-- Instruct students on iNaturalist data management obligations for course credit (at the instructor's discretion).
+- [ ] Create an iNaturalist Account. (Module 0.2)
+- [ ] Create an iNaturalist Traditional Project for your course. (Module 0.2) You may need to request the assistance of the Myco-Ed team to create this if you do not have the pre-requisite number of observations.
+- [ ] Tell your students the name of the iNaturalist Project, and request their iNaturalist user IDs.
+- [ ] Add the students to the course project once they've completed Module 1.2. (Module 0.2)
+- [ ] Instruct students on iNaturalist data management obligations for course credit (at the instructor's discretion).
 
 #### For Students/Participants
 **Homework Assignment 1 (Module 1.2)**
-- Create an iNaturalist Account.
-- Get the iNaturalist App for your phone
-- Give your instructor your iNaturalist User Name.
-- Update your real name under your account settings.
-- Watch some videos and tutorials.
-- Join the course project once you receive an invitation from the instructor/TA.
+- [ ] Create an iNaturalist Account.
+- [ ] Get the iNaturalist App for your phone
+- [ ] Give your instructor your iNaturalist User Name.
+- [ ] Update your real name under your account settings.
+- [ ] Watch some videos and tutorials.
+- [ ] Join the course project once you receive an invitation from the instructor/TA.
 
 **Make an Observation (Module 1.2)**
-- Take multiple images of the plant host (or habitat photos of the environment) and include at least one image with a unique field number. (e.g., MycoEd_004)
-- Add the observation to your course project.
-- Save and upload the observation to the cloud once you're connected to wifi.
-- Add Observation Field for MycoEd ID.
-- Add Observation Field for DNA Barcode ITS once you have DNA sequence data.
-- Update the name of fungal isolates using DNA sequence BLAST results.
-- Add Observation Field for Host Observation for fungal isolates linking to the original host on iNaturalist.
+- [ ] Take multiple images of the plant host (or habitat photos of the environment) and include at least one image with a unique field number. (e.g., MycoEd_004)
+- [ ] Add the observation to your course project.
+- [ ] Save and upload the observation to the cloud once you're connected to wifi.
+- [ ] Add Observation Field for MycoEd ID.
+- [ ] Add Observation Field for DNA Barcode ITS once you have DNA sequence data.
+- [ ] Update the name of fungal isolates using DNA sequence BLAST results.
+- [ ] Add Observation Field for Host Observation for fungal isolates linking to the original host on iNaturalist.
