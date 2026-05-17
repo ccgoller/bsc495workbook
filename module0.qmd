@@ -22,7 +22,7 @@ This document lists the materials and equipment required for implementing the My
 * Paper towels
 
 ### Module 2- Fungal Isolation
-* 60x15mm Petri Dishes
+* 60x15mm Petri dishes
 * Potato Dextrose Agar (PDA)
 * Autoclave
 * Laminar flow hood (not necessary, if not available)
@@ -46,8 +46,10 @@ This list may vary depending on your preferred extraction, amplification, and se
 * 0.2 mL PCR tubes
 * Microfuge and PCR tube racks
 * Labeling tape
-* Extraction Buffer (EB)
-* 3% BSA solution
+* Spin Genomic DNA Extraction Kit (New England BioLabs)
+* Metapolyzyme (Millipore)
+* TE Buffer
+* CTAB solution (Promega)
 * Parafilm
 * 70% ETOH
 * 1-10 and 20-200 µL micropipettors
