@@ -183,10 +183,11 @@ For this semester we will be sampling plant tissue and isolating endophytic fung
 iNaturalist makes documenting samples easy through observations. We will use this to help collect the metadata on our specimens in the upcoming lab. To prepare yourself, please review the following resources.
 
 **Homework Assignment 2: Review videos on how to document fungi.**
-- Getting Started: https://www.inaturalist.org/pages/getting+started
-- iNaturalist Videos Page: https://www.inaturalist.org/pages/video+tutorials
-- NAMA/FunDiS How To Collect Research Specimens: https://youtu.be/EgZw37NjxkA
-- FunDiS Photography: https://fundis.org/get-started/photograph
+- [ ] [Getting Started] (https://www.inaturalist.org/pages/getting+started)
+- [ ] [iNaturalist Videos] (https://www.inaturalist.org/pages/video+tutorials)
+- [ ] [NAMA/FunDiS How To Collect Research Specimens] (https://youtu.be/EgZw37NjxkA)
+{{ video https://youtu.be/EgZw37NjxkA }}
+- [ ] [FunDiS Photography] (https://fundis.org/get-started/photograph)
 
 Our protocol will be specific to our project, but will borrow from any/all of the video guides shown above.
 
