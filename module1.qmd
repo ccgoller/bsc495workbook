@@ -5,6 +5,7 @@
 ### Instructor Laboratory Preparation Instructions
 
 **Materials:**
+
 - [ ] Cellophane discs (rinsed and individually wrapped before autoclaving)
 - [ ] 100x15mm Petri dishes
 - [ ] 60x15mm Petri dishes
@@ -93,6 +94,7 @@ Every species of plant surveyed to date hosts a multitude of fungal **endophytes
 5. Characterize morphology of fungal cultures
 
 ### Lab Supplies
+
 - [ ] 3 large water agar Petri plates - these are for initial isolation
 - [ ] Sharpie
 - [ ] Parafilm
