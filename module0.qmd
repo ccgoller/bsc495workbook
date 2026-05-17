@@ -41,9 +41,9 @@ This list may vary depending on your preferred extraction, amplification, and se
 - Sharpie
 - Thermal cycler
 - Vortex
-- Centrifuge
-- Heat block
-- 1.5mL microcentrifuge tubes
+- Centrifuge for PCR and microfuge tubes
+- Heat block/thermomixer for 1.5-2.0 ml microfuge tubes
+- 1.5mL microcentrifuge tubes (Eppendorf DNA LoBind)
 - 0.2 mL PCR tubes
 - Microfuge and PCR tube racks
 - Labeling tape
@@ -52,10 +52,10 @@ This list may vary depending on your preferred extraction, amplification, and se
 - Parafilm
 - 70% ETOH
 - 1-10 and 20-200 µL micropipettors
-- 1-10 and 20-200 µL micropipette tips
+- 1-10 and 20-200 µL micropipette tips (preferably filtered)
 - Kimwipes
 - PCR Primers (ITS1f, ITS4, 5.8SR, fITS7)
-- Polymerase master mix
+- Polymerase master mix (New England BioLabs Q5 2x Master Mix)
 - PCR water
 
 ### Module 5 - Tissue Preparation for Genome Sequencing
@@ -69,7 +69,7 @@ This list may vary depending on your preferred extraction, amplification, and se
 - Balance
 - Forceps
 - Scalpel
-- Small jar with lid
+- Small jar with lid or plates with lids
 - Pure fungal culture
 
 ### Module 6 – Sample Submission
