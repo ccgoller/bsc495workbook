@@ -7,5 +7,5 @@ To learn more about the MycoEd curriculum visit <https://myco-ed.github.io/myco-
 
 ## Module Slides
 
-- [Module 1 Slides](module1-slides.html)
-- [Module 2 Slides](module2-slides.html)
+* [Module 1 Slides](module1-slides.html)
+* [Module 2 Slides](module2-slides.html)
