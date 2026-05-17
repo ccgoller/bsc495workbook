@@ -1,0 +1,18 @@
+---
+title: "Module 5: Tissue Preparation"
+subtitle: "BSC 495 — The Hidden World's Code"
+author: "Carlos C. Goller"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    logo: BSC495logo-transparent.png
+    footer: "BSC 495 | Module 5: Tissue Preparation | CC BY Carlos C. Goller"
+    chalkboard: false
+    transition: slide
+    background-transition: fade
+    incremental: false
+    css: module-slides.css
+---
+
+{{< include module5.qmd >}}

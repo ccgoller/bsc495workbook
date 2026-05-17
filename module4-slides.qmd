@@ -1,0 +1,18 @@
+---
+title: "Module 4: DNA Sequencing"
+subtitle: "BSC 495 — The Hidden World's Code"
+author: "Carlos C. Goller"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    logo: BSC495logo-transparent.png
+    footer: "BSC 495 | Module 4: DNA Sequencing | CC BY Carlos C. Goller"
+    chalkboard: false
+    transition: slide
+    background-transition: fade
+    incremental: false
+    css: module-slides.css
+---
+
+{{< include module4.qmd >}}
