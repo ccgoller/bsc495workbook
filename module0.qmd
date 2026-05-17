@@ -1,10 +1,11 @@
-# Module 0: Getting Started and Data Management [Instructor Instructions]
+# Module 0: Getting Started and Data Management [Instructor Instructions] {.unnumbered}
 
 ## Module 0.1 – Lab Materials and Equipment Overview
 
 This document lists the materials and equipment required for implementing the Myco-Ed program.
 
 ### Module 1- Fungal sampling and Culturing
+
 * 100x15mm Petri dishes
 * Bacteriological agar (for example, Difco Bacto Agar)
 * Autoclave
@@ -22,6 +23,7 @@ This document lists the materials and equipment required for implementing the My
 * Paper towels
 
 ### Module 2- Fungal Isolation
+
 * 60x15mm Petri dishes
 * Potato Dextrose Agar (PDA)
 * Autoclave
@@ -36,6 +38,7 @@ Materials and equipment will vary based on the phenotypic assay choice.
 
 ### Module 4 – DNA Sequencing and Species Identification
 This list may vary depending on your preferred extraction, amplification, and sequencing protocols.
+
 * Gloves
 * Sharpie
 * Thermal cycler
@@ -79,6 +82,7 @@ This list may vary depending on your preferred extraction, amplification, and se
 
 
 ### Module 5 - Tissue Preparation for Genome Sequencing
+
 * Cellophane discs, induvidually rinsed and autoclaved in gauze
 * 60x15mm Petri Dishes
 * Potato Dextrose Agar (PDA)
@@ -92,10 +96,12 @@ This list may vary depending on your preferred extraction, amplification, and se
 * Pure fungal culture
 
 ### Module 6 – Sample Submission
+
 * Shipping samples
 * Sample form printout
 
 ### Module 7 – Genomic Analyses
+
 * Access to Mycocosm
 * Computer with internet access
 

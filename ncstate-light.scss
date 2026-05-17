@@ -193,10 +193,6 @@ thead {
 
 // ── Deep Reader Mode Active ──────────────────────────────────────────────────
 body.deep-reader-mode {
-  #quarto-margin-sidebar {
-    display: none !important;
-  }
-
   #quarto-document-content {
     width: min(100%, 74ch);
     max-width: 74ch;

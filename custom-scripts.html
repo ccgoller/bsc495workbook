@@ -2,8 +2,12 @@
 (function () {
   'use strict';
 
+  var ANNOUNCEMENT_DISMISSED_KEY = 'bsc495-announcement-dismissed-v1';
+
   /* ─── Announcement Banner ──────────────────────────────────────────────── */
   function insertBanner() {
+    if (localStorage.getItem(ANNOUNCEMENT_DISMISSED_KEY) === 'true') return;
+
     var header = document.getElementById('quarto-header');
     if (!header) return;
 
@@ -25,6 +29,7 @@
       '</div>';
 
     banner.querySelector('.announcement-close').addEventListener('click', function () {
+      localStorage.setItem(ANNOUNCEMENT_DISMISSED_KEY, 'true');
       banner.style.transition = 'opacity 0.3s ease, max-height 0.3s ease, padding 0.3s ease';
       banner.style.opacity = '0';
       banner.style.maxHeight = '0';
@@ -36,6 +41,7 @@
     });
 
     header.insertAdjacentElement('afterend', banner);
+    localStorage.setItem(ANNOUNCEMENT_DISMISSED_KEY, 'true');
   }
 
   /* ─── Floating reader-controls container ──────────────────────────────── */

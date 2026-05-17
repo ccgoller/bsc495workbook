@@ -1,4 +1,4 @@
-# Module 1: Fungal Sampling
+# Module 1: Fungal Sampling {.unnumbered}
 
 ## Module 1.1 – Lab Prep Overview
 
@@ -91,6 +91,7 @@ This lab will introduce you to sterile/aseptic technique, culturing fungi, isola
 Every species of plant surveyed to date hosts a multitude of fungal **endophytes**. These symbiotic fungi exist in all plant tissues, including leaves, bark, roots, and reproductive structures such as flowers and seeds. All lineages of fungi contain endophytic species, however the majority of fungal endophytes described to date are Ascomycetes. Research has shown that fungal endophytes impact both plant species fitness and plant community fitness. Fungal endophytes can confer abiotic and biotic stress tolerance, influence biomass and water consumption, and alter resource allocation. The fungi live either between the plant cells, between the cell wall and the cell membrane, or sometimes even within the cell membrane. This project is part of the MycoEd Fungal Genomics Education Project. The goal of this long-term research project is to produce fungal reference genomes to better understand their biology.
 
 ### Learning Goals
+
 1. Documentation using iNaturalist
 2. Practice sterile technique
 3. Culture and isolate fungi
@@ -126,6 +127,7 @@ Upload an image of the plants you have chosen to your course's iNaturalist Proje
 
 **Sampling Endophytes**
 Materials needed:
+
 - [ ] Your phone with iNaturalist.
 - [ ] Sample labels with unique ID numbers.
 - [ ] Paper bags for samples.
@@ -170,6 +172,7 @@ Gather all supplies including sterilized water, 70% EtOH, and 10% bleach solutio
 For this semester we will be sampling plant tissue and isolating endophytic fungi for an experiment in fungal genomics. Part of this research will include the collection of important meta-data which includes latitude and longitude information, sampled material/host, and taxonomic information. To facilitate this we are using iNaturalist.
 
 **Homework Assignment 1: Get set up to use iNaturalist.**
+
 - Go to https://www.inaturalist.org/ and make an account if you don't already have one.
 - Download the iNaturalist App to your phone.
 - Give your iNaturalist user ID to your course instructor or TA. They will need this to add you to the course project. Be sure to ask your instructor for the name of the course project.
