@@ -1,0 +1,333 @@
+---
+title: "Module 1: Fungal Sampling"
+subtitle: "BSC 495 — The Hidden World's Code"
+author: "Carlos C. Goller"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    logo: BSC495logo-transparent.png
+    footer: "BSC 495 | Module 1: Fungal Sampling | CC BY Carlos C. Goller"
+    chalkboard: false
+    transition: slide
+    background-transition: fade
+    incremental: false
+    css: module-slides.css
+---
+
+## Overview {.center}
+
+Module 1 covers four topics:
+
+1. **Lab Prep** — preparing water agar plates and sterile workspace
+2. **Metadata** — iNaturalist observations and sample naming
+3. **Fungal Sampling & Culturing** — isolating endophytes from leaves
+4. **Using iNaturalist** — making quality observations for the MycoEd project
+
+---
+
+# Module 1.1 {background-color="#4156A1"}
+## Instructor Lab Prep
+
+---
+
+## Materials
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Consumables**
+
+- Cellophane
+- 100×15 mm Petri dishes
+- 60×15 mm Petri dishes
+- Bacteriological agar
+:::
+
+::: {.column width="50%"}
+**Equipment**
+
+- Alcohol lamp or Bunsen burner
+- Forceps
+- Scalpel *(metal handle — plastic melts)*
+:::
+
+::::
+
+---
+
+## Creating a Sterile Environment
+
+- Clean work area with **bleach** and/or **ethanol**
+- Set two torches facing each other over your workspace
+- Pour media under the flames (upward airflow blocks contaminants)
+- Use a laminar flow hood when available
+
+::: {.callout-warning}
+Fungi are generally not harmful, but **may cause allergic reactions**. Always use sterile technique and consult your instructor if you have concerns.
+:::
+
+---
+
+## Water Agar Recipe
+
+| Step | Detail |
+|------|--------|
+| Suspend | 39 g bacteriological agar in 1 L distilled water |
+| Dissolve | Heat to boiling |
+| Sterilize | Autoclave at 121 °C / 15 lbs for 15 min |
+| Pour | ~20 mL per 100×15 mm plate in sterile environment |
+| Store | Refrigerate (~4 °C) until use |
+
+---
+
+## Disposal
+
+1. Place all petri dishes in an **autoclavable bag**
+2. Sterilize at 121 °C / 15 lbs for 15 minutes
+3. Follow institutional protocol for post-sterilization disposal
+4. Handle heavy metals and chemicals per institutional guidelines
+
+---
+
+# Module 1.2 {background-color="#4156A1"}
+## Metadata Directions
+
+---
+
+## What is Metadata?
+
+> Metadata is **data about data** — information that gives context to your samples.
+
+For this project, metadata includes:
+
+- Plant host (substrate)
+- Latitude & longitude
+- Elevation
+- Canopy position
+- Fungal species, growth rates, images, and more
+
+---
+
+## Uploading to iNaturalist
+
+1. Select the plant you will isolate fungi from
+2. Upload an **image of the plant** to your course iNaturalist Project
+3. The fungal isolates and all associated data will be **linked back** to this observation
+4. All data will be publicly available to researchers worldwide
+
+---
+
+## Sample Naming Convention
+
+`[HostID]_[Initials]_[Leaf#][Section]`
+
+::: {.callout-note}
+**Example:** Tree is `MycoED_004`, initials are `ABC`, second leaf, third section →
+
+**`MycoED_004_ABC_2c`**
+:::
+
+- **HostID** — unique iNaturalist field number
+- **Initials** — use ≥ 3 initials to avoid duplicates
+- **Leaf #** — number per leaf sampled
+- **Section** — letter per cutting from that leaf
+
+---
+
+## Recording Location (Lat/Long)
+
+**On a computer:** iNaturalist observation → Map → Details → copy Lat/Long
+
+**On Android:** Tap location icon → copy decimal degree coordinates
+
+**On iPhone (Google Maps):**
+
+1. Open Google Maps → tap the location icon
+2. Long-press your location → bottom tab appears
+3. Scroll up to see coordinates (e.g. `45.123, -122.123`)
+4. Long-press coordinates → Copy → paste into spreadsheet
+
+---
+
+## Recording Elevation
+
+1. Go to your iNaturalist observation on a computer
+2. Click **Details** at the bottom of the map
+3. Click **Macrostrat** in the details window
+4. Record **elevation in meters** from the upper-right corner
+
+---
+
+## Canopy Position
+
+Record which portion of the plant the leaf was collected from:
+
+| Code | Position |
+|------|----------|
+| **L** | Lower 1/3 of plant |
+| **M** | Middle 1/3 of plant |
+| **U** | Upper 1/3 of plant |
+
+---
+
+# Module 1.3 {background-color="#4156A1"}
+## Fungal Sampling & Culturing
+
+---
+
+## What are Fungal Endophytes?
+
+- Present in **every plant species surveyed to date**
+- Found in leaves, bark, roots, flowers, and seeds
+- Majority are **Ascomycetes**
+- Can confer abiotic and biotic **stress tolerance** to their hosts
+- Influence biomass, water consumption, and resource allocation
+
+::: {.callout-note}
+This project is part of the **MycoEd Fungal Genomics Education Project** — your isolates contribute to building high-quality fungal reference genomes.
+:::
+
+---
+
+## Learning Goals
+
+1. Documentation using iNaturalist
+2. Practice sterile technique
+3. Culture and isolate fungi
+4. Investigate fungal endophytes
+5. Characterize morphology of fungal cultures
+
+---
+
+## Student Lab Supplies
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- 3 large water agar Petri plates
+- Sharpie
+- Parafilm
+- Paper towels
+- Gloves
+:::
+
+::: {.column width="50%"}
+- Flame (alcohol lamp / Bunsen burner)
+- Bleach
+- Ethanol
+- Scalpel
+- Metal hole punch
+- Forceps
+:::
+
+::::
+
+---
+
+## Formulate Your Research Question
+
+Choose an endophyte community to investigate:
+
+| Question | Approach |
+|----------|----------|
+| Diversity within one plant | Plate leaves from lower, middle, and upper canopy |
+| Diversity within a species | Collect from multiple individuals of same species |
+| Diversity across species | Collect from a variety of plant species |
+
+You will culture fungi from a total of **18 leaf sections**.
+
+---
+
+## Bleach Solution Preparation
+
+1. Boil water for 10 minutes (or use distilled water)
+2. Let cool to **room temperature**
+3. Mix **1 mL household bleach** in **500 mL sterilized water**
+4. This 10% bleach solution is used for surface sterilizing leaf tissue
+
+---
+
+## Isolation Protocol — Overview
+
+| Step | Action |
+|------|--------|
+| 1 | Sanitize work surface |
+| 2 | Sterilize tools with flame |
+| 3 | Cut ~1 cm leaf tissue sections |
+| 4 | Surface sterilize in bleach (10 sec) |
+| 5 | Rinse in sterile water / 70% EtOH |
+| 6 | Place up to 6 cuttings per water agar plate |
+| 7 | Seal with Parafilm |
+| 8 | Incubate at room temp in the dark; check daily |
+
+---
+
+## Sealing with Parafilm
+
+1. Cut a strip **slightly wider** than the petri dish
+2. Remove the paper backing
+3. Hold one end on the lip of the dish
+4. **Stretch and wrap** around the dish — stretching creates the seal
+5. No tape needed!
+
+---
+
+# Module 1.4 {background-color="#4156A1"}
+## Using iNaturalist
+
+---
+
+## Homework Assignment 1 — Set Up iNaturalist
+
+- Create an account at [inaturalist.org](https://www.inaturalist.org/)
+- Download the **iNaturalist app** to your phone
+- Give your iNaturalist **user ID** to your instructor or TA
+- **Join your course project**: Community → Projects
+- Add your **real name** under Account Settings → Display Name
+- In app settings: turn off **Automatic Upload** (recommended)
+
+---
+
+## Homework Assignment 2 — Review Resources
+
+- [Getting Started Guide](https://www.inaturalist.org/pages/getting+started)
+- [iNaturalist Video Tutorials](https://www.inaturalist.org/pages/video+tutorials)
+- [NAMA/FunDiS Collecting Research Specimens](https://youtu.be/EgZw37NjxkA)
+- [FunDiS Photography Guide](https://fundis.org/get-started/photograph)
+
+---
+
+## Making Plant Host Observations
+
+1. Open iNaturalist and take a picture of the plant
+2. **Include a field label** in at least one image
+3. Photograph from multiple angles: whole plant, leaves, flowers, bark, trunk
+4. Add observation to your **course project** before saving
+5. Manually upload (if Auto Upload is off)
+6. Add **MycoEd ID** field with the label ID number
+
+---
+
+## Making Fungal Culture Observations
+
+1. Take pictures from **top and bottom**, including label
+2. Add observation to your **course project**
+3. Manually upload and verify online
+4. Add iNaturalist Observation Fields:
+   - **DNA Sequence ITS** — for ITS sequence data
+   - **Host Observation** — link back to the host plant observation
+   - **MycoEd ID** — format: `MycoEd_004_ABC_2c`
+
+---
+
+## Summary — Module 1
+
+::: {.incremental}
+- Prepare water agar plates and a sterile workspace
+- Document host plants with iNaturalist and record metadata
+- Collect leaves and surface sterilize with bleach solution
+- Plate up to 6 leaf cuttings per water agar plate
+- Seal, incubate, and observe for fungal growth daily
+- Record all metadata and sample names carefully
+:::

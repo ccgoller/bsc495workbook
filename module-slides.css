@@ -1,0 +1,57 @@
+/* Module Slides — NC State Bio-Indigo & Genomic Green */
+
+:root {
+  --r-background-color: #ffffff;
+  --r-main-color: #1a1a2e;
+  --r-heading-color: #4156A1;
+  --r-link-color: #4156A1;
+  --r-link-color-hover: #00A77E;
+  --r-selection-background-color: #4156A1;
+  --r-selection-color: #ffffff;
+}
+
+/* Headings */
+.reveal h1, .reveal h2, .reveal h3 {
+  color: #4156A1;
+}
+
+/* Section title slides */
+.reveal section[data-background-color="#4156A1"] h2 {
+  color: #ffffff;
+}
+
+/* Footer */
+.reveal .footer {
+  font-size: 0.55em;
+  color: #4156A1;
+}
+
+/* Logo */
+.reveal .slide-logo {
+  max-height: 50px;
+}
+
+/* Callout boxes — match Quarto defaults with brand accent */
+.reveal .callout-warning {
+  border-left-color: #e6a817;
+}
+.reveal .callout-note {
+  border-left-color: #00A77E;
+}
+.reveal .callout-important {
+  border-left-color: #cc0000;
+}
+
+/* Tables */
+.reveal table th {
+  background-color: #4156A1;
+  color: #ffffff;
+}
+.reveal table tr:nth-child(even) {
+  background-color: #f0f3fb;
+}
+
+/* Slide number */
+.reveal .slide-number {
+  color: #4156A1;
+}
