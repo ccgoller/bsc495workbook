@@ -7,11 +7,15 @@ To learn more about the MycoEd curriculum visit the [MycoEd GitHub] (https://myc
 
 ## Module Slides
 
-* [Module 0 Slides](module0-slides.html)
-* [Module 1 Slides](module1-slides.html)
-* [Module 2 Slides](module2-slides.html)
-* [Module 3 Slides](module3-slides.html)
-* [Module 4 Slides](module4-slides.html)
-* [Module 5 Slides](module5-slides.html)
-* [Module 6 Slides](module6-slides.html)
-* [Module 7 Slides](module7-slides.html)
+The links below open the RevealJS slide decks for each module.
+
+::: {.callout-tip}
+* [Open Module 0 RevealJS Slides](module0-slides.html)
+* [Open Module 1 RevealJS Slides](module1-slides.html)
+* [Open Module 2 RevealJS Slides](module2-slides.html)
+* [Open Module 3 RevealJS Slides](module3-slides.html)
+* [Open Module 4 RevealJS Slides](module4-slides.html)
+* [Open Module 5 RevealJS Slides](module5-slides.html)
+* [Open Module 6 RevealJS Slides](module6-slides.html)
+* [Open Module 7 RevealJS Slides](module7-slides.html)
+:::
