@@ -34,7 +34,6 @@ This document lists the materials and equipment required for implementing the My
 Materials and equipment will vary based on the phenotypic assay choice.
 
 ### Module 4 – DNA Sequencing and Species Identification
-This list may vary depending on your preferred extraction, amplification, and sequencing protocols.
 * Gloves
 * Sharpie
 * Thermal cycler
@@ -75,7 +74,7 @@ This list may vary depending on your preferred extraction, amplification, and se
 * Magnetic rack for 1.5ml microcentrifuge tubes (for example, ThermoFisher DynaMag-2, 12321D) for long-read sequencing
 * Nuclease-free water and 100% ethanol to prepare 80& ethanol for long-read sequencing
 
-
+This list may vary depending on your preferred extraction, amplification, and sequencing protocols.
 
 ### Module 5 - Tissue Preparation for Genome Sequencing
 * Cellophane discs, induvidually rinsed and autoclaved in gauze

@@ -119,6 +119,7 @@ Once you have decided what endophyte communities you would like to explore, obta
 Upload an image of the plants you have chosen to your course's iNaturalist Project page. Follow the instructions in Module 1.1 - Metadata Directions to be sure you have documented all necessary metadata.
 
 **Sampling Endophytes**
+
 Materials needed:
 - [ ] Your phone with iNaturalist.
 - [ ] Sample labels with unique ID numbers.
@@ -155,7 +156,7 @@ Gather all supplies including sterilized water, 70% EtOH, and 10% bleach solutio
    b. Mix 1ml (1/4 teaspoon) household bleach with 500 ml (2 cups) sterilized water.
 5. Rinse leaf tissue. Transfer leaf cutting from bleach solution using forceps and swirl in sterile water or %70 EtOH to rinse. Let excess water drip off leaf cutting or place on clean kimwipes to dry.
 6. Add tissue to water agar. Place up to 6 leaf cuttings per plate of water agar labeled as described above (Figure 1). The water agar plates are the larger plates that contain clear to whitish media. Use sterile technique. Be sure to sterilize forceps (heat with flame and cool) in between each leaf transfer.
-7. Seal Petri dish with Parafilm. This is a stretchy material similar to Saran Wrap. Cut a strip a little wider than the petri dish. Remove the paper backing. Hold one end of the Parafilm strip on the lip of the petri dish so that the gap between the lid and base is covered by the Parafilm. Keeping one end fixed with one hand, stretch and wrap the parafilm around the petri dish, sealing the gap between the lid and base of the petri dish. The stretching of the Parafilm will facilitate the seal, you will not need any tape to keep the Parafilm in place.
+7. Seal Petri dish with Parafilm. This is a stretchy material similar to Saran Wrap. Cut a strip a little wider than the Petri dish. Remove the paper backing. Hold one end of the Parafilm strip on the lip of the Petri dish so that the gap between the lid and base is covered by the Parafilm. Keeping one end fixed with one hand, stretch and wrap the parafilm around the Petri dish, sealing the gap between the lid and base of the Petri dish. The stretching of the Parafilm will facilitate the seal, you will not need any tape to keep the Parafilm in place.
 8. Incubate at room temperature in the dark and examine for growth each day.
 
 ## Module 1.4 – Using iNaturalist
