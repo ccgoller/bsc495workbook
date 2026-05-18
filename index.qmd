@@ -8,7 +8,7 @@ To learn more about the MycoEd curriculum visit the [MycoEd GitHub](https://myco
 The links below open the RevealJS slide decks for each module. Please note the slides can be advanced using the arrow keys on your keyboard, and you can also use the menu in the bottom right corner to navigate between slides. The slide decks are designed to be used in conjunction with the corresponding module content in this book, so feel free to refer back to them as needed while working through the modules.    
 
 ::: {.callout-tip}
-Links to RevealJS slide decks for each module are listed below.:
+Links to RevealJS slide decks for each module are listed below.
 
 * [Open Module 0 RevealJS Slides](module0-slides.html)
 * [Open Module 1 RevealJS Slides](module1-slides.html)
