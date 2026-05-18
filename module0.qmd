@@ -2,7 +2,9 @@
 
 ## Module 0.1 – Lab Materials and Equipment Overview
 
-This table lists all materials and equipment required across Myco-Ed modules. Use the search box to filter by module, item, company, or catalog number.
+This table lists all materials and equipment required across Myco-Ed modules. Use the search box to filter by module, item, company, or catalog number (web view), or scroll through the complete table below (in PDF and downloads).
+
+::: {=html}
 
 ```{ojs}
 //| echo: false
@@ -101,6 +103,21 @@ Inputs.table(search, {
   }
 })
 ```
+
+:::
+
+::: {=pdf,docx}
+
+```{r}
+#| echo: false
+library(readr)
+materials_df <- read_csv("_materials.csv")
+knitr::kable(materials_df)
+```
+
+:::
+
+
 ## Module 0.2 – Create iNaturalist Traditional Project Instructions
 
 ### iNaturalist Introduction
