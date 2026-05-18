@@ -1,4 +1,4 @@
-# Module 7: Genomic Analyses {unnumbered}
+# Module 7: Genomic Analyses {.unnumbered}
 
 ## Module 7.1 – Sexual Reproduction in Ascomycota Genomic Analysis
 

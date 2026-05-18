@@ -1,4 +1,4 @@
-# Module 5: Tissue Preparation
+# Module 5: Tissue Preparation {.unnumbered}
 
 ## Module 5.1 – Tissue Preparation for Genome Sequencing
 

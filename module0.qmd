@@ -119,7 +119,7 @@ The umbrella project for MycoEd is the MycoEd Fungal Genomics Education Project.
 4. On the bottom right of the page, select Start a Project.
 5. Start a Traditional Project. Scroll to the bottom of the page to find the Traditional Project link for this option.
 
-**Note: If you do not have this option, please contact Amy Honan (amy.honan@oregonstate.edu) or Andrew Wilson (andrew.wilson@BotanicGardens.org) for assistance.
+**Note: If you do not have this option, please contact Amy Honan (amy.honan@oregonstate.edu) or Andrew Wilson (andrew.wilson@BotanicGardens.org) for assistance.**
 
 6. Complete the following criteria indicated in the lettered parts of the figure below:
    a. Add Title. Include Institution, term or semester, and year.

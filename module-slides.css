@@ -1,60 +1,217 @@
-/* Module Slides — NC State Bio-Indigo & Genomic Green */
+/* Module slides theme: NC State Bio-Indigo and Genomic Green */
 
 :root {
+  --brand-indigo: #4156a1;
+  --brand-green: #00a77e;
+  --brand-ink: #1a1a2e;
+  --brand-soft: #f0f3fb;
+  --brand-focus: #005fcc;
+
   --r-background-color: #ffffff;
-  --r-main-color: #1a1a2e;
-  --r-heading-color: #4156A1;
-  --r-link-color: #4156A1;
-  --r-link-color-hover: #00A77E;
-  --r-selection-background-color: #4156A1;
+  --r-main-color: var(--brand-ink);
+  --r-heading-color: var(--brand-indigo);
+  --r-link-color: #26439b;
+  --r-link-color-hover: #007e61;
+  --r-selection-background-color: var(--brand-indigo);
   --r-selection-color: #ffffff;
 }
 
-/* Headings */
-.reveal h1, .reveal h2, .reveal h3 {
-  color: #4156A1;
+.reveal {
+  font-size: 38px;
 }
 
-/* Section title slides */
-.reveal section[data-background-color="#4156A1"] h2 {
+.reveal .slides section {
+  text-align: left;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+  color: var(--brand-indigo);
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+.reveal h1 {
+  font-size: clamp(1.5em, 4.2vw, 2.05em);
+}
+
+.reveal h2 {
+  font-size: clamp(1.25em, 3.5vw, 1.7em);
+}
+
+.reveal p,
+.reveal li,
+.reveal td,
+.reveal th {
+  line-height: 1.45;
+}
+
+.reveal ul,
+.reveal ol {
+  margin-left: 1.1em;
+}
+
+.reveal li + li {
+  margin-top: 0.25em;
+}
+
+.reveal a {
+  color: var(--r-link-color);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+
+.reveal a:hover {
+  color: var(--r-link-color-hover);
+}
+
+.reveal a:focus-visible,
+.reveal button:focus-visible,
+.reveal [role="button"]:focus-visible {
+  outline: 3px solid var(--brand-focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.reveal section[data-background-color="#4156A1"] h1,
+.reveal section[data-background-color="#4156A1"] h2,
+.reveal section[data-background-color="#4156A1"] h3,
+.reveal section[data-background-color="#4156A1"] p,
+.reveal section[data-background-color="#4156A1"] li {
   color: #ffffff;
 }
 
-/* Footer */
-.reveal .footer {
-  font-size: 0.55em;
-  color: #4156A1;
-}
-
-/* Logo */
 .reveal .slide-logo {
-  max-height: 50px;
+  max-height: 56px;
 }
 
-/* Callout boxes — match Quarto defaults with brand accent */
-.reveal .callout-warning {
-  border-left-color: #e6a817;
+.reveal .footer {
+  font-size: 0.57em;
+  color: var(--brand-indigo);
+  letter-spacing: 0.01em;
 }
+
+.reveal .slide-number {
+  color: var(--brand-indigo);
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(65, 86, 161, 0.2);
+  border-radius: 999px;
+  padding: 0.15em 0.5em;
+}
+
+/* Callouts */
+.reveal .callout {
+  border-left-width: 0.35rem;
+  border-radius: 0.35rem;
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgba(26, 26, 46, 0.08);
+}
+
 .reveal .callout-note {
-  border-left-color: #00A77E;
+  border-left-color: var(--brand-green);
+  background-color: #f2fbf8;
 }
+
+.reveal .callout-warning {
+  border-left-color: #b58500;
+  background-color: #fff9e8;
+}
+
 .reveal .callout-important {
-  border-left-color: #cc0000;
+  border-left-color: #c62828;
+  background-color: #fff1f1;
+}
+
+/* Code and preformatted blocks */
+.reveal code {
+  color: #084f3e;
+  background: #eef7f3;
+  border-radius: 0.2em;
+  padding: 0.08em 0.22em;
+}
+
+.reveal pre {
+  border-top: 4px solid var(--brand-indigo);
+  border-radius: 0.45rem;
+  box-shadow: 0 6px 18px rgba(26, 26, 46, 0.1);
+}
+
+.reveal pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
 }
 
 /* Tables */
-.reveal table th {
-  background-color: #4156A1;
-  color: #ffffff;
-}
-.reveal table tr:nth-child(even) {
-  background-color: #f0f3fb;
-}
 .reveal table {
-  font-size: 0.82em;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78em;
+  border: 1px solid #d9deef;
+  border-radius: 0.45rem;
+  overflow: hidden;
 }
 
-/* Slide number */
-.reveal .slide-number {
-  color: #4156A1;
+.reveal table caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: 600;
+  color: var(--brand-ink);
+  margin-bottom: 0.4em;
+}
+
+.reveal table th {
+  background-color: var(--brand-indigo);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.reveal table th,
+.reveal table td {
+  padding: 0.48em 0.56em;
+  border: 1px solid #dde3f2;
+}
+
+.reveal table tbody tr:nth-child(even) {
+  background-color: var(--brand-soft);
+}
+
+.reveal table tbody tr:hover {
+  background-color: #e5faF3;
+}
+
+.reveal blockquote {
+  border-left: 0.3rem solid var(--brand-green);
+  background: #f5fbfa;
+  border-radius: 0.35rem;
+  padding: 0.45em 0.7em;
+}
+
+.reveal img,
+.reveal video,
+.reveal iframe {
+  border-radius: 0.35rem;
+  box-shadow: 0 8px 22px rgba(26, 26, 46, 0.14);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal *,
+  .reveal *::before,
+  .reveal *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .reveal {
+    font-size: 33px;
+  }
+
+  .reveal .footer {
+    font-size: 0.5em;
+  }
 }
