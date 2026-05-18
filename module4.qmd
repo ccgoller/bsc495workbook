@@ -1,26 +1,50 @@
-# Module 4: DNA Sequencing
+# Module 4: DNA Sequencing {.unnumbered}
 
 ## Module 4.1 – DNA Sequencing and Species Identification Instructor Resources
 
 ### Instructor Laboratory Preparation Instructions
 
 **Materials needed:**
-- 3 x 250 mL Beakers
-- 100 mL graduated cylinder or 100 mL pipettes.
-- Distilled water
-- PCR pure water
-- 1.5 mL microcentrifuge tubes
-- Glassware with screw cap lids
-- Stock primers
-- 1-10 and 20-200 µL micropipettors
-- 1-10 and 20-200 µL micropipette tips
-- Magnetic stir bars
-- Hotplate and magnetic stir plate
-- Tris (need 100 mL of 1M Tris stock solution)
-- KCl (need 18.6 g)
-- EDTA (need 3.7 g)
-- Gloves
-- Sharpie
+This list may vary depending on your preferred extraction, amplification, and sequencing protocols.
+* Gloves
+* Sharpie
+* Thermal cycler
+* Vortex
+* Centrifuge for PCR and microfuge tubes
+* Heat block/thermomixer for 1.5-2.0 ml microfuge tubes
+* 1.5mL microcentrifuge tubes (Eppendorf DNA LoBind)
+* 0.2 mL PCR tubes
+* Microfuge and PCR tube racks
+* Labeling tape
+* Monarch® Spin gDNA Extraction Kit (New England BioLabs,T3010S)
+* MetaPolyzyme, DNA free (Millipore Sigma, MAC4LDF-5X1VL)
+* TE Buffer
+* CTAB solution (100 ml, Promega, MC1411)
+* Parafilm
+* 70% ETOH
+* 1-10, 20-200, and 100-1000 µL micropipettors
+* 1-10, 20-200, and 100-1000 µL micropipette tips (preferably filtered)
+* Kimwipes
+* PCR primers (ITS1f, ITS4, 5.8SR, fITS7) ordered from Integrated DNA Technologies (IDT) or similar supplier normalized to 100 µM in TE buffer. The following primers are commonly used for fungal DNA barcoding:
+   + ITS1f: 5’-CTTGGTCATTTAGAGGAAGTAA-3’
+   + ITS4: 5’-TCCTCCGCTTATTGATATGC
+   + 5.8SR: 5’-CGCTGCGTTCTTCATCG-3’
+   + fITS7: 5’-GTGARTCATCGAATCTTTG-3’
+* Q5® Hot Start High-Fidelity 2X Master Mix - 100 reactions(New England BioLabs, M0494S)
+* PCR water (New England BioLabs, B1500S)
+* Exo-CIP Rapid PCR Cleanup Kit - 100 reactions (New England BioLabs, E1050S)
+* E-Gel system with 1.2% agarose gels (ThermoFisher, G4010010) or similar gel electrophoresis system
+* E-Gel™ Sizing DNA Ladder (ThermoFisher, 10488100)
+* DNA quantification system (for example, Qubit Fluorometer with dsDNA HS Assay Kit, ThermoFisher, Q32851)
+* Access to Sanger sequencing services (for example, Genewiz, Eurofins, Eton, or similar provider).
+* Rapid Barcoding Kit v14 (Oxford Nanopore Technologies), SQK-RBK114.24 or similar kit for long-read sequencing (optional)
+* MinION sequencing device
+* MinION flow cells (R10.4.1 or similar, Oxford Nanopore Technologies, FLO-MIN114)
+* Ultrapure BSA 50mg/ml (ThermoFisher, AM2616) for long-read sequencing
+* 1.5mL microcentrifuge tubes (Eppendorf DNA LoBind) for long-read sequencing
+* 0.2 mL PCR tubes for long-read sequencing
+* Magnetic rack for 1.5ml microcentrifuge tubes (for example, ThermoFisher DynaMag-2, 12321D) for long-read sequencing
+* Nuclease-free water and 100% ethanol to prepare 80& ethanol for long-read sequencing
 
 **DNA Extraction Buffer (ES)**
 

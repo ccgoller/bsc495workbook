@@ -12,9 +12,7 @@
 - [ ] Forceps
 - [ ] Scalpels or metal hole punch
 
-**Lab Prep:**
-
-**Sterility:**
+**Lab Prep and Sterility:**
 We will be working at the bench and without Bunsen burners. **Be very careful and do not leave plates open for long periods.** First, clean your work area with bleach, and/or ethanol. We will use clean benches and laminar flow hoods when available, but this is a good alternative for those without access to these resources.
 
 ::: {.callout-warning}
@@ -39,7 +37,6 @@ Place all Petri dishes in an autoclavable bag and sterilize at 15 lbs. pressure 
 ### Metadata
 Metadata 
 :  is the data providing information about other data. 
-
 In this project, metadata refers to information related to the fungi you will study, including information about the substrate (e.g., plant host for fungal endophytes), location (latitude and longitude), elevation, images, fungal species, growth rates, assay information, images, and other variables. This document guides you through capturing this data and where to document it.
 
 Once you have selected the plant(s) that you will isolate fungi from, upload an image of each plant to your course's iNaturalist Project page. This part of the larger MycoEd Fungal Genomics Education Project. The fungi you isolate from this plant and the data associated with the fungal isolates will be linked back to this observation. These data will then be freely available to you and any other researchers interested in investigating fungal endophyte ecology and genomics.
@@ -47,7 +44,6 @@ Once you have selected the plant(s) that you will isolate fungi from, upload an 
 Record metadata on the **Endophyte spreadsheet**. Below are descriptions for each category where necessary.
 
 ### iNaturalist plant observation:
-
 [NC State Myco Ed on iNaturalist] (https://www.inaturalist.org/projects/nc-state-myco-ed)
 https://www.inaturalist.org/projects/nc-state-myco-ed
 
@@ -91,7 +87,6 @@ This lab will introduce you to sterile/aseptic technique, culturing fungi, isola
 Every species of plant surveyed to date hosts a multitude of fungal **endophytes**. These symbiotic fungi exist in all plant tissues, including leaves, bark, roots, and reproductive structures such as flowers and seeds. All lineages of fungi contain endophytic species, however the majority of fungal endophytes described to date are Ascomycetes. Research has shown that fungal endophytes impact both plant species fitness and plant community fitness. Fungal endophytes can confer abiotic and biotic stress tolerance, influence biomass and water consumption, and alter resource allocation. The fungi live either between the plant cells, between the cell wall and the cell membrane, or sometimes even within the cell membrane. This project is part of the MycoEd Fungal Genomics Education Project. The goal of this long-term research project is to produce fungal reference genomes to better understand their biology.
 
 ### Learning Goals
-
 1. Documentation using iNaturalist
 2. Practice sterile technique
 3. Culture and isolate fungi
@@ -99,7 +94,6 @@ Every species of plant surveyed to date hosts a multitude of fungal **endophytes
 5. Characterize morphology of fungal cultures
 
 ### Lab Supplies
-
 - [ ] 3 large water agar Petri plates - these are for initial isolation
 - [ ] Sharpie
 - [ ] Parafilm
@@ -112,7 +106,6 @@ Every species of plant surveyed to date hosts a multitude of fungal **endophytes
 - [ ] Forceps
 
 ### Instructions
-
 #### Isolation of Fungi from Leaves
 Before you begin, read through the entire instructions. Be sure to consult your instructor if you have any questions.
 
@@ -127,7 +120,6 @@ Upload an image of the plants you have chosen to your course's iNaturalist Proje
 
 **Sampling Endophytes**
 Materials needed:
-
 - [ ] Your phone with iNaturalist.
 - [ ] Sample labels with unique ID numbers.
 - [ ] Paper bags for samples.
@@ -172,7 +164,6 @@ Gather all supplies including sterilized water, 70% EtOH, and 10% bleach solutio
 For this semester we will be sampling plant tissue and isolating endophytic fungi for an experiment in fungal genomics. Part of this research will include the collection of important meta-data which includes latitude and longitude information, sampled material/host, and taxonomic information. To facilitate this we are using iNaturalist.
 
 **Homework Assignment 1: Get set up to use iNaturalist.**
-
 - Go to https://www.inaturalist.org/ and make an account if you don't already have one.
 - Download the iNaturalist App to your phone.
 - Give your iNaturalist user ID to your course instructor or TA. They will need this to add you to the course project. Be sure to ask your instructor for the name of the course project.

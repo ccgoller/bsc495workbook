@@ -1,4 +1,4 @@
-# Module 3: Phenotypic Assays
+# Module 3: Phenotypic Assays {.unnumbered}
 
 ## Module 3.1 – Phenotypic Assays
 
@@ -11,12 +11,8 @@
 - Agar, Bacteriological
 - Potato Dextrose Agar
 - Zinc Sulfate
-- Alcohol Lamp or Bunsen Burner
 - Forceps
-- Scalpel (make sure the handle is metal as the scalpel will be flame sterilized and plastic will melt)
-
-**Sterility:**
-If you don't have a laminar flow hood, you may create a similar environment by setting up 2 torches over your work space. First, clean your work area with bleach, and/or ethanol. Set the torches facing each other with enough space to work underneath. Light the torches and pour media into plates under the flames.
+- Scalpel (sterilized)
 
 **Potato Dextrose Agar (PDA) with Zn Plates for Zn Stress Assay:**
 Suspend 39 grams Potato Dextrose Agar in 1000 ml (1 L) distilled water (or follow the directions on the bottle label). Add the appropriate amount of Zn sulfate to obtain concentrations of 1 mM Zn and 10 mM Zn in the media bottle. Heat to boiling to dissolve the medium completely (in most cases, this step can be skipped as autoclaving will dissolve media). Sterilize by autoclaving at 15 lbs pressure (121°C) for 15 minutes.
@@ -26,7 +22,7 @@ Suspend 39 grams Potato Dextrose Agar in 1000 ml (1 L) distilled water (or follo
 
 When the media is cool enough to handle with autoclave gloves, pour 60x15 mm plates in a sterile environment. Do not let it cool too long before pouring as the media will solidify. Each 60x15 mm plate holds approximately 8 mL of media. If plates will be used immediately smaller amounts of media can be poured into plates. If plates will be stored, use larger amounts. Store plates in original Petri dish sleeve in refrigerator (~4 °C) until use.
 
-Working in your sterile environment, place one cellophane disc onto cooled PDA agar in 60x15mm plates. Use sterile forceps to transfer each cellophane disc onto the PDA plate. If you can't easily remove single discs, try the "slide" technique. Dip your forceps into the container with the discs until you touch a disc. Using the forceps as a probe (not pinched) slide the disc to the side of the container and up the side of the container. Often, you'll pull out one disc. Sometimes more than one disc will slide up, but it's usually easy to see the individual discs at this point. You can then use your forceps to pull out one disc. If you grasp one disc with your forceps, you can swirl it in the water in the container to dislodge any other discs that might be attached. Open the lid of the petri dish and lay the cellophane onto the solid agar.
+Working in your sterile environment, place one cellophane disc onto cooled PDA agar in 60x15mm plates. Use sterile forceps to transfer each cellophane disc onto the PDA plate. If you can't easily remove single discs, try the "slide" technique. Dip your forceps into the container with the discs until you touch a disc. Using the forceps as a probe (not pinched) slide the disc to the side of the container and up the side of the container. Often, you'll pull out one disc. Sometimes more than one disc will slide up, but it's usually easy to see the individual discs at this point. You can then use your forceps to pull out one disc. If you grasp one disc with your forceps, you can swirl it in the water in the container to dislodge any other discs that might be attached. Open the lid of the Petri dish and lay the cellophane onto the solid agar.
 
 ## Module 3.2 – Phenotypic Assays
 
@@ -56,9 +52,8 @@ Testing foliar fungal endophytes for Zn tolerance is particularly relevant as th
 - PDA 0 mM Zn + antibiotics
 - PDA 1 mM Zn + antibiotics
 - PDA 10 mM Zn + antibiotics
-- Fine tip Sharpie
-- Culture cutting tool
-- Burner
+- Fine tip Sharpie or marker
+- Agar cutting tool
 - Ethanol jar
 
 **Procedures:**
@@ -79,9 +74,8 @@ In this lab, we will explore the effects of temperature on the growth and surviv
 **Materials:**
 - Pure cultures (2 per student)
 - PDA with antibiotics (6 per student)
-- Fine tip Sharpie
+- Fine tip Sharpie or marker
 - Culture cutting tool
-- Burner
 - Ethanol jar
 
 **Procedures:**

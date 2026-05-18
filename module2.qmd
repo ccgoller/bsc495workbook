@@ -1,4 +1,4 @@
-# Module 2: Fungal Isolation
+# Module 2: Fungal Isolation {.unnumbered}
 
 ## Module 2.1 – Lab Prep Overview
 
@@ -16,8 +16,9 @@
 
 **Lab Prep:**
 
-**Sterility:**
-If you don't have a laminar flow hood, you may create a similar environment by setting up 2 torches over your workspace. First, clean your work area with bleach, and/or ethanol. Set the torches facing each other with enough space to work underneath. Light the torches and pour media into plates under the flames.
+::: {.callout-important}
+Read all directions and gather all supplies before beginning. Carefully clean your work area with bleach, and/or ethanol.
+:::
 
 ::: {.callout-warning}
 Note that we will be working with fungi, which are generally not harmful to humans, but can cause allergic reactions in some individuals. Always practice good sterile technique and handle all materials with care. If you have any concerns about allergies or sensitivities, please consult with your instructor before beginning the lab.
@@ -90,18 +91,14 @@ Fungal cultures usually emerge as white fuzz from your leaf discs, however, the 
 
 Fungal growth from the leaf cuttings may occur over the span of a few weeks, so you may have to transfer several times. Your fungal cultures will be most successful if you transfer them within a few days (1-3) from emergence or detection.
 
-::: {.callout-important}
-Read all directions and gather all supplies before beginning.
-:::
 
-
-1. Practice Sterile Technique. Wear gloves. Clean work surface with disinfectant. If available, wipe surfaces with 70% ethanol. Choose a working location with the least amount of airflow to prevent contamination. If available, use a laminar flow hood. You may also set up torches or Bunsen burners on either side of your work area facing each other. The heat generated from the torches creates an upward airflow which decreases the potential of airborne contaminants falling onto your workspace or into your petri dishes.
+1. Practice Sterile Technique. Wear gloves. Clean work surface with disinfectant. If available, wipe surfaces with 70% ethanol. Choose a working location with the least amount of airflow to prevent contamination. Decrease the potential of airborne contaminants falling onto your workspace or into your petri dishes.
 2. Label a PDA petri dish with the sample number and date for each isolate (described in Module 1.1 - Metadata). Always label along the bottom edge. This ensures the label stays with the fungus, even if the top lid falls off. Label the edge of the plate because you don't want to obscure light transmission through the plate. Also, mark lines on the bottom of the plate as shown in Figure 2 to record the growth rate. Be sure to transfer only one fungal isolate to each PDA petri dish.
-3. Sterilize the scalpel using flame and let cool. You can touch your scalpel to the agar in the petri dish to cool.
+3. Use a stefilized scalpel. 
 4. Make a "plug". Cut a small chunk of water agar containing hyphae of target isolate using a sterilized scalpel. Transfer this plug of agar and hyphae to the PDA plate. Ideally, you will have the least amount of agar transferred to the new petri dish.
    a. Work quickly and cleanly and consider your technique to prevent contamination. Remove Parafilm from the water agar plate.
-   b. Tilt or lift the lid of the water agar petri dish as little as possible, try to keep the lid covering or hovering over the plate to prevent airborne contaminants. Work under flames if using flames.
-   c. Using a cooled sterile scalpel remove the chunk of agar from the target fungal isolate.
+   b. Tilt or lift the lid of the water agar petri dish as little as possible, try to keep the lid covering or hovering over the plate to prevent airborne contaminants.
+   c. Using a sterile scalpel remove the chunk of agar from the target fungal isolate.
    d. Replace the lid of the water agar.
    e. Open the PDA petri dish lid by slightly tilting the lid, or lifting the lid straight up. Place the agar chunk into the middle (or as mid-plate as possible) of the PDA petri dish. The agar will likely stick to the scalpel, so do your best to remove the chunk without contamination.
    f. Close the lid of the PDA petri dish lid as quickly as possible. Seal with parafilm.

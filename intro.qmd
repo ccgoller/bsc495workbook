@@ -1,10 +1,9 @@
 # Introduction {.unnumbered}
-
 This is a book created from the [MycoEd Workbook from March 2026](https://dx.doi.org/10.17504/protocols.io.rm7vzqd5xvx1/v1) and adapted for the **BSC 495 *The Hidden World's Code***, a course developed for students at North Carolina State University. The course is designed to provide students with hands-on experience in fungal biology and genomics, and to empower them to contribute to the field of mycology through research and discovery.
 
 The Mycological Curriculum for Education and Discovery (Myco-Ed) is a Course-Based Undergraduate Research Experience (CURE) that consists of coordinated hands-on experiments across fungal biology teaching labs with the goals of
 
-* Training students and professors in laboratory techniques and data analyses
+* Training students and instructors in laboratory techniques and data analyses
 * Compiling original data for improving fungal genomic resources
 * Empowering students through isolation and genome sequencing of new fungal species
 

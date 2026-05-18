@@ -1,11 +1,9 @@
 # Module 0: Getting Started and Data Management [Instructor Instructions] {.unnumbered}
 
 ## Module 0.1 – Lab Materials and Equipment Overview
-
 This document lists the materials and equipment required for implementing the Myco-Ed program.
 
 ### Module 1- Fungal sampling and Culturing
-
 * 100x15mm Petri dishes
 * Bacteriological agar (for example, Difco Bacto Agar)
 * Autoclave
@@ -23,7 +21,6 @@ This document lists the materials and equipment required for implementing the My
 * Paper towels
 
 ### Module 2- Fungal Isolation
-
 * 60x15mm Petri dishes
 * Potato Dextrose Agar (PDA)
 * Autoclave
@@ -38,7 +35,6 @@ Materials and equipment will vary based on the phenotypic assay choice.
 
 ### Module 4 – DNA Sequencing and Species Identification
 This list may vary depending on your preferred extraction, amplification, and sequencing protocols.
-
 * Gloves
 * Sharpie
 * Thermal cycler
@@ -59,10 +55,10 @@ This list may vary depending on your preferred extraction, amplification, and se
 * 1-10, 20-200, and 100-1000 µL micropipette tips (preferably filtered)
 * Kimwipes
 * PCR primers (ITS1f, ITS4, 5.8SR, fITS7) ordered from Integrated DNA Technologies (IDT) or similar supplier normalized to 100 µM in TE buffer. The following primers are commonly used for fungal DNA barcoding:
-   - ITS1f: 5’-CTTGGTCATTTAGAGGAAGTAA-3’
-   - ITS4: 5’-TCCTCCGCTTATTGATATGC
-   - 5.8SR: 5’-CGCTGCGTTCTTCATCG-3’
-   - fITS7: 5’-GTGARTCATCGAATCTTTG-3’
+   + ITS1f: 5’-CTTGGTCATTTAGAGGAAGTAA-3’
+   + ITS4: 5’-TCCTCCGCTTATTGATATGC
+   + 5.8SR: 5’-CGCTGCGTTCTTCATCG-3’
+   + fITS7: 5’-GTGARTCATCGAATCTTTG-3’
 * Q5® Hot Start High-Fidelity 2X Master Mix - 100 reactions(New England BioLabs, M0494S)
 * PCR water (New England BioLabs, B1500S)
 * Exo-CIP Rapid PCR Cleanup Kit - 100 reactions (New England BioLabs, E1050S)
@@ -82,7 +78,6 @@ This list may vary depending on your preferred extraction, amplification, and se
 
 
 ### Module 5 - Tissue Preparation for Genome Sequencing
-
 * Cellophane discs, induvidually rinsed and autoclaved in gauze
 * 60x15mm Petri Dishes
 * Potato Dextrose Agar (PDA)
@@ -96,12 +91,10 @@ This list may vary depending on your preferred extraction, amplification, and se
 * Pure fungal culture
 
 ### Module 6 – Sample Submission
-
 * Shipping samples
 * Sample form printout
 
 ### Module 7 – Genomic Analyses
-
 * Access to Mycocosm
 * Computer with internet access
 
@@ -167,7 +160,6 @@ Use this last step as a requirement for course credit to ensure the process is c
 This checklist will help you track your progress in managing Myco-Ed project data using iNaturalist.
 
 #### For Instructors
-
 - [ ] Create an iNaturalist Account. (Module 0.2)
 - [ ] Create an iNaturalist Traditional Project for your course. (Module 0.2) You may need to request the assistance of the Myco-Ed team to create this if you do not have the pre-requisite number of observations.
 - [ ] Tell your students the name of the iNaturalist Project, and request their iNaturalist user IDs.
@@ -176,7 +168,6 @@ This checklist will help you track your progress in managing Myco-Ed project dat
 
 #### For Students/Participants
 **Homework Assignment 1 (Module 1.2)**
-
 - [ ] Create an iNaturalist Account.
 - [ ] Get the iNaturalist App for your phone
 - [ ] Give your instructor your iNaturalist User Name.
@@ -185,7 +176,6 @@ This checklist will help you track your progress in managing Myco-Ed project dat
 - [ ] Join the course project once you receive an invitation from the instructor/TA.
 
 **Make an Observation (Module 1.2)**
-
 - [ ] Take multiple images of the plant host (or habitat photos of the environment) and include at least one image with a unique field number. (e.g., MycoEd_004)
 - [ ] Add the observation to your course project.
 - [ ] Save and upload the observation to the cloud once you're connected to wifi.
