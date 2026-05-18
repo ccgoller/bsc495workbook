@@ -9,6 +9,7 @@ The links below open the RevealJS slide decks for each module. Please note the s
 
 ::: {.callout-tip}
 Links to RevealJS slide decks for each module are listed below.:
+
 * [Open Module 0 RevealJS Slides](module0-slides.html)
 * [Open Module 1 RevealJS Slides](module1-slides.html)
 * [Open Module 2 RevealJS Slides](module2-slides.html)
