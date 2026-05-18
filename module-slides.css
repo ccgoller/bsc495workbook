@@ -92,6 +92,13 @@
   font-size: 0.57em;
   color: var(--brand-indigo);
   letter-spacing: 0.01em;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.reveal .slide:first-child .footer {
+  visibility: visible;
+  opacity: 1;
 }
 
 .reveal .slide-number {
@@ -206,12 +213,98 @@
   }
 }
 
-@media (max-width: 900px) {
-  .reveal {
-    font-size: 33px;
-  }
+/* Title slide (first slide) — Bio-Indigo blue background */
+.reveal .slide:first-child {
+  background: linear-gradient(135deg, var(--brand-indigo) 0%, #2d3a7a 100%);
+}
 
-  .reveal .footer {
-    font-size: 0.5em;
+.reveal .slide:first-child h1,
+.reveal .slide:first-child h2,
+.reveal .slide:first-child p,
+.reveal .slide:first-child .subtitle {
+  color: #ffffff;
+}
+
+/* Section headers with # heading and {background-color} — Green background */
+.reveal section[data-background-color="#00A77E"],
+.reveal section[data-background-color="#00a77e"] {
+  background: linear-gradient(135deg, var(--brand-green) 0%, #007e61 100%);
+}
+
+.reveal section[data-background-color="#00A77E"] h1,
+.reveal section[data-background-color="#00A77E"] h2,
+.reveal section[data-background-color="#00A77E"] p,
+.reveal section[data-background-color="#00a77e"] h1,
+.reveal section[data-background-color="#00a77e"] h2,
+.reveal section[data-background-color="#00a77e"] p {
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Section headers with blue background (Module X.Y style) */
+.reveal section[data-background-color="#4156A1"],
+.reveal section[data-background-color="#4156a1"] {
+  background: linear-gradient(135deg, var(--brand-indigo) 0%, #2d3a7a 100%);
+}
+
+.reveal section[data-background-color="#4156A1"] h1,
+.reveal section[data-background-color="#4156A1"] h2,
+.reveal section[data-background-color="#4156A1"] p,
+.reveal section[data-background-color="#4156a1"] h1,
+.reveal section[data-background-color="#4156a1"] h2,
+.reveal section[data-background-color="#4156a1"] p {
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Prevent text overflow on slides */
+.reveal {
+  --slide-width: 100%;
+}
+
+.reveal .slides section {
+  padding: 3rem 3.5rem !important;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+  max-width: 90%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.reveal p,
+.reveal li,
+.reveal td {
+  max-width: 95%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.reveal ul,
+.reveal ol {
+  width: 100%;
+  max-width: 95%;
+}
+
+.reveal .columns {
+  max-width: 100%;
+}
+
+.reveal .column {
+  overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal *,
+  .reveal *::before,
+  .reveal *::after {
+    transition: none !important;
+    animation: none !important;
   }
 }
