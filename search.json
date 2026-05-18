@@ -310,34 +310,45 @@
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "1  Summary",
+    "title": "Summary",
     "section": "",
-    "text": "In summary, this book covers the complete Myco-Ed curriculum for BSC 495: The Hidden World’s Code. Students will gain hands-on experience in fungal biology and genomics, from sample collection and fungal isolation through DNA sequencing, genome assembly, and annotation. By the end of the course, students will have contributed to high-quality fungal reference genomes and developed broadly applicable skills in lab techniques and bioinformatics. More information and course resources are available at the BSC495-HWC GitHub organization.",
+    "text": "This workbook outlines the Myco-Ed curriculum for BSC 495: The Hidden World’s Code. Students will gain hands-on experience in fungal biology and genomics, from sample collection and fungal isolation through DNA sequencing. By the end of the course, students scholars will have contributed to high-quality fungal reference genomes and developed broadly applicable skills in lab techniques and bioinformatics. More information and course resources are available at the BSC495-HWC GitHub organization.\nBut wait… there is more: genome assembly, and annotation. We hope you continue working on your isolates and share your results with us and the scientific community! One possibility is a microPublication. We are here to support you in your continued work on your isolates, and we would love to hear about your progress. Please feel free to reach out to us with any questions or updates on your work. We look forward to seeing the amazing things you will accomplish with your fungal isolates!",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Summary</span>"
+      "Summary"
     ]
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "2  Carlos C. Goller",
+    "title": "1  Carlos C. Goller",
     "section": "",
-    "text": "2.1 Education\nCarlos C. Goller, Ph.D. is a Teaching Professor at North Carolina State University in Raleigh, NC. He teaches microbiology, life science, public health, and other fun courses as part of the Department of Biological Sciences. When not playing with Delftia acidovorans or code, Carlos enjoys spending time with his family (Claire Gordy also at NC State, Amada, and Aurelio) and playing with his dog Sunshine.\nNorth Carolina State University, Raleigh, NC | Advisor: Dr. Sue Carson | Topic: Biotechnology Education and Curriculum Development\nDuke University Medical Center, Durham, NC | Advisor: Patrick C. Seed | Topic: Bacterial Pathogenesis and Anti-infective Screening The Hartwell Foundation Postdoctoral Fellowship | September 2008 - July 2012\nEmory University, Atlanta, GA | Advisor: Tony Romeo | Topic: Bacterial Biofilm Formation and Regulation Ph.D. in Microbiology and Molecular Genetics | August 2002 - September 2008\nWorcester Polytechnic Institute | Worcester, MA B.S in Biology and Biotechnology | August 1998 - May 2002",
+    "text": "About the Author\nCarlos C. Goller, Ph.D. is a Teaching Professor at North Carolina State University in Raleigh, NC. He teaches microbiology, life science, public health, and other fun courses as part of the Department of Biological Sciences. When not playing with Delftia acidovorans or code, Carlos enjoys spending time with his family (Claire Gordy also at NC State, Amada, and Aurelio) and playing with his dog Sunshine.",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Carlos C. Goller</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Carlos C. Goller</span>"
+    ]
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "1  Carlos C. Goller",
+    "section": "1.1 Education",
+    "text": "1.1 Education\nNorth Carolina State University, Raleigh, NC | Advisor: Dr. Sue Carson | Topic: Biotechnology Education and Curriculum Development\nDuke University Medical Center, Durham, NC | Advisor: Patrick C. Seed | Topic: Bacterial Pathogenesis and Anti-infective Screening The Hartwell Foundation Postdoctoral Fellowship | September 2008 - July 2012\nEmory University, Atlanta, GA | Advisor: Tony Romeo | Topic: Bacterial Biofilm Formation and Regulation Ph.D. in Microbiology and Molecular Genetics | August 2002 - September 2008\nWorcester Polytechnic Institute | Worcester, MA B.S in Biology and Biotechnology | August 1998 - May 2002",
+    "crumbs": [
+      "Home",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Carlos C. Goller</span>"
     ]
   },
   {
     "objectID": "about.html#experience",
     "href": "about.html#experience",
-    "title": "2  Carlos C. Goller",
-    "section": "2.2 Experience",
-    "text": "2.2 Experience\nTeaching Professor | North Carolina State University Department of Biological Sciences | 2024 - Present Associate Teaching Professor | North Carolina State University Department of Biological Sciences | 2019 - 2024 Assistant Teaching Professor | North Carolina State University Department of Biological Sciences | 2015 - 2019",
+    "title": "1  Carlos C. Goller",
+    "section": "1.2 Experience",
+    "text": "1.2 Experience\nTeaching Professor | North Carolina State University Department of Biological Sciences | 2024 - Present Associate Teaching Professor | North Carolina State University Department of Biological Sciences | 2019 - 2024 Assistant Teaching Professor | North Carolina State University Department of Biological Sciences | 2015 - 2019",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Carlos C. Goller</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Carlos C. Goller</span>"
     ]
   },
   {
