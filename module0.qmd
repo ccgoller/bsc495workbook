@@ -1,4 +1,4 @@
-# Module 0: Getting Started and Data Management [Instructor Instructions] {.unnumbered}
+# Module 0: Getting Started and Data Management {.unnumbered}
 
 ## Module 0.1 – Lab Materials and Equipment Overview
 This document lists the materials and equipment required for implementing the Myco-Ed program.
@@ -10,7 +10,7 @@ This document lists the materials and equipment required for implementing the My
 * Laminar flow hood (not necessary, if not available)
 * Forceps
 * Scalpels
-* 150ml beaker (or similar container for ethanol, 2 per student)
+* 150ml beaker (or similar container for ethanol)
 * Parafilm
 * Gloves
 * Hole punch (all metal, for cutting leaf discs; scalpel will work in lieu of hole punch)
@@ -66,7 +66,7 @@ This list may vary depending on your preferred extraction, amplification, and se
 * E-Gel™ Sizing DNA Ladder (ThermoFisher, 10488100)
 * DNA quantification system (for example, Qubit Fluorometer with dsDNA HS Assay Kit, ThermoFisher, Q32851)
 * Access to Sanger sequencing services (for example, Genewiz, Eurofins, Eton, or similar provider).
-* Rapid Barcoding Kit v14 (Oxford Nanopore Technologies), SQK-RBK114.24 or similar kit for long-read sequencing (optional)
+* Oxford Nanopore Technologies (ONT) Rapid Barcoding Kit v14 (Oxford Nanopore Technologies), SQK-RBK114.24 or similar kit for long-read sequencing (optional)
 * MinION sequencing device
 * MinION flow cells (R10.4.1 or similar, Oxford Nanopore Technologies, FLO-MIN114)
 * Ultrapure BSA 50mg/ml (ThermoFisher, AM2616) for long-read sequencing
@@ -160,6 +160,7 @@ Use this last step as a requirement for course credit to ensure the process is c
 This checklist will help you track your progress in managing Myco-Ed project data using iNaturalist.
 
 #### For Instructors
+
 - [ ] Create an iNaturalist Account. (Module 0.2)
 - [ ] Create an iNaturalist Traditional Project for your course. (Module 0.2) You may need to request the assistance of the Myco-Ed team to create this if you do not have the pre-requisite number of observations.
 - [ ] Tell your students the name of the iNaturalist Project, and request their iNaturalist user IDs.
@@ -168,6 +169,7 @@ This checklist will help you track your progress in managing Myco-Ed project dat
 
 #### For Students/Participants
 **Homework Assignment 1 (Module 1.2)**
+
 - [ ] Create an iNaturalist Account.
 - [ ] Get the iNaturalist App for your phone
 - [ ] Give your instructor your iNaturalist User Name.
@@ -176,6 +178,7 @@ This checklist will help you track your progress in managing Myco-Ed project dat
 - [ ] Join the course project once you receive an invitation from the instructor/TA.
 
 **Make an Observation (Module 1.2)**
+
 - [ ] Take multiple images of the plant host (or habitat photos of the environment) and include at least one image with a unique field number. (e.g., MycoEd_004)
 - [ ] Add the observation to your course project.
 - [ ] Save and upload the observation to the cloud once you're connected to wifi.
