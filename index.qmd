@@ -4,6 +4,19 @@ The Mycological Curriculum for Education and Discovery **(Myco-Ed)** is a **Cour
 To learn more about Quarto books visit [Quarto Books](https://quarto.org/docs/books)
 To learn more about the MycoEd curriculum visit the [MycoEd GitHub](https://mycocosm.jgi.doe.gov/mycocosm/home/myco-ed))
 
+## Course Outcomes
+* ** CO1**: Isolate fungal endophytes,
+* ** CO2**: Characterize the morphology of fungal cultures through phenotypic and genomic assays,
+* ** CO3**: Practice extracting fungal DNA,
+* ** CO4**: Describe the process to PCR amplify fungal ITS,
+* ** CO5**: Formulate meaningful and testable scientific questions/hypotheses,
+* ** CO6**: Collect and critically interpret experimental data (including metadata),
+* ** CO7**: Maintain an appropriate laboratory notebook,
+* ** CO8**: Summarize their work and describe their findings in written and oral presentations.
+* ** CO9**: Apply evidence-based strategies to improve scientific collaboration and teamwork skills.
+* ** CO10**: Reflect on your development as a scientist and team member through structured prompts and reflections.
+
+
 ## Module Slides
 The links below open the RevealJS slide decks for each module. Please note the slides can be advanced using the arrow keys on your keyboard, and you can also use the menu in the bottom right corner to navigate between slides. The slide decks are designed to be used in conjunction with the corresponding module content in this book, so feel free to refer back to them as needed while working through the modules.    
 

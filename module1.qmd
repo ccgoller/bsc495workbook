@@ -188,7 +188,7 @@ iNaturalist makes documenting samples easy through observations. We will use thi
 **Homework Assignment 2: Review videos on how to document fungi.**
 
 - [ ] [Getting Started](https://www.inaturalist.org/pages/getting+started)
-- [ ] [iNaturalist Videos](https://www.inaturalist.org/pages/video+tutorials)
+- [ ] [iNaturalist Videos](https://inaturalist.freshdesk.com/en/support/solutions/folders/151000547795)
 - [ ] [NAMA/FunDiS How To Collect Research Specimens](https://youtu.be/EgZw37NjxkA)
 
 {{< video https://youtu.be/EgZw37NjxkA >}}
