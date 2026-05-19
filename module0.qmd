@@ -108,11 +108,7 @@ Inputs.table(search, {
 
 ::: {.content-visible when-format="pdf,docx"}
 
-```{r}
-#| echo: false
-materials_data <- read.csv("_materials.csv", stringsAsFactors = FALSE, check.names = FALSE)
-knitr::kable(materials_data)
-```
+The complete materials and equipment list is available in `_materials.csv`.
 
 :::
 
