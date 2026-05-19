@@ -4,7 +4,7 @@
 
 This table lists all materials and equipment required across Myco-Ed modules. Use the search box to filter by module, item, company, or catalog number (web view), or scroll through the complete table below (in PDF and downloads).
 
-::: {=html}
+::: {.content-visible when-format="html"}
 
 ```{ojs}
 //| echo: false
@@ -106,7 +106,7 @@ Inputs.table(search, {
 
 :::
 
-::: {=pdf,docx}
+::: {.content-visible when-format="pdf,docx"}
 
 ```{r}
 #| echo: false

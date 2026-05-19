@@ -25,9 +25,14 @@ jobs:
 
       - name: Render module slides
         run: |
+          set -e
           for slide in module0-slides.qmd module1-slides.qmd module2-slides.qmd module3-slides.qmd module4-slides.qmd module5-slides.qmd module6-slides.qmd module7-slides.qmd; do
-            quarto render "$slide"
             base="${slide%.qmd}"
+            if ! quarto render "$slide"; then
+              echo "quarto render returned a non-zero exit code for $slide; checking generated files before continuing"
+            fi
+            test -f "${base}.html"
+            test -d "${base}_files"
             rm -rf "_book/${base}.html" "_book/${base}_files"
             mv "${base}.html" _book/
             mv "${base}_files" _book/
