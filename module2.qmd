@@ -61,7 +61,7 @@ In the previous lab, we started the process of sampling fungal endophytes. We do
 
 Today, we will isolate, or subculture, these fungi onto PDA agar (Potato Dextrose Agar). This nutrient agar will allow for fungal growth. We will then measure the growth rate of each individual fungal isolate.
 
-This project is part of the Myco-Ed Fungal Genomics Education Project. The goal of this long-term research project is to develop annotated genomes of fungal endophytes to better understand their ecology and how they impact their host plants.
+This project is part of the [Myco-Ed Fungal Genomics Education Project](https://mycocosm.jgi.doe.gov/mycocosm/home/myco-ed). The goal of this long-term research project is to develop annotated genomes of fungal endophytes to better understand their ecology and how they impact their host plants.
 
 ### Learning Goals
 1. Practice sterile technique
