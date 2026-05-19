@@ -1,5 +1,6 @@
 ---
 title: "Carlos C. Goller"
+numbered: false
 about:
   template: trestles
   image: GollerCarlos.jpg
