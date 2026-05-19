@@ -110,8 +110,11 @@ Inputs.table(search, {
 
 ```{r}
 #| echo: false
-materials_data <- tibble::tribble(
-  ~module, ~item, ~description, ~company, ~catalog,
+materials_data <- read.csv("_materials.csv", stringsAsFactors = FALSE, check.names = FALSE)
+knitr::kable(materials_data)
+```
+
+:::
 
 
 ## Module 0.2 – Create iNaturalist Traditional Project Instructions
