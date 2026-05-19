@@ -6,6 +6,7 @@
 
 **Materials needed:**
 This list may vary depending on your preferred extraction, amplification, and sequencing protocols.
+
 * Gloves
 * Sharpie
 * Thermal cycler
@@ -26,10 +27,10 @@ This list may vary depending on your preferred extraction, amplification, and se
 * 1-10, 20-200, and 100-1000 µL micropipette tips (preferably filtered)
 * Kimwipes
 * PCR primers (ITS1f, ITS4, 5.8SR, fITS7) ordered from Integrated DNA Technologies (IDT) or similar supplier normalized to 100 µM in TE buffer. The following primers are commonly used for fungal DNA barcoding:
-   + ITS1f: 5’-CTTGGTCATTTAGAGGAAGTAA-3’
-   + ITS4: 5’-TCCTCCGCTTATTGATATGC
-   + 5.8SR: 5’-CGCTGCGTTCTTCATCG-3’
-   + fITS7: 5’-GTGARTCATCGAATCTTTG-3’
+   - ITS1f: 5’-CTTGGTCATTTAGAGGAAGTAA-3’
+   - ITS4: 5’-TCCTCCGCTTATTGATATGC-3’
+   - 5.8SR: 5’-CGCTGCGTTCTTCATCG-3’
+   - fITS7: 5’-GTGARTCATCGAATCTTTG-3’
 * Q5® Hot Start High-Fidelity 2X Master Mix - 100 reactions(New England BioLabs, M0494S)
 * PCR water (New England BioLabs, B1500S)
 * Exo-CIP Rapid PCR Cleanup Kit - 100 reactions (New England BioLabs, E1050S)
@@ -44,7 +45,7 @@ This list may vary depending on your preferred extraction, amplification, and se
 * 1.5mL microcentrifuge tubes (Eppendorf DNA LoBind) for long-read sequencing
 * 0.2 mL PCR tubes for long-read sequencing
 * Magnetic rack for 1.5ml microcentrifuge tubes (for example, ThermoFisher DynaMag-2, 12321D) for long-read sequencing
-* Nuclease-free water and 100% ethanol to prepare 80& ethanol for long-read sequencing
+* Nuclease-free water and 100% ethanol to prepare 80% ethanol for long-read sequencing
 
 **DNA Extraction Buffer (ES)**
 

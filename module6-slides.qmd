@@ -12,6 +12,7 @@ format:
     transition: slide
     background-transition: fade
     incremental: false
+    scrollable: true
     css: module-slides.css
 ---
 
