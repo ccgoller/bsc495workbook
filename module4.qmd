@@ -7,68 +7,45 @@
 **Materials needed:**
 This list may vary depending on your preferred extraction, amplification, and sequencing protocols.
 
-* Gloves
-* Sharpie
-* Thermal cycler
-* Vortex
-* Centrifuge for PCR and microfuge tubes
-* Heat block/thermomixer for 1.5-2.0 ml microfuge tubes
-* 1.5mL microcentrifuge tubes (Eppendorf DNA LoBind)
-* 0.2 mL PCR tubes
-* Microfuge and PCR tube racks
-* Labeling tape
-* Monarch® Spin gDNA Extraction Kit (New England BioLabs,T3010S)
-* MetaPolyzyme, DNA free (Millipore Sigma, MAC4LDF-5X1VL)
-* TE Buffer
-* CTAB solution (100 ml, Promega, MC1411)
-* Parafilm
-* 70% ETOH
-* 1-10, 20-200, and 100-1000 µL micropipettors
-* 1-10, 20-200, and 100-1000 µL micropipette tips (preferably filtered)
-* Kimwipes
-* PCR primers (ITS1f, ITS4, 5.8SR, fITS7) ordered from Integrated DNA Technologies (IDT) or similar supplier normalized to 100 µM in TE buffer. The following primers are commonly used for fungal DNA barcoding:
+- [ ] Gloves
+- [ ] Sharpie
+- [ ] Thermal cycler
+- [ ] Vortex
+- [ ] Centrifuge for PCR and microfuge tubes
+- [ ] Heat block/thermomixer for 1.5-2.0 ml microfuge tubes
+- [ ] 1.5mL microcentrifuge tubes (Eppendorf DNA LoBind)
+- [ ] 0.2 mL PCR tubes
+- [ ] Microfuge and PCR tube racks
+- [ ] Labeling tape
+- [ ] Monarch® Spin gDNA Extraction Kit (New England BioLabs,T3010S)
+- [ ] MetaPolyzyme, DNA free (Millipore Sigma, MAC4LDF-5X1VL)
+- [ ] TE Buffer
+- [ ] CTAB solution (100 ml, Promega, MC1411)
+- [ ] Parafilm
+- [ ] 70% ETOH
+- [ ] 1-10, 20-200, and 100-1000 µL micropipettors
+- [ ] 1-10, 20-200, and 100-1000 µL micropipette tips (preferably filtered)
+- [ ] Kimwipes
+- [ ] PCR primers (ITS1f, ITS4, 5.8SR, fITS7) ordered from Integrated DNA Technologies (IDT) or similar supplier normalized to 100 µM in TE buffer. The following primers are commonly used for fungal DNA barcoding:
    - ITS1f: 5’-CTTGGTCATTTAGAGGAAGTAA-3’
    - ITS4: 5’-TCCTCCGCTTATTGATATGC-3’
    - 5.8SR: 5’-CGCTGCGTTCTTCATCG-3’
    - fITS7: 5’-GTGARTCATCGAATCTTTG-3’
-* Q5® Hot Start High-Fidelity 2X Master Mix - 100 reactions(New England BioLabs, M0494S)
-* PCR water (New England BioLabs, B1500S)
-* Exo-CIP Rapid PCR Cleanup Kit - 100 reactions (New England BioLabs, E1050S)
-* E-Gel system with 1.2% agarose gels (ThermoFisher, G4010010) or similar gel electrophoresis system
-* E-Gel™ Sizing DNA Ladder (ThermoFisher, 10488100)
-* DNA quantification system (for example, Qubit Fluorometer with dsDNA HS Assay Kit, ThermoFisher, Q32851)
-* Access to Sanger sequencing services (for example, Genewiz, Eurofins, Eton, or similar provider).
-* Rapid Barcoding Kit v14 (Oxford Nanopore Technologies), SQK-RBK114.24 or similar kit for long-read sequencing (optional)
-* MinION sequencing device
-* MinION flow cells (R10.4.1 or similar, Oxford Nanopore Technologies, FLO-MIN114)
-* Ultrapure BSA 50mg/ml (ThermoFisher, AM2616) for long-read sequencing
-* 1.5mL microcentrifuge tubes (Eppendorf DNA LoBind) for long-read sequencing
+- [ ] Q5® Hot Start High-Fidelity 2X Master Mix - 100 reactions(New England BioLabs, M0494S)
+- [ ] PCR water (New England BioLabs, B1500S)
+- [ ] Exo-CIP Rapid PCR Cleanup Kit - 100 reactions (New England BioLabs, E1050S)
+- [ ] E-Gel system with 1.2% agarose gels (ThermoFisher, G4010010) or similar gel electrophoresis system
+- [ ] E-Gel™ Sizing DNA Ladder (ThermoFisher, 10488100)
+- [ ] DNA quantification system (for example, Qubit Fluorometer with dsDNA HS Assay Kit, ThermoFisher, Q32851)
+- [ ] Access to Sanger sequencing services (for example, Genewiz, Eurofins, Eton, or similar provider).
+- [ ] Rapid Barcoding Kit v14 (Oxford Nanopore Technologies), SQK-RBK114.24 or similar kit for long-read sequencing (optional)
+- [ ] MinION sequencing device
+- [ ] MinION flow cells (R10.4.1 or similar, Oxford Nanopore Technologies, FLO-MIN114)
+- [ ] Ultrapure BSA 50mg/ml (ThermoFisher, AM2616) for long-read sequencing
+- [ ] 1.5mL microcentrifuge tubes (Eppendorf DNA LoBind) for long-read sequencing
 * 0.2 mL PCR tubes for long-read sequencing
 * Magnetic rack for 1.5ml microcentrifuge tubes (for example, ThermoFisher DynaMag-2, 12321D) for long-read sequencing
 * Nuclease-free water and 100% ethanol to prepare 80% ethanol for long-read sequencing
-
-**DNA Extraction Buffer (ES)**
-
-**1M Tris Stock Solution (1 mole (M) of Tris = 121.14 grams)**
-1. Add 121.14 grams of Tris to 1000 mL of water (adjust quantity to lab needs)
-2. Add a magnetic stir bar to the beaker and put the beaker on a hot plate/stir plate and set the heat and stirring to medium-low to facilitate the dissolving of the Tris.
-
-**Prepare Extraction Buffer (ES)**
-1. Add 10 mL of Tris stock solution to a 250 mL beaker.
-2. Weigh and add 1.86 g KCl to the beaker.
-3. Weigh and add 0.37 g EDTA.
-4. Top up with 80 mL of distilled water.
-5. Place on a hot/stir plate with a magnetic stir bar over medium-low heat and speed. Wait until dissolved.
-6. Top up to 100mL total with distilled water and stir briefly.
-7. Dispense 1000 µL into 1.5 mL microcentrifuge tubes and label the tubes "ES" for Extraction Solution.
-8. Place tubes in a rack labeled "Mycology DNA Extraction Reagents" and store in the Freezer.
-
-**Dilution Solution (DS) (3% BSA) Prep**
-1. Add 3 g BSA (Bovine Serum Albumin) to 250 mL beaker.
-2. Add 100 mL of distilled water.
-3. Shake/stir to dissolve the BSA into solution. DO NOT HEAT!
-4. Dispense 1000 µL into 1.5 mL microcentrifuge tubes and label the tubes "DS".
-5. Place tubes in a rack labeled "Mycology DNA Extraction Reagents" and store them in the Freezer.
 
 **Diluting and prepping PCR primers**
 1. To dilute the vial to a stock concentration of 100 picomols/microliter first read the number of µmols present in the tube.
@@ -81,7 +58,7 @@ This list may vary depending on your preferred extraction, amplification, and se
 ## Module 4.2 – DNA Sequencing and Species Identification
 
 ### Purpose
-The purpose of this module is to molecularly identify fungal isolates using the Internal Transcribed Spacer (ITS) rDNA region, also known as the fungal barcode. You will extract genomic DNA (gDNA) from your isolates, amplify the ITS rDNA using polymerase chain reaction (PCR), clean PCR product, Sanger sequence PCR product, and use DNA sequence to obtain a name for your isolate.
+The purpose of this module is to molecularly identify fungal isolates using the Internal Transcribed Spacer **(ITS)** rDNA region, also known as the fungal barcode. You will extract genomic DNA (gDNA) from your isolates, amplify the ITS rDNA using polymerase chain reaction (PCR), clean PCR product, Sanger sequence PCR product, and use DNA sequence to obtain a name for your isolate.
 
 ### Learning Goals
 1. Practice extracting fungal DNA
@@ -96,13 +73,13 @@ Identification of fungal cultures requires knowledge and techniques beyond the s
 In this part of the module, you will extract DNA from your fungal isolates. There are many ways to isolate DNA from fungi. Here we will use a very simple kit that uses an alkaline (pH 9.5-10) extraction solution at high heat to disrupt cells and release gDNA.
 
 #### Materials:
-- Fungal isolates
-- 0.2 mL PCR tubes
-- P20 micropipette with tips
-- DNA extraction solution (ES)
-- DNA dilution solution (DS)
-- Ethanol jar
-- Loop, pick, and forceps
+- [ ] Fungal isolates
+- [ ]0.2 mL PCR tubes
+- [ ]P20 micropipette with tips
+- [ ]DNA extraction solution (ES)
+- [ ]DNA dilution solution (DS)
+- [ ]Ethanol jar
+- [ ]Loop, pick, and forceps
 
 #### Procedures:
 1. Using the micropipette, aliquot 20 µL of ES into 0.2 mL snap-cap PCR tubes. We will run DNA extraction in duplicates, so fill two PCR tubes per culture.
@@ -122,16 +99,16 @@ The PCR reaction consists of mixing your template DNA with two primers: short se
 Figure 1: rDNA region containing the variable regions ITS-1 and ITS-2. Our forward primer (ITS-1F) will target a portion of the SSU and our reverse primer (ITS4) will target a portion of the LSU. Thereby, amplifying both variable regions and the 5.8S subunit.
 
 #### Materials:
-- DNA extractions with DS
-- Control DNA sample
-- 0.2 mL PCR tubes
-- P10 micropipette with tips
-- P20 micropipette with tips
-- P200 micropipette with tips
-- P1000 micropipette with tips
-- Master mix containing buffer (MgCl2, dNTPs, primers, polymerase enzyme)
-- PCR tube centrifuge
-- Thermal cycler
+- [ ] DNA extractions with DS
+- [ ] Control DNA sample
+- [ ] 0.2 mL PCR tubes
+- [ ] P10 micropipette with tips
+- [ ] P20 micropipette with tips
+- [ ] P200 micropipette with tips
+- [ ] P1000 micropipette with tips
+- [ ] Master mix containing buffer (MgCl2, dNTPs, primers, polymerase enzyme)
+- [ ] PCR tube centrifuge
+- [ ] Thermal cycler
 
 #### Procedures:
 We will run 20 µL PCR reactions
