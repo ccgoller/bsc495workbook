@@ -38,36 +38,23 @@ Module 1 covers four topics:
 
 ::: {.column width="50%"}
 **Consumables**
-
-- Cellophane
-- 100×15 mm Petri dishes
-- 60×15 mm Petri dishes
 - Bacteriological agar
 :::
 
 ::: {.column width="50%"}
 **Equipment**
-
-- Alcohol lamp or Bunsen burner
-- Forceps
 - Scalpel *(metal handle — plastic melts)*
 :::
 
 ::::
-
 ---
 
 ## Creating a Sterile Environment
-
-- Clean work area with **bleach** and/or **ethanol**
-- Set two torches facing each other over your workspace
-- Pour media under the flames (upward airflow blocks contaminants)
 - Use a laminar flow hood when available
 
 ::: {.callout-warning}
 Fungi are generally not harmful, but **may cause allergic reactions**. Always use sterile technique and consult your instructor if you have concerns.
 :::
-
 ---
 
 ## Water Agar Recipe
@@ -79,7 +66,6 @@ Fungi are generally not harmful, but **may cause allergic reactions**. Always us
 | Sterilize | Autoclave at 121 °C / 15 lbs for 15 min |
 | Pour | ~20 mL per 100×15 mm plate in sterile environment |
 | Store | Refrigerate (~4 °C) until use |
-
 ---
 
 ## Disposal
@@ -88,12 +74,10 @@ Fungi are generally not harmful, but **may cause allergic reactions**. Always us
 2. Sterilize at 121 °C / 15 lbs for 15 minutes
 3. Follow institutional protocol for post-sterilization disposal
 4. Handle heavy metals and chemicals per institutional guidelines
-
 ---
 
 # Module 1.2 {background-color="#4156A1"}
 ## Metadata Directions
-
 ---
 
 ## What is Metadata?
@@ -101,13 +85,7 @@ Fungi are generally not harmful, but **may cause allergic reactions**. Always us
 > Metadata is **data about data** — information that gives context to your samples.
 
 For this project, metadata includes:
-
-- Plant host (substrate)
-- Latitude & longitude
-- Elevation
-- Canopy position
 - Fungal species, growth rates, images, and more
-
 ---
 
 ## Uploading to iNaturalist
@@ -116,7 +94,6 @@ For this project, metadata includes:
 2. Upload an **image of the plant** to your course iNaturalist Project
 3. The fungal isolates and all associated data will be **linked back** to this observation
 4. All data will be publicly available to researchers worldwide
-
 ---
 
 ## Sample Naming Convention
@@ -128,12 +105,7 @@ For this project, metadata includes:
 
 **`MycoED_004_ABC_2c`**
 :::
-
-- **HostID** — unique iNaturalist field number
-- **Initials** — use ≥ 3 initials to avoid duplicates
-- **Leaf #** — number per leaf sampled
 - **Section** — letter per cutting from that leaf
-
 ---
 
 ## Recording Location (Lat/Long)
@@ -148,7 +120,6 @@ For this project, metadata includes:
 2. Long-press your location → bottom tab appears
 3. Scroll up to see coordinates (e.g. `45.123, -122.123`)
 4. Long-press coordinates → Copy → paste into spreadsheet
-
 ---
 
 ## Recording Elevation
@@ -157,7 +128,6 @@ For this project, metadata includes:
 2. Click **Details** at the bottom of the map
 3. Click **Macrostrat** in the details window
 4. Record **elevation in meters** from the upper-right corner
-
 ---
 
 ## Canopy Position
@@ -169,26 +139,18 @@ Record which portion of the plant the leaf was collected from:
 | **L** | Lower 1/3 of plant |
 | **M** | Middle 1/3 of plant |
 | **U** | Upper 1/3 of plant |
-
 ---
 
 # Module 1.3 {background-color="#4156A1"}
 ## Fungal Sampling & Culturing
-
 ---
 
 ## What are Fungal Endophytes?
-
-- Present in **every plant species surveyed to date**
-- Found in leaves, bark, roots, flowers, and seeds
-- Majority are **Ascomycetes**
-- Can confer abiotic and biotic **stress tolerance** to their hosts
 - Influence biomass, water consumption, and resource allocation
 
 ::: {.callout-note}
 This project is part of the **MycoEd Fungal Genomics Education Project** — your isolates contribute to building high-quality fungal reference genomes.
 :::
-
 ---
 
 ## Learning Goals
@@ -198,32 +160,19 @@ This project is part of the **MycoEd Fungal Genomics Education Project** — you
 3. Culture and isolate fungi
 4. Investigate fungal endophytes
 5. Characterize morphology of fungal cultures
-
 ---
 
 ## Student Lab Supplies
 
 :::: {.columns}
 
-::: {.column width="50%"}
-- 3 large water agar Petri plates
-- Sharpie
-- Parafilm
-- Paper towels
 - Gloves
 :::
 
-::: {.column width="50%"}
-- Flame (alcohol lamp / Bunsen burner)
-- Bleach
-- Ethanol
-- Scalpel
-- Metal hole punch
 - Forceps
 :::
 
 ::::
-
 ---
 
 ## Formulate Your Research Question
@@ -237,7 +186,6 @@ Choose an endophyte community to investigate:
 | Diversity across species | Collect from a variety of plant species |
 
 You will culture fungi from a total of **18 leaf sections**.
-
 ---
 
 ## Bleach Solution Preparation
@@ -246,7 +194,6 @@ You will culture fungi from a total of **18 leaf sections**.
 2. Let cool to **room temperature**
 3. Mix **1 mL household bleach** in **500 mL sterilized water**
 4. This 10% bleach solution is used for surface sterilizing leaf tissue
-
 ---
 
 ## Isolation Protocol — Overview
@@ -261,7 +208,6 @@ You will culture fungi from a total of **18 leaf sections**.
 | 6 | Place up to 6 cuttings per water agar plate |
 | 7 | Seal with Parafilm |
 | 8 | Incubate at room temp in the dark; check daily |
-
 ---
 
 ## Sealing with Parafilm
@@ -271,32 +217,18 @@ You will culture fungi from a total of **18 leaf sections**.
 3. Hold one end on the lip of the dish
 4. **Stretch and wrap** around the dish — stretching creates the seal
 5. No tape needed!
-
 ---
 
 # Module 1.4 {background-color="#4156A1"}
 ## Using iNaturalist
-
 ---
 
 ## Homework Assignment 1 — Set Up iNaturalist
-
-- Create an account at [inaturalist.org](https://www.inaturalist.org/)
-- Download the **iNaturalist app** to your phone
-- Give your iNaturalist **user ID** to your instructor or TA
-- **Join your course project**: Community → Projects
-- Add your **real name** under Account Settings → Display Name
 - In app settings: turn off **Automatic Upload** (recommended)
-
 ---
 
 ## Homework Assignment 2 — Review Resources
-
-- [Getting Started Guide](https://www.inaturalist.org/pages/getting+started)
-- [iNaturalist Video Tutorials](https://www.inaturalist.org/pages/video+tutorials)
-- [NAMA/FunDiS Collecting Research Specimens](https://youtu.be/EgZw37NjxkA)
 - [FunDiS Photography Guide](https://fundis.org/get-started/photograph)
-
 ---
 
 ## Making Plant Host Observations
@@ -307,7 +239,6 @@ You will culture fungi from a total of **18 leaf sections**.
 4. Add observation to your **course project** before saving
 5. Manually upload (if Auto Upload is off)
 6. Add **MycoEd ID** field with the label ID number
-
 ---
 
 ## Making Fungal Culture Observations
@@ -319,16 +250,13 @@ You will culture fungi from a total of **18 leaf sections**.
    - **DNA Sequence ITS** — for ITS sequence data
    - **Host Observation** — link back to the host plant observation
    - **MycoEd ID** — format: `MycoEd_004_ABC_2c`
-
 ---
 
 ## Summary — Module 1
 
-::: {.incremental}
-- Prepare water agar plates and a sterile workspace
-- Document host plants with iNaturalist and record metadata
-- Collect leaves and surface sterilize with bleach solution
-- Plate up to 6 leaf cuttings per water agar plate
-- Seal, incubate, and observe for fungal growth daily
 - Record all metadata and sample names carefully
+![Fungal Sampling. Leaves have different shapes and sizes. Leaf pathologies and diseases can be identified by inspection of leaves. Figure created with BioRender.com.](images/LeafPathologies.png){#fig-leafpathologies fig-alt="Plant Leaf Pathologies." fig-align="center" lightbox="true"}
+![Fungal Sampling. Collect one sample/leaf per bag and complete the required information on each label. Figure created with BioRender.com.](images/LeafSampling.png){#fig-leafsampling fig-alt="Fungal Sampling. Collect one sample/leaf per bag and complete the required information on each label." fig-align="center" lightbox="Leaf sampling"}
+![Water Agar Plates. Take a large water agar plate and divide it into six sections using a ruler and marker. Label each section with the unique ID number for the leaf sample you will be plating in that section. Figure created with BioRender.com.](images/WaterAgar.png){#fig-Wateragar fig-alt="Water agar plate division into sections and labeling." fig-align="center" lightbox="true"}
+![Place Leaf Samples on Water Agar Plates. Take a large water agar plate and divide it into six sections using a ruler and marker. Place leaf samples in each section after surface sterilizing and rinsing in ethanol. Figure created with BioRender.com.](images/LeafSamplesWaterAgar.png){#fig-SamplesWaterAgar fig-alt="Place leaf samples on water agar plates." fig-align="center" lightbox="true"}
 :::

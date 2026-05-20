@@ -70,7 +70,7 @@ This project is part of the [Myco-Ed Fungal Genomics Education Project](https://
 4. Characterize morphology of fungal cultures
 5. Create data spreadsheets
 6. Isolate fungi for molecular extraction and analysis
-7. Create Growth Curves
+7. Create growth curves
 
 ### Instructions
 
@@ -81,7 +81,7 @@ This project is part of the [Myco-Ed Fungal Genomics Education Project](https://
 - [ ] Kimwipes and paper towels
 - [ ] Parafilm
 - [ ] Fine-tip Sharpie
-- [ ] Flame source for sterilization
+- [ ] Ethanol for sterilization
 - [ ] Scalpel
 - [ ] Ruler
 - [ ] Forceps

@@ -118,6 +118,8 @@ Use **red biohazard bags** for all petri dishes and materials that contacted fun
 # Module 2.2 {background-color="#4156A1"}
 ## Fungal Isolation
 
+![Fungal Hyphae Emerging from Green Leaf Tissue. Leaves have different shapes and sizes. Leaf pathologies and diseases can be identified by inspection of leaves. Figure created with BioRender.com.](images/FungalHyphae.png){#fig-fungalhyphae fig-alt="Fungal hyphae emerging from green leaf tissue." fig-align="center" lightbox="true"}
+
 ---
 
 ## Where We Left Off
