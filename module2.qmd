@@ -72,19 +72,19 @@ This project is part of the [Myco-Ed Fungal Genomics Education Project](https://
 6. Isolate fungi for molecular extraction and analysis
 7. Create Growth Curves
 
-### Student Lab Supplies
+### Instructions
+
+#### Materials
 - [ ] Fungal endophyte sample plates
-- [ ] PDA plates (60x15mm)
+- [ ] PDA plates (60x15 mm)
 - [ ] 70% ethanol
 - [ ] Kimwipes and paper towels
 - [ ] Parafilm
-- [ ] Fine tip Sharpie or marker for labeling
-- [ ] Alcohol and beaker for sterilization
+- [ ] Fine-tip Sharpie
+- [ ] Flame source for sterilization
 - [ ] Scalpel
 - [ ] Ruler
 - [ ] Forceps
-
-### Instructions
 
 #### Part I - Subculturing Fungal Endophytes into Fungal Isolates
 Fungal cultures usually emerge as white fuzz from your leaf discs, however, the hyphae might be pigmented, such as a brown or greenish color. @fig-fungalhyphae depicts the fungal hyphae in brown and blue emerging from the green leaf tissue. The fungi are utilizing the nutrients available in the leaf tissue for growth as water agar does not contain nutrients. To promote the growth necessary for downstream analyses, it is essential to transfer the fungi to a growth medium that contains nutrients. For our exercise we are using Potato Dextrose Agar (PDA) as nutrient media. These are smaller Petri dishes and the media has a yellowish tint (compared to the larger Petri dishes containing the clear, or whitish, water agar from your initial isolation). This transfer step also allows for the separation of each fungal isolate to ensure pure cultures.
