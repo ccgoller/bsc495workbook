@@ -5,29 +5,30 @@
 ### Instructor Laboratory Preparation Instructions
 
 #### Materials and Equipment
+
 - [ ] Autoclave
-- [ ]Laminar Flow Hood (if available)
+- [ ] Laminar Flow Hood (if available)
 - [ ] Cellophane
 - [ ] 100x15mm Petri Dishes
 - [ ] 60x15mm Petri Dishes
 - [ ] Agar, Bacteriological
-- [ ] Potato Dextrose Agar
-- [ ] Alcohol Lamp or Bunsen Burner
+- [ ] Potato Dextrose Agar (PDA) media
+- [ ] Alcohol for sterilization
 - [ ] Forceps
-- [ ] Scalpel (make sure the handle is metal, as it will be flame sterilized and plastic will melt)
+- [ ] Scalpel 
 
 **Sterility:**
-If you don't have a laminar flow hood, you may create a similar environment by setting up 2 torches over your work space. First, clean your work area with bleach, and/or ethanol. Set the torches facing each other with enough space to work underneath. Light the torches and pour media into plates under the flames.
+First, clean your work area with bleach, and/or ethanol. Work carefully to maintain prevent contamination of your samples. Always sterilize your implements (forceps and scalpel) by dipping them in alcohol and allow time to air dry.
 
-**Potato Dextrose Agar (PDA) Plates:**
+**Potato Dextrose Agar (PDA) Plates**
 Fungi cultured from leaves on water agar are transferred to nutrient Potato Dextrose Agar (PDA) plates. We use one 60x15 mm Petri dish for each fungal isolate.
 
-**Potato Dextrose Agar Recipe:**
+**Potato Dextrose Agar Recipe**
 Suspend 39 grams Agar, Bacteriological in 1000 ml (1 L) distilled water. Heat to boiling to dissolve the medium completely (in most cases, this step can be skipped as autoclaving will dissolve media). Sterilize by autoclaving at 15 lbs pressure (121°C) for 15 minutes.
 
 When the media is cool enough to handle with autoclave gloves, pour 60x15mm plates in a sterile environment. Do not let it cool too long as the media will solidify. Each 60x15mm plate holds approximately 8 ml media. If plates will be used immediately smaller amounts of media can be poured into plates. If plates will be stored, use larger amounts. Store plates in the original Petri dish sleeve in the refrigerator (~4 °C) until use.
 
-**Cellophane Plates:**
+**Cellophane Plates**
 Fungal tissue can be harvested from cellophane plates. Cut cellophane discs slightly smaller than the Petri dish so that they lay flat on the PDA media. Using the bottom of the Petri dish as a template, draw a circle on the cellophane and the cut out discs on the inside of the line.
 
 Place cellophane discs into an autoclavable container with water. Place each cellophane disc individually into the water and try to stagger them in the water. This staggering step ensures that you can more easily remove the discs from the water. Cover your container with foil and sterilize by autoclaving at 15 lbs pressure (121°C) for 15 minutes.
@@ -70,12 +71,13 @@ Once fungal endophytes have been cultured from host plants, these fungal culture
 Full genome sequencing requires large amounts of tissue to be successful. The tissue grown on the cellophane plates will be harvested, dried, and sent for genome sequencing.
 
 ### Student Lab Supplies
-- 1.5 ml Eppendorf tubes
-- Sharpie
-- Scalpel
-- Forceps
-- Silica
-- Probe
+
+- [ ] 1.5 ml Eppendorf tubes
+- [ ] Sharpie
+- [ ] Scalpel
+- [ ] Forceps
+- [ ] Silica
+- [ ] Probe
 
 ### Overview
 The goal of this supplement is to prepare fungal tissue for DNA extraction and sequencing. The cellophane overlay method was implemented to obtain pure tissue conducive to clean DNA extractions (Fig. 1).
