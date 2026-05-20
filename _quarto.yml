@@ -8,7 +8,7 @@ book:
   date: "5/07/2026"
   cover-image: BSC495logo-transparent.png
   image: bsc495logo-transparent.png
-  sharing: [twitter, facebook]
+  # sharing: [twitter, facebook]
   page-navigation: true
   description: "This lab-based course is a high-impact experience based on The Mycological Curriculum for Education and Discovery (Myco-Ed), a Course-Based Undergraduate Research Experience (CURE) that features team-based, hands-on experiments in fungal biology and genomics. You will learn new laboratory techniques and data analysis by starting with sample collection, fungal isolation, and the characterization of the resulting data to improve fungal genomic resources. Genomic DNA will be extracted from samples for genome sequencing, assembly, and annotation. By isolating and sequencing new fungal species, your team will help produce high-quality fungal reference genomes. This course will prepare you with workforce training in fungal biology and genomics and empower you to be a contributor to fungal genomics! Importantly, you will practice lab and bioinformatics skills that are broadly applicable!"
 

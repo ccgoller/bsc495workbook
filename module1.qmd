@@ -23,7 +23,7 @@ Additionally, we may not be able to work in a laminar flow hood, which increases
 :::
 
 **Water Agar Plates:**
-Student scholars isolate fungal endophytes from leaves on water agar. We use one 100x15mm Petri dish to plate up to 6 leaf discs.
+Student scholars isolate fungal endophytes from leaves on water agar. We use one 100x15mm Petri dish to plate up to 6 leaf discs (@fig-Wateragar).
 
 **Water Agar Recipe:**
 Suspend 39 grams bacteriological agar in 1000 mL (1 L) distilled water. Heat to boiling to dissolve the medium completely (in most cases, this step can be skipped as autoclaving will dissolve media). Sterilize by autoclaving at 15 lbs pressure at 121 °C for 15 minutes.
@@ -59,7 +59,7 @@ On a computer, go to iNaturalist observation. On the map, click on details at th
 
 From the dropdown menu. The Lat/Long is now shown. Click the copy button and paste it into the [Endophyte spreadsheet](https://docs.google.com/spreadsheets/d/1mwfepj-iDCfE9ZHvsbBmc7eAuIUaboug/edit?usp=sharing&ouid=105826871227022710667&rtpof=true&sd=true).
 
-You can also find Lat/Long coordinates on Google Maps.
+You can also find latitude/longitude coordinates on Google Maps.
 For Android phones: tap location and copy and paste in a text and it’s automatically in decimal degree format.
 For the iPhones:
 1. Open the Google maps app. Tap the "black triangle in a circle" icon to zoom to your location.
@@ -77,7 +77,97 @@ On a computer, go to iNaturalist observation and again, click on details at the 
 ### Canopy:
 Record the portion of the canopy where the leaf was collected (L-lower 1/3 of plant, M-middle 1/3 of plant, or U-upper 1/3 of plant).
 
-## Module 1.3 - Fungal Sampling and Culturing
+## Module 1.3 – Using iNaturalist
+
+### Using iNaturalist
+For this semester we will be sampling plant tissue and isolating endophytic fungi for an experiment in fungal genomics. Part of this research will include the collection of important meta-data which includes latitude and longitude information, sampled material/host, and taxonomic information. To facilitate this we are using iNaturalist.
+
+**Homework Assignment 1: Get set up to use iNaturalist.**
+
+- Go to https://www.inaturalist.org/ and make an account if you don't already have one.
+- Download the iNaturalist App to your phone.
+- Give your iNaturalist user ID to your course instructor or TA. They will need this to add you to the course project. Be sure to ask your instructor for the name of the course project.
+- Join your course project. Within your iNaturalist account, go to: Community>Projects Assuming you're invited you should see the name of your course project. Join the project. If you don't see it, send your iNaturalist user ID to your Instructor or TA to receive an invitation.
+- Add your Real Name to iNaturalist
+  - For your name to display properly you need it spelled out in your profile.
+  - Log into iNat.
+  - Go to your profile icon in the top right.
+  - Select Account Settings.
+  - Type your real name into the space under Display Name.
+- iNaturalist Application Settings on your phone.
+  - Go to settings on your phone.
+  - Turn off "Automatic Upload" (recommended).
+  - Adjust settings as they suit you.
+
+**Learn how to use iNaturalist to make observations for scientific research.**
+iNaturalist makes documenting samples easy through observations. We will use this to help collect the metadata on our specimens in the upcoming lab. To prepare yourself, please review the following resources.
+
+**Homework Assignment 2: Review videos on how to document fungi.**
+
+- [ ] [Getting Started](https://www.inaturalist.org/pages/getting+started)
+- [ ] [iNaturalist Videos](https://inaturalist.freshdesk.com/en/support/solutions/folders/151000547795)
+- [ ] [NAMA/FunDiS How To Collect Research Specimens](https://youtu.be/EgZw37NjxkA)
+
+{{< video https://youtu.be/EgZw37NjxkA >}}
+
+- [ ] [FunDiS Photography](https://fundis.org/get-started/photograph)
+
+Our protocol will be specific to our project, but will borrow from any/all of the video guides shown above.
+
+### Making observations for your mycology course (Myco-Ed)
+To make the best use of iNaturalist as a tool for this course, and the broader MycoEd Project, you need to make quality observations of plant hosts, and the fungal endophyte cultures that come from these plants.
+
+**Observations of Plant Hosts**
+
+1. Open your iNaturalist Application.
+2. Make an observation of one host plant by taking a picture of it.
+   a. Find the camera icon in the app and take a picture of your plant.
+   b. Include one field label in an image of the plant. (see examples)
+   c. Take images from multiple perspectives: whole plant, leaves, flowers+fruits, branches, trunk, etc.
+3. Alternatively, take images on your phone and upload them to iNaturalist. Again, make sure you are including a field label in your images.
+4. Before saving the observation, add it to your course project using the app.
+   a. Go to "Projects"
+   b. Select the course project.
+   NOTE: You must join the course project before this step. See the third bullet point at the beginning of these instructions.
+5. Click Done to save your observation.
+6. Assuming you've turned "automatic upload" off, you will need to manually upload your observation. This will appear green on your phone until it is uploaded.
+7. Double-check your observation online.
+   a. It will appear on your account if it was uploaded correctly.
+8. Add Myco-Ed ID. This will attach the field label ID number to this host observation.
+   a. Under Observations Fields, on the lower right portion of the page, type "MycoEd"
+   b. Select "MycoEd ID" from the dropdown that appears.
+   c. Add the field label ID number assigned to this host in the blank field under MycoEd ID.
+   d. Click "Add".
+
+Under Project you should see the name for your course project. If not, click on the open field and the course project's name should appear in the drop-down menu. Select the
+
+**Observations of Fungal Cultures**
+Protocols for making observations of fungal cultures that follow the same steps as above with some added metadata that will go in as "Observation Fields".
+
+9. Open your iNaturalist Application.
+   a. Alternatively, take images on your phone and upload them to iNaturalist.
+10. Make an observation of the fungal isolate by taking a picture of it.
+    a. Take pictures from the top and bottom, including the label.
+11. Before saving the observation, add it to your course project using the app.
+    a. Follow the instructions detailed above.
+12. Click Done to save your observation.
+13. Manually upload your observation. This will appear green on your phone until it is uploaded.
+14. Double-check your observation online.
+    a. It will appear on your account if it was uploaded correctly.
+
+**Adding iNaturalist Observation Fields**
+
+15. Add MycoEd ID. This will attach the field label ID number to this host observation.
+    a. Follow the above directions.
+    b. The format of the MycoEd ID of fungal isolates should be in the form of: MycoEd Host ID_Your Initials_Leaf and Fragment number.
+    Example: MycoEd_004_ABC_2c
+    See: Myco-Ed Module 1.1 - Metadata, under the Sample Naming section
+16. Add other iNaturalist Observation Fields
+    a. For ITS sequence data from fungal isolates, use DNA Sequence ITS
+    b. To link to the host iNaturalist observation for this fungus, use the Host Observation Observation Field and add the URL to the host observation.
+
+
+## Module 1.4 - Fungal Sampling and Culturing
 
 ### Purpose
 This lab will introduce you to sterile/aseptic technique, culturing fungi, isolating cultures, and documenting fungal growth.
@@ -150,112 +240,25 @@ Materials needed:
 ![Fungal Sampling. Collect one sample/leaf per bag and complete the required information on each label. Figure created with BioRender.com.](images/LeafSampling.png){#fig-leafsampling fig-alt="Fungal Sampling. Collect one sample/leaf per bag and complete the required information on each label." fig-align="center" lightbox="Leaf sampling"}
 
 
-
 **Culturing Fungi From Leaves**
-You have 3 larger (150x10mm) Petri dishes that contain water agar. Water agar media is more clear (whitish to translucent) than the smaller Petri dishes which contain Potato Dextrose Agar (PDA). These water agar plates will be used for Part I of this exercise. Section each of these into 6 regions as depicted in Figure 1. This will provide you space to culture 18 leaf sections.
+You have 3 larger (150x10mm) Petri dishes that contain water agar. Water agar media is more clear (whitish to translucent) than the smaller Petri dishes which contain Potato Dextrose Agar (PDA). These water agar plates will be used for Part I of this exercise. Section each of these into 6 regions as depicted in @wfig-wateragar. This will provide you space to culture 18 leaf sections.
 
-Gather all supplies including sterilized water, 70% ethanol, and 10% bleach solution. Label the Petri dishes and read through procedures before starting. Place bleach solution and sterile water in a container with enough space to dip leaf tissue. Use the provided scalpel or metal paper hole punch from your lab kit to take leaf subsamples.
+Gather all supplies including sterilized water, 70% ethanol, and 10% bleach solution. Label the Petri dishes and read through procedures before starting. Place bleach solution and sterile water in a container with enough space to dip leaf tissue. Use the provided scalpel or metal paper hole punch from your lab kit to take leaf subsamples. 
+
+Label the @fig-wateragar plate with your name and divide into six sections. Label each section with the unique ID number for the leaf sample you will be plating in that section. For example, if you are plating leaf 1a in the first section, label that section "1a". If you are plating leaf 2b in the second section, label that section "2b", and so on.
+
+![Water Agar Plates. Take a large water agar plate and divide it into six sections using a ruler and marker. Label each section with the unique ID number for the leaf sample you will be plating in that section. Figure created with BioRender.com.](images/WaterAgar.png){#fig-Wateragar fig-alt="Water agar plate division into sections and labeling." fig-align="center" lightbox="true"}
+
 
 1. Sanitize/sterilize all work surfaces. Wipe surfaces with ethanol. Choose a working location with the least amount of airflow to prevent contamination. If available, set up torches on either side of your work area with the flames aimed toward the middle of your workspace. The heat generated from the torches creates an the potential of airborne contaminants.
-2. Sterilize tools (scalpel or hole punch and forceps)
-   a. Heat your tool using a flame (candle, alcohol lamp, torch, or something similar).
-   b. Let cool – you can dip the tool (scalpel or hole punch) into the bleach solution to cool.
+2. Sterilize tools (scalpel or hole punch and forceps). Use ethanol and allow to air dry.
 3. Cut leaf tissues. You may take as many cuttings from each leaf as desired. Be sure to label cuttings appropriately as described above. Cuttings should be ~1 cm.
 4. Surface sterilize leaf tissue. Using sterilized forceps (heat and cool as above), immerse each cutting in 10% bleach solution for 10 seconds.
    a. To prepare the bleach solution, sterilize water by boiling water for 10 minutes. You will need enough water for the bleach solution and rinse step. Distilled water is preferred. If unavailable, use tap water. Let water cool to room temperature before coming into contact with plant tissue.
    b. Mix 1ml (1/4 teaspoon) household bleach with 500 ml (2 cups) sterilized water.
 5. Rinse leaf tissue. Transfer leaf cutting from bleach solution using forceps and swirl in sterile water or 70% ethanol to rinse. Let excess water drip off leaf cutting or place on clean kimwipes to dry.
-6. Add tissue to water agar. Place up to 6 leaf cuttings per plate of water agar labeled as described above (Figure 1). The water agar plates are the larger plates that contain clear to whitish media. Use sterile technique. Be sure to sterilize forceps (heat with flame and cool) in between each leaf transfer.
+6. Add tissue to water agar. Place up to 6 leaf cuttings per plate of water agar labeled as described @fig-SamplesWaterAgar. The water agar plates are the larger plates that contain clear to whitish media. Use sterile technique. Be sure to sterilize forceps (heat with flame and cool) in between each leaf transfer.
 7. Seal Petri dish with Parafilm. This is a stretchy material similar to Saran Wrap. Cut a strip a little wider than the Petri dish. Remove the paper backing. Hold one end of the Parafilm strip on the lip of the Petri dish so that the gap between the lid and base is covered by the Parafilm. Keeping one end fixed with one hand, stretch and wrap the parafilm around the Petri dish, sealing the gap between the lid and base of the Petri dish. The stretching of the Parafilm will facilitate the seal, you will not need any tape to keep the Parafilm in place.
 8. Incubate at room temperature in the dark and examine for growth each day.
 
-## Module 1.4 – Using iNaturalist
-
-### Using iNaturalist
-For this semester we will be sampling plant tissue and isolating endophytic fungi for an experiment in fungal genomics. Part of this research will include the collection of important meta-data which includes latitude and longitude information, sampled material/host, and taxonomic information. To facilitate this we are using iNaturalist.
-
-**Homework Assignment 1: Get set up to use iNaturalist.**
-
-- Go to https://www.inaturalist.org/ and make an account if you don't already have one.
-- Download the iNaturalist App to your phone.
-- Give your iNaturalist user ID to your course instructor or TA. They will need this to add you to the course project. Be sure to ask your instructor for the name of the course project.
-- Join your course project. Within your iNaturalist account, go to: Community>Projects Assuming you're invited you should see the name of your course project. Join the project. If you don't see it, send your iNaturalist user ID to your Instructor or TA to receive an invitation.
-- Add your Real Name to iNaturalist
-  - For your name to display properly you need it spelled out in your profile.
-  - Log into iNat.
-  - Go to your profile icon in the top right.
-  - Select Account Settings.
-  - Type your real name into the space under Display Name.
-- iNaturalist Application Settings on your phone.
-  - Go to settings on your phone.
-  - Turn off "Automatic Upload" (recommended).
-  - Adjust settings as they suit you.
-
-**Learn how to use iNaturalist to make observations for scientific research.**
-iNaturalist makes documenting samples easy through observations. We will use this to help collect the metadata on our specimens in the upcoming lab. To prepare yourself, please review the following resources.
-
-**Homework Assignment 2: Review videos on how to document fungi.**
-
-- [ ] [Getting Started](https://www.inaturalist.org/pages/getting+started)
-- [ ] [iNaturalist Videos](https://inaturalist.freshdesk.com/en/support/solutions/folders/151000547795)
-- [ ] [NAMA/FunDiS How To Collect Research Specimens](https://youtu.be/EgZw37NjxkA)
-
-{{< video https://youtu.be/EgZw37NjxkA >}}
-
-- [ ] [FunDiS Photography](https://fundis.org/get-started/photograph)
-
-Our protocol will be specific to our project, but will borrow from any/all of the video guides shown above.
-
-### Making observations for your mycology course (Myco-Ed)
-To make the best use of iNaturalist as a tool for this course, and the broader MycoEd Project, you need to make quality observations of plant hosts, and the fungal endophyte cultures that come from these plants.
-
-**Required Ingredients**
-
-**Observations of Plant Hosts**
-
-1. Open your iNaturalist Application.
-2. Make an observation of one host plant by taking a picture of it.
-   a. Find the camera icon in the app and take a picture of your plant.
-   b. Include one field label in an image of the plant. (see examples)
-   c. Take images from multiple perspectives: whole plant, leaves, flowers+fruits, branches, trunk, etc.
-3. Alternatively, take images on your phone and upload them to iNaturalist. Again, make sure you are including a field label in your images.
-4. Before saving the observation, add it to your course project using the app.
-   a. Go to "Projects"
-   b. Select the course project.
-   NOTE: You must join the course project before this step. See the third bullet point at the beginning of these instructions.
-5. Click Done to save your observation.
-6. Assuming you've turned "automatic upload" off, you will need to manually upload your observation. This will appear green on your phone until it is uploaded.
-7. Double-check your observation online.
-   a. It will appear on your account if it was uploaded correctly.
-8. Add Myco-Ed ID. This will attach the field label ID number to this host observation.
-   a. Under Observations Fields, on the lower right portion of the page, type "MycoEd"
-   b. Select "MycoEd ID" from the dropdown that appears.
-   c. Add the field label ID number assigned to this host in the blank field under MycoEd ID.
-   d. Click "Add".
-
-Under Project you should see the name for your course project. If not, click on the open field and the course project's name should appear in the drop-down menu. Select the
-
-**Observations of Fungal Cultures**
-Protocols for making observations of fungal cultures that follow the same steps as above with some added metadata that will go in as "Observation Fields".
-
-9. Open your iNaturalist Application.
-   a. Alternatively, take images on your phone and upload them to iNaturalist.
-10. Make an observation of the fungal isolate by taking a picture of it.
-    a. Take pictures from the top and bottom, including the label.
-11. Before saving the observation, add it to your course project using the app.
-    a. Follow the instructions detailed above.
-12. Click Done to save your observation.
-13. Manually upload your observation. This will appear green on your phone until it is uploaded.
-14. Double-check your observation online.
-    a. It will appear on your account if it was uploaded correctly.
-
-**Adding iNaturalist Observation Fields**
-
-15. Add MycoEd ID. This will attach the field label ID number to this host observation.
-    a. Follow the above directions.
-    b. The format of the MycoEd ID of fungal isolates should be in the form of: MycoEd Host ID_Your Initials_Leaf and Fragment number.
-    Example: MycoEd_004_ABC_2c
-    See: Myco-Ed Module 1.1 - Metadata, under the Sample Naming section
-16. Add other iNaturalist Observation Fields
-    a. For ITS sequence data from fungal isolates, use DNA Sequence ITS
-    b. To link to the host iNaturalist observation for this fungus, use the Host Observation Observation Field and add the URL to the host observation.
+![Place Leaf Samples on Water Agar Plates. Take a large water agar plate and divide it into six sections using a ruler and marker. Place leaf samples in each section after surface sterilizing and rinsing in ethanol. Figure created with BioRender.com.](images/LeafSamplesWaterAgar.png){#fig-SamplesWaterAgar fig-alt="Place leaf samples on water agar plates." fig-align="center" lightbox="true"}
