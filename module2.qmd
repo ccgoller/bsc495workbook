@@ -7,9 +7,9 @@
 #### Materials
 
 - [ ] Cellophane
-- [ ] 100x15mm Petri Dishes
-- [ ] 60x15mm Petri Dishes
-- [ ] Agar, Bacteriological
+- [ ] 100x15mm Petri dishes
+- [ ] 60x15mm Petri dishes
+- [ ] Bacteriological agar
 - [ ] Potato Dextrose Agar (PDA)
 - [ ] Forceps
 - [ ] Scalpel
@@ -17,13 +17,7 @@
 **Lab Prep:**
 
 ::: {.callout-important}
-Read all directions and gather all supplies before beginning.Carefully clean your work area with bleach, and/or ethanol.
-:::
-
-::: {.callout-warning}
-Note that we will be working with fungi, which are generally not harmful to humans, but can cause allergic reactions in some individuals. Always practice good sterile technique and handle all materials with care. If you have any concerns about allergies or sensitivities, please consult with your instructor before beginning the lab.
-
-Additionally, we may not be able to work in a laminar flow hood, which increases the risk of contamination. Be extra cautious with sterile technique and be prepared for some contamination in your plates. If you have access to a laminar flow hood, please use it for this lab.
+Read all directions and gather all supplies before beginning. Carefully clean your work area with bleach, and/or ethanol.
 :::
 
 **Potato Dextrose Agar (PDA) Plates:**
@@ -34,10 +28,13 @@ Suspend 39 grams Agar, Bacteriological in 1000 ml (1 L) distilled water. Heat to
 
 When the media is cool enough to handle with autoclave gloves, pour 60x15mm plates in a sterile environment. Do not let it cool too long as the media will solidify. Each 60x15mm plate holds approximately 8 ml media. If plates will be used immediately smaller amounts of media can be poured into plates. If plates will be stored, use larger amounts. Store plates in the original Petri dish sleeve in the refrigerator (~4 °C) until use.
 
-**Option: Adding Antibiotics**
+::: {.callout-}
+**Option: Adding Antibiotics:**
 Once your PDA has cooled, you may choose to add antibiotics to the media. Streptomycin (streptomycin sulfate) is commonly used at a concentration of 50mg/L in agar. Add the appropriate amount to your media once cool to the touch and before pouring plates.
+:::
 
-**Cellophane Plates**
+
+**Cellophane Plates:**
 Fungal tissue can be harvested from cellophane plates. Cut cellophane discs slightly smaller than the petri dish so that they lay flat on the PDA media. Using the bottom of the petri dish as a template, draw a circle on the cellophane and cut out discs on the inside of the line.
 
 Place cellophane discs into an autoclavable container with water. Place each cellophane disc individually into the water and try to stagger them in the water. This staggering step ensures that you can more easily remove the discs from the water. Cover your container with foil and sterilize by autoclaving at 15 lbs. pressure at 121 °C for 15 minutes.
@@ -55,6 +52,13 @@ Please use the red biohazard bags for disposal of all Petri dishes and materials
 
 ### Purpose
 This lab will introduce you to sterile technique, culturing fungi, isolating cultures, and documenting fungal growth.
+
+::: {.callout-warning}
+Note that we will be working with fungi, which are generally not harmful to humans, but can cause allergic reactions in some individuals. Always practice good sterile technique and handle all materials with care. If you have any concerns about allergies or sensitivities, please consult with your instructor before beginning the lab.
+
+Additionally, we may not be able to work in a laminar flow hood, which increases the risk of contamination. Be extra cautious with sterile technique and be prepared for some contamination in your plates. If you have access to a laminar flow hood, please use it for this lab.
+:::
+
 
 ### Introduction
 In the previous lab, we started the process of sampling fungal endophytes. We documented the host plant using iNaturalist and then sampled foliar tissues from the plants. These foliar tissues were transported to the lab, surface sterilized to remove any external contaminants, and dissected. The dissected tissues were plated onto water agar plates, sealed, and labeled.
