@@ -11,3 +11,9 @@ Thumbs.db
 
 /.quarto/
 **/*.quarto_ipynb
+
+# LaTeX artifacts from PDF rendering
+*.aux
+*.log
+*.tex
+*.toc

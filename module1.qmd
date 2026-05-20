@@ -88,7 +88,7 @@ Every species of plant surveyed to date hosts a multitude of fungal **endophytes
 
 All lineages of fungi contain endophytic species, however the majority of fungal endophytes described to date are Ascomycetes. Research has shown that fungal endophytes impact both plant species fitness and plant community fitness. Fungal endophytes can confer abiotic and biotic stress tolerance, influence biomass and water consumption, and alter resource allocation. The fungi live either between the plant cells, between the cell wall and the cell membrane, or sometimes even within the cell membrane. This project is part of the MycoEd Fungal Genomics Education Project. **The goal of this long-term research project is to produce fungal reference genomes to better understand their biology.**
 
-![](images/LeafPathologies.png.png.png){fig-alt="Plant Leaf Pathologies." fig-align="center" #fig-LeafPathologies lightbox="Plant Leaf Pathologies"}
+![](images/LeafPathologies.png){fig-alt="Plant Leaf Pathologies." fig-align="center" #fig-LeafPathologies lightbox="Plant Leaf Pathologies"}
 Fungal Sampling. Leafs have different shapes and sizes. Leaf pathologies and diseases can be identified by inspection of leaves. Figure created with BioRender.com.
 
 
@@ -149,7 +149,7 @@ Materials needed:
 5. Put the leaf samples into the bag.
 
 
-![](images/LeafSampling.png.png){fig-alt="Fungal Sampling.Collect one sample/leaf per bag and complete the required information on each label."fig-align="center" #fig-LeafSampling lightbox="Leaf sampling"}
+![](images/LeafSampling.png){fig-alt="Fungal Sampling.Collect one sample/leaf per bag and complete the required information on each label."fig-align="center" #fig-LeafSampling lightbox="Leaf sampling"}
 Fungal Sampling. Collect one sample/leaf per bag and complete the required information on each label. Figure created with BioRender.com.
 
 
