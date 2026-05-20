@@ -57,7 +57,8 @@ quarto preview
 
 ## Publish / deployment
 
-GitHub Actions workflows in `.github/workflows/` are configured to render and deploy the book to GitHub Pages on pushes to `main`.
+Deployment is managed by a single workflow at `.github/workflows/publish.yml`.
+It renders the Quarto book and module slide decks, then publishes `_book/` to GitHub Pages on pushes to `main` (and via manual dispatch).
 
 ## Source curriculum
 
