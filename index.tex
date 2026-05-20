@@ -1,0 +1,3781 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrreprt}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={BSC 495: The Hidden World's Code},
+  pdfauthor={Carlos C. Goller, Ph.D.},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{BSC 495: The Hidden World's Code}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{A Hands-On Fungal Genomics Lab}
+\author{Carlos C. Goller, Ph.D.}
+\date{2026-05-07}
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Table of contents}
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+
+\bookmarksetup{startatroot}
+
+\chapter*{Overview}\label{overview}
+\addcontentsline{toc}{chapter}{Overview}
+
+\markboth{Overview}{Overview}
+
+The Mycological Curriculum for Education and Discovery
+\textbf{(Myco-Ed)} is a \textbf{Course-Based Undergraduate Research
+Experience (CURE)} that features team-based, hands-on experiments in
+fungal biology and genomics. You will learn new laboratory techniques
+and data analysis by starting with sample collection, fungal isolation,
+and the characterization of the resulting data to improve fungal genomic
+resources. Genomic DNA will be extracted from samples for genome
+sequencing, assembly, and annotation. By isolating and sequencing new
+fungal species, your team will help produce high-quality fungal
+reference genomes. This course will prepare you with workforce training
+in fungal biology and genomics and empower you to be a contributor to
+fungal genomics! Importantly, you will practice lab and bioinformatics
+skills that are broadly applicable!
+
+To learn more about Quarto books visit
+\href{https://quarto.org/docs/books}{Quarto Books} To learn more about
+the MycoEd curriculum visit the
+\href{https://mycocosm.jgi.doe.gov/mycocosm/home/myco-ed}{MycoEd
+GitHub})
+
+\section*{Course Outcomes}\label{course-outcomes}
+\addcontentsline{toc}{section}{Course Outcomes}
+
+\markright{Course Outcomes}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{CO1}: Isolate fungal endophytes,
+\item
+  \textbf{CO2}: Characterize the morphology of fungal cultures through
+  phenotypic and genomic assays,
+\item
+  \textbf{CO3}: Practice extracting fungal DNA,
+\item
+  \textbf{CO4}: Describe the process to PCR amplify fungal ITS,
+\item
+  \textbf{CO5}: Formulate meaningful and testable scientific
+  questions/hypotheses,
+\item
+  \textbf{CO6}: Collect and critically interpret experimental data
+  (including metadata),
+\item
+  \textbf{CO7}: Maintain an appropriate laboratory notebook,
+\item
+  \textbf{CO8}: Summarize their work and describe their findings in
+  written and oral presentations.
+\item
+  \textbf{CO9}: Apply evidence-based strategies to improve scientific
+  collaboration and teamwork skills.
+\item
+  \textbf{CO10}: Reflect on your development as a scientist and team
+  member through structured prompts and reflections.
+\end{itemize}
+
+\section*{Module Slides}\label{module-slides}
+\addcontentsline{toc}{section}{Module Slides}
+
+\markright{Module Slides}
+
+The links below open the RevealJS slide decks for each module. Please
+note the slides can be advanced using the arrow keys on your keyboard,
+and you can also use the menu in the bottom right corner to navigate
+between slides. The slide decks are designed to be used in conjunction
+with the corresponding module content in this book, so feel free to
+refer back to them as needed while working through the modules.
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+Links to RevealJS slide decks for each module are listed below.
+
+\begin{itemize}
+\tightlist
+\item
+  \href{module0-slides.html}{Open Module 0 RevealJS Slides}
+\item
+  \href{module1-slides.html}{Open Module 1 RevealJS Slides}
+\item
+  \href{module2-slides.html}{Open Module 2 RevealJS Slides}
+\item
+  \href{module3-slides.html}{Open Module 3 RevealJS Slides}
+\item
+  \href{module4-slides.html}{Open Module 4 RevealJS Slides}
+\item
+  \href{module5-slides.html}{Open Module 5 RevealJS Slides}
+\item
+  \href{module6-slides.html}{Open Module 6 RevealJS Slides}
+\item
+  \href{module7-slides.html}{Open Module 7 RevealJS Slides}
+\end{itemize}
+
+\end{tcolorbox}
+
+\bookmarksetup{startatroot}
+
+\chapter*{Introduction}\label{introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+
+\markboth{Introduction}{Introduction}
+
+This is a Quarto book created from the
+\href{https://dx.doi.org/10.17504/protocols.io.rm7vzqd5xvx1/v1}{MycoEd
+Workbook from March 2026} and adapted for the \textbf{BSC 495 \emph{The
+Hidden World's Code}}, a course developed for students at North Carolina
+State University. The course is designed to provide students with
+hands-on experience in fungal biology and genomics, and to empower them
+to contribute to the field of mycology through research and discovery.
+
+The Mycological Curriculum for Education and Discovery (Myco-Ed) is a
+Course-Based Undergraduate Research Experience (CURE) that consists of
+coordinated hands-on experiments across fungal biology teaching labs
+with the goals of
+
+\begin{itemize}
+\tightlist
+\item
+  Training students and instructors in laboratory techniques and data
+  analyses
+\item
+  Compiling original data for improving fungal genomic resources
+\item
+  Empowering students through isolation and genome sequencing of new
+  fungal species
+\end{itemize}
+
+The content is organized into \textbf{modules}, each covering a specific
+topic related to mycology and education. The book is designed to provide
+comprehensive information and resources for educators, students, and
+anyone interested in learning about fungi and their role in the
+environment.
+
+\bookmarksetup{startatroot}
+
+\chapter*{Module 0: Getting Started and Data
+Management}\label{module-0-getting-started-and-data-management}
+\addcontentsline{toc}{chapter}{Module 0: Getting Started and Data
+Management}
+
+\markboth{Module 0: Getting Started and Data Management}{Module 0:
+Getting Started and Data Management}
+
+\section*{Module 0.1 -- Lab Materials and Equipment
+Overview}\label{module-0.1-lab-materials-and-equipment-overview}
+\addcontentsline{toc}{section}{Module 0.1 -- Lab Materials and Equipment
+Overview}
+
+\markright{Module 0.1 -- Lab Materials and Equipment Overview}
+
+This table lists all materials and equipment required across Myco-Ed
+modules. Use the search box to filter by module, item, company, or
+catalog number (web view), or scroll through the complete table below
+(in PDF and downloads).
+
+\section*{Module 0.2 -- Create iNaturalist Traditional Project
+Instructions}\label{module-0.2-create-inaturalist-traditional-project-instructions}
+\addcontentsline{toc}{section}{Module 0.2 -- Create iNaturalist
+Traditional Project Instructions}
+
+\markright{Module 0.2 -- Create iNaturalist Traditional Project
+Instructions}
+
+\subsection*{iNaturalist Introduction}\label{inaturalist-introduction}
+\addcontentsline{toc}{subsection}{iNaturalist Introduction}
+
+iNaturalist is a tool that we can use to document the fungal isolates in
+Myco-Ed courses. This tool allows instructors and students to record the
+metadata associated with the fungal isolates. Metadata will include
+plant species, geographic location, elevation, fungal DNA sequences,
+growth assays, and any other data relevant for this project. This
+platform will also enable us to track growth of the MycoEd project. The
+goal of this long-term research project is to develop annotated fungal
+genomes to better understand fungal biology.
+
+To begin, make sure that you have an iNaturalist account.
+
+\subsection*{Project Overview}\label{project-overview}
+\addcontentsline{toc}{subsection}{Project Overview}
+
+There are three kinds of projects: 1. Umbrella Projects 2. Collection
+Projects 3. Traditional Projects
+
+The umbrella project for MycoEd is the MycoEd Fungal Genomics Education
+Project. Each course will establish a Traditional Project in
+iNaturalist. A traditional project allows us to control whose
+observations are included in the project, which enables better
+downstream data management. We ask that your class use the Traditional
+Project for MycoEd for only your MycoEd fungi. If your course includes a
+fungal collection using iNaturalist, please have a separate iNaturalist
+project for these fungal observations.
+
+\subsection*{Make a MycoEd Traditional Project {[}Instructor
+Instructions{]}}\label{make-a-mycoed-traditional-project-instructor-instructions}
+\addcontentsline{toc}{subsection}{Make a MycoEd Traditional Project
+{[}Instructor Instructions{]}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Log into iNaturalist.
+\item
+  Go to Projects.
+\item
+  This will take you to Your Projects.
+\item
+  On the bottom right of the page, select Start a Project.
+\item
+  Start a Traditional Project. Scroll to the bottom of the page to find
+  the Traditional Project link for this option.
+\end{enumerate}
+
+\textbf{Note: If you do not have this option, please contact Amy Honan
+(amy.honan@oregonstate.edu) or Andrew Wilson
+(andrew.wilson@BotanicGardens.org) for assistance.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  Complete the following criteria indicated in the lettered parts of the
+  figure below:
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Add Title. Include Institution, term or semester, and year.
+  \item
+    Make this Invite Only. You will add your students to this project.
+  \item
+    Add images or logos as you see fit. This step is useful if you
+    manage multiple projects.
+  \end{enumerate}
+\item
+  Other fields to consider:
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Location: You may choose to limit the locations of your
+    observations. If your project is set to invite only, this is likely
+    unnecessary.
+  \item
+    Observation Fields: Here you can link the fungal endophytes back to
+    the host plants. In the future, we may have further instructions for
+    data to add here.
+  \end{enumerate}
+\item
+  Complete the project by selecting the Create button.
+\item
+  You may add your MycoEd concierges to your project if you wish
+  (Andrew\_wilson, ahonan).
+\item
+  Email Andrew Wilson (andrew.wilson@BotanicGardens.org) to be added to
+  the MycoEd Fungal Genomics Education Project.
+\item
+  Add your project name to the text highlighted in yellow in copies of
+  the following documents:
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Module 1 -- Using iNaturalist
+  \item
+    Module 1 -- Sampling Fungal Endophytes and Culturing Student
+    Instructions
+  \end{enumerate}
+\end{enumerate}
+
+Adding your name to the copies of these documents will enable you to use
+them directly in your courses.
+
+\subsection*{Add Participants (=Students) To The
+Project}\label{add-participants-students-to-the-project}
+\addcontentsline{toc}{subsection}{Add Participants (=Students) To The
+Project}
+
+Because we've made the Project ``Invite Only'' you will need to manually
+invite each of the students to join the course. They are instructed to
+join the course in Module 1.2.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Open your Myco-Ed project.
+\item
+  Select the ``Members'' section on the lower right. In this section you
+  can manage membership and participation for the project.
+\item
+  Click on ``invite new members here'' in the yellow box on the right.
+\item
+  Once you've received the iNaturalist User IDs, start adding your
+  students to the blank space under ``Invite people\ldots{}''. Their
+  names/user ID should appear in the drop down menu.
+\end{enumerate}
+
+If their names do not show up, it is because they have not completed
+their iNaturalist registration, or the User ID is different from what
+they've supplied.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Instruct the students to look for their invitation and join the
+  project. They must now add their course's iNaturalist observations to
+  the project for them to show up in the project.
+\end{enumerate}
+
+Use this last step as a requirement for course credit to ensure the
+process is completed by students.
+
+\section*{Module 0.3 -- iNaturalist
+Checklist}\label{module-0.3-inaturalist-checklist}
+\addcontentsline{toc}{section}{Module 0.3 -- iNaturalist Checklist}
+
+\markright{Module 0.3 -- iNaturalist Checklist}
+
+\subsection*{iNaturalist Checklist}\label{inaturalist-checklist}
+\addcontentsline{toc}{subsection}{iNaturalist Checklist}
+
+This checklist will help you track your progress in managing Myco-Ed
+project data using iNaturalist.
+
+\subsubsection*{For Instructors}\label{for-instructors}
+\addcontentsline{toc}{subsubsection}{For Instructors}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Create an iNaturalist Account. (Module 0.2)
+\item[$\square$]
+  Create an iNaturalist Traditional Project for your course. (Module
+  0.2) You may need to request the assistance of the Myco-Ed team to
+  create this if you do not have the pre-requisite number of
+  observations.
+\item[$\square$]
+  Tell your students the name of the iNaturalist Project, and request
+  their iNaturalist user IDs.
+\item[$\square$]
+  Add the students to the course project once they've completed Module
+  1.2. (Module 0.2)
+\item[$\square$]
+  Instruct students on iNaturalist data management obligations for
+  course credit (at the instructor's discretion).
+\end{itemize}
+
+\subsubsection*{For
+Students/Participants}\label{for-studentsparticipants}
+\addcontentsline{toc}{subsubsection}{For Students/Participants}
+
+\textbf{Homework Assignment 1 (Module 1.2)}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Create an iNaturalist Account.
+\item[$\square$]
+  Get the iNaturalist App for your phone
+\item[$\square$]
+  Give your instructor your iNaturalist User Name.
+\item[$\square$]
+  Update your real name under your account settings.
+\item[$\square$]
+  Watch some videos and tutorials.
+\item[$\square$]
+  Join the course project once you receive an invitation from the
+  instructor/TA.
+\end{itemize}
+
+\textbf{Make an Observation (Module 1.2)}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Take multiple images of the plant host (or habitat photos of the
+  environment) and include at least one image with a unique field
+  number. (e.g., MycoEd\_004)
+\item[$\square$]
+  Add the observation to your course project.
+\item[$\square$]
+  Save and upload the observation to the cloud once you're connected to
+  wifi.
+\item[$\square$]
+  Add Observation Field for MycoEd ID.
+\item[$\square$]
+  Add Observation Field for DNA Barcode ITS once you have DNA sequence
+  data.
+\item[$\square$]
+  Update the name of fungal isolates using DNA sequence BLAST results.
+\item[$\square$]
+  Add Observation Field for Host Observation for fungal isolates linking
+  to the original host on iNaturalist.
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter*{Module 1: Fungal Sampling}\label{module-1-fungal-sampling}
+\addcontentsline{toc}{chapter}{Module 1: Fungal Sampling}
+
+\markboth{Module 1: Fungal Sampling}{Module 1: Fungal Sampling}
+
+\section*{Module 1.1 -- Lab Prep
+Overview}\label{module-1.1-lab-prep-overview}
+\addcontentsline{toc}{section}{Module 1.1 -- Lab Prep Overview}
+
+\markright{Module 1.1 -- Lab Prep Overview}
+
+\subsection*{Instructor Laboratory Preparation
+Instructions}\label{instructor-laboratory-preparation-instructions}
+\addcontentsline{toc}{subsection}{Instructor Laboratory Preparation
+Instructions}
+
+\textbf{Materials:}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Cellophane discs (rinsed and individually wrapped before autoclaving)
+\item[$\square$]
+  100x15mm Petri dishes
+\item[$\square$]
+  60x15mm Petri dishes
+\item[$\square$]
+  Bacteriological agar
+\item[$\square$]
+  Forceps
+\item[$\square$]
+  Scalpels or metal hole punch
+\end{itemize}
+
+\textbf{Lab Prep and Sterility:} We will be working at the bench and
+without Bunsen burners. \textbf{Be very careful and do not leave plates
+open for long periods.} First, clean your work area with bleach, and/or
+ethanol. We will use clean benches and laminar flow hoods when
+available, but this is a good alternative for those without access to
+these resources.
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+Note that we will be working with fungi, which are generally not harmful
+to humans, but can cause allergic reactions in some individuals. Always
+practice good sterile technique and handle all materials with care. If
+you have any concerns about allergies or sensitivities, please consult
+with your instructor before beginning the lab.
+
+Additionally, we may not be able to work in a laminar flow hood, which
+increases the risk of contamination. Be extra cautious with sterile
+technique and be prepared for some contamination in your plates.
+\textbf{Work carefully and do not leave plates open for long periods of
+time.}
+
+\end{tcolorbox}
+
+\textbf{Water Agar Plates:} Student scholars isolate fungal endophytes
+from leaves on water agar. We use one 100x15mm Petri dish to plate up to
+6 leaf discs.
+
+\textbf{Water Agar Recipe:} Suspend 39 grams bacteriological agar in
+1000 mL (1 L) distilled water. Heat to boiling to dissolve the medium
+completely (in most cases, this step can be skipped as autoclaving will
+dissolve media). Sterilize by autoclaving at 15 lbs pressure at 121 °C
+for 15 minutes.
+
+When the media is cool enough to handle with autoclave gloves, pour
+100x15mm plates in a sterile environment. Do not let it cool too long as
+the media will solidify. Each 100x15mm plate holds approximately 20 ml
+media. If plates will be used immediately smaller amounts of media can
+be poured into plates. If plates will be stored, use larger amounts.
+Store plates in the original dish sleeve in a refrigerator
+(\textasciitilde4 °C) until use.
+
+\textbf{Disposal:} Place all Petri dishes in an autoclavable bag and
+sterilize at 15 lbs. pressure at 121 °C for 15 minutes. Follow
+institutional protocol for post-sterilization disposal. Be sure that the
+disposal of any heavy metals or other chemicals is properly handled.
+
+\section*{Module 1.2 -- Metadata
+Directions}\label{module-1.2-metadata-directions}
+\addcontentsline{toc}{section}{Module 1.2 -- Metadata Directions}
+
+\markright{Module 1.2 -- Metadata Directions}
+
+\subsection*{Metadata}\label{metadata}
+\addcontentsline{toc}{subsection}{Metadata}
+
+\begin{description}
+\tightlist
+\item[Metadata]
+is the data providing information about other data. In this project,
+metadata refers to information related to the fungi you will study,
+including information about the substrate (e.g., plant host for fungal
+endophytes), location (latitude and longitude), elevation, images,
+fungal species, growth rates, assay information, images, and other
+variables. This document guides you through capturing this data and
+where to document it.
+\end{description}
+
+Once you have selected the plant(s) that you will isolate fungi from,
+upload an image of each plant to your course's iNaturalist Project page.
+This part of the larger MycoEd Fungal Genomics Education Project. The
+fungi you isolate from this plant and the data associated with the
+fungal isolates will be linked back to this observation. These data will
+then be freely available to you and any other researchers interested in
+investigating fungal endophyte ecology and genomics.
+
+Record metadata on the \textbf{Endophyte spreadsheet}. Below are
+descriptions for each category where necessary.
+
+\subsection*{iNaturalist plant
+observation:}\label{inaturalist-plant-observation}
+\addcontentsline{toc}{subsection}{iNaturalist plant observation:}
+
+\href{https://www.inaturalist.org/projects/nc-state-myco-ed}{NC State
+Myco Ed on iNaturalist}
+
+\subsection*{Sample Naming:}\label{sample-naming}
+\addcontentsline{toc}{subsection}{Sample Naming:}
+
+Your individual fungal isolates will be identified using several
+identifiers. The first will be the unique \textbf{Host ID number} that
+identifies the host for the fungi you isolate. Second will be
+\textbf{your initials}. Please use at least 3 initials since some large
+courses may have students with shared initials. Third, \textbf{each
+individual leaf you cultured fungi from will be a separate number}. If
+you take multiple samples from the same leaf, they will be identified by
+letters. For example, if you have one leaf or needle with 3 different
+sections, they would be 1a, 1b, and 1c.
+
+\textbf{Example:} You have leaves collected from a maple tree on your
+campus. This tree was logged in iNaturalist and given a unique field
+number MycoED\_004 (or whatever format the field numbers are provided in
+by your instructor/TA) (See the next module 1.2 for details). Let's
+assume your initials are ABC. From this collection, you have three
+leaves that you culture from: leaf 1, leaf 2, and leaf 3. From each of
+these leaves, you take six segments, so these are letters a-f.~So, if
+you isolate a fungus from the second leaf, third section, and your
+initials are ABC, the name of the isolate would look like
+MycoED\_004\_ABC\_2c.
+
+With this naming scheme, anyone can trace the 1) plant host, 2) the
+researcher, 3) and the leaf and section the fungal isolate came from. NO
+other fungus will have this precise labeling unless additional fungi
+were isolated from this leaf section. After that step you will need to
+add additional identifiers.
+
+\subsection*{Sample location:}\label{sample-location}
+\addcontentsline{toc}{subsection}{Sample location:}
+
+Record latitude and longitude in decimal format. On a computer, go to
+iNaturalist observation. On the map, click on details at the bottom.
+
+From the dropdown menu. The Lat/Long is now shown. Click the copy button
+and paste it into the Excel Spreadsheet.
+
+You can also find Lat/Long coordinates on Google Maps. For Android
+phones: tap location and copy and paste in a text and it's automatically
+in decimal degree format. For the iPhones: 1. Open the Google maps app.
+Tap the ``black triangle in a circle'' icon to zoom to your location. 2.
+Long touch on your location. This should open a tab at the bottom of the
+screen. 3. Scroll up. You should see the latitude and longitude
+coordinates of that position, looking something like this: (45.1234567,
+-122.1234567). 4. Long touch the coordinates, tap copy and then paste
+into an email or text.
+
+\subsection*{Elevation:}\label{elevation}
+\addcontentsline{toc}{subsection}{Elevation:}
+
+Record the elevation of the plant in meters. On a computer, go to
+iNaturalist observation and again, click on details at the bottom. 1. On
+a computer, go to iNaturalist observation and again, click on details at
+the bottom. 2. At the bottom of the details window, click macrostrat. 3.
+The next window will display elevation in meters in the upper right.
+Record this elevation.
+
+\subsection*{Canopy:}\label{canopy}
+\addcontentsline{toc}{subsection}{Canopy:}
+
+Record the portion of the canopy where the leaf was collected (L-lower
+1/3 of plant, M-middle 1/3 of plant, or U-upper 1/3 of plant).
+
+\section*{Module 1.3 - Fungal Sampling and
+Culturing}\label{module-1.3---fungal-sampling-and-culturing}
+\addcontentsline{toc}{section}{Module 1.3 - Fungal Sampling and
+Culturing}
+
+\markright{Module 1.3 - Fungal Sampling and Culturing}
+
+\subsection*{Purpose}\label{purpose}
+\addcontentsline{toc}{subsection}{Purpose}
+
+This lab will introduce you to sterile/aseptic technique, culturing
+fungi, isolating cultures, and documenting fungal growth.
+
+\subsection*{Introduction}\label{introduction-1}
+\addcontentsline{toc}{subsection}{Introduction}
+
+Every species of plant surveyed to date hosts a multitude of fungal
+\textbf{endophytes}. These symbiotic fungi exist in all plant tissues,
+including leaves, bark, roots, and reproductive structures such as
+flowers and seeds. Observation of leaves can provide information on
+potential plant disesase, including fungal infections. This is
+illustrated in Figure 1: \textbf{?@fig-LeafPathologies}, which shows a
+variety of leaf pathologies. Fungal endophytes can be cultured from
+healthy plant tissue, and these fungi can be important for plant health
+and fitness. These fungi can be mutualistic, commensal, or parasitic.
+They can also be latent pathogens that cause disease under certain
+conditions.
+
+All lineages of fungi contain endophytic species, however the majority
+of fungal endophytes described to date are Ascomycetes. Research has
+shown that fungal endophytes impact both plant species fitness and plant
+community fitness. Fungal endophytes can confer abiotic and biotic
+stress tolerance, influence biomass and water consumption, and alter
+resource allocation. The fungi live either between the plant cells,
+between the cell wall and the cell membrane, or sometimes even within
+the cell membrane. This project is part of the MycoEd Fungal Genomics
+Education Project. \textbf{The goal of this long-term research project
+is to produce fungal reference genomes to better understand their
+biology.}
+
+\begin{center}
+\pandocbounded{\includegraphics[keepaspectratio]{images/LeafPathologies.png.png.png}}
+\end{center}
+Fungal Sampling. Leafs have different shapes and sizes. Leaf pathologies
+and diseases can be identified by inspection of leaves. Figure created
+with BioRender.com.
+
+\subsection*{Learning Goals}\label{learning-goals}
+\addcontentsline{toc}{subsection}{Learning Goals}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Documentation using iNaturalist
+\item
+  Practice sterile technique
+\item
+  Culture and isolate fungi
+\item
+  Investigate fungal endophytes
+\item
+  Characterize morphology of fungal cultures
+\end{enumerate}
+
+\subsection*{Lab Supplies}\label{lab-supplies}
+\addcontentsline{toc}{subsection}{Lab Supplies}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  3 large water agar Petri plates - these are for initial isolation
+\item[$\square$]
+  Sharpie
+\item[$\square$]
+  Parafilm
+\item[$\square$]
+  Paper towels
+\item[$\square$]
+  Gloves
+\item[$\square$]
+  Bleach
+\item[$\square$]
+  Ethanol
+\item[$\square$]
+  Scalpel
+\item[$\square$]
+  Metal hole punch
+\item[$\square$]
+  Forceps
+\end{itemize}
+
+\subsection*{Instructions}\label{instructions}
+\addcontentsline{toc}{subsection}{Instructions}
+
+\subsubsection*{Isolation of Fungi from
+Leaves}\label{isolation-of-fungi-from-leaves}
+\addcontentsline{toc}{subsubsection}{Isolation of Fungi from Leaves}
+
+Before you begin, read through the entire instructions. Be sure to
+consult your instructor if you have any questions.
+
+\textbf{Formulate your Research Question} You will attempt to culture
+fungi from a total of 18 leaf sections. You may use any combination of
+plant species, individual plants, leaf portions, or leaf cuttings in
+your setup. Choose a combination that interests you. Are you interested
+in capturing the diversity within an individual plant? If so, are you
+interested in looking at the diversity of endophytes within the canopy
+of individual plants? For this question, you would plate leaves from
+lower, middle, and upper canopies. Are you interested in documenting the
+fungal endophyte diversity within a plant species? For this
+investigation, collect leaves from multiple individuals of the same
+species. Perhaps you want to compare species diversity between different
+plant species. To investigate this question, collect plant leaves from a
+variety of plant species.
+
+\textbf{Design your Experimental Setup} Once you have decided what
+endophyte communities you would like to explore, obtain green leaves
+from your target host plants. These can be from deciduous or evergreen
+plants, including needles from conifers. You should plate your leaves
+within 24 hours of collection. Refrigerate your leaves if you need to
+store them between collection and plating.
+
+\textbf{Metadata} Upload an image of the plants you have chosen to your
+course's iNaturalist Project page. Follow the instructions in Module 1.1
+- Metadata Directions to be sure you have documented all necessary
+metadata.
+
+\textbf{Sampling Endophytes}
+
+Materials needed:
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  Your phone with iNaturalist.
+\item[$\square$]
+  Sample labels with unique ID numbers.
+\item[$\square$]
+  Paper bags for samples.
+\item[$\square$]
+  Clippers, scissors, or a knife to sample leaves.
+\end{itemize}
+
+\textbf{Protocol:} 1. Find a tree, or other plant to sample. Ideally,
+one that has healthy leaves. 2. Make an iNaturalist observation of the
+plant on your phone. a. Take multiple images. i. At least one of the
+entire plant. ii. Multiple closer pictures of the leaves, bark, any
+flowers or fruit, etc. iii. At least one observation must include one
+sample label with an ID number. b. Go to the projects section on
+iNaturalist. i. Select ``Your iNaturalist Project''. c.~Save the
+observation on iNaturalist. i. Follow instructions in Module 1.2 Using
+iNaturalist 3. Place the label in a paper bag. Record your information
+on the label including the unique ID number, date, location, and any
+other relevant information. This will be important for tracking your
+samples and linking them to your iNaturalist observation. 4. Sample up
+to three leaves using your cutting instrument. 5. Put the leaf samples
+into the bag.
+
+\begin{center}
+\pandocbounded{\includegraphics[keepaspectratio]{images/LeafSampling.png.png}}
+\end{center}
+Fungal Sampling. Collect one sample/leaf per bag and complete the
+required information on each label. Figure created with BioRender.com.
+
+\textbf{Culturing Fungi From Leaves} You have 3 larger (100x15mm) Petri
+dishes that contain water agar. Water agar media is more clear (whitish
+to translucent) than the smaller Petri dishes which contain Potato
+Dextrose Agar (PDA). These water agar plates will be used for Part I of
+this exercise. Section each of these into 6 regions as depicted in
+Figure 1. This will provide you space to culture 18 leaf sections.
+
+Gather all supplies including sterilized water, 70\% EtOH, and 10\%
+bleach solution. Label the Petri dishes and read through procedures
+before starting. Place bleach solution and sterile water in a container
+with enough space to dip leaf tissue. Use the provided scalpel or metal
+paper hole punch from your lab kit to take leaf subsamples.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Sanitize/sterilize all work surfaces. Wipe surfaces with ethanol.
+  Choose a working location with the least amount of airflow to prevent
+  contamination. If available, set up torches on either side of your
+  work area with the flames aimed toward the middle of your workspace.
+  The heat generated from the torches creates an the potential of
+  airborne contaminants.
+\item
+  Sterilize tools (scalpel or hole punch and forceps)
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Heat your tool using a flame (candle, alcohol lamp, torch, or
+    something similar).
+  \item
+    Let cool -- you can dip the tool (scalpel or hole punch) into the
+    bleach solution to cool.
+  \end{enumerate}
+\item
+  Cut leaf tissues. You may take as many cuttings from each leaf as
+  desired. Be sure to label cuttings appropriately as described above.
+  Cuttings should be \textasciitilde1 cm.
+\item
+  Surface sterilize leaf tissue. Using sterilized forceps (heat and cool
+  as above), immerse each cutting in 10\% bleach solution for 10
+  seconds.
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    To prepare the bleach solution, sterilize water by boiling water for
+    10 minutes. You will need enough water for the bleach solution and
+    rinse step. Distilled water is preferred. If unavailable, use tap
+    water. Let water cool to room temperature before coming into contact
+    with plant tissue.
+  \item
+    Mix 1ml (1/4 teaspoon) household bleach with 500 ml (2 cups)
+    sterilized water.
+  \end{enumerate}
+\item
+  Rinse leaf tissue. Transfer leaf cutting from bleach solution using
+  forceps and swirl in sterile water or \%70 EtOH to rinse. Let excess
+  water drip off leaf cutting or place on clean kimwipes to dry.
+\item
+  Add tissue to water agar. Place up to 6 leaf cuttings per plate of
+  water agar labeled as described above (Figure 1). The water agar
+  plates are the larger plates that contain clear to whitish media. Use
+  sterile technique. Be sure to sterilize forceps (heat with flame and
+  cool) in between each leaf transfer.
+\item
+  Seal Petri dish with Parafilm. This is a stretchy material similar to
+  Saran Wrap. Cut a strip a little wider than the Petri dish. Remove the
+  paper backing. Hold one end of the Parafilm strip on the lip of the
+  Petri dish so that the gap between the lid and base is covered by the
+  Parafilm. Keeping one end fixed with one hand, stretch and wrap the
+  parafilm around the Petri dish, sealing the gap between the lid and
+  base of the Petri dish. The stretching of the Parafilm will facilitate
+  the seal, you will not need any tape to keep the Parafilm in place.
+\item
+  Incubate at room temperature in the dark and examine for growth each
+  day.
+\end{enumerate}
+
+\section*{Module 1.4 -- Using
+iNaturalist}\label{module-1.4-using-inaturalist}
+\addcontentsline{toc}{section}{Module 1.4 -- Using iNaturalist}
+
+\markright{Module 1.4 -- Using iNaturalist}
+
+\subsection*{Using iNaturalist}\label{using-inaturalist}
+\addcontentsline{toc}{subsection}{Using iNaturalist}
+
+For this semester we will be sampling plant tissue and isolating
+endophytic fungi for an experiment in fungal genomics. Part of this
+research will include the collection of important meta-data which
+includes latitude and longitude information, sampled material/host, and
+taxonomic information. To facilitate this we are using iNaturalist.
+
+\textbf{Homework Assignment 1: Get set up to use iNaturalist.}
+
+\begin{itemize}
+\tightlist
+\item
+  Go to https://www.inaturalist.org/ and make an account if you don't
+  already have one.
+\item
+  Download the iNaturalist App to your phone.
+\item
+  Give your iNaturalist user ID to your course instructor or TA. They
+  will need this to add you to the course project. Be sure to ask your
+  instructor for the name of the course project.
+\item
+  Join your course project. Within your iNaturalist account, go to:
+  Community\textgreater Projects Assuming you're invited you should see
+  the name of your course project. Join the project. If you don't see
+  it, send your iNaturalist user ID to your Instructor or TA to receive
+  an invitation.
+\item
+  Add your Real Name to iNaturalist
+
+  \begin{itemize}
+  \tightlist
+  \item
+    For your name to display properly you need it spelled out in your
+    profile.
+  \item
+    Log into iNat.
+  \item
+    Go to your profile icon in the top right.
+  \item
+    Select Account Settings.
+  \item
+    Type your real name into the space under Display Name.
+  \end{itemize}
+\item
+  iNaturalist Application Settings on your phone.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Go to settings on your phone.
+  \item
+    Turn off ``Automatic Upload'' (recommended).
+  \item
+    Adjust settings as they suit you.
+  \end{itemize}
+\end{itemize}
+
+\textbf{Learn how to use iNaturalist to make observations for scientific
+research.} iNaturalist makes documenting samples easy through
+observations. We will use this to help collect the metadata on our
+specimens in the upcoming lab. To prepare yourself, please review the
+following resources.
+
+\textbf{Homework Assignment 2: Review videos on how to document fungi.}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  \href{https://www.inaturalist.org/pages/getting+started}{Getting
+  Started}
+\item[$\square$]
+  \href{https://inaturalist.freshdesk.com/en/support/solutions/folders/151000547795}{iNaturalist
+  Videos}
+\item[$\square$]
+  \href{https://youtu.be/EgZw37NjxkA}{NAMA/FunDiS How To Collect
+  Research Specimens}
+\end{itemize}
+
+\url{https://youtu.be/EgZw37NjxkA}
+
+\begin{itemize}
+\tightlist
+\item[$\square$]
+  \href{https://fundis.org/get-started/photograph}{FunDiS Photography}
+\end{itemize}
+
+Our protocol will be specific to our project, but will borrow from
+any/all of the video guides shown above.
+
+\subsection*{Making observations for your mycology course
+(Myco-Ed)}\label{making-observations-for-your-mycology-course-myco-ed}
+\addcontentsline{toc}{subsection}{Making observations for your mycology
+course (Myco-Ed)}
+
+To make the best use of iNaturalist as a tool for this course, and the
+broader MycoEd Project, you need to make quality observations of plant
+hosts, and the fungal endophyte cultures that come from these plants.
+
+\textbf{Required Ingredients}
+
+\textbf{Observations of Plant Hosts}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Open your iNaturalist Application.
+\item
+  Make an observation of one host plant by taking a picture of it.
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Find the camera icon in the app and take a picture of your plant.
+  \item
+    Include one field label in an image of the plant. (see examples)
+  \item
+    Take images from multiple perspectives: whole plant, leaves,
+    flowers+fruits, branches, trunk, etc.
+  \end{enumerate}
+\item
+  Alternatively, take images on your phone and upload them to
+  iNaturalist. Again, make sure you are including a field label in your
+  images.
+\item
+  Before saving the observation, add it to your course project using the
+  app.
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Go to ``Projects''
+  \item
+    Select the course project. NOTE: You must join the course project
+    before this step. See the third bullet point at the beginning of
+    these instructions.
+  \end{enumerate}
+\item
+  Click Done to save your observation.
+\item
+  Assuming you've turned ``automatic upload'' off, you will need to
+  manually upload your observation. This will appear green on your phone
+  until it is uploaded.
+\item
+  Double-check your observation online.
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    It will appear on your account if it was uploaded correctly.
+  \end{enumerate}
+\item
+  Add Myco-Ed ID. This will attach the field label ID number to this
+  host observation.
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Under Observations Fields, on the lower right portion of the page,
+    type ``MycoEd''
+  \item
+    Select ``MycoEd ID'' from the dropdown that appears.
+  \item
+    Add the field label ID number assigned to this host in the blank
+    field under MycoEd ID.
+  \item
+    Click ``Add''.
+  \end{enumerate}
+\end{enumerate}
+
+Under Project you should see the name for your course project. If not,
+click on the open field and the course project's name should appear in
+the drop-down menu. Select the
+
+\textbf{Observations of Fungal Cultures} Protocols for making
+observations of fungal cultures that follow the same steps as above with
+some added metadata that will go in as ``Observation Fields''.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\tightlist
+\item
+  Open your iNaturalist Application.
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Alternatively, take images on your phone and upload them to
+    iNaturalist.
+  \end{enumerate}
+\item
+  Make an observation of the fungal isolate by taking a picture of it.
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Take pictures from the top and bottom, including the label.
+  \end{enumerate}
+\item
+  Before saving the observation, add it to your course project using the
+  app.
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Follow the instructions detailed above.
+  \end{enumerate}
+\item
+  Click Done to save your observation.
+\item
+  Manually upload your observation. This will appear green on your phone
+  until it is uploaded.
+\item
+  Double-check your observation online.
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    It will appear on your account if it was uploaded correctly.
+  \end{enumerate}
+\end{enumerate}
+
+\textbf{Adding iNaturalist Observation Fields}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{14}
+\tightlist
+\item
+  Add MycoEd ID. This will attach the field label ID number to this host
+  observation.
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Follow the above directions.
+  \item
+    The format of the MycoEd ID of fungal isolates should be in the form
+    of: MycoEd Host ID\_Your Initials\_Leaf and Fragment number.
+    Example: MycoEd\_004\_ABC\_2c See: Myco-Ed Module 1.1 - Metadata,
+    under the Sample Naming section
+  \end{enumerate}
+\item
+  Add other iNaturalist Observation Fields
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    For ITS sequence data from fungal isolates, use DNA Sequence ITS
+  \item
+    To link to the host iNaturalist observation for this fungus, use the
+    Host Observation Observation Field and add the URL to the host
+    observation.
+  \end{enumerate}
+\end{enumerate}
+
+\bookmarksetup{startatroot}
+
+\chapter*{Module 2: Fungal Isolation}\label{module-2-fungal-isolation}
+\addcontentsline{toc}{chapter}{Module 2: Fungal Isolation}
+
+\markboth{Module 2: Fungal Isolation}{Module 2: Fungal Isolation}
+
+\section*{Module 2.1 -- Lab Prep
+Overview}\label{module-2.1-lab-prep-overview}
+\addcontentsline{toc}{section}{Module 2.1 -- Lab Prep Overview}
+
+\markright{Module 2.1 -- Lab Prep Overview}
+
+\subsection*{Instructor Laboratory Preparation
+Instructions}\label{instructor-laboratory-preparation-instructions-1}
+\addcontentsline{toc}{subsection}{Instructor Laboratory Preparation
+Instructions}
+
+\textbf{Materials:} - Cellophane - 100x15mm Petri Dishes - 60x15mm Petri
+Dishes - Agar, Bacteriological - Potato Dextrose Agar - Alcohol Lamp or
+Bunsen Burner - Forceps - Scalpel (make sure the handle is metal, this
+will be flame sterilized, plastic will melt)
+
+\textbf{Lab Prep:}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-important-color!10!white, colframe=quarto-callout-important-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Important}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+Read all directions and gather all supplies before beginning. Carefully
+clean your work area with bleach, and/or ethanol.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+Note that we will be working with fungi, which are generally not harmful
+to humans, but can cause allergic reactions in some individuals. Always
+practice good sterile technique and handle all materials with care. If
+you have any concerns about allergies or sensitivities, please consult
+with your instructor before beginning the lab.
+
+Additionally, we may not be able to work in a laminar flow hood, which
+increases the risk of contamination. Be extra cautious with sterile
+technique and be prepared for some contamination in your plates. If you
+have access to a laminar flow hood, please use it for this lab.
+
+\end{tcolorbox}
+
+\textbf{Potato Dextrose Agar (PDA) Plates:} Fungi cultured from leaves
+on water agar is transferred to nutrient Potato Dextrose Agar (PDA)
+plates. We use one 60x15 mm Petri dish for each fungal isolate.
+
+\textbf{Potato Dextrose Agar Recipe:} Suspend 39 grams Agar,
+Bacteriological in 1000 ml (1 L) distilled water. Heat to boiling to
+dissolve the medium completely (in most cases, this step can be skipped
+as autoclaving will dissolve media). Sterilize by autoclaving at 15 lbs
+pressure (121°C) for 15 minutes.
+
+When the media is cool enough to handle with autoclave gloves, pour
+60x15mm plates in a sterile environment. Do not let it cool too long as
+the media will solidify. Each 60x15mm plate holds approximately 8 ml
+media. If plates will be used immediately smaller amounts of media can
+be poured into plates. If plates will be stored, use larger amounts.
+Store plates in the original petri dish sleeve in the refrigerator
+(\textasciitilde4 °C) until use.
+
+\textbf{Option: Adding Antibiotics} Once your PDA has cooled, you may
+choose to add antibiotics to the media. Streptomycin (streptomycin
+sulfate) is commonly used at a concentration of 50mg/L in agar. Add the
+appropriate amount to your media once cool to the touch and before
+pouring plates.
+
+\textbf{Cellophane Plates:} Fungal tissue can be harvested from
+cellophane plates. Cut cellophane discs slightly smaller than the petri
+dish so that they lay flat on the PDA media. Using the bottom of the
+petri dish as a template, draw a circle on the cellophane and cut out
+discs on the inside of the line.
+
+Place cellophane discs into an autoclavable container with water. Place
+each cellophane disc individually into the water and try to stagger them
+in the water. This staggering step ensures that you can more easily
+remove the discs from the water. Cover your container with foil and
+sterilize by autoclaving at 15 lbs. pressure at 121 °C for 15 minutes.
+
+Working in your sterile environment, place one cellophane disc onto
+cooled PDA agar in 60x15mm plates. Use sterile forceps to transfer each
+cellophane disc onto the PDA plate. If you can't easily remove single
+discs, try the ``slide'' technique. Dip your forceps into the container
+with the discs until you touch a disc. Using the forceps as a probe (not
+pinched) slide the disc to the side of the container and up the side of
+the container. Often, you'll pull out one disc. Sometimes more than one
+disc will slide up, but it's usually easy to see the individual discs at
+this point. You can then use your forceps to pull out one disc. If you
+grasp one disc with your forceps, you can swirl it in the water in the
+container to dislodge any other discs that might be attached. Open the
+lid of the petri dish and lay the cellophane onto the solid agar.
+
+\textbf{Disposal:} Place all petri dishes in an autoclavable bag and
+sterilize at 15 lbs pressure (121°C) for 15 minutes. Follow
+institutional protocol for post-sterilization disposal. Be sure that the
+disposal of any heavy metals or other chemicals are properly handled.
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-important-color!10!white, colframe=quarto-callout-important-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Important}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+Please use the red biohazard bags for disposal of all petri dishes and
+materials that have come into contact with fungi. This includes gloves,
+paper towels, kimwipes, and any other materials used during the lab. Do
+not dispose of these materials in regular trash or recycling bins.
+
+\end{tcolorbox}
+
+\section*{Module 2.2 - Fungal
+Isolation}\label{module-2.2---fungal-isolation}
+\addcontentsline{toc}{section}{Module 2.2 - Fungal Isolation}
+
+\markright{Module 2.2 - Fungal Isolation}
+
+\subsection*{Purpose}\label{purpose-1}
+\addcontentsline{toc}{subsection}{Purpose}
+
+This lab will introduce you to sterile technique, culturing fungi,
+isolating cultures, and documenting fungal growth.
+
+\subsection*{Introduction}\label{introduction-2}
+\addcontentsline{toc}{subsection}{Introduction}
+
+In the previous lab, we started the process of sampling fungal
+endophytes. We documented the host plant using iNaturalist and then
+sampled foliar tissues from the plants. These foliar tissues were
+transported to the lab, surface sterilized to remove any external
+contaminants, and dissected. The dissected tissues were plated onto
+water agar plates, sealed, and labeled.
+
+Today, we will isolate, or subculture, these fungi onto PDA agar (Potato
+Dextrose Agar). This nutrient agar will allow for fungal growth. We will
+then measure the growth rate of each individual fungal isolate.
+
+This project is part of the
+\href{https://mycocosm.jgi.doe.gov/mycocosm/home/myco-ed}{Myco-Ed Fungal
+Genomics Education Project}. The goal of this long-term research project
+is to develop annotated genomes of fungal endophytes to better
+understand their ecology and how they impact their host plants.
+
+\subsection*{Learning Goals}\label{learning-goals-1}
+\addcontentsline{toc}{subsection}{Learning Goals}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Practice sterile technique
+\item
+  Culture and isolate fungi
+\item
+  Investigate fungal endophytes
+\item
+  Characterize morphology of fungal cultures
+\item
+  Create data spreadsheets
+\item
+  Isolate fungi for molecular extraction and analysis
+\item
+  Create Growth Curves
+\end{enumerate}
+
+\subsection*{Student Lab Supplies}\label{student-lab-supplies}
+\addcontentsline{toc}{subsection}{Student Lab Supplies}
+
+\begin{itemize}
+\tightlist
+\item
+  Fungal Endophyte Sample Plates
+\item
+  PDA Plates (60x15mm)
+\item
+  70\% ethanol
+\item
+  Kimwipes and Paper Towels
+\item
+  Parafilm
+\item
+  Fine Tip Sharpie
+\item
+  Flame Source for Sterilization (alcohol lamp or Bunsen burner)
+\item
+  Scalpel
+\item
+  Ruler
+\item
+  Forceps
+\end{itemize}
+
+\subsection*{Instructions}\label{instructions-1}
+\addcontentsline{toc}{subsection}{Instructions}
+
+\subsubsection*{Part I - Subculturing Fungal Endophytes into Fungal
+Isolates}\label{part-i---subculturing-fungal-endophytes-into-fungal-isolates}
+\addcontentsline{toc}{subsubsection}{Part I - Subculturing Fungal
+Endophytes into Fungal Isolates}
+
+Fungal cultures usually emerge as white fuzz from your leaf discs,
+however, the hyphae might be pigmented, such as a brown or greenish
+color. Figure 1 depicts the fungal hyphae in brown and blue emerging
+from the green leaf tissue. The fungi are utilizing the nutrients
+available in the leaf tissue for growth as water agar does not contain
+nutrients. To promote the growth necessary for downstream analyses, it
+is essential to transfer the fungi to a growth medium that contains
+nutrients. For our exercise we are using Potato Dextrose Agar (PDA) as
+nutrient media. These are smaller petri dishes and the media has a
+yellowish tint (compared to the larger petri dishes containing the
+clear, or whitish, water agar from your initial isolation). This
+transfer step also allows for the separation of each fungal isolate to
+ensure pure cultures.
+
+Fungal growth from the leaf cuttings may occur over the span of a few
+weeks, so you may have to transfer several times. Your fungal cultures
+will be most successful if you transfer them within a few days (1-3)
+from emergence or detection.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Practice Sterile Technique. Wear gloves. Clean work surface with
+  disinfectant. If available, wipe surfaces with 70\% ethanol. Choose a
+  working location with the least amount of airflow to prevent
+  contamination. Decrease the potential of airborne contaminants falling
+  onto your workspace or into your petri dishes.
+\item
+  Label a PDA petri dish with the sample number and date for each
+  isolate (described in Module 1.1 - Metadata). Always label along the
+  bottom edge. This ensures the label stays with the fungus, even if the
+  top lid falls off. Label the edge of the plate because you don't want
+  to obscure light transmission through the plate. Also, mark lines on
+  the bottom of the plate as shown in Figure 2 to record the growth
+  rate. Be sure to transfer only one fungal isolate to each PDA petri
+  dish.
+\item
+  Use a stefilized scalpel.
+\item
+  Make a ``plug''. Cut a small chunk of water agar containing hyphae of
+  target isolate using a sterilized scalpel. Transfer this plug of agar
+  and hyphae to the PDA plate. Ideally, you will have the least amount
+  of agar transferred to the new petri dish.
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Work quickly and cleanly and consider your technique to prevent
+    contamination. Remove Parafilm from the water agar plate.
+  \item
+    Tilt or lift the lid of the water agar petri dish as little as
+    possible, try to keep the lid covering or hovering over the plate to
+    prevent airborne contaminants.
+  \item
+    Using a sterile scalpel remove the chunk of agar from the target
+    fungal isolate.
+  \item
+    Replace the lid of the water agar.
+  \item
+    Open the PDA petri dish lid by slightly tilting the lid, or lifting
+    the lid straight up. Place the agar chunk into the middle (or as
+    mid-plate as possible) of the PDA petri dish. The agar will likely
+    stick to the scalpel, so do your best to remove the chunk without
+    contamination.
+  \item
+    Close the lid of the PDA petri dish lid as quickly as possible. Seal
+    with parafilm.
+  \end{enumerate}
+\end{enumerate}
+
+\subsubsection*{Part II -- Measuring Growth
+Rates}\label{part-ii-measuring-growth-rates}
+\addcontentsline{toc}{subsubsection}{Part II -- Measuring Growth Rates}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Design a data sheet to record growth.
+\item
+  On the bottom of the plate, trace the edge of your fungal culture
+  using a fine-tip sharpie (Figures 3 and 4).
+\item
+  Measure, in mm, new growth at each of the eight edges along the lines
+  (Figures 3 and 4)
+\item
+  Average the eight measurements to get the average growth (Table 1).
+\end{enumerate}
+
+\textbf{Table 1: Daily Growth Average}
+
+\begin{longtable}[]{@{}ll@{}}
+\caption{Table 1. Daily Growth Average}\tabularnewline
+\toprule\noalign{}
+Measurement & Value \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+Measurement & Value \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & 3 mm \\
+2 & 2.5 mm \\
+3 & 2.7 mm \\
+4 & 1.8 mm \\
+5 & 3.1 mm \\
+6 & 2.2 mm \\
+7 & 2.6 mm \\
+8 & 2.1 mm \\
+Average & 2.5 mm \\
+\end{longtable}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Continue to measure average growth in mm 7 days from plating (Figure
+  4).
+\item
+  Calculate the average growth rate (distance/time).
+\item
+  Plot a graph of your fungal isolate(s) growth rate.
+\item
+  Submit images and your data sheet and a graph of growth rates in your
+  lab blog post for this project. Please take images to add to your blog
+  post.
+\end{enumerate}
+
+\bookmarksetup{startatroot}
+
+\chapter*{Module 3: Phenotypic Assays}\label{module-3-phenotypic-assays}
+\addcontentsline{toc}{chapter}{Module 3: Phenotypic Assays}
+
+\markboth{Module 3: Phenotypic Assays}{Module 3: Phenotypic Assays}
+
+\section*{Module 3.1 -- Phenotypic
+Assays}\label{module-3.1-phenotypic-assays}
+\addcontentsline{toc}{section}{Module 3.1 -- Phenotypic Assays}
+
+\markright{Module 3.1 -- Phenotypic Assays}
+
+\subsection*{Instructor Laboratory Preparation
+Instructions}\label{instructor-laboratory-preparation-instructions-2}
+\addcontentsline{toc}{subsection}{Instructor Laboratory Preparation
+Instructions}
+
+\textbf{Materials and Equipment:} - Autoclave - Laminar Flow Hood (if
+available) - 60x15mm Petri Dishes - Agar, Bacteriological - Potato
+Dextrose Agar - Zinc Sulfate - Forceps - Scalpel (sterilized)
+
+\textbf{Potato Dextrose Agar (PDA) with Zn Plates for Zn Stress Assay:}
+Suspend 39 grams Potato Dextrose Agar in 1000 ml (1 L) distilled water
+(or follow the directions on the bottle label). Add the appropriate
+amount of Zn sulfate to obtain concentrations of 1 mM Zn and 10 mM Zn in
+the media bottle. Heat to boiling to dissolve the medium completely (in
+most cases, this step can be skipped as autoclaving will dissolve
+media). Sterilize by autoclaving at 15 lbs pressure (121°C) for 15
+minutes.
+
+\textbf{(PDA) Plates for Temperature Assay:} Suspend 39 grams Potato
+Dextrose Agar in 1000 ml (1 L) distilled water (or follow the directions
+on bottle label). Heat to boiling to dissolve the medium completely (in
+most cases, this step can be skipped as autoclaving will dissolve
+media). Sterilize by autoclaving at 15 lbs pressure (121°C) for 15
+minutes.
+
+When the media is cool enough to handle with autoclave gloves, pour
+60x15 mm plates in a sterile environment. Do not let it cool too long
+before pouring as the media will solidify. Each 60x15 mm plate holds
+approximately 8 mL of media. If plates will be used immediately smaller
+amounts of media can be poured into plates. If plates will be stored,
+use larger amounts. Store plates in original Petri dish sleeve in
+refrigerator (\textasciitilde4 °C) until use.
+
+Working in your sterile environment, place one cellophane disc onto
+cooled PDA agar in 60x15mm plates. Use sterile forceps to transfer each
+cellophane disc onto the PDA plate. If you can't easily remove single
+discs, try the ``slide'' technique. Dip your forceps into the container
+with the discs until you touch a disc. Using the forceps as a probe (not
+pinched) slide the disc to the side of the container and up the side of
+the container. Often, you'll pull out one disc. Sometimes more than one
+disc will slide up, but it's usually easy to see the individual discs at
+this point. You can then use your forceps to pull out one disc. If you
+grasp one disc with your forceps, you can swirl it in the water in the
+container to dislodge any other discs that might be attached. Open the
+lid of the Petri dish and lay the cellophane onto the solid agar.
+
+\section*{Module 3.2 -- Phenotypic
+Assays}\label{module-3.2-phenotypic-assays}
+\addcontentsline{toc}{section}{Module 3.2 -- Phenotypic Assays}
+
+\markright{Module 3.2 -- Phenotypic Assays}
+
+\subsection*{Phenotypic Assays}\label{phenotypic-assays}
+\addcontentsline{toc}{subsection}{Phenotypic Assays}
+
+\textbf{Objectives:} 1. Determine how fungal isolates react to
+environmental stressors
+
+\textbf{Materials:} - Student fungal isolates
+
+\textbf{Procedures:} - Observe your fungal cultures and determine if
+they are pure cultures - We will use these cultures to set up stress
+tests (Zn assay and temperature assay) and for molecular identification.
+
+\subsection*{Zn Stress Assay}\label{zn-stress-assay}
+\addcontentsline{toc}{subsection}{Zn Stress Assay}
+
+In this lab, we will be investigating the tolerance and growth response
+of foliar fungal endophytes to varying concentrations of zinc (Zn). Zinc
+is an essential trace element for many biological processes, but in
+elevated concentrations, it can become toxic to fungi and other
+microorganisms. To understand how these fungi cope with different levels
+of Zn, we will isolate fungal endophytes from plant leaves and subject
+them to media containing 0 mM, 1 mM, and 10 mM of Zn. By measuring their
+growth rates over several weeks, we aim to determine the impact of Zn on
+their growth and survival.
+
+Testing foliar fungal endophytes for Zn tolerance is particularly
+relevant as these fungi play crucial roles in plant health and ecosystem
+functioning. Endophytes can enhance plant growth, provide resistance to
+pathogens, and contribute to nutrient cycling. Understanding their
+tolerance to heavy metals like Zn is important for ecological studies,
+especially in areas affected by pollution or where plants are used in
+phytoremediation efforts. By assessing their ability to thrive in
+environments with varying Zn concentrations, we can gain insights into
+their resilience and potential applications in sustainable agriculture
+and environmental management.
+
+\textbf{Objectives:} 1. Determine if the fungal isolates are tolerant of
+Zn. 2. Measure how different concentrations of Zn influence fungal
+growth rates.
+
+\textbf{Materials:} - Pure fungal cultures - PDA 0 mM Zn + antibiotics -
+PDA 1 mM Zn + antibiotics - PDA 10 mM Zn + antibiotics - Fine tip
+Sharpie or marker - Agar cutting tool - Ethanol jar
+
+\textbf{Procedures:} - Label your plates with identifying information -
+On the bottom of each plate, draw four lines that intersect in the
+center of the plate (Figure 1) - Cut out three 0.5 cm² chunks from the
+edge of your pure culture and place one in the center of each of the Zn
+plates - Close and parafilm your plates - Carefully, flip the plates
+over and trace the cube using a fine tip Sharpie - Place the plate
+(unflipped) at room temperature in the dark and observe growth over the
+next few weeks
+
+\subsection*{Temperature Assays}\label{temperature-assays}
+\addcontentsline{toc}{subsection}{Temperature Assays}
+
+In this lab, we will explore the effects of temperature on the growth
+and survival of foliar fungal endophytes. Temperature is a critical
+environmental factor that influences fungal physiology and ecological
+dynamics. To investigate how these fungi respond to different thermal
+conditions, we will isolate fungal endophytes from plant leaves and
+cultivate them at three distinct temperatures: 4°C, room temperature
+(approximately 20°C), and 28°C. By measuring their growth rates over
+several weeks, we will better understand their tolerance to different
+temperatures.
+
+\textbf{Objectives:} 1. Determine optimal growth temperature. 2. Measure
+how different temperatures influence fungal growth rates.
+
+\textbf{Materials:} - Pure cultures (2 per student) - PDA with
+antibiotics (6 per student) - Fine tip Sharpie or marker - Culture
+cutting tool - Ethanol jar
+
+\textbf{Procedures:} - Label your plates with identifying information
+and growth temperatures (2 per temp.) - On the bottom of each plate,
+draw four lines that intersect in the center of the plate (Figure 6.1) -
+Cut out three 0.5 cm chunks from the edge of your pure culture and place
+one in the center of each of the temperature plates - Close and parafilm
+your plates - Carefully, flip the plates over and trace the cube using a
+fine-tip Sharpie - Bring your plates to the front of the class and place
+them (unflipped) in the correct box for incubation
+
+\subsection*{Measuring Fungal Growth}\label{measuring-fungal-growth}
+\addcontentsline{toc}{subsection}{Measuring Fungal Growth}
+
+\textbf{Objectives:} 1. Measure growth for Zn stress assay 2. Measure
+growth for temperature assay
+
+\textbf{Materials:} - Fine tip Sharpie - Three Zn culture plates - Three
+temperature culture plates - Ruler to measure growth in mm (mm ruler)
+
+\textbf{Procedures:} - On the bottom of the plate, trace the edge of
+your fungal culture - Measure, in mm, new growth at each of the four
+edges along the lines - Average the eight measurements to get the
+average growth and determine the average growth rate (distance/time)
+
+\bookmarksetup{startatroot}
+
+\chapter*{Module 4: DNA Sequencing}\label{module-4-dna-sequencing}
+\addcontentsline{toc}{chapter}{Module 4: DNA Sequencing}
+
+\markboth{Module 4: DNA Sequencing}{Module 4: DNA Sequencing}
+
+\section*{Module 4.1 -- DNA Sequencing and Species Identification
+Instructor
+Resources}\label{module-4.1-dna-sequencing-and-species-identification-instructor-resources}
+\addcontentsline{toc}{section}{Module 4.1 -- DNA Sequencing and Species
+Identification Instructor Resources}
+
+\markright{Module 4.1 -- DNA Sequencing and Species Identification
+Instructor Resources}
+
+\subsection*{Instructor Laboratory Preparation
+Instructions}\label{instructor-laboratory-preparation-instructions-3}
+\addcontentsline{toc}{subsection}{Instructor Laboratory Preparation
+Instructions}
+
+\textbf{Materials needed:} This list may vary depending on your
+preferred extraction, amplification, and sequencing protocols.
+
+\begin{itemize}
+\tightlist
+\item
+  Gloves
+\item
+  Sharpie
+\item
+  Thermal cycler
+\item
+  Vortex
+\item
+  Centrifuge for PCR and microfuge tubes
+\item
+  Heat block/thermomixer for 1.5-2.0 ml microfuge tubes
+\item
+  1.5mL microcentrifuge tubes (Eppendorf DNA LoBind)
+\item
+  0.2 mL PCR tubes
+\item
+  Microfuge and PCR tube racks
+\item
+  Labeling tape
+\item
+  Monarch® Spin gDNA Extraction Kit (New England BioLabs,T3010S)
+\item
+  MetaPolyzyme, DNA free (Millipore Sigma, MAC4LDF-5X1VL)
+\item
+  TE Buffer
+\item
+  CTAB solution (100 ml, Promega, MC1411)
+\item
+  Parafilm
+\item
+  70\% ETOH
+\item
+  1-10, 20-200, and 100-1000 µL micropipettors
+\item
+  1-10, 20-200, and 100-1000 µL micropipette tips (preferably filtered)
+\item
+  Kimwipes
+\item
+  PCR primers (ITS1f, ITS4, 5.8SR, fITS7) ordered from Integrated DNA
+  Technologies (IDT) or similar supplier normalized to 100 µM in TE
+  buffer. The following primers are commonly used for fungal DNA
+  barcoding:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    ITS1f: 5'-CTTGGTCATTTAGAGGAAGTAA-3'
+  \item
+    ITS4: 5'-TCCTCCGCTTATTGATATGC-3'
+  \item
+    5.8SR: 5'-CGCTGCGTTCTTCATCG-3'
+  \item
+    fITS7: 5'-GTGARTCATCGAATCTTTG-3'
+  \end{itemize}
+\item
+  Q5® Hot Start High-Fidelity 2X Master Mix - 100 reactions(New England
+  BioLabs, M0494S)
+\item
+  PCR water (New England BioLabs, B1500S)
+\item
+  Exo-CIP Rapid PCR Cleanup Kit - 100 reactions (New England BioLabs,
+  E1050S)
+\item
+  E-Gel system with 1.2\% agarose gels (ThermoFisher, G4010010) or
+  similar gel electrophoresis system
+\item
+  E-Gel™ Sizing DNA Ladder (ThermoFisher, 10488100)
+\item
+  DNA quantification system (for example, Qubit Fluorometer with dsDNA
+  HS Assay Kit, ThermoFisher, Q32851)
+\item
+  Access to Sanger sequencing services (for example, Genewiz, Eurofins,
+  Eton, or similar provider).
+\item
+  Rapid Barcoding Kit v14 (Oxford Nanopore Technologies), SQK-RBK114.24
+  or similar kit for long-read sequencing (optional)
+\item
+  MinION sequencing device
+\item
+  MinION flow cells (R10.4.1 or similar, Oxford Nanopore Technologies,
+  FLO-MIN114)
+\item
+  Ultrapure BSA 50mg/ml (ThermoFisher, AM2616) for long-read sequencing
+\item
+  1.5mL microcentrifuge tubes (Eppendorf DNA LoBind) for long-read
+  sequencing
+\item
+  0.2 mL PCR tubes for long-read sequencing
+\item
+  Magnetic rack for 1.5ml microcentrifuge tubes (for example,
+  ThermoFisher DynaMag-2, 12321D) for long-read sequencing
+\item
+  Nuclease-free water and 100\% ethanol to prepare 80\% ethanol for
+  long-read sequencing
+\end{itemize}
+
+\textbf{DNA Extraction Buffer (ES)}
+
+\textbf{1M Tris Stock Solution (1 mole (M) of Tris = 121.14 grams)} 1.
+Add 121.14 grams of Tris to 1000 mL of water (adjust quantity to lab
+needs) 2. Add a magnetic stir bar to the beaker and put the beaker on a
+hot plate/stir plate and set the heat and stirring to medium-low to
+facilitate the dissolving of the Tris.
+
+\textbf{Prepare Extraction Buffer (ES)} 1. Add 10 mL of Tris stock
+solution to a 250 mL beaker. 2. Weigh and add 1.86 g KCl to the beaker.
+3. Weigh and add 0.37 g EDTA. 4. Top up with 80 mL of distilled water.
+5. Place on a hot/stir plate with a magnetic stir bar over medium-low
+heat and speed. Wait until dissolved. 6. Top up to 100mL total with
+distilled water and stir briefly. 7. Dispense 1000 µL into 1.5 mL
+microcentrifuge tubes and label the tubes ``ES'' for Extraction
+Solution. 8. Place tubes in a rack labeled ``Mycology DNA Extraction
+Reagents'' and store in the Freezer.
+
+\textbf{Dilution Solution (DS) (3\% BSA) Prep} 1. Add 3 g BSA (Bovine
+Serum Albumin) to 250 mL beaker. 2. Add 100 mL of distilled water. 3.
+Shake/stir to dissolve the BSA into solution. DO NOT HEAT! 4. Dispense
+1000 µL into 1.5 mL microcentrifuge tubes and label the tubes ``DS''. 5.
+Place tubes in a rack labeled ``Mycology DNA Extraction Reagents'' and
+store them in the Freezer.
+
+\textbf{Diluting and prepping PCR primers} 1. To dilute the vial to a
+stock concentration of 100 picomols/microliter first read the number of
+µmols present in the tube. a. Using this number, divide by 10, and add
+that many µL of PCR pure water to the tubes. This will give you a
+concentration of 100 pmol/µL 2. To make PCR ready primers we need to
+dilute the concentration to 10 pmol/µL. a. Add 180 µL PCR pure water to
+a 1.5 mL microcentrifuge tube. b. Label the tube according to the primer
+being added. c.~Add 20 µL of the 100 pmol/µL concentration primer.
+
+\section*{Module 4.2 -- DNA Sequencing and Species
+Identification}\label{module-4.2-dna-sequencing-and-species-identification}
+\addcontentsline{toc}{section}{Module 4.2 -- DNA Sequencing and Species
+Identification}
+
+\markright{Module 4.2 -- DNA Sequencing and Species Identification}
+
+\subsection*{Purpose}\label{purpose-2}
+\addcontentsline{toc}{subsection}{Purpose}
+
+The purpose of this module is to molecularly identify fungal isolates
+using the Internal Transcribed Spacer (ITS) rDNA region, also known as
+the fungal barcode. You will extract genomic DNA (gDNA) from your
+isolates, amplify the ITS rDNA using polymerase chain reaction (PCR),
+clean PCR product, Sanger sequence PCR product, and use DNA sequence to
+obtain a name for your isolate.
+
+\subsection*{Learning Goals}\label{learning-goals-2}
+\addcontentsline{toc}{subsection}{Learning Goals}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Practice extracting fungal DNA
+\item
+  Successfully PCR amplify fungal ITS
+\item
+  Learn to BLAST ITS sequence to identify fungal isolates
+\end{enumerate}
+
+\subsection*{Part I: DNA Extraction}\label{part-i-dna-extraction}
+\addcontentsline{toc}{subsection}{Part I: DNA Extraction}
+
+\subsubsection*{Introduction}\label{introduction-3}
+\addcontentsline{toc}{subsubsection}{Introduction}
+
+Identification of fungal cultures requires knowledge and techniques
+beyond the scope of this course. Luckily, we can use DNA sequencing of
+the fungal barcode region (ITS rDNA region) to obtain an identification
+for our isolates. To do this, you must (1) extract gDNA from a pure
+culture of your fungal isolate; (2) specifically amplify (make millions
+of copies) a portion of the ITS rDNA region using polymerase chain
+reaction (PCR); (3) sequence the PCR product using Sanger sequencing;
+and (4) submit your sequences for comparison against an online gene
+database (NCBI's GenBank).
+
+In this part of the module, you will extract DNA from your fungal
+isolates. There are many ways to isolate DNA from fungi. Here we will
+use a very simple kit that uses an alkaline (pH 9.5-10) extraction
+solution at high heat to disrupt cells and release gDNA.
+
+\subsubsection*{Materials:}\label{materials}
+\addcontentsline{toc}{subsubsection}{Materials:}
+
+\begin{itemize}
+\tightlist
+\item
+  Fungal isolates
+\item
+  0.2 mL PCR tubes
+\item
+  P20 micropipette with tips
+\item
+  DNA extraction solution (ES)
+\item
+  DNA dilution solution (DS)
+\item
+  Ethanol jar
+\item
+  Loop, pick, and forceps
+\end{itemize}
+
+\subsubsection*{Procedures:}\label{procedures}
+\addcontentsline{toc}{subsubsection}{Procedures:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Using the micropipette, aliquot 20 µL of ES into 0.2 mL snap-cap PCR
+  tubes. We will run DNA extraction in duplicates, so fill two PCR tubes
+  per culture. NOTE: Label your tubes before adding ES. Label on both
+  the cap and side of the tubes, so you can identify the samples as
+  yours and can differentiate to which culture they belong.
+\item
+  Place the tissue sample into the ES. Submerge and smash the sample
+  against the tube wall if possible. NOTE: be careful not to add any
+  agar to the ES as this will impact the pH of the solution and the
+  extraction of gDNA.
+\item
+  Close the snap-caps and incubate at 65 °C for 10 minutes followed by
+  95 °C for 10 minutes.
+\item
+  Using the micropipette, aliquot an equal volume of DS (20 µL) to your
+  extracts. Ensure that you can still read the labels and store in the
+  freezer until next week. We will use these extractions to amplify the
+  fungal ITS rDNA region using PCR.
+\end{enumerate}
+
+\subsection*{Part II: Polymerase Chain Reaction
+(PCR)}\label{part-ii-polymerase-chain-reaction-pcr}
+\addcontentsline{toc}{subsection}{Part II: Polymerase Chain Reaction
+(PCR)}
+
+\subsubsection*{Introduction to PCR}\label{introduction-to-pcr}
+\addcontentsline{toc}{subsubsection}{Introduction to PCR}
+
+The polymerase chain reaction (PCR), developed in the mid-1980s,
+amplifies a specific DNA region by creating millions or billions of
+copies by `in vitro DNA replication'. It uses a thermostable form of
+bacterial DNA polymerase, the enzyme that copies DNA, isolated from
+Thermus aquaticum, a thermophilic bacterium isolated from a Yellowstone
+hot spring. This enzyme, `Taq polymerase', is active at 72 °C and can
+withstand brief heating to 95 °C. Thus, the PCR reaction is an example
+of how environmental microbes have benefited biotechnology and
+revolutionized biology.
+
+The PCR reaction consists of mixing your template DNA with two primers:
+short sequences of DNA that are complementary to the ends of the region
+you want to amplify. The forward primer binds to one strand at the
+beginning of the region, and the reverse primer binds to the
+complementary strand at the end of the region. Primers are designed
+using computer databases of gene sequences, and synthesized chemically.
+In addition to the primers, Taq polymerase (or a synthetic polymerase
+enzyme), and your DNA, the PCR reaction also needs a buffer containing
+MgCl2 and dNTPs (the four bases of DNA). The reaction is run on a
+machine called a thermal cycler, which automatically heats the reaction
+first to 95 °C to melt the double-stranded DNA (break H-bonds between
+strands), then to about 53 °C to allow the primers to anneal to the
+template DNA, and finally to 72 °C to allow the polymerase to add dNTPs
+and extend the product. Typically, scientists run 25-35 cycles of this
+reaction, producing 225 - 235 copies of the target region.
+
+Figure 1: rDNA region containing the variable regions ITS-1 and ITS-2.
+Our forward primer (ITS-1F) will target a portion of the SSU and our
+reverse primer (ITS4) will target a portion of the LSU. Thereby,
+amplifying both variable regions and the 5.8S subunit.
+
+\subsubsection*{Materials:}\label{materials-1}
+\addcontentsline{toc}{subsubsection}{Materials:}
+
+\begin{itemize}
+\tightlist
+\item
+  DNA extractions with DS
+\item
+  Control DNA sample
+\item
+  0.2 mL PCR tubes
+\item
+  P10 micropipette with tips
+\item
+  P20 micropipette with tips
+\item
+  P200 micropipette with tips
+\item
+  P1000 micropipette with tips
+\item
+  Master mix containing buffer (MgCl2, dNTPs, primers, polymerase
+  enzyme)
+\item
+  PCR tube centrifuge
+\item
+  Thermal cycler
+\end{itemize}
+
+\subsubsection*{Procedures:}\label{procedures-1}
+\addcontentsline{toc}{subsubsection}{Procedures:}
+
+We will run 20 µL PCR reactions 1. Add 18 µL of PCR master mix (contains
+PCR buffer, polymerase enzyme, dNTPs, and primers) to one PCR tube per
+sample. You can use the same pipette tip to aliquot master mix to PCR
+tubes. NOTE: Cap all PCR tubes when not in use to avoid
+cross-contamination. 2. Dilute DNA 1:10 (2 µl of DNA + 18 µL of DS) 3.
+Transfer 2 µL of your 1:10 diluted DNA to one PCR tube containing master
+mix. NOTE: Only one sample per tube and make sure to use a fresh tip for
+each sample to avoid cross-contamination. 4. Spin down your tubes before
+placing them in the thermal cycler. Run the reaction and observe the
+temperature cycles. After the reactions are finished, we will store your
+PCR products at -20 °C.
+
+\subsubsection*{PCR Troubleshooting after Gel
+Electrophoresis}\label{pcr-troubleshooting-after-gel-electrophoresis}
+\addcontentsline{toc}{subsubsection}{PCR Troubleshooting after Gel
+Electrophoresis}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  No amplification on any samples: check primers, polymerase, and other
+  reagents.
+\item
+  Positive control OK, but samples show no amplification: Try dilutions
+  of samples to check for inhibitors. Try a control with a primer set
+  for common organisms to check that you can PCR something. Check the
+  DNA amount.
+\item
+  Weak or multiple bands, smear: Mispriming from the incorrect program.
+  Check primer concentration: an imbalance of primers can lead to
+  multiple bands.
+\end{enumerate}
+
+\subsection*{Part III: Gel Electrophoresis
+Introduction}\label{part-iii-gel-electrophoresis-introduction}
+\addcontentsline{toc}{subsection}{Part III: Gel Electrophoresis
+Introduction}
+
+Gel electrophoresis is a technique used to separate and analyze DNA
+based on fragment sizes and to verify the success of PCR. Gel
+electrophoresis separates DNA molecules based on size by applying an
+electrical current to either side of the gel. Since DNA is negatively
+charged, we load our DNA on the positive side of the gel to allow it to
+run toward the positive side of the gel when power is applied. The
+agarose gel allows the separation of DNA fragments based on size as the
+polysaccharide matrix acts as a sieve allowing small fragments to
+migrate faster and larger fragments slower.
+
+Today, we will use gel electrophoresis to verify the success of our PCR
+reaction. We are looking for PCR product bands between
+
+\subsubsection*{Prep 1\% agarose gels for gel
+electrophoresis}\label{prep-1-agarose-gels-for-gel-electrophoresis}
+\addcontentsline{toc}{subsubsection}{Prep 1\% agarose gels for gel
+electrophoresis}
+
+To give enough time for the gel to cool and solidify, this task should
+be done in the first hour of the lab.
+
+\subsubsection*{Materials needed:}\label{materials-needed}
+\addcontentsline{toc}{subsubsection}{Materials needed:}
+
+\begin{itemize}
+\tightlist
+\item
+  Agarose
+\item
+  1X TAE (or TE, TBE, or SB) buffer to make gels and running buffer
+  Note: Use the same buffer for making and running the gel
+\item
+  SYBR Safe to visualize DNA
+\item
+  250 mL Erlenmeyer Flask
+\item
+  P20 micropipette with tips
+\item
+  PCR products
+\item
+  100 bp Ladder
+\item
+  Digital Balance
+\item
+  Weigh Boats
+\item
+  Gel rigs
+\item
+  Gel comb
+\item
+  Power source
+\end{itemize}
+
+\subsubsection*{Gel Preparation Protocol (Prep gel at least 20 minutes
+prior to
+use)}\label{gel-preparation-protocol-prep-gel-at-least-20-minutes-prior-to-use}
+\addcontentsline{toc}{subsubsection}{Gel Preparation Protocol (Prep gel
+at least 20 minutes prior to use)}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Measure 100 mL of 1x TE buffer in an Erlenmeyer flask.
+\item
+  Add 1 gram of agarose to the buffer.
+\item
+  Microwave for 30-second intervals.
+\item
+  Remove and swirl after each interval. If you still see un-melted
+  agarose, continue in 30-second intervals until completely melted. If
+  the agarose starts to boil, stop the microwave immediately to prevent
+  it from boiling over.
+\item
+  Once all the agarose is melted, let sit on the counter until it cools
+  enough to handle. Don't let it cool too long as it will solidify.
+\item
+  Set up the agarose mold and add a comb.
+\item
+  Once the agarose has cooled to the touch. Pour into the mold. Make
+  sure the agarose is approximately 1/3 to 1/2 way up the combs.
+\item
+  If bubbles are present, use a micropipette tip to draw them to the
+  sides of the gel.
+\item
+  Allow approximately 20 minutes for the gel to solidify and become
+  somewhat translucent.
+\item
+  Gently remove the comb.
+\item
+  Remove gel from casting mold and place in gel rig. The gel rig is
+  oriented to ``run to red.'' Place the wells created from the comb
+  towards the black electrode, opposite the red electrode.
+\item
+  Gels can be wrapped in saran wrap and stored for approximately 1 week.
+\end{enumerate}
+
+\subsubsection*{Gel Loading:}\label{gel-loading}
+\addcontentsline{toc}{subsubsection}{Gel Loading:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Fill the gel rig with 1X TAE (or equivalent) buffer until it covers
+  the surface of the gel.
+\item
+  Make a map of your samples in your gel.
+\item
+  Load Gel
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    PCR product without loading dye: Using a micropipettor add drops
+    (less than 1 μL) of loading dye to the plastic side of parafilm. Add
+    5 μL PCR product to loading dye. Swirl with pipette tip. Draw up the
+    product and proceed to step 4.
+  \item
+    PCR product with loading dye: Draw up 5 μL of PCR product using
+    micropipette.
+  \end{enumerate}
+\item
+  Dip pipette tip into the submerged well very carefully, without
+  piercing through the gel. Depress the pipette slowly. Too much
+  pressure or speed will force the sample out of the well. Without
+  releasing the plunger, draw out the pipette. If you release the
+  plunger, you will draw your sample back into the pipette.
+\item
+  Be sure to reserve one well per row for a standardized DNA ladder.
+\item
+  Run at 300 volts for about 15 minutes
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Keep an eye on the migration of your PCR product across the gel to
+    ensure it doesn't run off the other end of the gel.
+  \end{enumerate}
+\item
+  Visualize with UV light.
+\end{enumerate}
+
+\subsection*{Part IV: PCR Cleanup}\label{part-iv-pcr-cleanup}
+\addcontentsline{toc}{subsection}{Part IV: PCR Cleanup}
+
+In order to sequence PCR products, the primers and other contaminants
+must be removed. 1. Remove ExoSAP-IT™ reagent from --20 °C freezer and
+keep on ice throughout this procedure. 2. Mix 5 µL of a post-PCR
+reaction product with 2 µL of ExoSAPIT™ reagent for a combined 7 µL
+reaction volume. When treating PCR product volumes greater than 5 µL,
+simply increase the amount of ExoSAP-IT™ reagent proportionally. 3.
+Incubate at 37 °C for 15 minutes to degrade remaining primers and
+nucleotides. 4. Incubate at 80 °C for 15 minutes to inactivate
+ExoSAP-IT™ reagent. 5. The PCR product is now ready for use in DNA
+sequencing. Treated PCR products may be stored at --20°C until required
+
+\subsection*{Part V: Sanger Sequencing}\label{part-v-sanger-sequencing}
+\addcontentsline{toc}{subsection}{Part V: Sanger Sequencing}
+
+Your cleaned PCR product will be sent to an external facility for Sanger
+sequencing.
+
+\subsection*{Part VI: Identifying Species using DNA
+Barcode}\label{part-vi-identifying-species-using-dna-barcode}
+\addcontentsline{toc}{subsection}{Part VI: Identifying Species using DNA
+Barcode}
+
+\subsubsection*{Identify your sequence data using
+BLAST}\label{identify-your-sequence-data-using-blast}
+\addcontentsline{toc}{subsubsection}{Identify your sequence data using
+BLAST}
+
+To identify the sequence you've produced and determine if it represents
+the specimen you've sequenced and not some other contaminant, you can
+compare the sequence to a database of reference sequences. This is from
+the National Center for Biotechnology Information's (NCBI) Genbank
+database.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Go to NCBI: https://www.ncbi.nlm.nih.gov/.
+\item
+  Click on ``BLAST'' in the right-hand column under ``Popular
+  Resources''
+
+  \begin{itemize}
+  \tightlist
+  \item
+    BLAST = Basic Local Alignment Search Tool
+  \end{itemize}
+\item
+  Click on the Nucleotide BLAST image.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    There are numerous BLAST options depending on the data you are
+    working with. The two basics are nucleotides and amino acid
+    (=Protein) sequence BLASTS. The blastx and blastn options allow you
+    to convert these sequences into the complementary format.
+  \end{itemize}
+\item
+  Paste your sequence data into the big space under ``Enter Query
+  Sequence''.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Open your FASTA file and select your sequences. This is the DNA
+    sequence from the beginning of the ``\textgreater{}'' symbol, all
+    the way to the end (e.g., the beginning of the next
+    ``\textgreater{}'' symbol).
+  \end{itemize}
+\item
+  Under Choose Search Set you can keep it under ``Standard databases (nr
+  etc.)''.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    You can come back and re-perform the BLAST using the ``rRNA/ITS
+    databases''. After selecting this, choose ``Internal transcribed
+    spacer region (ITS) from Fungi type and reference material''. This
+    will be a much narrower database and set of comparisons, but the
+    confidence in the results providing a correct ID will be \emph{MUCH}
+    higher.
+  \end{itemize}
+\item
+  Select the ``BLAST'' button at the end.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Genbank will then begin to query your sequence against sequences in
+    the database. The top hit that comes back will be the sequence that
+    is most like your sequence based on several stats.
+  \item
+    Percent Identity = What percent of your sequence (query sequence) is
+    identical to the matched sequence.
+  \item
+    Query Cover = How much of the query sequence covers the matched
+    sequence.
+  \item
+    E value = The probability that this match occurred by chance in the
+    provided database.
+  \end{itemize}
+\item
+  Review the results.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    What is the ``top hit''?
+  \item
+    How much support is provided for this hit given the current database
+    used?
+  \item
+    What is the taxonomic ID of this result? What kind of fungi are
+    these?
+  \item
+    You may google the names and search under Wikipedia to get a better
+    understanding of these organisms and what is known.
+  \end{itemize}
+\end{enumerate}
+
+\subsection*{Part VII: Data Management - Spreadsheets and
+iNaturalist}\label{part-vii-data-management---spreadsheets-and-inaturalist}
+\addcontentsline{toc}{subsection}{Part VII: Data Management -
+Spreadsheets and iNaturalist}
+
+{[}Content for this part would continue from the protocols, but it's cut
+off in the text{]}
+
+\bookmarksetup{startatroot}
+
+\chapter*{Module 5: Tissue
+Preparation}\label{module-5-tissue-preparation}
+\addcontentsline{toc}{chapter}{Module 5: Tissue Preparation}
+
+\markboth{Module 5: Tissue Preparation}{Module 5: Tissue Preparation}
+
+\section*{Module 5.1 -- Tissue Preparation for Genome
+Sequencing}\label{module-5.1-tissue-preparation-for-genome-sequencing}
+\addcontentsline{toc}{section}{Module 5.1 -- Tissue Preparation for
+Genome Sequencing}
+
+\markright{Module 5.1 -- Tissue Preparation for Genome Sequencing}
+
+\subsection*{Instructor Laboratory Preparation
+Instructions}\label{instructor-laboratory-preparation-instructions-4}
+\addcontentsline{toc}{subsection}{Instructor Laboratory Preparation
+Instructions}
+
+\textbf{Materials and Equipment:} - Autoclave - Laminar Flow Hood (if
+available) - Cellophane - 100x15mm Petri Dishes - 60x15mm Petri Dishes -
+Agar, Bacteriological - Potato Dextrose Agar - Alcohol Lamp or Bunsen
+Burner - Forceps - Scalpel (make sure the handle is metal, as it will be
+flame sterilized and plastic will melt)
+
+\textbf{Sterility:} If you don't have a laminar flow hood, you may
+create a similar environment by setting up 2 torches over your work
+space. First, clean your work area with bleach, and/or ethanol. Set the
+torches facing each other with enough space to work underneath. Light
+the torches and pour media into plates under the flames.
+
+\textbf{Potato Dextrose Agar (PDA) Plates:} Fungi cultured from leaves
+on water agar are transferred to nutrient Potato Dextrose Agar (PDA)
+plates. We use one 60x15 mm Petri dish for each fungal isolate.
+
+\textbf{Potato Dextrose Agar Recipe:} Suspend 39 grams Agar,
+Bacteriological in 1000 ml (1 L) distilled water. Heat to boiling to
+dissolve the medium completely (in most cases, this step can be skipped
+as autoclaving will dissolve media). Sterilize by autoclaving at 15 lbs
+pressure (121°C) for 15 minutes.
+
+When the media is cool enough to handle with autoclave gloves, pour
+60x15mm plates in a sterile environment. Do not let it cool too long as
+the media will solidify. Each 60x15mm plate holds approximately 8 ml
+media. If plates will be used immediately smaller amounts of media can
+be poured into plates. If plates will be stored, use larger amounts.
+Store plates in the original Petri dish sleeve in the refrigerator
+(\textasciitilde4 °C) until use.
+
+\textbf{Cellophane Plates:} Fungal tissue can be harvested from
+cellophane plates. Cut cellophane discs slightly smaller than the Petri
+dish so that they lay flat on the PDA media. Using the bottom of the
+Petri dish as a template, draw a circle on the cellophane and the cut
+out discs on the inside of the line.
+
+Place cellophane discs into an autoclavable container with water. Place
+each cellophane disc individually into the water and try to stagger them
+in the water. This staggering step ensures that you can more easily
+remove the discs from the water. Cover your container with foil and
+sterilize by autoclaving at 15 lbs pressure (121°C) for 15 minutes.
+
+Working in your sterile environment, place one cellophane disc onto
+cooled PDA agar in 60x15mm plates. Use sterile forceps to transfer each
+cellophane disc onto the PDA plate. If you can't easily remove single
+discs, try the ``slide'' technique. Dip your forceps into the container
+with the discs until you touch a disc. Using the forceps as a probe (not
+pinched) slide the disc to the side of the container and up the side of
+the container. Often, you'll pull out one disc. Sometimes more than one
+disc will slide up, but it's usually easy to see the individual discs at
+this point. You can then use your forceps to pull out one disc. If you
+grasp one disc with your forceps, you can swirl it in the water in the
+container to dislodge any other discs that might be attached. Open the
+lid of the Petri dish and lay the cellophane onto the solid agar.
+
+\section*{Module 5.2 -- Tissue Preparation for Genome
+Sequencing}\label{module-5.2-tissue-preparation-for-genome-sequencing}
+\addcontentsline{toc}{section}{Module 5.2 -- Tissue Preparation for
+Genome Sequencing}
+
+\markright{Module 5.2 -- Tissue Preparation for Genome Sequencing}
+
+\subsection*{Purpose}\label{purpose-3}
+\addcontentsline{toc}{subsection}{Purpose}
+
+This protocol guides you through the culturing and harvesting of fungal
+tissue for molecular applications.
+
+\subsection*{Introduction}\label{introduction-4}
+\addcontentsline{toc}{subsection}{Introduction}
+
+The long-term goal of this endophyte isolation project is to develop a
+robust dataset of fungal genomes. We are piloting this project in our
+course to determine if whole genome extractions are possible using home
+laboratory techniques. If successful, the project will be expanded in
+several directions. Any data generated from this project will be made
+available on the Mycocosm Web Portal. These data can then be used by
+students and researchers to analyze fungal genomes. Beyond phylogenetic
+inferences and evolutionary reconstructions, a variety of research
+questions can be addressed using fungal genomic data. Genomic data can
+elucidate the functions of these fungi and contribute to an
+understanding of their biology. In addition, if this pilot project is
+successful, future studies will incorporate stress factors, such as
+salts, metals, or temperatures, to understand the morphological,
+physiological and genetic responses of fungi to environmental stressors.
+
+This pilot project is being conducted in collaboration with mycologists
+and mycology students across North America. In addition to Oregon State
+University, students from the University of Colorado, both Denver and
+Boulder, Denver Botanic Gardens, Colorado State University, and Duke
+University, are collecting tissue and isolating fungal endophytes from
+plant hosts. Genomic data will be generated by the Joint Genome
+Institute. This is the first project of its kind and the most
+comprehensive project investigating endophytes on a large geographic and
+taxonomic scale.
+
+To prepare your fungal tissue for full genome sequencing, you will
+transfer some mycelia to a Petri dish with cellophane.
+
+Once fungal endophytes have been cultured from host plants, these fungal
+cultures will be identified using ITS (the fungal barcode region)
+sequencing. The ITS sequence will provide some level of taxonomic
+placement of your isolate, perhaps even to species. This ITS
+identification step also allows the determination of which fungal
+cultures to submit for full genome sequencing.
+
+\subsection*{Sub-Culturing on
+Cellophane}\label{sub-culturing-on-cellophane}
+\addcontentsline{toc}{subsection}{Sub-Culturing on Cellophane}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Clean your workspace as described previously. Work under flames or in
+  a laminar flow hood if available.
+\item
+  Label your Cellophane lined Petri Dish appropriately.
+\item
+  Sterilize implements (forceps and scalpel).
+\item
+  Scrape mycelia from PDA plates that you have been growing. Be sure to
+  avoid transferring any media as much as possible.
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Leaving the assay plate on the bench space, remove the parafilm of
+    the inoculation plate and slightly crack open the lid using your
+    non-dominant hand.
+  \item
+    Insert your forceps into the crack of the Petri dish and attempt to
+    sample some mycelium.
+
+    \begin{enumerate}
+    \def\labelenumiii{\roman{enumiii}.}
+    \tightlist
+    \item
+      If you are unable to remove mycelia with your forceps, use your
+      scalpel to remove mycelia with the least amount of agar possible.
+    \end{enumerate}
+  \end{enumerate}
+\item
+  Transfer the mycelia to a Petri dish with cellophane.
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Carefully remove the chunk of agar. Replace the lid. Slide the
+    sample plate away. Slide a cellophane plate towards you.
+  \item
+    Crack open the cellophane plate using your non-dominant hand, and
+    carefully insert the forceps with the agar and mycelium.
+  \item
+    To deposit the agar onto the PDA agar, submerge the forceps into the
+    agar on the plate. This should force the agar and mycelium from your
+    forceps, onto the PDA agar.
+  \item
+    Pull your forceps straight out to leave the agar and mycelium on the
+    plate.
+  \item
+    The mycelia will be sticky, so you might need to scrape it off using
+    sterile implements. If you're using forceps to transfer, use the
+    sterilized scalpel to scrape mycelia off the forceps onto cellophane
+    in the Petri dish.
+  \end{enumerate}
+\item
+  Seal Petri dish with parafilm.
+\item
+  Allow fungi to fill the cellophane.
+\item
+  Repeat this process with all fungal isolates that will be sent for
+  genome sequencing.
+\end{enumerate}
+
+\subsection*{Harvesting Mycelia for Genome Sequencing
+Instructions}\label{harvesting-mycelia-for-genome-sequencing-instructions}
+\addcontentsline{toc}{subsection}{Harvesting Mycelia for Genome
+Sequencing Instructions}
+
+Full genome sequencing requires large amounts of tissue to be
+successful. The tissue grown on the cellophane plates will be harvested,
+dried, and sent for genome sequencing.
+
+\subsection*{Student Lab Supplies}\label{student-lab-supplies-1}
+\addcontentsline{toc}{subsection}{Student Lab Supplies}
+
+\begin{itemize}
+\tightlist
+\item
+  1.5 ml Eppendorf tubes
+\item
+  Sharpie
+\item
+  Scalpel
+\item
+  Forceps
+\item
+  Silica
+\item
+  Probe
+\end{itemize}
+
+\subsection*{Overview}\label{overview-1}
+\addcontentsline{toc}{subsection}{Overview}
+
+The goal of this supplement is to prepare fungal tissue for DNA
+extraction and sequencing. The cellophane overlay method was implemented
+to obtain pure tissue conducive to clean DNA extractions (Fig. 1).
+
+Figure 1 - Using aseptic techniques (step 1), prepare agar plates and
+arrange a sterile location for transfer. Add one disk of sterile
+cellophane to each plate (step 2) and inoculate with the fungal isolate,
+avoiding the transfer of residual agar, in the center of the disk (step
+3). Allow the fungus to grow on top of the cellophane in a dark
+incubator at 26°C(step 4). Take the initial weight of the empty
+Eppendorf tube. After the cellophane disk is covered, peel the tissue to
+remove it and place it in the empty Eppendorf tube. Place the open tube
+in a jar with silica gel in the bottom. Cover the jar. Allow the tissue
+to dry for 4-7 days (step 5). Once the tissue is dry, close the tube and
+take the final weight. 1-2 grams of tissue should be recovered. Store
+the sample in a clean place. It is now ready for in-house DNA extraction
+or shipping. Figure created in BioRender. Knight, C. (2025)
+https://BioRender.com/s61a377
+
+\subsection*{Instructions}\label{instructions-2}
+\addcontentsline{toc}{subsection}{Instructions}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  You will be harvesting fungal tissue from the cellophane PDA petri
+  dishes.
+\item
+  Use a laminar flow hood or set up flames to create a sterile
+  environment. Clean your sterile area.
+\item
+  Light your flame source. Dip your harvesting implement(s) (scalpel,
+  forceps, and/or probe) into alcohol. Flame your implements and let it
+  cool.
+\item
+  Once cool, open your petri dish lid, and lay this facing upward on
+  your workspace. Remove fungal tissue by scraping from cellophane. In
+  some cases, the entire fungal tissue will easily peel from the
+  cellophane. In some cases, the mycelia will be stuck to the
+  cellophane. In this case, you will need to use some combination of
+  instruments to remove the fungi from the cellophane (Figs 2 and 3,
+  Videos 1 and 2).
+\item
+  Place Eppendorf tubes into a jar filled with silica. The silica will
+  allow you to stand up the tubes in the jar. Keep the lids of the
+  Eppendorf tubes open to allow the tissue to dry.
+\item
+  Seal silica-filled jar with the lid. Allow the tissue to dry for 5-10
+  days.
+\item
+  Once the tissue is dry, remove the Eppendorf tubes from the silica jar
+  and close the lids.
+\item
+  Proceed to the Sample submission module.
+\end{enumerate}
+
+\bookmarksetup{startatroot}
+
+\chapter*{Module 6: Sample Submission}\label{module-6-sample-submission}
+\addcontentsline{toc}{chapter}{Module 6: Sample Submission}
+
+\markboth{Module 6: Sample Submission}{Module 6: Sample Submission}
+
+\section*{Module 6.1 -- Myco-Ed Sample Submission
+SOP}\label{module-6.1-myco-ed-sample-submission-sop}
+\addcontentsline{toc}{section}{Module 6.1 -- Myco-Ed Sample Submission
+SOP}
+
+\markright{Module 6.1 -- Myco-Ed Sample Submission SOP}
+
+\subsection*{Overview}\label{overview-2}
+\addcontentsline{toc}{subsection}{Overview}
+
+Use this document to submit fungal samples to Arizona Genomics Institute
+(AGI) for DNA extraction.
+
+\subsection*{Definitions}\label{definitions}
+\addcontentsline{toc}{subsection}{Definitions}
+
+\begin{itemize}
+\tightlist
+\item
+  JGI = Joint Genomics Institute
+\item
+  AGI = Arizona Genome Institute
+\end{itemize}
+
+\subsection*{Associated Documents}\label{associated-documents}
+\addcontentsline{toc}{subsection}{Associated Documents}
+
+MycoEd Metadata Form
+
+\subsection*{Process Steps}\label{process-steps}
+\addcontentsline{toc}{subsection}{Process Steps}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Create a JGI Single Sign on Account
+\item
+  Email photos of the live tissue you intend to send AGI before
+  collection to JTALAG@email.arizona.edu and kwbarry@lbl.gov.
+\item
+  Make a copy of the MycoEd Metadata Form
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Click on MycoEd Metadata Form link
+  \item
+    Under file, select Make a Copy
+  \item
+    Rename your new copy {[}University{]}{[}Instructor Last
+    Name{]}{[}MycoEd Metadata{]}{[}Date{]}
+  \end{enumerate}
+\item
+  Fill out your copy of the MycoEd Metadata Form
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Professor is the instructor for the class and their email address
+  \item
+    Name of the University/Institution is your University/Institution
+  \item
+    Date submitted/shipped is the date you ship the samples to AGI
+  \item
+    JGI proposal name \& number is DS 509937 (already provided)
+  \end{enumerate}
+\item
+  Fill out Sample Table
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Enter requested metadata into the table
+  \item
+    Use one row per sample/tube
+  \item
+    Insert additional rows if needed
+  \item
+    Columns with gray field headers, B and D, will be filled out by JGI
+  \item
+    For Column C, Sample Name - please use below convention for naming:
+    {[}University{]}{[}Plant{]}{[}Plant tissue{]} Metagenome {[}Sample
+    ID{]}
+  \item
+    Column G is only needed if you are sending more than 22 samples
+  \item
+    Student is the full name of student that collected the sample and
+    their email address
+  \item
+    Columns with Yellow Header, X-AF, will be filled out by AGI after
+    DNA extraction
+  \end{enumerate}
+\item
+  Email form to AGI \& JGI
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Once all required metadata is provided, download a copy to excel
+  \item
+    Email a copy to Jayson at (jtalag@ag.arizona.edu ) and Kerrie
+    (kwbarry@lbl.gov).
+  \item
+    Include in the subject line of your email ``MyCoEd 509937''
+    {[}Professor's Name{]}{[}University/Institution{]} ``Sample
+    Submission''
+  \item
+    Include in your email your name, your college/university, the exact
+    name of your samples (column D) that are ready to ship to AGI (and
+    the rows in this sheet).
+  \item
+    Wait for approval/confirmation from AGI \& JGI.
+
+    \begin{enumerate}
+    \def\labelenumiii{\roman{enumiii}.}
+    \tightlist
+    \item
+      If needed make requested changed and email updated copy
+    \end{enumerate}
+  \end{enumerate}
+\item
+  Prepare samples for shipment
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    \begin{enumerate}
+    \def\labelenumiii{\Alph{enumiii})}
+    \tightlist
+    \item
+      Print out (in Landscape orientation) the paper copy of the Myco-Ed
+      Metadata Form and put it with the shipment and also email the
+      completed sheet to: JTALAG@email.arizona.edu, and kwbarry@lbl.gov
+    \end{enumerate}
+  \item
+    Email FEDEX tracking \# when your shipment is picked up.
+  \item
+    Ship samples to Jayson Talag 1657 E. Helen St. The University of
+    Arizona Tucson, AZ 85721 United States Ph: 520-626-9596
+  \end{enumerate}
+\end{enumerate}
+
+\subsection*{High Molecular DNA Extraction
+Protocol}\label{high-molecular-dna-extraction-protocol}
+\addcontentsline{toc}{subsection}{High Molecular DNA Extraction
+Protocol}
+
+The AGI uses the following high molecular DNA extraction protocol:
+
+High molecular weight DNA is extracted from (biomass) using the protocol
+of Doyle and Doyle (1987) with minor modifications. Flash-frozen biomass
+is ground to a fine powder in a frozen mortar with liquid nitrogen
+followed by very gentle extraction in 2\% CTAB buffer (that includes
+proteinase K, PVP-40 and beta-mercaptoethanol) for 30min to 1h at 50 °C.
+After centrifugation, the supernatant is transferred to a new tube,
+treated with 200ul 50mM PSMF for 10 minutes at room temperature then
+gently extracted twice with 24:1 Chloroform : Isoamyl alcohol. The upper
+phase is transferred to a new tube and 1/10th volume 3 M Sodium acetate
+is added, gently mixed, and DNA precipitated with iso-propanol. DNA
+precipitate is collected by centrifugation, washed with 70\% ethanol,
+air dried for 5-10 minutes and dissolved thoroughly in elution buffer at
+room temperature followed by RNAse treatment. DNA purity is measured
+with Nanodrop, DNA concentration measured with Qubit HS kit (Invitrogen)
+and DNA size is validated by Femto Pulse System (Agilent).
+
+\bookmarksetup{startatroot}
+
+\chapter*{Module 7: Genomic Analyses}\label{module-7-genomic-analyses}
+\addcontentsline{toc}{chapter}{Module 7: Genomic Analyses}
+
+\markboth{Module 7: Genomic Analyses}{Module 7: Genomic Analyses}
+
+\section*{Module 7.1 -- Sexual Reproduction in Ascomycota Genomic
+Analysis}\label{module-7.1-sexual-reproduction-in-ascomycota-genomic-analysis}
+\addcontentsline{toc}{section}{Module 7.1 -- Sexual Reproduction in
+Ascomycota Genomic Analysis}
+
+\markright{Module 7.1 -- Sexual Reproduction in Ascomycota Genomic
+Analysis}
+
+\subsection*{Introduction}\label{introduction-5}
+\addcontentsline{toc}{subsection}{Introduction}
+
+Fungal sexual reproduction is complicated. Unlike animals, where usually
+only 2 opposite mates are observed, some fungi can have hundreds to
+thousands of different mates (Casselton \& Olesnicky, 1998)! Beyond
+granting the ability to mix genetic material, sexual reproduction has
+additional importance in fungi since reproductive structures are often
+more hearty and capable of overwintering, meaning their presence can
+seriously complicate disease management practices. Undergoing sexual
+reproduction also provides an important cleaning mechanism for some
+fungi, enabling them to treat their genomes and remove transposons using
+processes like Repeat Induced Point mutations, or RIP (Cambareri et al.,
+1991). In this exercise, we will learn how to determine mating types in
+Ascomycota using MycoCosm. Compared to most other fungi, Ascomycetes
+have a relatively simple mating system, where only two types are
+observed. Here, we will focus on the genus Neurospora where the mating
+types are simply named ``A'' and ``a'' (Metzenberg \& Glass, 1990).
+
+What we know for this exercise: Several mating type-related genes have
+already been identified. These control the initiation of sexual
+reproduction. They are mostly transcription factors, which you can think
+of as highly specialized workers: each has a unique `skillset' (genes)
+that they control (turn on or off) to perform some task (in this case,
+regulate reproduction-related machinery).
+
+How are mating types determined in fungi? Are the same genes found in
+both mating types, but regulated differently? Or, are there genes unique
+to each mating type that are responsible for this? Using comparative
+genomic approaches, let's try and find out!
+
+Beginning with known mating type-related genes collected from NCBI, we
+will use MycoCosm to branch out into related fungi, identify opposite
+mates, then formulate hypotheses and learn about the genetics underlying
+fungal sexual regulation. This approach can be directly applied to
+predict mating types in other fungi, or used to explore presence/absence
+of other types of genes!
+
+\subsection*{References:}\label{references}
+\addcontentsline{toc}{subsection}{References:}
+
+\begin{itemize}
+\tightlist
+\item
+  Casselton, L.A., Olesnicky, N.S., 1998. Molecular Genetics of Mating
+  Recognition in Basidiomycete Fungi. Microbiol Mol Biol Rev., 62(1):
+  55--70. doi: 10.1128/mmbr.62.1.55-70.1998
+\item
+  Cambareri, E.B., Singer, M.J., Selker, E.U., 1991. Recurrence of
+  repeat-induced point mutation (RIP) in Neurospora crassa. Genetics,
+  127(4):699-710. doi: 10.1093/genetics/127.4.699.
+\item
+  Metzenberg, R.L., Glass, N.L., 1990. Mating type and mating strategies
+  in Neurospora. Bioessays. 1990 Feb;12(2):53-9. doi:
+  10.1002/bies.950120202.
+\end{itemize}
+
+\subsection*{Finding mat A}\label{finding-mat-a}
+\addcontentsline{toc}{subsection}{Finding mat A}
+
+\subsubsection*{Locate mat A locus in the Neurospora crassa OR74A
+genome}\label{locate-mat-a-locus-in-the-neurospora-crassa-or74a-genome}
+\addcontentsline{toc}{subsubsection}{Locate mat A locus in the
+Neurospora crassa OR74A genome}
+
+To guide our exploration, let's create a testable hypothesis. Being
+informative and straightforward, let's hypothesize that mating type is
+determined by the presence/absence of specific genes. Given what we know
+about mating in Neurospora, a good starting point would be the mat A
+locus. It is composed of 3 genes, mat A-1, mat A-2, and mat A-3.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Start by visiting NCBI (https://www.ncbi.nlm.nih.gov/) and collecting
+  a reference sequence. Go to the nucleotide database and search for
+  ``Neurospora crassa OR74A mating-type protein A-1 (matA-1), mRNA''.
+\item
+  Find the matching record, ``Neurospora crassa OR74A mating-type
+  protein A-1 (matA-1), mRNA'' and collect the corresponding nucleotide
+  sequence by clicking the `FASTA' link (see below), then select and
+  copy the sequence.
+\item
+  Let's find the location of this gene in the genome! Go to the Neucr2
+  MycoCosm portal (https://mycocosm.jgi.doe.gov/Neucr2) and search for
+  it using the BLAST tool.
+\item
+  Click the BLAST tab, paste your sequence into the query sequence box.
+  Using blastn, select the filtered model transcripts set and click the
+  `Run blastn' button.
+\item
+  You should see two hits, each shown in a separate row.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The first column shows the portal ID and transcript ID (since we are
+    searching against nucleotides) of the hit. Portal IDs are unique
+    identifiers assigned to each genome. For example, Neucr2 is the
+    portal ID for Neurospora crassa OR74A, and it can be used to access
+    the portal (e.g.~https://mycocosm.jgi.doe.gov/Neucr2). This unique
+    identifier is also displayed across various portal pages to label
+    data from a particular organism.
+  \item
+    The second column shows an alignment of that sequence against your
+    query, which is helpful for seeing how well hits cover your query
+    sequence.
+  \item
+    The score and EValue columns are also useful when assessing hit
+    quality. Higher scores are better, and conversely, lower e-values
+    are better.
+  \end{itemize}
+\item
+  The first hit looks better. You can tell because the hit covers more
+  of our query and the score is higher. Let's explore the protein page
+  for the best hit and look for evidence that this is actually mat A-1.
+  Click on the identifier in the first column to access this page.
+\item
+  Let's explore the genome browser by clicking on the genome coordinates
+  at the top of the page, in the `Location' section (Above image, red
+  arrow).
+\item
+  After loading is complete (this might take a little while, lots of
+  data are on this browser!), click on the -10x in the top middle
+  portion of the page to get a bigger view (see image below).
+\item
+  The genome browser will show you information we have available for a
+  particular stretch of DNA sequence in your assembly. It contains
+  details on whether we observed the same (or similar) stretch of DNA in
+  a related organism (Vista tracks), predicted genes in that
+  region/locus, and any other information we have. Other information can
+  include messenger RNA expression (mRNA) levels, locations of blast
+  hits for proteins from other fungi, and more! All of these other
+  tracks can provide valuable information to understand fungal biology
+  as well as evidence for validating gene predictions.
+\item
+  You just found the mat A locus in N. crassa! In the position box in
+  the upper left corner, you can see your location:
+  Supercontig\_1:1853928-1868957. Remember, if you are lost, every
+  MycoCosm page has a HELP! tab you can access from the menu bar.
+\item
+  Now that we are at the mating type locus, let's look at the genes. In
+  this case, genes were predicted at the Broad Institute instead of the
+  JGI. Click on the small `+' to the left of the `BroadModels' track to
+  view them.
+\item
+  Note that some regions have 2 overlapping genes. These are called
+  `isoforms', which are variants of the same gene where RNA can be
+  sliced in different ways to produce alternative transcripts and
+  proteins (these are rare in fungi).
+\item
+  In this region of the genome, you can see 5 genes (2 with isoforms).
+  To learn more about what these genes might do, we can look at their
+  protein pages. You can get to the protein page by clicking on the
+  gene, then selecting `feature' web page (or center mouse click on the
+  gene to open it in a new tab). For convenience, here are links to the
+  protein pages for all 5 genes in this region: NCU01961T0, NCU01960T0,
+  NCU01959T0, NCU01958T0, NCU01957T0.
+\item
+  Using the information on the protein page, can you find mat A-2 and
+  mat-A3?
+\item
+  At the mating type locus, do you notice anything interesting when
+  exploring the read depth coverage plots (pink tracks) from related
+  Neurospora genomes?
+\item
+  Based on this information, let's revisit our hypothesis about how
+  fungal mating type is determined. Given that many related Neurospora
+  crassa genomes are completely missing this region, this appears to
+  support our hypothesis that fungal mating type is determined by gene
+  presence/absence, and specifically suggests that this locus might be
+  what we are looking for! This would mean that the fungi without this
+  locus are of the opposite mating type. Let's continue to test this
+  hypothesis and see if it holds up to further scrutiny!
+\end{enumerate}
+
+\subsubsection*{Exploring mating type in related
+Neurospora}\label{exploring-mating-type-in-related-neurospora}
+\addcontentsline{toc}{subsubsection}{Exploring mating type in related
+Neurospora}
+
+Let's try to find mat A genes in related genomes. We can start by
+selecting a representative gene and then searching gene families present
+on the mcl clusters page.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Go to the MCL clusters tab. The MCL page displays information on gene
+  families present across a set of related genomes. You can use it to
+  filter gene families and identify those that fit specific criteria you
+  are interested in.
+\item
+  We can also use this page to search for specific proteins of interest.
+  Using the protein ID you gathered earlier from either mat A-2 or mat
+  A-3, in the `filter by keywords' field, type: portalID.proteinId
+  (e.g.~Neucr2.487), then hit enter.
+\item
+  You should see a single cluster appear. It looks like this gene is
+  missing from one of these genomes! Actually, all 3 genes from the mat
+  A locus are missing in this lineage. This is not surprising given what
+  we saw earlier on the genome browser (Step 14 from the `Finding mat A'
+  section).
+\item
+  Hover over the lineage name and you will get a clue as to why this
+  might be. Specifically, this strain is named Neurospora tetrasperma
+  FGSC 2509 mat a, telling us that the organism lacking these genes is
+  the opposite mate!
+\item
+  You can take a closer look at gene families by clicking on the cluster
+  number to the left of the donut plots (see above figure). This page
+  will show you details on all genes (rows) that are part of this gene
+  family. Click on the synteny view and make some observations.
+\item
+  Genes rearrange all the time in fungi, leading to poor conservation of
+  gene neighborhoods. As you can see from this view, the genes
+  surrounding the mating type locus are an exception, where across all
+  species they tend to keep the same order. Feel free to head back to
+  the full mcl clustering run (here) and click around on some families
+  to see how different it really is!
+\end{enumerate}
+
+\subsubsection*{Finding mat a}\label{finding-mat-a-1}
+\addcontentsline{toc}{subsubsection}{Finding mat a}
+
+Let's repeat this exercise with the mat a locus to confirm our
+suspicions, but instead of using nucleotide sequence, let's try another
+approach: using protein sequence.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Start by searching the NCBI protein database for ``mating-type protein
+  Mat a-1, partial Neurospora discreta'' and collect the protein
+  sequence.
+\item
+  Let's find it on the mat a genome portal you found earlier for N.
+  tetrasperma strain FGSC 2509,
+  (https://mycocosm.jgi.doe.gov/Neute\_mat\_a1).
+\item
+  Can you find the corresponding protein using blastp against the
+  `Neurospora tetrasperma mat a v1.0 filtered gene models (proteins)'
+  set?
+\item
+  The best hit is to N. tetrasperma protein ID 124723, can you explain
+  why?
+\item
+  Let's revisit the Neucr2 mcl clustering page and search for this,
+  again by typing portalID.proteinID (e.g.~Neute\_mat\_a1.124723) in the
+  search field.
+\item
+  Do you notice anything different about this cluster compared to the
+  mat-A cluster? Explore this family to learn more - click the on the
+  cluster number (\#771) and take a look at the synteny view again.
+\item
+  It looks like our mat a gene is found in a region that is not present
+  in any of the others, which are all the opposite mating type (mat A)!
+\item
+  With this information, we can say that all our current evidence
+  supports our hypothesis that fungal mating types are driven by
+  presence/absence of specific genes, mat a and A in particular!
+\end{enumerate}
+
+\subsubsection*{Annotating mating type loci in Myco-Ed (and related)
+genomes}\label{annotating-mating-type-loci-in-myco-ed-and-related-genomes}
+\addcontentsline{toc}{subsubsection}{Annotating mating type loci in
+Myco-Ed (and related) genomes}
+
+Let's apply what you learned! Pick a MycoEd genome from our group portal
+- can you identify its mating type and find the mating type locus?
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Identify mating type genes from a related fungus on NCBI and go
+  through this exercise again on your own. Note that not all mating type
+  genes will be the same as those from N. crassa. Consequently, using
+  the mat a or A genes you identified earlier as bait might not work to
+  fish out mating type genes in other groups of fungi. You will have to
+  find these on your own!
+\item
+  If you cannot find a gene to use as bait from NCBI, try using the
+  search function on MycoCosm! Try searching for something like
+  `mating-type' and see what sorts of annotations come up for the
+  resulting list of genes.
+\item
+  Go through the same exercise to search mcl clusters. Do you see a
+  similar pattern to what we observed in N. crassa?
+\item
+  For these MycoEd genomes, you can add your own text to describe what
+  you discovered about any particular gene! This will be of great value
+  to the scientific community, especially those studying fungal sexual
+  reproduction.
+\item
+  Once you have identified the mating type locus, go to the
+  corresponding protein page and click `view/modify manual annotation'.
+\item
+  Next, add your description! You should see `add/edit' buttons on the
+  next page. For the `Description' attribute, select `add', then enter
+  details on what you discovered about that gene and hit `save item'.
+  For example, if you found mat A-1, a useful description would be
+  `mating type protein A-1'.
+\item
+  Your name will be associated with your entry and by the following day,
+  it will become searchable across the portal! This means anyone who
+  visits this genome can easily find mating type loci, and know who to
+  thank (you!) for this work.
+\item
+  Using your exploration of MCL clusters, you might also be able to
+  characterize mating type loci in related fungi. If you do, please
+  share the identified portal, protein ID, and your text description
+  with your instructor. In addition, please share your name and email
+  address so we can attribute these discoveries to you!
+\end{enumerate}
+
+\section*{Module 7.2 -- Fungal Natural Product Production Genomic
+Analysis}\label{module-7.2-fungal-natural-product-production-genomic-analysis}
+\addcontentsline{toc}{section}{Module 7.2 -- Fungal Natural Product
+Production Genomic Analysis}
+
+\markright{Module 7.2 -- Fungal Natural Product Production Genomic
+Analysis}
+
+\subsection*{Introduction}\label{introduction-6}
+\addcontentsline{toc}{subsection}{Introduction}
+
+Fungi are famous producers of natural products that become new drugs,
+including anticancer agents (Kumar et al., 2019), cholesterol-reducing
+products (Seenivasan et al., 2008), and a variety of diverse
+antibiotics. One of the most famous examples is penicillin, the first
+antibiotic. Discovered by Alexander Fleming in 1929 as a fungal
+contaminant on his bacterial cultures, his observation that the fungus
+(Penicillium rubrum; reclassified later as P. chrysogenum) could kill
+bacteria (Fleming, 1929) led to the development of penicillin, saving
+countless lives during World War II and beyond. Like most of these
+interesting fungal products, they are secondary metabolites. Secondary
+metabolites are typically produced by organisms to provide a competitive
+advantage in a given environment (e.g., antibacterials for protection,
+toxins for causing disease, etc).
+
+Core to the production of any secondary metabolite is a `backbone' gene.
+These backbone genes can be very strange, such as Non-Ribosomal Peptide
+Synthetases (NRPSs), which are specialized machines that enable the
+formation of non-standard products. This can even include amino acids
+outside of the standard 20 essential for life! NRPSs are large proteins
+that contain repeated modules, each including an Adenylation (A),
+Peptide Carrier Protein (PCP), and condensation (C) domain (Streiker et
+al., 2010). Combined, these allow the NRPS to add amino acids to a
+growing chain, producing unique molecules. These molecules are then
+tweaked by decorating enzymes (Keller, 2019) that modify whatever the
+backbone gene produces, allowing fungi to produce a multitude of bizarre
+molecules that can wreak havoc in other cells! Decorating genes are
+physically located next to backbone genes, allowing us to define
+Biosynthetic Gene Clusters (BGCs) responsible for the production of
+specific metabolites.
+
+In this exercise, let's follow up on Alexander Fleming's discovery and
+find the BGC that controls penicillin production. We will then use
+comparative genomic approaches to discover other fungi that are likely
+producers of penicillin and variants thereof (which could be candidates
+for creating exciting new antibiotics), then apply our knowledge to
+characterize new, unexplored BGCs!
+
+What we know for this exercise: From Fleming's work, we know penicillin
+is produced by Penicillium chrysogenum. An NRPS is responsible for
+penicillin production and in P. chrysogenum the penicillin BGC contains
+three genes: pcbAB, pcbC, and penDE. Which of these is the backbone
+gene? Can we find it in related Penicillium genomes? Can you identify
+any fungi that might produce novel penicillin variants? Using
+comparative genomics approaches, let's begin by identifying the
+penicillin BGC in P. chrysogenum, then formulate hypotheses and learn
+about its distribution across fungi. The same approach can be used to
+characterize diversity and distribution of other BGCs, even ones where
+we don't know the metabolite they produce yet!
+
+\subsection*{References}\label{references-1}
+\addcontentsline{toc}{subsection}{References}
+
+\begin{itemize}
+\tightlist
+\item
+  Kumar, P., Singh, B., Thakur, V., Thakur, A., Thakur, N., Pandey, D.,
+  Chanda, D., 2019. Hyper-production of taxol from Aspergillus
+  fumigatus, an endophytic fungus isolated from Taxus sp. of the
+  Northern Himalayan region. Biotechnol Rep (Amst). doi:
+  10.1016/j.btre.2019.e00395
+\item
+  Seenivasan, A., Subhagar, S., Aravindan, R., Viruthagiri, T., 2008.
+  Microbial Production and Biomedical Applications of Lovastatin. Indian
+  J Pharm Sci. 2008, doi: 10.4103/0250-474X.49087
+\item
+  Fleming, A., 1929. On the Antibacterial Action of Cultures of a
+  Penicillium, with Special Reference to their Use in the Isolation of
+  B. influenzæ. Br J Exp Pathol. 1929 Jun; 10(3): 226--236
+\item
+  Strieker, M., Tanovic, A., Marahiel, M.A., 2010. Nonribosomal peptide
+  synthetases: structures and dynamics. Current Opinion in Structural
+  Biology 2010, 20:234--240
+\item
+  Keller, N., 2019. Fungal secondary metabolism: regulation, function
+  and drug discovery. Nature Reviews Microbiology, 17(3): 167--180. doi:
+  10.1038/s41579-018-0121-1
+\end{itemize}
+
+\subsection*{Finding the Penicillin Biosynthetic Gene
+Cluster}\label{finding-the-penicillin-biosynthetic-gene-cluster}
+\addcontentsline{toc}{subsection}{Finding the Penicillin Biosynthetic
+Gene Cluster}
+
+\subsubsection*{Locate the known cluster in P.
+chrysogenum}\label{locate-the-known-cluster-in-p.-chrysogenum}
+\addcontentsline{toc}{subsubsection}{Locate the known cluster in P.
+chrysogenum}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  To start, let's retrieve a sequence from NCBI that can help us locate
+  the Penicillin BGC. We know there are 3 genes in this cluster: pcbAB,
+  pcbC, and penDE. Go to NCBI (https://www.ncbi.nlm.nih.gov/) and search
+  the `Nucleotide' database for pcbAB
+\item
+  Select the first record, titled ``Penicillium chrysogenum PcbC (pcbC)
+  gene, partial cds; pcbC-pcbAB intergenic spacer, complete sequence;
+  and PcbAB (pcbAB) gene, partial cds''. This corresponds mostly to the
+  DNA in between pcbC and pcbAB, which will be a great tool for
+  identifying very similar regions in other genomes!
+\item
+  Click the `FASTA' button to see the nucleotide sequence, then copy the
+  sequence.
+\item
+  Now, let's find this region in the Penicillium chrysogenum genome in
+  MycoCosm using BLAST. Here, we can browse the genome and conduct
+  comparative analyses across related fungi. Go to the Penicillium
+  chrysogenum genome portal (https://mycocosm.jgi.doe.gov/Pench1) and
+  click on the BLAST tab.
+\item
+  Paste in your nucleotide sequence and conduct a blastn analysis
+  against the assembly. Remember, we are using the sequence that mostly
+  falls between two genes here to locate our region of interest, so we
+  need to search the assembly instead of the available gene model sets.
+\item
+  You should see a single hit! Click on the coordinates to view this
+  region of the genome.
+\item
+  Of course, we are searching for DNA that is mostly found in between
+  these penicillin-related genes. Click -10x to get a bigger view of
+  this locus.
+\item
+  Excellent! You just found the Penicillin Biosynthetic Gene Cluster
+  (scaffold\_1:6815459-6827128)! You will notice that there is no
+  nucleotide conservation with the genomes presented in the Vista tracks
+  at the top of the page. Let's expand the GeneCatalog by clicking on
+  the `+' next to the track and look at a few of these genes.
+\item
+  In this region of the genome, you can see 4 genes. To learn more about
+  what these might do, we can look at their protein pages. You can get
+  to the protein page by clicking on the gene, then selecting `feature'
+  web page (or center mouse click on the gene to open it in a new tab).
+  For convenience, here are links to the protein pages for all 4 genes
+  in this region, named by their protein IDs (which are the main
+  identifiers used within MycoCosm): 67014, 32451, 67324, 22458
+\item
+  As the backbone gene is central to the production of a specific
+  secondary metabolite, let's use it to discover other fungi that might
+  make similar products! On the 22458 protein page, click on the green
+  bar underneath the domain information section (see figure immediately
+  above). Copy this sequence to your clipboard, we will use it in the
+  next section.
+\end{enumerate}
+
+\subsubsection*{Find candidate Penicillin BGCs in related
+fungi}\label{find-candidate-penicillin-bgcs-in-related-fungi}
+\addcontentsline{toc}{subsubsection}{Find candidate Penicillin BGCs in
+related fungi}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  With our NRPS bait in hand, let's try to fish out similar genes in
+  related fungi! But before we do, do you have any hypotheses about how
+  often it will be found?
+\item
+  On MycoCosm, you can view individual genomes, or analyze groups of
+  them simultaneously. There are several group page categories,
+  including: Project groups, which contain genomes associated with
+  specific research projects. For example, our own MycoEd project group!
+  EcoGroups, which contain genomes of organisms with shared ecology,
+  e.g.~plant pathogenic fungi. PhyloGroups, which contain genomes of
+  taxonomically related organisms.
+\item
+  You can access groups either using the Groups pulldown menu on the
+  MycoCosm homepage, or if you know the group of interest you can type
+  it into the url. For this exercise, let's visit the Penicillium
+  phylogroup page.
+\item
+  You can see we have over 70 Penicillium genomes available for
+  comparative analysis! Genomes are colored differently based on their
+  status, red = private, only available to you and your colleagues,
+  white = publicly available, green = published.
+\item
+  With so many genomes available, we have a great dataset with which we
+  can test our hypothesis that all Penicillium produce penicillin! There
+  are several routes we can take to explore this, but for this exercise
+  let's again use BLAST. On group pages, this tool allows us to search
+  all these genomes simultaneously. Click on the BLAST tab to get
+  started.
+\item
+  Paste the protein sequence you copied from the P. chrysogenum
+  Penicillin NRPS into the query sequence box. Select the blastp
+  alignment program and the Gene Catalog protein database. Confirm that
+  your search criteria are correct, then click `Run blastp'. Note that
+  this is a large protein and we are searching a lot of genomes, so this
+  might take a few minutes.
+\item
+  After a few minutes, you should see results. We get a lot of hits
+  (1,929 of them!). The top hit should almost always be to the original
+  backbone gene you selected. To assess quality take a look at the
+  alignment, which shows how well the hits cover your query sequence.
+  Also take a look at the `Score'. The higher the score, the better.
+\item
+  Can you find where hit quality begins to drop off? You can see by just
+  looking at the top 10 that quality drops off really fast!
+\item
+  Where to define cutoffs is somewhat arbitrary and depends on your
+  research question. For this exercise, let's keep it simple and set
+  this cutoff by calculating a Blast Score Ratio (BSR; Rasko et al.,
+  2005). By dividing a given score by the score of the query against
+  itself, we can get a feel for how good a match is compared to the best
+  possible match.
+\item
+  With this new information, let's revisit our hypothesis. Given that we
+  see only 7 really good matches to the penicillin NRPS out of the
+  \textasciitilde70 available genomes, it seems that our first
+  hypothesis was incorrect, meaning not all Penicillium species produce
+  penicillin.
+\item
+  Let's revise it! Maybe the Penicillium genus is too diverse and only a
+  small subset of closely related fungi can produce this product!
+  Perhaps a compelling new hypothesis would be that all penicillin
+  producers are closely related evolutionarily.
+\item
+  Record the names in the organism column from our BLAST output for the
+  top 7 hits. We can use the precomputed phylogenetic tree from the
+  `TREE' tab to continue our exploration and test whether they are
+  closely related or not.
+\item
+  Open the `TREE' tab, either in a separate tab or a new window so you
+  can easily see both your blast results and the phylogeny.
+\item
+  Here, we will see a pre-computed phylogenetic tree showing
+  evolutionary relationships within this PhyloGroup. The node colors on
+  the tree indicate support values, green: 1.0, orange: ≥ 0.7, red:
+  \textless{} 0.7, white: no support. This phylogenetic tree is
+  generated based on amino acid sequence alignments from hundreds to
+  thousands of proteins across these fungi. If a particular node is well
+  supported, it means that a lot of the underlying sequence alignment
+  agrees with the relationships shown in that part of the tree. In
+  contrast, if support is low, we should be suspicious of the
+  relationships depicted there.
+\item
+  At the top of the page is a search box where we can type in some of
+  our organisms of interest to see where they are on the tree. Try
+  typing in Penicillium chrysogenum. Hit enter (or the `Filter' button)
+  and see what happens!
+\item
+  You will see that the tree compresses and highlights the lineages that
+  match your search, in this case, strains of P. chrysogenum. Everything
+  else will be grayed out. Click `Expand All' and you can see where they
+  are in the larger Penicillium tree. Click the clear to restore
+  everything to default colors.
+\item
+  Looking over this tree, can you find the 7 fungi from our BLAST
+  results that contain our intact Penicillin NRPS? Are they found in the
+  same part of the tree, or all over the place?
+\item
+  We can point to 3 clades where this NRPS is found, with most being
+  present in Clade 2 (see above image). However, in all cases there are
+  very close relatives which lack it. Overall, this suggests that the
+  ability to produce penicillin is pretty variable across the
+  Penicillium genus. While phylogeny can provide some clues, it alone
+  cannot be used to predict the ability to produce penicillin.
+\item
+  This tells us that our hypothesis that penicillin producers are all
+  closely related evolutionarily is incorrect (again!) - and that is OK!
+  Based on our current results, we can conclude that penicillin
+  production is both dispensable (as clearly not all Penicillium can
+  make it) and not phylogenetically driven.
+\item
+  This knowledge raises a ton of new hypotheses, such as: i) The
+  Penicillin BGC arose in these fungi due to horizontal gene transfer,
+  ii) The Penicillin BGC is associated with specific ecological niches,
+  iii) The Penicillin BGC is restricted to specific geographic
+  locations, iv) etc\ldots{} Using MycoCosm, NCBI and other online
+  bioinformatics tools, feel free to explore some of these ideas!
+\end{enumerate}
+
+\subsection*{Characterize Myco-Ed BGCs}\label{characterize-myco-ed-bgcs}
+\addcontentsline{toc}{subsection}{Characterize Myco-Ed BGCs}
+
+\subsubsection*{Find interesting BGCs using Secondary Metabolite (SM)
+clusters
+page}\label{find-interesting-bgcs-using-secondary-metabolite-sm-clusters-page}
+\addcontentsline{toc}{subsubsection}{Find interesting BGCs using
+Secondary Metabolite (SM) clusters page}
+
+Penicillin is a famous example of a fungal natural product. However,
+fungi are some of the most prolific producers of secondary metabolites
+worldwide, and there is a lot to discover here! Let's do some
+exploratory work and characterize secondary metabolites produced by
+MycoEd fungi.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Pick a genome from our MycoEd group portal. For these MycoEd genomes,
+  you can add your own text to describe what you discover about any
+  particular gene. This will be of great value to the scientific
+  community, especially those studying fungal natural product diversity!
+\item
+  Keep in mind, what you are doing here is completely new - you might be
+  the first person ever to look at these fungal natural product genes!
+  If you observe something unexpected or cannot find similar genes in
+  related genomes that is OK, and could reveal something very exciting!
+  Documenting your work, manually curating genes (see `Annotate them!'
+  section, below), and sharing it with your instructor will be a big
+  help to future investigators.
+\item
+  Let's set a goal to describe the distribution of fungal BGC backbone
+  genes, following the same workflow you just did for penicillin.
+\item
+  Each MycoCosm portal has a secondary metabolite clusters page, which
+  can be used to study these BGCs in greater detail. On the menu bar for
+  any portal, you will see an `Annotations' pulldown. Click it, then
+  select `Secondary Metabolism Clusters'
+\item
+  The secondary metabolism clusters page shows a table of BGC counts
+  across a set of closely related genomes. The columns separate
+  different types of backbone genes and the rows are individual genomes.
+  For your MycoEd genome, click on the number in the `Total' column to
+  see the BGCs found only in this genome, or click on the number within
+  the backbone gene column you are interested in (e.g.~NRPS).
+\item
+  The following page will show details on all BGCs found. This includes
+  the type of cluster, the location on the genome and its architecture,
+  including the backbone gene (in color) and nearby predicted decorating
+  enzymes (gray). Note that some clusters might be missing decorating
+  enzymes - this could be real, or we failed to predict them.
+\item
+  Hovering your mouse over the genes in the cartoon will provide
+  information on those proteins. Pick a cluster and repeat our previous
+  exercise to characterize its distribution. You can start by clicking
+  on the backbone gene in the cartoon, which will bring you to the
+  corresponding protein page. Keep this page open in a separate tab for
+  the rest of the exercise, we will revisit it later.
+\item
+  Collect the protein sequence, then search a related MycoCosm
+  Phylogroup. You can find a related group by going to the portal Info
+  page. At the bottom of this screen is a `Links' section. Select the
+  PhyloGroup containing this organism's closest relatives, which is at
+  the end of the list. If there are only a few genomes (less than 5),
+  try going one taxonomic level up by returning to the info page and
+  selecting the second to last link.
+\item
+  Start exploring by conducting a BLAST search! If you have a lot of
+  good hits, make sure to increase the number of alignments shown until
+  you see low-quality hits. Click `Configure this screen' and increase
+  the number of hits shown to a larger number (e.g.~100); see below.
+\item
+  Select any hit that passes the BSR threshold of 0.9 we defined earlier
+  (see Step 9 in the `Find candidate Penicillin BGCs' section)' and
+  let's see where those fungi are on the interactive tree. The
+  interactive tree is produced only once or twice a year, so your chosen
+  MycoEd genome might not be there depending on when you conduct this
+  analysis. That is OK since we are mostly interested in where these
+  other fungi are found.
+\end{enumerate}
+
+\subsubsection*{Annotate them!}\label{annotate-them}
+\addcontentsline{toc}{subsubsection}{Annotate them!}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Once you have completed your analysis, return to the protein page for
+  your backbone gene and click `view/modify manual annotation'.
+\item
+  Next, add your description. You should see `add/edit' buttons on the
+  next page. For the `Description' attribute, select `add' then enter
+  details on what you discovered about that gene and click `save item'.
+\item
+  Your name will be associated with your entry and eventually, it will
+  become searchable across the portal! This means anyone who visits this
+  genome can easily retrieve these details (via the search page), and
+  know who to thank (you!) for this work.
+\end{enumerate}
+
+\bookmarksetup{startatroot}
+
+\chapter*{Summary}\label{summary}
+\addcontentsline{toc}{chapter}{Summary}
+
+\markboth{Summary}{Summary}
+
+This workbook outlines the Myco-Ed curriculum for BSC 495: The Hidden
+World's Code. Students will gain hands-on experience in fungal biology
+and genomics, from sample collection and fungal isolation through DNA
+sequencing. By the end of the course, students scholars will have
+contributed to high-quality fungal reference genomes and developed
+broadly applicable skills in lab techniques and bioinformatics. More
+information and course resources are available at the
+\href{https://github.com/BSC495-HWC}{BSC495-HWC GitHub organization}.
+
+But wait\ldots{} there is more: genome assembly, and annotation. We hope
+you continue working on your isolates and share your results with us and
+the scientific community! One possibility is a \emph{microPublication}.
+We are here to support you in your continued work on your isolates, and
+we would love to hear about your progress. Please feel free to reach out
+to us with any questions or updates on your work. We look forward to
+seeing the amazing things you will accomplish with your fungal isolates!
+
+\bookmarksetup{startatroot}
+
+\chapter{Carlos C. Goller}\label{carlos-c.-goller}
+
+\bookmarksetup{startatroot}
+
+\chapter*{About the Author}\label{about-the-author}
+\addcontentsline{toc}{chapter}{About the Author}
+
+\markboth{About the Author}{About the Author}
+
+Carlos C. Goller, Ph.D.~is a Teaching Professor at North Carolina State
+University in Raleigh, NC. He teaches microbiology, life science, public
+health, and other fun courses as part of the Department of Biological
+Sciences. When not playing with \emph{Delftia acidovorans} or code,
+Carlos enjoys spending time with his family (Claire Gordy also at NC
+State, Amada, and Aurelio) and playing with his dog Sunshine.
+
+\section{Education}\label{education}
+
+North Carolina State University, Raleigh, NC \textbar{} Advisor: Dr.~Sue
+Carson \textbar{} Topic: Biotechnology Education and Curriculum
+Development
+
+Duke University Medical Center, Durham, NC \textbar{} Advisor: Patrick
+C. Seed \textbar{} Topic: Bacterial Pathogenesis and Anti-infective
+Screening The Hartwell Foundation Postdoctoral Fellowship \textbar{}
+September 2008 - July 2012
+
+Emory University, Atlanta, GA \textbar{} Advisor: Tony Romeo \textbar{}
+Topic: Bacterial Biofilm Formation and Regulation Ph.D.~in Microbiology
+and Molecular Genetics \textbar{} August 2002 - September 2008
+
+Worcester Polytechnic Institute \textbar{} Worcester, MA B.S in Biology
+and Biotechnology \textbar{} August 1998 - May 2002
+
+\section{Experience}\label{experience}
+
+Teaching Professor \textbar{} North Carolina State University Department
+of Biological Sciences \textbar{} 2024 - Present Associate Teaching
+Professor \textbar{} North Carolina State University Department of
+Biological Sciences \textbar{} 2019 - 2024 Assistant Teaching Professor
+\textbar{} North Carolina State University Department of Biological
+Sciences \textbar{} 2015 - 2019
+
+\bookmarksetup{startatroot}
+
+\chapter*{References}\label{references-2}
+\addcontentsline{toc}{chapter}{References}
+
+\markboth{References}{References}
+
+\section*{Module 7.1 References}\label{module-7.1-references}
+\addcontentsline{toc}{section}{Module 7.1 References}
+
+\markright{Module 7.1 References}
+
+\begin{itemize}
+\tightlist
+\item
+  Casselton, L.A., Olesnicky, N.S., 1998. Molecular Genetics of Mating
+  Recognition in Basidiomycete Fungi. Microbiology and Molecular Biology
+  Reviews, 62(1): 55-70. https://doi.org/10.1128/mmbr.62.1.55-70.1998
+\item
+  Cambareri, E.B., Singer, M.J., Selker, E.U., 1991. Recurrence of
+  repeat-induced point mutation (RIP) in Neurospora crassa. Genetics,
+  127(4): 699-710. https://doi.org/10.1093/genetics/127.4.699
+\item
+  Metzenberg, R.L., Glass, N.L., 1990. Mating type and mating strategies
+  in Neurospora. BioEssays, 12(2): 53-59.
+  https://doi.org/10.1002/bies.950120202
+\end{itemize}
+
+\protect\phantomsection\label{refs}
+\begin{CSLReferences}{1}{1}
+\bibitem[\citeproctext]{ref-doyle1987}
+Doyle, J. J., and J. L. Doyle. 1987. {``A Rapid {DNA} Isolation
+Procedure from Small Quantities of Fresh Leaf Tissues.''}
+\emph{Phytochemical Bulletin} 19: 11--15.
+
+\end{CSLReferences}
+
+
+
+
+\end{document}
