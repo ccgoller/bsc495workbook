@@ -4,7 +4,7 @@
 
 ### Instructor Laboratory Preparation Instructions
 
-**Materials needed:**
+#### Materials
 This list may vary depending on your preferred extraction, amplification, and sequencing protocols.
 
 - [ ] Gloves
@@ -27,10 +27,10 @@ This list may vary depending on your preferred extraction, amplification, and se
 - [ ] 1-10, 20-200, and 100-1000 µL micropipette tips (preferably filtered)
 - [ ] Kimwipes
 - [ ] PCR primers (ITS1f, ITS4, 5.8SR, fITS7) ordered from Integrated DNA Technologies (IDT) or similar supplier normalized to 100 µM in TE buffer. The following primers are commonly used for fungal DNA barcoding:
-   - ITS1f: 5’-CTTGGTCATTTAGAGGAAGTAA-3’
-   - ITS4: 5’-TCCTCCGCTTATTGATATGC-3’
-   - 5.8SR: 5’-CGCTGCGTTCTTCATCG-3’
-   - fITS7: 5’-GTGARTCATCGAATCTTTG-3’
+   + ITS1f: 5’-CTTGGTCATTTAGAGGAAGTAA-3’
+   + ITS4: 5’-TCCTCCGCTTATTGATATGC-3’
+   + 5.8SR: 5’-CGCTGCGTTCTTCATCG-3’
+   + fITS7: 5’-GTGARTCATCGAATCTTTG-3’
 - [ ] Q5® Hot Start High-Fidelity 2X Master Mix - 100 reactions(New England BioLabs, M0494S)
 - [ ] PCR water (New England BioLabs, B1500S)
 - [ ] Exo-CIP Rapid PCR Cleanup Kit - 100 reactions (New England BioLabs, E1050S)
@@ -72,16 +72,16 @@ Identification of fungal cultures requires knowledge and techniques beyond the s
 
 In this part of the module, you will extract DNA from your fungal isolates. There are many ways to isolate DNA from fungi. Here we will use a very simple kit that uses an alkaline (pH 9.5-10) extraction solution at high heat to disrupt cells and release gDNA.
 
-#### Materials:
+#### Materials
 - [ ] Fungal isolates
 - [ ]0.2 mL PCR tubes
 - [ ]P20 micropipette with tips
-- [ ]DNA extraction solution (ES)
-- [ ]DNA dilution solution (DS)
+- [ ]DNA extraction kit (New England BioLabs, Monarch® Spin gDNA Extraction Kit, T3010S)
+- [ ]DNA quantification system (for example, Qubit Fluorometer with dsDNA HS Assay Kit, ThermoFisher, Q32851)
 - [ ]Ethanol jar
 - [ ]Loop, pick, and forceps
 
-#### Procedures:
+#### Procedures
 1. Using the micropipette, aliquot 20 µL of ES into 0.2 mL snap-cap PCR tubes. We will run DNA extraction in duplicates, so fill two PCR tubes per culture.
    NOTE: Label your tubes before adding ES. Label on both the cap and side of the tubes, so you can identify the samples as yours and can differentiate to which culture they belong.
 2. Place the tissue sample into the ES. Submerge and smash the sample against the tube wall if possible.
@@ -98,8 +98,8 @@ The PCR reaction consists of mixing your template DNA with two primers: short se
 
 Figure 1: rDNA region containing the variable regions ITS-1 and ITS-2. Our forward primer (ITS-1F) will target a portion of the SSU and our reverse primer (ITS4) will target a portion of the LSU. Thereby, amplifying both variable regions and the 5.8S subunit.
 
-#### Materials:
-- [ ] DNA extractions with DS
+#### Materials
+- [ ] DNA extraction kit
 - [ ] Control DNA sample
 - [ ] 0.2 mL PCR tubes
 - [ ] P10 micropipette with tips
@@ -110,10 +110,15 @@ Figure 1: rDNA region containing the variable regions ITS-1 and ITS-2. Our forwa
 - [ ] PCR tube centrifuge
 - [ ] Thermal cycler
 
-#### Procedures:
+#### Procedures
 We will run 20 µL PCR reactions
 1. Add 18 µL of PCR master mix (contains PCR buffer, polymerase enzyme, dNTPs, and primers) to one PCR tube per sample. You can use the same pipette tip to aliquot master mix to PCR tubes.
-   NOTE: Cap all PCR tubes when not in use to avoid cross-contamination.
+:: 
+::: {.callout-caution}
+Careful! Cap all PCR tubes when not in use to avoid cross-contamination.
+:::
+
+   
 2. Dilute DNA 1:10 (2 µl of DNA + 18 µL of DS)
 3. Transfer 2 µL of your 1:10 diluted DNA to one PCR tube containing master mix.
    NOTE: Only one sample per tube and make sure to use a fresh tip for each sample to avoid cross-contamination.
@@ -132,7 +137,7 @@ Today, we will use gel electrophoresis to verify the success of our PCR reaction
 #### Prep 1% agarose gels for gel electrophoresis
 To give enough time for the gel to cool and solidify, this task should be done in the first hour of the lab.
 
-#### Materials needed:
+#### Materials Needed
 - Agarose
 - 1X TAE (or TE, TBE, or SB) buffer to make gels and running buffer
   Note: Use the same buffer for making and running the gel
@@ -161,7 +166,7 @@ To give enough time for the gel to cool and solidify, this task should be done i
 11. Remove gel from casting mold and place in gel rig. The gel rig is oriented to "run to red." Place the wells created from the comb towards the black electrode, opposite the red electrode.
 12. Gels can be wrapped in saran wrap and stored for approximately 1 week.
 
-#### Gel Loading:
+#### Gel Loading
 1. Fill the gel rig with 1X TAE (or equivalent) buffer until it covers the surface of the gel.
 2. Make a map of your samples in your gel.
 3. Load Gel

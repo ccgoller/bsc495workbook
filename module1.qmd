@@ -4,12 +4,13 @@
 
 ### Instructor Laboratory Preparation Instructions
 
-**Materials:**
+#### Materials
 
 - [ ] Cellophane discs (rinsed and individually wrapped before autoclaving)
 - [ ] 150x10mm Petri dishes
 - [ ] 60x15mm Petri dishes
 - [ ] Bacteriological agar
+- [ ] Potato Dextrose Agar (PDA)
 - [ ] Forceps
 - [ ] Scalpels or metal hole punch
 
@@ -43,17 +44,17 @@ Once you have selected the plant(s) that you will isolate fungi from, upload an 
 
 Record metadata on the [**Endophyte spreadsheet**](https://docs.google.com/spreadsheets/d/1mwfepj-iDCfE9ZHvsbBmc7eAuIUaboug/edit?usp=sharing&ouid=105826871227022710667&rtpof=true&sd=true). Below are descriptions for each category where necessary.
 
-### iNaturalist plant observation:
+### iNaturalist Plant Observation
 [NC State Myco Ed on iNaturalist](https://www.inaturalist.org/projects/nc-state-myco-ed)
 
-### Sample Naming:
+### Sample Naming
 Your individual fungal isolates will be identified using several identifiers. The first will be the unique **Host ID number** that identifies the host for the fungi you isolate. Second will be **your initials**. Please use at least 3 initials since some large courses may have students with shared initials. Third, **each individual leaf you cultured fungi from will be a separate number**. If you take multiple samples from the same leaf, they will be identified by letters. For example, if you have one leaf or needle with 3 different sections, they would be 1a, 1b, and 1c.
 
 **Example:** You have leaves collected from a maple tree on your campus. This tree was logged in iNaturalist and given a unique field number MycoED_004 (or whatever format the field numbers are provided in by your instructor/TA) (See the next module 1.2 for details). Let's assume your initials are ABC. From this collection, you have three leaves that you culture from: leaf 1, leaf 2, and leaf 3. From each of these leaves, you take six segments, so these are letters a-f. So, if you isolate a fungus from the second leaf, third section, and your initials are ABC, the name of the isolate would look like MycoED_004_ABC_2c.
 
 With this naming scheme, anyone can trace the 1) plant host, 2) the researcher, 3) and the leaf and section the fungal isolate came from. NO other fungus will have this precise labeling unless additional fungi were isolated from this leaf section. After that step you will need to add additional identifiers.
 
-### Sample location:
+### Sample Location
 Record latitude and longitude in decimal format.
 On a computer, go to iNaturalist observation. On the map, click on details at the bottom.
 
@@ -67,14 +68,14 @@ For the iPhones:
 3. Scroll up. You should see the latitude and longitude coordinates of that position, looking something like this: (45.1234567, -122.1234567).
 4. Long touch the coordinates, tap copy and then paste into an email or text.
 
-### Elevation:
+### Elevation
 Record the elevation of the plant in meters.
 On a computer, go to iNaturalist observation and again, click on details at the bottom.
 1. On a computer, go to iNaturalist observation and again, click on details at the bottom.
 2. At the bottom of the details window, click macrostrat.
 3. The next window will display elevation in meters in the upper right. Record this elevation.
 
-### Canopy:
+### Canopy
 Record the portion of the canopy where the leaf was collected (L-lower 1/3 of plant, M-middle 1/3 of plant, or U-upper 1/3 of plant).
 
 ## Module 1.3 – Using iNaturalist
@@ -82,7 +83,7 @@ Record the portion of the canopy where the leaf was collected (L-lower 1/3 of pl
 ### Using iNaturalist
 For this semester we will be sampling plant tissue and isolating endophytic fungi for an experiment in fungal genomics. Part of this research will include the collection of important meta-data which includes latitude and longitude information, sampled material/host, and taxonomic information. To facilitate this we are using iNaturalist.
 
-**Homework Assignment 1: Get set up to use iNaturalist.**
+#### Homework Assignment 1: Get Set Up to Use iNaturalist
 
 - Go to https://www.inaturalist.org/ and make an account if you don't already have one.
 - Download the iNaturalist App to your phone.
@@ -102,7 +103,7 @@ For this semester we will be sampling plant tissue and isolating endophytic fung
 **Learn how to use iNaturalist to make observations for scientific research.**
 iNaturalist makes documenting samples easy through observations. We will use this to help collect the metadata on our specimens in the upcoming lab. To prepare yourself, please review the following resources.
 
-**Homework Assignment 2: Review videos on how to document fungi.**
+#### Homework Assignment 2: Review Videos on How to Document Fungi
 
 - [ ] [Getting Started](https://www.inaturalist.org/pages/getting+started)
 - [ ] [iNaturalist Videos](https://inaturalist.freshdesk.com/en/support/solutions/folders/151000547795)
@@ -167,7 +168,7 @@ Protocols for making observations of fungal cultures that follow the same steps 
     b. To link to the host iNaturalist observation for this fungus, use the Host Observation Observation Field and add the URL to the host observation.
 
 
-## Module 1.4 - Fungal Sampling and Culturing
+## Module 1.4 – Fungal Sampling and Culturing
 
 ### Purpose
 This lab will introduce you to sterile/aseptic technique, culturing fungi, isolating cultures, and documenting fungal growth.
@@ -214,14 +215,14 @@ Upload an image of the plants you have chosen to your course's iNaturalist Proje
 
 **Sampling Endophytes**
 
-Materials needed:
+#### Materials needed
 
 - [ ] Your phone with iNaturalist.
 - [ ] Sample labels with unique ID numbers.
 - [ ] Paper bags for samples.
 - [ ] Clippers, scissors, or a knife to sample leaves.
 
-**Protocol:**
+#### Protocol
 1. Find a tree, or other plant to sample. Ideally, one that has healthy leaves.
 2. Make an iNaturalist observation of the plant on your phone or device.
    a. Take multiple photos.
@@ -240,12 +241,12 @@ Materials needed:
 ![Fungal Sampling. Collect one sample/leaf per bag and complete the required information on each label. Figure created with BioRender.com.](images/LeafSampling.png){#fig-leafsampling fig-alt="Fungal Sampling. Collect one sample/leaf per bag and complete the required information on each label." fig-align="center" lightbox="Leaf sampling"}
 
 
-**Culturing Fungi From Leaves**
-You have 3 larger (150x10mm) Petri dishes that contain water agar. Water agar media is more clear (whitish to translucent) than the smaller Petri dishes which contain Potato Dextrose Agar (PDA). These water agar plates will be used for Part I of this exercise. Section each of these into 6 regions as depicted in @wfig-wateragar. This will provide you space to culture 18 leaf sections.
+#### Culturing Fungi From Leaves
+You have 3 larger (150x10mm) Petri dishes that contain water agar. Water agar media is more clear (whitish to translucent) than the smaller Petri dishes which contain Potato Dextrose Agar (PDA). These water agar plates will be used for Part I of this exercise. Section each of these into 6 regions as depicted in @fig-Wateragar. This will provide you space to culture 18 leaf sections.
 
 Gather all supplies including sterilized water, 70% ethanol, and 10% bleach solution. Label the Petri dishes and read through procedures before starting. Place bleach solution and sterile water in a container with enough space to dip leaf tissue. Use the provided scalpel or metal paper hole punch from your lab kit to take leaf subsamples. 
 
-Label the @fig-wateragar plate with your name and divide into six sections. Label each section with the unique ID number for the leaf sample you will be plating in that section. For example, if you are plating leaf 1a in the first section, label that section "1a". If you are plating leaf 2b in the second section, label that section "2b", and so on.
+Label the @fig-Wateragar plate with your name and divide into six sections. Label each section with the unique ID number for the leaf sample you will be plating in that section. For example, if you are plating leaf 1a in the first section, label that section "1a". If you are plating leaf 2b in the second section, label that section "2b", and so on.
 
 ![Water Agar Plates. Take a large water agar plate and divide it into six sections using a ruler and marker. Label each section with the unique ID number for the leaf sample you will be plating in that section. Figure created with BioRender.com.](images/WaterAgar.png){#fig-Wateragar fig-alt="Water agar plate division into sections and labeling." fig-align="center" lightbox="true"}
 

@@ -4,17 +4,17 @@
 
 ### Instructor Laboratory Preparation Instructions
 
-**Materials and Equipment:**
-- Autoclave
-- Laminar Flow Hood (if available)
-- Cellophane
-- 100x15mm Petri Dishes
-- 60x15mm Petri Dishes
-- Agar, Bacteriological
-- Potato Dextrose Agar
-- Alcohol Lamp or Bunsen Burner
-- Forceps
-- Scalpel (make sure the handle is metal, as it will be flame sterilized and plastic will melt)
+#### Materials and Equipment
+- [ ] Autoclave
+- [ ]Laminar Flow Hood (if available)
+- [ ] Cellophane
+- [ ] 100x15mm Petri Dishes
+- [ ] 60x15mm Petri Dishes
+- [ ] Agar, Bacteriological
+- [ ] Potato Dextrose Agar
+- [ ] Alcohol Lamp or Bunsen Burner
+- [ ] Forceps
+- [ ] Scalpel (make sure the handle is metal, as it will be flame sterilized and plastic will melt)
 
 **Sterility:**
 If you don't have a laminar flow hood, you may create a similar environment by setting up 2 torches over your work space. First, clean your work area with bleach, and/or ethanol. Set the torches facing each other with enough space to work underneath. Light the torches and pour media into plates under the flames.

@@ -11,7 +11,7 @@ How are mating types determined in fungi? Are the same genes found in both matin
 
 Beginning with known mating type-related genes collected from NCBI, we will use MycoCosm to branch out into related fungi, identify opposite mates, then formulate hypotheses and learn about the genetics underlying fungal sexual regulation. This approach can be directly applied to predict mating types in other fungi, or used to explore presence/absence of other types of genes!
 
-### References:
+### References
 - Casselton, L.A., Olesnicky, N.S., 1998. Molecular Genetics of Mating Recognition in Basidiomycete Fungi. Microbiol Mol Biol Rev., 62(1): 55–70. doi: 10.1128/mmbr.62.1.55-70.1998
 - Cambareri, E.B., Singer, M.J., Selker, E.U., 1991. Recurrence of repeat-induced point mutation (RIP) in Neurospora crassa. Genetics, 127(4):699-710. doi: 10.1093/genetics/127.4.699.
 - Metzenberg, R.L., Glass, N.L., 1990. Mating type and mating strategies in Neurospora. Bioessays. 1990 Feb;12(2):53-9. doi: 10.1002/bies.950120202.
