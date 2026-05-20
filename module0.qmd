@@ -10,14 +10,14 @@ This table lists all materials and equipment required across Myco-Ed modules. Us
 //| echo: false
 materials = [
   // Module 1
-  { module: "Module 1 – Fungal Sampling & Culturing", item: "100×15 mm Petri dishes", description: "Petri dishes for fungal culturing", company: "", catalog: "" },
+  { module: "Module 1 – Fungal Sampling & Culturing", item: "150×10 mm Petri dishes", description: "Petri dishes for fungal culturing", company: "", catalog: "" },
   { module: "Module 1 – Fungal Sampling & Culturing", item: "Bacteriological agar (e.g., Difco Bacto Agar)", description: "Agar base for culture media", company: "Difco/BD", catalog: "" },
   { module: "Module 1 – Fungal Sampling & Culturing", item: "Autoclave", description: "Sterilization of media and equipment", company: "", catalog: "" },
   { module: "Module 1 – Fungal Sampling & Culturing", item: "Laminar flow hood", description: "Sterile work environment (optional if unavailable)", company: "", catalog: "" },
   { module: "Module 1 – Fungal Sampling & Culturing", item: "Forceps", description: "Sample manipulation", company: "", catalog: "" },
   { module: "Module 1 – Fungal Sampling & Culturing", item: "Scalpels", description: "Cutting leaf tissue", company: "", catalog: "" },
   { module: "Module 1 – Fungal Sampling & Culturing", item: "150 mL beaker", description: "Container for ethanol", company: "", catalog: "" },
-  { module: "Module 1 – Fungal Sampling & Culturing", item: "Parafilm", description: "Sealing Petri plates", company: "Bemis", catalog: "" },
+  { module: "Module 1 – Fungal Sampling & Culturing", item: "Parafilm", description: "Sealing Petri plates", company: "VWR", catalog: "" },
   { module: "Module 1 – Fungal Sampling & Culturing", item: "Gloves", description: "Personal protection", company: "", catalog: "" },
   { module: "Module 1 – Fungal Sampling & Culturing", item: "Hole punch (all metal)", description: "Cutting leaf discs; scalpel is an acceptable substitute", company: "", catalog: "" },
   { module: "Module 1 – Fungal Sampling & Culturing", item: "Kimwipes", description: "Lab wipes", company: "Kimtech", catalog: "" },

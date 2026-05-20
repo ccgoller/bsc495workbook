@@ -7,7 +7,7 @@
 **Materials:**
 
 - [ ] Cellophane discs (rinsed and individually wrapped before autoclaving)
-- [ ] 100x15mm Petri dishes
+- [ ] 150x10mm Petri dishes
 - [ ] 60x15mm Petri dishes
 - [ ] Bacteriological agar
 - [ ] Forceps
@@ -36,8 +36,7 @@ Place all Petri dishes in an autoclavable bag and sterilize at 15 lbs. pressure 
 ## Module 1.2 – Metadata Directions
 
 ### Metadata
-Metadata 
-:  is the data providing information about other data. 
+**Metadata** is the data providing information about other data. 
 In this project, metadata refers to information related to the fungi you will study, including information about the substrate (e.g., plant host for fungal endophytes), location (latitude and longitude), elevation, images, fungal species, growth rates, assay information, images, and other variables. This document guides you through capturing this data and where to document it.
 
 Once you have selected the plant(s) that you will isolate fungi from, upload an image of each plant to your course's iNaturalist Project page. This part of the larger MycoEd Fungal Genomics Education Project. The fungi you isolate from this plant and the data associated with the fungal isolates will be linked back to this observation. These data will then be freely available to you and any other researchers interested in investigating fungal endophyte ecology and genomics.
