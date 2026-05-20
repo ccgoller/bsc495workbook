@@ -5,14 +5,14 @@
 ### Instructor Laboratory Preparation Instructions
 
 **Materials and Equipment:**
-- Autoclave
-- Laminar Flow Hood (if available)
-- 60x15mm Petri Dishes
-- Agar, Bacteriological
-- Potato Dextrose Agar
-- Zinc Sulfate
-- Forceps
-- Scalpel (sterilized)
+- [ ] Autoclave
+- [ ] Laminar flow hood (if available)
+- [ ] 60x15mm Petri Dishes
+- [ ] Bacteriological agar
+- [ ] Potato Dextrose Agar (PDA) with antibiotics
+- [ ] Zinc sulfate
+- [ ] Forceps
+- [ ] Scalpel (sterilized)
 
 **Potato Dextrose Agar (PDA) with Zn Plates for Zn Stress Assay:**
 Suspend 39 grams Potato Dextrose Agar in 1000 ml (1 L) distilled water (or follow the directions on the bottle label). Add the appropriate amount of Zn sulfate to obtain concentrations of 1 mM Zn and 10 mM Zn in the media bottle. Heat to boiling to dissolve the medium completely (in most cases, this step can be skipped as autoclaving will dissolve media). Sterilize by autoclaving at 15 lbs pressure (121°C) for 15 minutes.
@@ -48,13 +48,13 @@ Testing foliar fungal endophytes for Zn tolerance is particularly relevant as th
 2. Measure how different concentrations of Zn influence fungal growth rates.
 
 **Materials:**
-- Pure fungal cultures
-- PDA 0 mM Zn + antibiotics
-- PDA 1 mM Zn + antibiotics
-- PDA 10 mM Zn + antibiotics
-- Fine tip Sharpie or marker
-- Agar cutting tool
-- Ethanol jar
+- [ ] Pure fungal cultures
+- [ ] PDA 0 mM Zn + antibiotics
+- [ ] PDA 1 mM Zn + antibiotics
+- [ ] PDA 10 mM Zn + antibiotics
+- [ ] Fine tip Sharpie or marker
+- [ ] Agar cutting tool and whole punch
+- [ ] Ethanol jar
 
 **Procedures:**
 - Label your plates with identifying information
