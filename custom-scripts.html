@@ -104,15 +104,46 @@
     placeDeepBtn(initiallyOn);
   }
 
+  /* ─── External Links In New Tab ──────────────────────────────────────── */
+  function setupExternalLinks() {
+    var links = document.querySelectorAll('a[href]');
+
+    links.forEach(function (link) {
+      var href = link.getAttribute('href');
+      if (!href) return;
+
+      // Ignore hash links and non-http protocols.
+      if (href.charAt(0) === '#') return;
+      if (/^(mailto:|tel:|javascript:)/i.test(href)) return;
+
+      var url;
+      try {
+        url = new URL(href, window.location.href);
+      } catch (e) {
+        return;
+      }
+
+      if (!/^https?:$/i.test(url.protocol)) return;
+
+      // External links are those on a different host than the current page.
+      if (url.host !== window.location.host) {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      }
+    });
+  }
+
   /* ─── Init ─────────────────────────────────────────────────────────────── */
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function () {
       insertBanner();
       setupDeepReaderMode();
+      setupExternalLinks();
     });
   } else {
     insertBanner();
     setupDeepReaderMode();
+    setupExternalLinks();
   }
 }());
 </script>
