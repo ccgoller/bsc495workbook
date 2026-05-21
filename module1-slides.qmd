@@ -6,6 +6,7 @@ format:
   revealjs:
     theme: default
     slide-number: true
+    slide-level: 3
     logo: BSC495logo-transparent.png
     footer: "BSC 495 | Module 1: Fungal Sampling | CC BY Carlos C. Goller"
     chalkboard: false
