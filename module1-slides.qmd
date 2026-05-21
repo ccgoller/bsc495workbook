@@ -16,10 +16,10 @@ format:
     css: module-slides.css
 ---
 
-  {{< include module1.qmd >}}
+{{< include module1.qmd >}}
 
-  ---
+---
 
-  ## Continue in Workbook {.center}
+## Continue in Workbook {.center}
 
-  [Back to Module 1 Workbook](module1.html){.back-to-module}
+[Back to Module 1 Workbook](module1.html){.back-to-module}
