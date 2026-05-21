@@ -381,6 +381,19 @@
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
+/* Module subsection divider slides (e.g., Module 1.1, 1.2) */
+.reveal .slides section:has(> h2[id^="module-"]) {
+  background: linear-gradient(135deg, var(--brand-indigo) 0%, var(--brand-indigo-deep) 100%);
+}
+
+.reveal .slides section:has(> h2[id^="module-"]) h2,
+.reveal .slides section:has(> h2[id^="module-"]) h3,
+.reveal .slides section:has(> h2[id^="module-"]) p,
+.reveal .slides section:has(> h2[id^="module-"]) li {
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
 /* Prevent text overflow on slides */
 .reveal {
   --slide-width: 100%;
