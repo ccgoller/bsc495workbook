@@ -113,10 +113,7 @@ Figure 1: rDNA region containing the variable regions ITS-1 and ITS-2. Our forwa
 #### Procedures
 We will run 20 µL PCR reactions
 1. Add 18 µL of PCR master mix (contains PCR buffer, polymerase enzyme, dNTPs, and primers) to one PCR tube per sample. You can use the same pipette tip to aliquot master mix to PCR tubes.
-:: 
-::: {.callout-caution}
-Careful! Cap all PCR tubes when not in use to avoid cross-contamination.
-:::
+   **Caution:** Cap all PCR tubes when not in use to avoid cross-contamination.
 
    
 2. Dilute DNA 1:10 (2 µl of DNA + 18 µL of DS)

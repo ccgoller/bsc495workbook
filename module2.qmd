@@ -28,7 +28,7 @@ Suspend 39 grams Agar, Bacteriological in 1000 ml (1 L) distilled water. Heat to
 
 When the media is cool enough to handle with autoclave gloves, pour 60x15mm plates in a sterile environment. Do not let it cool too long as the media will solidify. Each 60x15mm plate holds approximately 8 ml media. If plates will be used immediately smaller amounts of media can be poured into plates. If plates will be stored, use larger amounts. Store plates in the original Petri dish sleeve in the refrigerator (~4 °C) until use.
 
-::: {.callout-}
+::: {.callout-note}
 **Option: Adding Antibiotics:**
 Once your PDA has cooled, you may choose to add antibiotics to the media. Streptomycin (streptomycin sulfate) is commonly used at a concentration of 50mg/L in agar. Add the appropriate amount to your media once cool to the touch and before pouring plates.
 :::
