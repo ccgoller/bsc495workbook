@@ -4,35 +4,48 @@
 
 This table lists all materials and equipment required across Myco-Ed modules. Use the search box to filter by module, item, company, or catalog number (web view), or scroll through the complete table below (in PDF and downloads).
 
-```{r}
-#| echo: false
-#| message: false
-#| warning: false
-
-materials <- read.csv("_materials.csv", stringsAsFactors = FALSE)
-names(materials) <- c("Module", "Item", "Description", "Company", "Catalog")
-
-# Derive a broad type category from the item/description text.
-classify_type <- function(item, description) {
-   text <- tolower(paste(item, description))
-   if (grepl("agar|buffer|water|ctab|primer|mix|ladder|solution|polyzyme|ethanol|bleach|bsa", text)) {
-      return("Reagent")
-   }
-   if (grepl("autoclave|hood|cycler|vortex|centrifuge|thermomixer|qubit|minion|computer|portal|incubator|balance", text)) {
-      return("Equipment")
-   }
-   if (grepl("varies by assay", text)) {
-      return("Mixed")
-   }
-   return("Supply")
-}
-
-materials$Type <- mapply(classify_type, materials$Item, materials$Description)
-
-table_out <- materials[, c("Module", "Type", "Item", "Description", "Company", "Catalog")]
-
-knitr::kable(table_out, align = c("l", "l", "l", "l", "l", "l"))
-```
+| Module | Type | Item | Description | Company | Catalog |
+|---|---|---|---|---|---|
+| Module 1 – Fungal Sampling & Culturing | Supply | 100x15 mm Petri dishes | Petri dishes for fungal culturing |  |  |
+| Module 1 – Fungal Sampling & Culturing | Reagent | Bacteriological agar | Agar base for culture media | Difco/BD |  |
+| Module 1 – Fungal Sampling & Culturing | Equipment | Autoclave | Sterilization of media and equipment |  |  |
+| Module 1 – Fungal Sampling & Culturing | Equipment | Laminar flow hood | Sterile work environment (optional if unavailable) |  |  |
+| Module 1 – Fungal Sampling & Culturing | Supply | Forceps | Sample manipulation |  |  |
+| Module 1 – Fungal Sampling & Culturing | Supply | Scalpels / hole punch | Cutting leaf tissue |  |  |
+| Module 1 – Fungal Sampling & Culturing | Supply | Parafilm | Sealing Petri plates | Bemis |  |
+| Module 1 – Fungal Sampling & Culturing | Reagent | 10% bleach | Surface sterilization solution |  |  |
+| Module 1 – Fungal Sampling & Culturing | Reagent | 70% ethanol | Surface sterilization |  |  |
+| Module 2 – Fungal Isolation | Supply | 60x15 mm Petri dishes | Dishes for fungal isolation transfers |  |  |
+| Module 2 – Fungal Isolation | Reagent | Potato Dextrose Agar (PDA) | Selective culture medium for fungi |  |  |
+| Module 2 – Fungal Isolation | Equipment | Autoclave | Sterilization of media and equipment |  |  |
+| Module 2 – Fungal Isolation | Supply | Sharpie/lab marker | Plate labeling |  |  |
+| Module 2 – Fungal Isolation | Reagent | 70% ethanol | Surface sterilization |  |  |
+| Module 3 – Phenotypic Assays | Mixed | Varies by assay | Materials depend on chosen phenotypic assay |  |  |
+| Module 4 – DNA Sequencing | Equipment | Thermal cycler | PCR amplification |  |  |
+| Module 4 – DNA Sequencing | Equipment | Vortex | Sample mixing |  |  |
+| Module 4 – DNA Sequencing | Equipment | Centrifuge | PCR and microfuge tube centrifugation |  |  |
+| Module 4 – DNA Sequencing | Supply | 0.2 mL PCR tubes | PCR reactions |  |  |
+| Module 4 – DNA Sequencing | Supply | DNA LoBind microcentrifuge tubes | Low-bind tubes to minimize DNA adsorption | Eppendorf |  |
+| Module 4 – DNA Sequencing | Reagent | Monarch Spin gDNA Extraction Kit | Spin-column genomic DNA extraction | New England BioLabs | T3010S |
+| Module 4 – DNA Sequencing | Reagent | MetaPolyzyme (DNA free) | Fungal cell wall digestion enzyme blend | Millipore Sigma | MAC4LDF-5X1VL |
+| Module 4 – DNA Sequencing | Reagent | CTAB solution (100 mL) | Alternative DNA extraction reagent | Promega | MC1411 |
+| Module 4 – DNA Sequencing | Reagent | PCR primers (ITS1f, ITS4, 5.8SR, fITS7) | Fungal ITS barcoding primers | IDT or similar |  |
+| Module 4 – DNA Sequencing | Reagent | Q5 Hot Start High-Fidelity 2X Master Mix | High-fidelity PCR master mix | New England BioLabs | M0494S |
+| Module 4 – DNA Sequencing | Reagent | PCR water | Nuclease-free PCR water | New England BioLabs | B1500S |
+| Module 4 – DNA Sequencing | Reagent | Exo-CIP Rapid PCR Cleanup Kit | PCR cleanup before sequencing | New England BioLabs | E1050S |
+| Module 4 – DNA Sequencing | Equipment | E-Gel system (1.2% agarose) | Pre-cast gel electrophoresis system | ThermoFisher | G4010010 |
+| Module 4 – DNA Sequencing | Reagent | E-Gel Sizing DNA Ladder | DNA size standard | ThermoFisher | 10488100 |
+| Module 4 – DNA Sequencing | Equipment | Qubit + dsDNA HS assay | Fluorometric DNA quantification | ThermoFisher | Q32851 |
+| Module 5 – Tissue Preparation | Supply | Cellophane discs | Individually rinsed and autoclaved before use |  |  |
+| Module 5 – Tissue Preparation | Supply | 60x15 mm Petri dishes | Culture dishes for tissue preparation |  |  |
+| Module 5 – Tissue Preparation | Reagent | Potato Dextrose Agar (PDA) | Fungal culture medium |  |  |
+| Module 5 – Tissue Preparation | Supply | Silica beads | Sample desiccation/homogenization |  |  |
+| Module 5 – Tissue Preparation | Equipment | Incubator | Controlled temperature growth environment |  |  |
+| Module 5 – Tissue Preparation | Equipment | Balance | Biomass weighing |  |  |
+| Module 6 – Sample Submission | Supply | Shipment supplies | For shipping samples to AGI |  |  |
+| Module 6 – Sample Submission | Supply | MycoEd metadata printout | Completed metadata form included with shipment |  |  |
+| Module 7 – Genomic Analyses | Platform | MycoCosm (JGI portal) | Web-based genomic analysis portal | DOE Joint Genome Institute |  |
+| Module 7 – Genomic Analyses | Equipment | Computer with internet access | Required for web-based genomic analyses |  |  |
 
 For the full source list and raw fields, see `_materials.csv`.
 
