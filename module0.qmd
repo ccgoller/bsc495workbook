@@ -4,7 +4,37 @@
 
 This table lists all materials and equipment required across Myco-Ed modules. Use the search box to filter by module, item, company, or catalog number (web view), or scroll through the complete table below (in PDF and downloads).
 
-The complete materials and equipment list is available in `_materials.csv`.
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+materials <- read.csv("_materials.csv", stringsAsFactors = FALSE)
+names(materials) <- c("Module", "Item", "Description", "Company", "Catalog")
+
+# Derive a broad type category from the item/description text.
+classify_type <- function(item, description) {
+   text <- tolower(paste(item, description))
+   if (grepl("agar|buffer|water|ctab|primer|mix|ladder|solution|polyzyme|ethanol|bleach|bsa", text)) {
+      return("Reagent")
+   }
+   if (grepl("autoclave|hood|cycler|vortex|centrifuge|thermomixer|qubit|minion|computer|portal|incubator|balance", text)) {
+      return("Equipment")
+   }
+   if (grepl("varies by assay", text)) {
+      return("Mixed")
+   }
+   return("Supply")
+}
+
+materials$Type <- mapply(classify_type, materials$Item, materials$Description)
+
+table_out <- materials[, c("Module", "Type", "Item", "Description", "Company", "Catalog")]
+
+knitr::kable(table_out, align = c("l", "l", "l", "l", "l", "l"))
+```
+
+For the full source list and raw fields, see `_materials.csv`.
 
 
 ## Module 0.2 – Create iNaturalist Traditional Project Instructions
