@@ -1,5 +1,10 @@
 # Module 3: Phenotypic Assays {.unnumbered}
 
+::: {.callout-tip}
+### 🎞 Open Slides
+[Open Module 3 Slides](module3-slides.html)
+:::
+
 ## Module 3.1 – Phenotypic Assays
 
 ### Instructor Laboratory Preparation Instructions

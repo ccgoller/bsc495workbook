@@ -1,5 +1,10 @@
 # Module 6: Sample Submission {.unnumbered}
 
+::: {.callout-tip}
+### 🎞 Open Slides
+[Open Module 6 Slides](module6-slides.html)
+:::
+
 ## Module 6.1 – Myco-Ed Sample Submission SOP
 
 ### Overview

@@ -1,5 +1,10 @@
 # Module 7: Genomic Analyses {.unnumbered}
 
+::: {.callout-tip}
+### 🎞 Open Slides
+[Open Module 7 Slides](module7-slides.html)
+:::
+
 ## Module 7.1 – Sexual Reproduction in Ascomycota Genomic Analysis
 
 ### Introduction

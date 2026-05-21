@@ -1,5 +1,10 @@
 # Module 2: Fungal Isolation {.unnumbered}
 
+::: {.callout-tip}
+### 🎞 Open Slides
+[Open Module 2 Slides](module2-slides.html)
+:::
+
 ## Module 2.1 – Lab Prep Overview
 
 ### Instructor Laboratory Preparation Instructions

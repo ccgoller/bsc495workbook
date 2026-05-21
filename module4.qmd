@@ -1,5 +1,10 @@
 # Module 4: DNA Sequencing {.unnumbered}
 
+::: {.callout-tip}
+### 🎞 Open Slides
+[Open Module 4 Slides](module4-slides.html)
+:::
+
 ## Module 4.1 – DNA Sequencing and Species Identification Instructor Resources
 
 ### Instructor Laboratory Preparation Instructions

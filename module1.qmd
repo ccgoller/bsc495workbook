@@ -1,5 +1,10 @@
 # Module 1: Fungal Sampling {.unnumbered}
 
+::: {.callout-tip}
+### 🎞 Open Slides
+[Open Module 1 Slides](module1-slides.html)
+:::
+
 ## Module 1.1 – Lab Prep Overview
 
 ### Instructor Laboratory Preparation Instructions
@@ -205,12 +210,15 @@ All lineages of fungi contain endophytic species, however the majority of fungal
 Before you begin, read through the entire instructions. Be sure to consult your instructor if you have any questions.
 
 **Formulate your Research Question**
+
 You will attempt to culture fungi from a total of 18 leaf sections. You may use any combination of plant species, individual plants, leaf portions, or leaf cuttings in your setup. Choose a combination that interests you. Are you interested in capturing the diversity within an individual plant? If so, are you interested in looking at the diversity of endophytes within the canopy of individual plants? For this question, you would plate leaves from lower, middle, and upper canopies. Are you interested in documenting the fungal endophyte diversity within a plant species? For this investigation, collect leaves from multiple individuals of the same species. Perhaps you want to compare species diversity between different plant species. To investigate this question, collect plant leaves from a variety of plant species.
 
 **Design your Experimental Setup**
+
 Once you have decided what endophyte communities you would like to explore, obtain green leaves from your target host plants. These can be from deciduous or evergreen plants, including needles from conifers. You should plate your leaves within 24 hours of collection. Refrigerate your leaves if you need to store them between collection and plating.
 
 **Metadata**
+
 Upload an image of the plants you have chosen to your course's iNaturalist Project page. Follow the instructions in Module 1.1 - Metadata Directions to be sure you have documented all necessary metadata.
 
 **Sampling Endophytes**

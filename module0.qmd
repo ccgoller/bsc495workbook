@@ -1,8 +1,13 @@
 # Module 0: Getting Started and Data Management {.unnumbered}
 
+::: {.callout-tip}
+### 🎞 Open Slides
+[Open Module 0 Slides](module0-slides.html)
+:::
+
 ## Module 0.1 – Lab Materials and Equipment Overview
 
-This table lists all materials and equipment required across Myco-Ed modules. Use the search box to filter by module, item, company, or catalog number (web view), or scroll through the complete table below (in PDF and downloads).
+This table lists all materials and equipment required across Myco-Ed modules. The table is organized by module and includes the type of item, a description, and company/catalog information when available.
 
 | Module | Type | Item | Description | Company | Catalog |
 |---|---|---|---|---|---|
