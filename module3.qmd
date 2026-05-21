@@ -1,7 +1,7 @@
 # Module 3: Phenotypic Assays {.unnumbered}
 
 ::: {.callout-tip}
-### 🎞 Open Slides
+### 📽️ Open Slides
 [Open Module 3 Slides](module3-slides.html)
 :::
 
@@ -9,13 +9,15 @@
 
 ### Instructor Laboratory Preparation Instructions
 
-**Materials and Equipment:**
+#### Materials and Equipment
+
 - [ ] Autoclave
 - [ ] Laminar flow hood (if available)
-- [ ] 60x15mm Petri Dishes
+- [ ] 60x15 mm Petri dishes
 - [ ] Bacteriological agar
 - [ ] Potato Dextrose Agar (PDA) with antibiotics
 - [ ] Zinc sulfate
+- [ ] Cellophane discs
 - [ ] Forceps
 - [ ] Scalpel (sterilized)
 
