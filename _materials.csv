@@ -1,0 +1,73 @@
+module,item,description,company,catalog
+Module 1 – Fungal Sampling & Culturing,100×15 mm Petri dishes,Petri dishes for fungal culturing,,
+Module 1 – Fungal Sampling & Culturing,"Bacteriological agar (e.g., Difco Bacto Agar)",Agar base for culture media,Difco/BD,
+Module 1 – Fungal Sampling & Culturing,Autoclave,Sterilization of media and equipment,,
+Module 1 – Fungal Sampling & Culturing,Laminar flow hood,Sterile work environment (optional if unavailable),,
+Module 1 – Fungal Sampling & Culturing,Forceps,Sample manipulation,,
+Module 1 – Fungal Sampling & Culturing,Scalpels,Cutting leaf tissue,,
+Module 1 – Fungal Sampling & Culturing,150 mL beaker,Container for ethanol,,
+Module 1 – Fungal Sampling & Culturing,Parafilm,Sealing Petri plates,Bemis,
+Module 1 – Fungal Sampling & Culturing,Gloves,Personal protection,,
+Module 1 – Fungal Sampling & Culturing,Hole punch (all metal),Cutting leaf discs; scalpel is an acceptable substitute,,
+Module 1 – Fungal Sampling & Culturing,Kimwipes,Lab wipes,Kimtech,
+Module 1 – Fungal Sampling & Culturing,Paper bags,Field sample storage,,
+Module 1 – Fungal Sampling & Culturing,10% bleach (in autoclaved water),Surface sterilization solution,,
+Module 1 – Fungal Sampling & Culturing,70% ethanol,Surface sterilization,,
+Module 1 – Fungal Sampling & Culturing,Paper towels,General lab use,,
+Module 2 – Fungal Isolation,60×15 mm Petri dishes,Smaller dishes for fungal isolation transfers,,
+Module 2 – Fungal Isolation,Potato Dextrose Agar (PDA),Selective culture media for fungi,,
+Module 2 – Fungal Isolation,Autoclave,Sterilization of media and equipment,,
+Module 2 – Fungal Isolation,Laminar flow hood,Sterile work environment (optional if unavailable),,
+Module 2 – Fungal Isolation,Gloves,Personal protection,,
+Module 2 – Fungal Isolation,Sharpie or lab marker (fine tip),Plate labeling,,
+Module 2 – Fungal Isolation,70% ethanol,Surface sterilization,,
+Module 2 – Fungal Isolation,Kimwipes,Lab wipes,Kimtech,
+Module 3 – Phenotypic Assays,Varies by assay,Materials depend on the chosen phenotypic assay,,
+Module 4 – DNA Sequencing,Gloves,Personal protection,,
+Module 4 – DNA Sequencing,Sharpie,Tube and plate labeling,,
+Module 4 – DNA Sequencing,Thermal cycler,PCR amplification,,
+Module 4 – DNA Sequencing,Vortex,Sample mixing,,
+Module 4 – DNA Sequencing,Centrifuge,Centrifugation of PCR and microfuge tubes,,
+Module 4 – DNA Sequencing,Heat block / thermomixer,For 1.5–2.0 mL microfuge tubes,,
+Module 4 – DNA Sequencing,1.5 mL microcentrifuge tubes (DNA LoBind),Low-bind tubes to minimize DNA adsorption,Eppendorf,
+Module 4 – DNA Sequencing,0.2 mL PCR tubes,PCR reactions,,
+Module 4 – DNA Sequencing,Microfuge and PCR tube racks,Tube organization,,
+Module 4 – DNA Sequencing,Labeling tape,Sample labeling,,
+Module 4 – DNA Sequencing,Monarch Spin gDNA Extraction Kit (100 reactions),Spin-column genomic DNA extraction kit,New England BioLabs,T3010S
+Module 4 – DNA Sequencing,"MetaPolyzyme, DNA free",Enzyme blend for fungal cell wall digestion,Millipore Sigma,MAC4LDF-5X1VL
+Module 4 – DNA Sequencing,TE Buffer,DNA storage and dilution buffer,,
+Module 4 – DNA Sequencing,CTAB solution (100 mL),Alternative DNA extraction reagent,Promega,MC1411
+Module 4 – DNA Sequencing,Parafilm,Tube sealing,Bemis,
+Module 4 – DNA Sequencing,70% ethanol,Surface sterilization,,
+Module 4 – DNA Sequencing,"Micropipettors (1–10, 20–200, 100–1000 µL)",Liquid handling,,
+Module 4 – DNA Sequencing,"Micropipette tips (1–10, 20–200, 100–1000 µL, filtered preferred)",Filtered tips reduce contamination risk,,
+Module 4 – DNA Sequencing,Kimwipes,Lab wipes,Kimtech,
+Module 4 – DNA Sequencing,"PCR primers: ITS1f, ITS4, 5.8SR, fITS7",Fungal ITS barcoding primers; normalize to 100 µM in TE buffer. ITS1f: CTTGGTCATTTAGAGGAAGTAA; ITS4: TCCTCCGCTTATTGATATGC; 5.8SR: CGCTGCGTTCTTCATCG; fITS7: GTGARTCATCGAATCTTTG,IDT or similar,
+Module 4 – DNA Sequencing,Q5 Hot Start High-Fidelity 2X Master Mix (100 reactions),High-fidelity PCR amplification master mix,New England BioLabs,M0494S
+Module 4 – DNA Sequencing,PCR water,Nuclease-free water for PCR setup,New England BioLabs,B1500S
+Module 4 – DNA Sequencing,Exo-CIP Rapid PCR Cleanup Kit (100 reactions),Enzymatic cleanup of PCR products prior to sequencing,New England BioLabs,E1050S
+Module 4 – DNA Sequencing,E-Gel system with 1.2% agarose gels,Pre-cast gel electrophoresis system,ThermoFisher,G4010010
+Module 4 – DNA Sequencing,E-Gel Sizing DNA Ladder,DNA size standard for gel electrophoresis,ThermoFisher,10488100
+Module 4 – DNA Sequencing,Qubit Fluorometer with dsDNA HS Assay Kit,Fluorometric DNA quantification,ThermoFisher,Q32851
+Module 4 – DNA Sequencing,Sanger sequencing service access,"Capillary sequencing of ITS amplicons (e.g., Genewiz, Eurofins, Eton)",Various,
+"Module 4 – DNA Sequencing (long-read, optional)",ONT Rapid Barcoding Kit v14,Long-read nanopore sequencing library preparation,Oxford Nanopore Technologies,SQK-RBK114.24
+"Module 4 – DNA Sequencing (long-read, optional)",MinION sequencing device,Portable nanopore sequencer,Oxford Nanopore Technologies,
+"Module 4 – DNA Sequencing (long-read, optional)",MinION flow cells (R10.4.1),Nanopore sequencing flow cells,Oxford Nanopore Technologies,FLO-MIN114
+"Module 4 – DNA Sequencing (long-read, optional)",Ultrapure BSA 50 mg/mL,Blocking agent for long-read library prep,ThermoFisher,AM2616
+"Module 4 – DNA Sequencing (long-read, optional)",Magnetic rack for 1.5 mL tubes (DynaMag-2),Bead-based cleanup during long-read library preparation,ThermoFisher,12321D
+"Module 4 – DNA Sequencing (long-read, optional)",Nuclease-free water and 100% ethanol,For preparing 80% ethanol wash during bead cleanup,,
+Module 5 – Tissue Preparation,Cellophane discs (autoclaved in gauze),Individually rinsed and autoclaved before use,,
+Module 5 – Tissue Preparation,60×15 mm Petri dishes,Culture dishes for tissue preparation,,
+Module 5 – Tissue Preparation,Potato Dextrose Agar (PDA),Fungal culture media,,
+Module 5 – Tissue Preparation,Silica beads,For sample desiccation or homogenization,,
+Module 5 – Tissue Preparation,Gloves,Personal protection,,
+Module 5 – Tissue Preparation,Incubator,Controlled temperature environment for fungal growth,,
+Module 5 – Tissue Preparation,Balance,Weighing biomass samples,,
+Module 5 – Tissue Preparation,Forceps,Sample manipulation,,
+Module 5 – Tissue Preparation,Scalpel,Cutting tissue,,
+Module 5 – Tissue Preparation,Small jar with lid or covered plates,Sample containment and storage,,
+Module 5 – Tissue Preparation,Pure fungal culture,Starting biological material,,
+Module 6 – Sample Submission,Sample shipment supplies,For shipping samples to AGI (see Module 6 SOP for details),,
+Module 6 – Sample Submission,MycoEd Metadata Form printout,Paper copy of completed metadata form included with shipment (landscape orientation),,
+Module 7 – Genomic Analyses,MycoCosm (JGI portal),Web-based genomic analysis portal,DOE Joint Genome Institute,
+Module 7 – Genomic Analyses,Computer with internet access,Required for all web-based genomic analyses,,
