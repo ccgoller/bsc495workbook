@@ -17,3 +17,9 @@ format:
 ---
 
 {{< include module5.qmd >}}
+
+---
+
+## Continue in Workbook {.center}
+
+[Back to Module 5 Workbook](module5.html){.back-to-module}

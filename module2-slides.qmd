@@ -268,3 +268,9 @@ Today we will **subculture** those fungi onto nutrient-rich **PDA agar** to prom
 - Calculate growth rate and plot a graph
 - Document everything in iNaturalist and your lab blog
 :::
+
+---
+
+## Continue in Workbook {.center}
+
+[Back to Module 2 Workbook](module2.html){.back-to-module}

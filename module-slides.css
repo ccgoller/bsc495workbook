@@ -1,18 +1,32 @@
 /* Module slides theme: NC State Bio-Indigo and Genomic Green */
 
 :root {
-  --brand-indigo: #4156a1;
-  --brand-green: #00a77e;
-  --brand-teal: #0a7f8c;
-  --brand-ink: #1a1a2e;
-  --brand-soft: #f0f3fb;
+  --brand-indigo: #2f478f;
+  --brand-indigo-deep: #1f2f63;
+  --brand-green: #007a5d;
+  --brand-teal: #0b6672;
+  --brand-ink: #111425;
+  --brand-soft: #eef2fb;
   --brand-focus: #005fcc;
+  --brand-link: #1f46a7;
+  --brand-link-hover: #005f48;
+  --surface-plain: #ffffff;
+  --surface-subtle: #f7f9ff;
+  --surface-note: #ecf8f4;
+  --surface-warning: #fff6dd;
+  --surface-important: #fff0f0;
+  --border-subtle: #cfd8ee;
+
+  --motion-duration-fast: 140ms;
+  --motion-duration-base: 220ms;
+  --motion-duration-slow: 320ms;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
 
   --r-background-color: #ffffff;
   --r-main-color: var(--brand-ink);
   --r-heading-color: var(--brand-indigo);
-  --r-link-color: #26439b;
-  --r-link-color-hover: #007e61;
+  --r-link-color: var(--brand-link);
+  --r-link-color-hover: var(--brand-link-hover);
   --r-selection-background-color: var(--brand-indigo);
   --r-selection-color: #ffffff;
 }
@@ -41,9 +55,6 @@
 
 .reveal h2 {
   font-size: clamp(1.25em, 3.5vw, 1.7em);
-}
-
-.reveal h2 {
   color: var(--brand-teal);
 }
 
@@ -71,10 +82,38 @@
   color: var(--r-link-color);
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.16em;
+  transition: color var(--motion-duration-fast) var(--motion-ease);
 }
 
 .reveal a:hover {
   color: var(--r-link-color-hover);
+}
+
+.reveal a.back-to-module {
+  display: inline-block;
+  margin-top: 0.6em;
+  padding: 0.5em 0.9em;
+  border-radius: 0.45em;
+  border: 2px solid var(--brand-indigo);
+  background: var(--brand-indigo);
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(17, 20, 37, 0.18);
+  transition:
+    background-color var(--motion-duration-fast) var(--motion-ease),
+    border-color var(--motion-duration-fast) var(--motion-ease),
+    color var(--motion-duration-fast) var(--motion-ease),
+    transform var(--motion-duration-fast) var(--motion-ease),
+    box-shadow var(--motion-duration-fast) var(--motion-ease);
+}
+
+.reveal a.back-to-module:hover {
+  background: var(--brand-indigo-deep);
+  border-color: var(--brand-indigo-deep);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(17, 20, 37, 0.22);
 }
 
 .reveal a:focus-visible,
@@ -82,7 +121,8 @@
 .reveal [role="button"]:focus-visible {
   outline: 3px solid var(--brand-focus);
   outline-offset: 2px;
-  border-radius: 4px;
+  border-radius: 6px;
+  box-shadow: 0 0 0 2px #ffffff;
 }
 
 .reveal section[data-background-color="#4156A1"] h1,
@@ -95,10 +135,10 @@
 
 .reveal .slide-logo {
   max-height: 56px;
-  background: rgba(255, 255, 255, 0.96);
-  border: 1px solid rgba(65, 86, 161, 0.22);
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(47, 71, 143, 0.28);
   border-radius: 10px;
-  box-shadow: 0 5px 14px rgba(26, 26, 46, 0.22);
+  box-shadow: 0 6px 16px rgba(17, 20, 37, 0.24);
   padding: 0.18em 0.34em;
 }
 
@@ -117,8 +157,8 @@
 
 .reveal .slide-number {
   color: var(--brand-indigo);
-  background: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(65, 86, 161, 0.2);
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(47, 71, 143, 0.32);
   border-radius: 999px;
   padding: 0.15em 0.5em;
 }
@@ -134,29 +174,30 @@
 .reveal .callout {
   border-left-width: 0.35rem;
   border-radius: 0.35rem;
-  background: #ffffff;
-  box-shadow: 0 4px 14px rgba(26, 26, 46, 0.08);
+  background: var(--surface-plain);
+  box-shadow: 0 4px 14px rgba(17, 20, 37, 0.09);
+  border: 1px solid var(--border-subtle);
 }
 
 .reveal .callout-note {
   border-left-color: var(--brand-green);
-  background-color: #f2fbf8;
+  background-color: var(--surface-note);
 }
 
 .reveal .callout-warning {
-  border-left-color: #b58500;
-  background-color: #fff9e8;
+  border-left-color: #8a6200;
+  background-color: var(--surface-warning);
 }
 
 .reveal .callout-important {
-  border-left-color: #c62828;
-  background-color: #fff1f1;
+  border-left-color: #a62222;
+  background-color: var(--surface-important);
 }
 
 /* Code and preformatted blocks */
 .reveal code {
-  color: #084f3e;
-  background: #eef7f3;
+  color: #0c4638;
+  background: #ebf5f2;
   border-radius: 0.2em;
   padding: 0.08em 0.22em;
 }
@@ -178,7 +219,7 @@
   width: 100%;
   border-collapse: collapse;
   font-size: 0.78em;
-  border: 1px solid #d9deef;
+  border: 1px solid var(--border-subtle);
   border-radius: 0.45rem;
   overflow: hidden;
 }
@@ -200,20 +241,20 @@
 .reveal table th,
 .reveal table td {
   padding: 0.48em 0.56em;
-  border: 1px solid #dde3f2;
+  border: 1px solid var(--border-subtle);
 }
 
 .reveal table tbody tr:nth-child(even) {
-  background-color: var(--brand-soft);
+  background-color: var(--surface-subtle);
 }
 
 .reveal table tbody tr:hover {
-  background-color: #e5faF3;
+  background-color: #e0f4ee;
 }
 
 .reveal blockquote {
   border-left: 0.3rem solid var(--brand-green);
-  background: #f5fbfa;
+  background: #eef8f5;
   border-radius: 0.35rem;
   padding: 0.45em 0.7em;
 }
@@ -236,7 +277,7 @@
 
 /* Title slide (first slide) — Bio-Indigo blue background */
 .reveal .slide:first-child {
-  background: linear-gradient(135deg, var(--brand-indigo) 0%, #2d3a7a 100%);
+  background: linear-gradient(135deg, var(--brand-indigo) 0%, var(--brand-indigo-deep) 100%);
 }
 
 .reveal .slide:first-child h1,
@@ -248,7 +289,7 @@
 
 /* Automatic section dividers: any slide whose first block is an H1 gets blue */
 .reveal .slides section:has(> h1) {
-  background: linear-gradient(135deg, var(--brand-indigo) 0%, #2d3a7a 100%);
+  background: linear-gradient(135deg, var(--brand-indigo) 0%, var(--brand-indigo-deep) 100%);
 }
 
 .reveal .slides section:has(> h1) h1,
@@ -262,19 +303,19 @@
 
 /* Subsection dividers: H2 and H3 opener slides use brand accent backgrounds */
 .reveal .slides section:has(> h2):not(:has(> h1)) {
-  background: linear-gradient(135deg, #e7f5f3 0%, #d9f0ee 100%);
+  background: linear-gradient(135deg, #edf7f5 0%, #dff2ee 100%);
   border-left: 12px solid var(--brand-teal);
 }
 
 .reveal .slides section:has(> h3):not(:has(> h1)):not(:has(> h2)) {
-  background: linear-gradient(135deg, #eef8f5 0%, #e2f6ef 100%);
+  background: linear-gradient(135deg, #f0f8f5 0%, #e4f5ef 100%);
   border-left: 12px solid var(--brand-green);
 }
 
 /* Section headers with # heading and {background-color} — Green background */
 .reveal section[data-background-color="#00A77E"],
 .reveal section[data-background-color="#00a77e"] {
-  background: linear-gradient(135deg, var(--brand-green) 0%, #007e61 100%);
+  background: linear-gradient(135deg, var(--brand-green) 0%, #005f48 100%);
 }
 
 .reveal section[data-background-color="#00A77E"] h1,
@@ -290,7 +331,44 @@
 /* Section headers with blue background (Module X.Y style) */
 .reveal section[data-background-color="#4156A1"],
 .reveal section[data-background-color="#4156a1"] {
-  background: linear-gradient(135deg, var(--brand-indigo) 0%, #2d3a7a 100%);
+  background: linear-gradient(135deg, var(--brand-indigo) 0%, var(--brand-indigo-deep) 100%);
+}
+
+/* Motion system: consistent reveal timing and subtle enter transitions */
+.reveal .slides section {
+  transition:
+    background-color var(--motion-duration-base) var(--motion-ease),
+    border-color var(--motion-duration-base) var(--motion-ease),
+    box-shadow var(--motion-duration-base) var(--motion-ease);
+}
+
+.reveal .slides section.present > * {
+  animation: slide-item-enter var(--motion-duration-slow) var(--motion-ease) both;
+}
+
+.reveal .slides section.present > *:nth-child(2) { animation-delay: 40ms; }
+.reveal .slides section.present > *:nth-child(3) { animation-delay: 80ms; }
+.reveal .slides section.present > *:nth-child(4) { animation-delay: 120ms; }
+
+.reveal .fragment {
+  transition:
+    opacity var(--motion-duration-base) var(--motion-ease),
+    transform var(--motion-duration-base) var(--motion-ease);
+}
+
+.reveal .fragment.visible {
+  transform: none;
+}
+
+@keyframes slide-item-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .reveal section[data-background-color="#4156A1"] h1,
