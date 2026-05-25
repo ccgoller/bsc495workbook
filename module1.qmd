@@ -1,7 +1,7 @@
 # Module 1: Fungal Sampling {.unnumbered}
 
 ::: {.callout-tip}
-### 🎞 Open Slides
+### 📽️ Open Slides
 [Open Module 1 Slides](module1-slides.html)
 :::
 
@@ -81,7 +81,10 @@ On a computer, go to iNaturalist observation and again, click on details at the 
 3. The next window will display elevation in meters in the upper right. Record this elevation.
 
 ### Canopy
-Record the portion of the canopy where the leaf was collected (L-lower 1/3 of plant, M-middle 1/3 of plant, or U-upper 1/3 of plant).
+Record the portion of the canopy where the leaf was collected:
+- **L-lower** 1/3 of plant, 
+- **M-middle** 1/3 of plant, or 
+- **U-upper** 1/3 of plant.
 
 ## Module 1.3 – Using iNaturalist
 

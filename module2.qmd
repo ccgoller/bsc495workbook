@@ -1,7 +1,7 @@
 # Module 2: Fungal Isolation {.unnumbered}
 
 ::: {.callout-tip}
-### 🎞 Open Slides
+### 📽️ Open Slides
 [Open Module 2 Slides](module2-slides.html)
 :::
 
@@ -11,7 +11,7 @@
 
 #### Materials
 
-- [ ] Cellophane
+- [ ] Cellophane (rinsed, individually wrapped in gauze, and autoclaved)
 - [ ] 100x15mm Petri dishes
 - [ ] 60x15mm Petri dishes
 - [ ] Bacteriological agar

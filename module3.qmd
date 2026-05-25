@@ -54,7 +54,7 @@ Testing foliar fungal endophytes for Zn tolerance is particularly relevant as th
 1. Determine if the fungal isolates are tolerant of Zn.
 2. Measure how different concentrations of Zn influence fungal growth rates.
 
-**Materials:**
+#### Materials
 - [ ] Pure fungal cultures
 - [ ] PDA 0 mM Zn + antibiotics
 - [ ] PDA 1 mM Zn + antibiotics

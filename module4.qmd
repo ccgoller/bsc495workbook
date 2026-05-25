@@ -1,7 +1,7 @@
 # Module 4: DNA Sequencing {.unnumbered}
 
 ::: {.callout-tip}
-### 🎞 Open Slides
+### 📽️ Open Slides
 [Open Module 4 Slides](module4-slides.html)
 :::
 

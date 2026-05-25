@@ -1,7 +1,7 @@
 # Module 5: Tissue Preparation {.unnumbered}
 
 ::: {.callout-tip}
-### 🎞 Open Slides
+### 📽️ Open Slides
 [Open Module 5 Slides](module5-slides.html)
 :::
 

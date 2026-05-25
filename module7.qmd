@@ -1,7 +1,7 @@
 # Module 7: Genomic Analyses {.unnumbered}
 
 ::: {.callout-tip}
-### 🎞 Open Slides
+### 📽️ Open Slides
 [Open Module 7 Slides](module7-slides.html)
 :::
 
