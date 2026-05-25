@@ -1,5 +1,5 @@
 # Overview {.unnumbered}
-The Mycological Curriculum for Education and Discovery [MycoEd](https://mycocosm.jgi.doe.gov/mycocosm/home/myco-ed) is a **Course-Based Undergraduate Research Experience (CURE)** that features team-based, hands-on experiments in fungal biology and genomics. You will learn new laboratory techniques and data analysis by starting with sample collection, fungal isolation, and the characterization of the resulting data to improve fungal genomic resources. Genomic DNA will be extracted from samples for genome sequencing, assembly, and annotation. By isolating and sequencing new fungal species, your team will help produce high-quality fungal reference genomes. This course will prepare you with workforce training in fungal biology and genomics and empower you to be a contributor to fungal genomics! Importantly, you will practice lab and bioinformatics skills that are broadly applicable!
+The Mycological Curriculum for Education and Discovery [MycoEd](https://mycocosm.jgi.doe.gov/mycocosm/home/myco-ed) is a **Course-Based Undergraduate Research Experience (CURE)** that features team-based, hands-on experiments in fungal biology and genomics. You will learn new laboratory techniques and data analysis by starting with sample collection, fungal isolation, and the characterization of the resulting isolates to improve fungal genomic resources. Genomic DNA will be extracted from samples for genome sequencing, assembly, and annotation. By isolating and sequencing fungal species, your team will help produce high-quality fungal reference genomes. This course will prepare you with workforce training in fungal biology and genomics and empower you to be a contributor to fungal genomics! Importantly, you will practice lab and bioinformatics skills that are broadly applicable!
 
 To learn more about Quarto books visit [Quarto Books](https://quarto.org/docs/books)
 To learn more about the MycoEd curriculum visit the [MycoEd](https://mycocosm.jgi.doe.gov/mycocosm/home/myco-ed))
@@ -10,7 +10,7 @@ To learn more about the MycoEd curriculum visit the [MycoEd](https://mycocosm.jg
 * **CO3**: **Practice** extracting fungal DNA,
 * **CO4**: **Describe** the process to PCR amplify fungal ITS,
 * **CO5**: **Formulate** meaningful and testable scientific questions/hypotheses,
-* **CO6**: **Collect** and **critically interpret** experimental data (including metadata),
+* **CO6**: **Collect** and critically **interpret** experimental data (including metadata),
 * **CO7**: **Maintain** an appropriate laboratory notebook,
 * **CO8**: **Summarize** their work and **describe** their findings in written and oral presentations.
 * **CO9**: **Apply** evidence-based strategies to improve scientific collaboration and teamwork skills.

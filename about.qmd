@@ -13,7 +13,7 @@ about:
       href: https://linkedin.com/in/ccgoller
 ---
 # About the Author {.unnumbered}
-Carlos C. Goller, Ph.D. is a Teaching Professor at North Carolina State University in Raleigh, NC. He teaches microbiology, life science, public health, and other fun courses as part of the Department of Biological Sciences. When not playing with *Delftia acidovorans* or code, Carlos enjoys spending time with his family (Claire Gordy also at NC State, Amada, and Aurelio) and playing with his dog Sunshine.
+Carlos C. Goller, Ph.D. is a Teaching Professor at North Carolina State University in Raleigh, NC. He teaches microbiology, life sciences, public health, and other fun courses as a faculty member of the Department of Biological Sciences. When not learing about *Delftia acidovorans* or code, Carlos enjoys spending time with his family (Claire Gordy also at NC State, Amada, and Aurelio) and playing with his dog Sunshine.
 
 ## Education
 North Carolina State University, Raleigh, NC | Advisor: Dr. Sue Carson  |  Topic: Biotechnology Education and Curriculum Development

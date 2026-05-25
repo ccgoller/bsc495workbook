@@ -63,7 +63,7 @@ For the full source list and raw fields, see `_materials.csv`.
 ## Module 0.2 – Create iNaturalist Traditional Project Instructions
 
 ### iNaturalist Introduction
-iNaturalist is a tool that we can use to document the fungal isolates in Myco-Ed courses. This tool allows instructors and students to record the metadata associated with the fungal isolates. Metadata will include plant species, geographic location, elevation, fungal DNA sequences, growth assays, and any other data relevant for this project. This platform will also enable us to track growth of the MycoEd project. The goal of this long-term research project is to develop annotated fungal genomes to better understand fungal biology.
+[iNaturalist](https://www.inaturalist.org/) is a tool that we can use to document the fungal isolates in Myco-Ed courses. This tool allows instructors and students to record the **metadata** associated with the fungal isolates. Metadata will include plant species, geographic location, elevation, fungal DNA sequences, growth assays, and any other data relevant for this project. iNaturalist will also enable us to track growth of the MycoEd project. The goal of this long-term research project is to develop annotated fungal genomes to better understand fungal biology.
 
 To begin, make sure that you have an iNaturalist account.
 
@@ -73,16 +73,20 @@ There are three kinds of projects:
 2. Collection Projects
 3. Traditional Projects
 
-The umbrella project for MycoEd is the MycoEd Fungal Genomics Education Project. Each course will establish a Traditional Project in iNaturalist. A traditional project allows us to control whose observations are included in the project, which enables better downstream data management. We ask that your class use the Traditional Project for MycoEd for only your MycoEd fungi. If your course includes a fungal collection using iNaturalist, please have a separate iNaturalist project for these fungal observations.
+The umbrella project for MycoEd is the MycoEd Fungal Genomics Education Project. Each course will establish a Traditional Project in iNaturalist. A traditional project allows us to control whose **observations** are included in the project, which enables better downstream data management. We ask that your class use the Traditional Project for MycoEd for only your MycoEd fungi. If your course includes a fungal collection using iNaturalist, please have a separate iNaturalist project for these fungal observations.
 
 ### Make a MycoEd Traditional Project [Instructor Instructions]
-1. Log into iNaturalist.
+1. Log into [iNaturalist](https://www.inaturalist.org/).
 2. Go to Projects.
 3. This will take you to Your Projects.
 4. On the bottom right of the page, select Start a Project.
 5. Start a Traditional Project. Scroll to the bottom of the page to find the Traditional Project link for this option.
 
-**Note: If you do not have this option, please contact Amy Honan (amy.honan@oregonstate.edu) or Andrew Wilson (andrew.wilson@BotanicGardens.org) for assistance.**
+
+::: {.callout-note}
+**Note:** If you do not have this option, please contact **Amy Honan** (amy.honan@oregonstate.edu) or **Andrew Wilson** (andrew.wilson@BotanicGardens.org) for assistance.
+:::
+
 
 6. Complete the following criteria indicated in the lettered parts of the figure below:
    a. Add Title. Include Institution, term or semester, and year.
@@ -125,7 +129,7 @@ This checklist will help you track your progress in managing Myco-Ed project dat
 
 - [ ] Create an iNaturalist Account. (Module 0.2)
 - [ ] Create an iNaturalist Traditional Project for your course. (Module 0.2) You may need to request the assistance of the Myco-Ed team to create this if you do not have the pre-requisite number of observations.
-- [ ] Tell your students the name of the iNaturalist Project, and request their iNaturalist user IDs.
+- [ ] Tell students the name of the iNaturalist Project, and request their iNaturalist user IDs.
 - [ ] Add the students to the course project once they've completed Module 1.2. (Module 0.2)
 - [ ] Instruct students on iNaturalist data management obligations for course credit (at the instructor's discretion).
 

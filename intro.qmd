@@ -1,5 +1,5 @@
 # Introduction {.unnumbered}
-This is a Quarto book created from the [MycoEd Workbook from March 2026](https://dx.doi.org/10.17504/protocols.io.rm7vzqd5xvx1/v1) and adapted for the **BSC 495 *The Hidden World's Code***, a course developed for students at North Carolina State University. The course is designed to provide students with hands-on experience in fungal biology and genomics, and to empower them to contribute to the field of mycology through research and discovery.
+The BSC 495 Workbook is a Quarto book created from the [MycoEd Workbook from March 2026](https://dx.doi.org/10.17504/protocols.io.rm7vzqd5xvx1/v1) and adapted for the **BSC 495 *The Hidden World's Code***, a course developed for students at North Carolina State University. The course is designed to provide students with hands-on experience in fungal biology and genomics, and to empower them to contribute to the field of mycology through research and discovery.
 
 The Mycological Curriculum for Education and Discovery (Myco-Ed) is a Course-Based Undergraduate Research Experience (CURE) that consists of coordinated hands-on experiments across fungal biology teaching labs with the goals of:
 
@@ -7,4 +7,4 @@ The Mycological Curriculum for Education and Discovery (Myco-Ed) is a Course-Bas
 * Compiling original data for improving fungal genomic resources
 * Empowering students through isolation and genome sequencing of new fungal species
 
- The content is organized into **modules**, each addressing a specific topic related to mycology and education. The book is designed to provide comprehensive information and resources for educators, students, and anyone interested in learning about fungi and their role in the environment.
+ The content is organized into **modules**, each addressing a specific topic related to mycology and education. This workbook is designed to provide information and resources for educators, students, and anyone interested in learning about fungi and their role in the environment.

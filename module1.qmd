@@ -18,12 +18,17 @@
 - [ ] Potato Dextrose Agar (PDA)
 - [ ] Forceps
 - [ ] Scalpels or metal hole punch
+- [ ] Parafilm
+- [ ] Bleach
+- [ ] Ethanol
+- [ ] Sterile water
+- [ ] Streptomycin (50 mg/ml stock solution)
 
 **Lab Prep and Sterility:**
 We will be working at the bench and without Bunsen burners. **Be very careful and do not leave plates open for long periods.** First, clean your work area with bleach, and/or ethanol. We will use clean benches and laminar flow hoods when available, but this is a good alternative for those without access to these resources.
 
 ::: {.callout-warning}
-Note that we will be working with fungi, which are generally not harmful to humans, but can cause allergic reactions in some individuals. Always practice good sterile technique and handle all materials with care. If you have any concerns about allergies or sensitivities, please consult with your instructor before beginning the lab.
+We will be working with fungi, which are generally not harmful to humans, but can cause allergic reactions in some individuals. Always practice good sterile technique and handle all materials with care. If you have any concerns about allergies or sensitivities, please consult with your instructor before beginning the lab.
 
 Additionally, we may not be able to work in a laminar flow hood, which increases the risk of contamination. Be extra cautious with sterile technique and be prepared for some contamination in your plates. **Work carefully and do not leave plates open for long periods of time.**
 :::
@@ -34,7 +39,7 @@ Student scholars isolate fungal endophytes from leaves on water agar. We use one
 **Water Agar Recipe:**
 Suspend 39 grams bacteriological agar in 1000 mL (1 L) distilled water. Heat to boiling to dissolve the medium completely (in most cases, this step can be skipped as autoclaving will dissolve media). Sterilize by autoclaving at 15 lbs pressure at 121 °C for 15 minutes.
 
-When the media is cool enough to handle with autoclave gloves, pour 100x15mm plates in a sterile environment. Do not let it cool too long as the media will solidify. Each 100x15mm plate holds approximately 20 ml media. If plates will be used immediately smaller amounts of media can be poured into plates. If plates will be stored, use larger amounts. Store plates in the original dish sleeve in a refrigerator (~4 °C) until use.
+When the media is cool enough to handle with autoclave gloves, pour 100x15mm plates in a sterile environment. Do not let it cool too long as the media will solidify. Each 100x15mm plate holds approximately 20 ml media. If plates will be used immediately smaller amounts of media can be poured into plates. If plates will be stored, use larger amounts. Store plates (agar side up)in the original dish sleeve in a refrigerator (~4 °C) until use.
 
 **Disposal:**
 Place all Petri dishes in an autoclavable bag and sterilize at 15 lbs. pressure at 121 °C for 15 minutes. Follow institutional protocol for post-sterilization disposal. Be sure that the disposal of any heavy metals or other chemicals is properly handled.
@@ -47,7 +52,7 @@ In this project, metadata refers to information related to the fungi you will st
 
 Once you have selected the plant(s) that you will isolate fungi from, upload an image of each plant to your course's iNaturalist Project page. This part of the larger MycoEd Fungal Genomics Education Project. The fungi you isolate from this plant and the data associated with the fungal isolates will be linked back to this observation. These data will then be freely available to you and any other researchers interested in investigating fungal endophyte ecology and genomics.
 
-Record metadata on the [**Endophyte spreadsheet**](https://docs.google.com/spreadsheets/d/1mwfepj-iDCfE9ZHvsbBmc7eAuIUaboug/edit?usp=sharing&ouid=105826871227022710667&rtpof=true&sd=true). Below are descriptions for each category where necessary.
+Record metadata on the [**Endophyte spreadsheet**](https://docs.google.com/spreadsheets/d/1mwfepj-iDCfE9ZHvsbBmc7eAuIUaboug/edit?usp=sharing&ouid=105826871227022710667&rtpof=true&sd=true). We will continue adding to this spreadsheet as we collect more data on our fungal isolates. This spreadsheet will be shared with you and your instructor/TA.
 
 ### iNaturalist Plant Observation
 [NC State Myco Ed on iNaturalist](https://www.inaturalist.org/projects/nc-state-myco-ed)
@@ -55,9 +60,9 @@ Record metadata on the [**Endophyte spreadsheet**](https://docs.google.com/sprea
 ### Sample Naming
 Your individual fungal isolates will be identified using several identifiers. The first will be the unique **Host ID number** that identifies the host for the fungi you isolate. Second will be **your initials**. Please use at least 3 initials since some large courses may have students with shared initials. Third, **each individual leaf you cultured fungi from will be a separate number**. If you take multiple samples from the same leaf, they will be identified by letters. For example, if you have one leaf or needle with 3 different sections, they would be 1a, 1b, and 1c.
 
-**Example:** You have leaves collected from a maple tree on your campus. This tree was logged in iNaturalist and given a unique field number MycoED_004 (or whatever format the field numbers are provided in by your instructor/TA). Let's assume your initials are ABC. From this collection, you have three leaves that you culture from: leaf 1, leaf 2, and leaf 3. From each of these leaves, you take six segments, so these are letters a-f. So, if you isolate a fungus from the second leaf, third section, and your initials are ABC, the name of the isolate would look like MycoED_004_ABC_2c.
+**Example:** You have leaves collected from a maple tree on your campus. This tree was logged in iNaturalist and given a unique field number MycoED_004 (or whatever format the field numbers are provided in by your instructor/TA). Let's assume your initials are ABC. From this collection, you have three leaves that you culture from: leaf 1, leaf 2, and leaf 3. From each of these leaves, you take six segments or sections, so these are letters a-f. So, if you isolate a fungus from the second leaf, third section, and your initials are ABC, the name of the isolate would look like MycoED_004_ABC_2c.
 
-With this naming scheme, anyone can trace the 1) plant host, 2) the researcher, 3) and the leaf and section the fungal isolate came from. NO other fungus will have this precise labeling unless additional fungi were isolated from this leaf section. After that step you will need to add additional identifiers.
+With this naming scheme, anyone can trace the 1) plant host, 2) the researcher, 3) and the leaf and leaf section the fungal isolate came from. No other fungus will have this precise labeling unless additional fungi were isolated from this leaf section. After that step you will need to add additional identifiers.
 
 ### Sample Location
 Record latitude and longitude in decimal format.
@@ -66,9 +71,14 @@ On a computer, go to iNaturalist observation. On the map, click on details at th
 From the dropdown menu. The Lat/Long is now shown. Click the copy button and paste it into the [Endophyte spreadsheet](https://docs.google.com/spreadsheets/d/1mwfepj-iDCfE9ZHvsbBmc7eAuIUaboug/edit?usp=sharing&ouid=105826871227022710667&rtpof=true&sd=true).
 
 You can also find latitude/longitude coordinates on Google Maps.
-For Android phones: tap location and copy and paste in a text and it’s automatically in decimal degree format.
-For the iPhones:
-1. Open the Google maps app. Tap the "black triangle in a circle" icon to zoom to your location.
+
+####For Android phones: 
+1. Tap on the location. 
+2. Copy the latitutde/longitude coordinates.
+3. Paste the information. The text is automatically in decimal degree format.
+
+#### For the iPhones:
+1. Open the Google Maps app. Tap the "black triangle in a circle" icon to zoom to your location.
 2. Long touch on your location. This should open a tab at the bottom of the screen.
 3. Scroll up. You should see the latitude and longitude coordinates of that position, looking something like this: (45.1234567, -122.1234567).
 4. Long touch the coordinates, tap copy and then paste into an email or text.
@@ -89,7 +99,7 @@ Record the portion of the canopy where the leaf was collected:
 ## Module 1.3 – Using iNaturalist
 
 ### Using iNaturalist
-For this semester we will be sampling plant tissue and isolating endophytic fungi for an experiment in fungal genomics. Part of this research will include the collection of important meta-data which includes latitude and longitude information, sampled material/host, and taxonomic information. To facilitate this we are using iNaturalist.
+We will be sampling plant tissue and isolating endophytic fungi for an experiment in fungal genomics. Part of this research will include the collection of important meta-data which includes latitude and longitude information, sampled material/host, and taxonomic information. To facilitate this we are using iNaturalist.
 
 #### Homework Assignment 1: Get Set Up to Use iNaturalist
 
@@ -97,9 +107,9 @@ For this semester we will be sampling plant tissue and isolating endophytic fung
 - Download the iNaturalist App to your phone.
 - Give your iNaturalist user ID to your course instructor or TA. They will need this to add you to the course project. Be sure to ask your instructor for the name of the course project.
 - Join your course project. Within your iNaturalist account, go to: Community>Projects Assuming you're invited you should see the name of your course project. Join the project. If you don't see it, send your iNaturalist user ID to your Instructor or TA to receive an invitation.
-- Add your Real Name to iNaturalist
+- Add your name to iNaturalist or coontact your instructor with the information you will want to use and share.
   - For your name to display properly you need it spelled out in your profile.
-  - Log into iNat.
+  - Log into iNaturalist.
   - Go to your profile icon in the top right.
   - Select Account Settings.
   - Type your real name into the space under Display Name.
@@ -121,23 +131,27 @@ iNaturalist makes documenting samples easy through observations. We will use thi
 
 - [ ] [FunDiS Photography](https://fundis.org/get-started/photograph)
 
-Our protocol will be specific to our project, but will borrow from any/all of the video guides shown above.
+Our protocol will be specific to our project, but we will borrow from any/all of the video guides shown above.
 
 ### Making observations for your mycology course (Myco-Ed)
 To make the best use of iNaturalist as a tool for this course, and the broader MycoEd Project, you need to make quality observations of plant hosts, and the fungal endophyte cultures that come from these plants.
 
-**Observations of Plant Hosts**
+#### Observations of Plant Hosts
 
 1. Open your iNaturalist Application.
 2. Make an observation of one host plant by taking a picture of it.
    a. Find the camera icon in the app and take a picture of your plant.
-   b. Include one field label in an image of the plant. (see examples)
-   c. Take images from multiple perspectives: whole plant, leaves, flowers+fruits, branches, trunk, etc.
+   b. Include one field label in an image of the plant. (review examples)
+   c. Take images from multiple perspectives: whole plant, leaves, flowers & fruits, branches, trunk...
 3. Alternatively, take images on your phone and upload them to iNaturalist. Again, make sure you are including a field label in your images.
 4. Before saving the observation, add it to your course project using the app.
    a. Go to "Projects"
    b. Select the course project.
-   NOTE: You must join the course project before this step. See the third bullet point at the beginning of these instructions.
+ 
+::: {.callout-tip}
+You must join the course project before this step. Refer to the third bullet point at the beginning of these instructions.
+:::
+
 5. Click Done to save your observation.
 6. Assuming you've turned "automatic upload" off, you will need to manually upload your observation. This will appear green on your phone until it is uploaded.
 7. Double-check your observation online.
@@ -150,7 +164,7 @@ To make the best use of iNaturalist as a tool for this course, and the broader M
 
 Under Project you should see the name for your course project. If not, click on the open field and the course project's name should appear in the drop-down menu. Select the
 
-**Observations of Fungal Cultures**
+#### Observations of Fungal Cultures
 Protocols for making observations of fungal cultures that follow the same steps as above with some added metadata that will go in as "Observation Fields".
 
 9. Open your iNaturalist Application.
@@ -164,7 +178,7 @@ Protocols for making observations of fungal cultures that follow the same steps 
 14. Double-check your observation online.
     a. It will appear on your account if it was uploaded correctly.
 
-**Adding iNaturalist Observation Fields**
+#### Adding iNaturalist Observation Fields
 
 15. Add MycoEd ID. This will attach the field label ID number to this host observation.
     a. Follow the above directions.
@@ -179,7 +193,7 @@ Protocols for making observations of fungal cultures that follow the same steps 
 ## Module 1.4 – Fungal Sampling and Culturing
 
 ### Purpose
-This lab will introduce you to sterile/aseptic technique, culturing fungi, isolating cultures, and documenting fungal growth.
+This lab session will introduce you to sterile/aseptic technique, culturing, isolating, and documenting fungal growth.
 
 ### Introduction
 Every species of plant surveyed to date hosts a multitude of fungal **endophytes**. These symbiotic fungi exist in all plant tissues, including leaves, bark, roots, and reproductive structures such as flowers and seeds. Observation of leaves can provide information on potential plant disesase, including fungal infections. This is illustrated in @fig-leafpathologies, which depicts a variety of leaf pathologies. Fungal endophytes can be cultured from healthy plant tissue, and these fungi can be important for plant health and fitness. These fungi can be mutualistic, commensal, or parasitic. They can also be latent pathogens that cause disease under certain conditions.
@@ -198,13 +212,13 @@ All lineages of fungi contain endophytic species, however the majority of fungal
 
 ### Lab Supplies
 - [ ] 3 large water agar Petri plates (150 x 10 mm) - these are for initial isolation
-- [ ] Sharpie
+- [ ] Sharpie or marker for labeling plates
 - [ ] Parafilm
 - [ ] Paper towels
 - [ ] Gloves
 - [ ] Bleach
 - [ ] Ethanol
-- [ ] Scalpel
+- [ ] Scissors
 - [ ] Metal hole punch
 - [ ] Forceps
 
@@ -238,10 +252,10 @@ Upload an image of the plants you have chosen to your course's iNaturalist Proje
 2. Make an iNaturalist observation of the plant on your phone or device.
    a. Take multiple photos.
       i. At least one of the entire plant.
-      ii. Multiple closer pictures of the leaves, bark, any flowers or fruit, etc.
+      ii. Multiple closer pictures of the leaves, bark, any flowers or fruit...
       iii. At least one observation must include one sample label with an ID number.
    b. Go to the projects section on iNaturalist.
-      i. Select "Your iNaturalist Project".
+      i. Select "Your iNaturalist Project."
    c. Save the observation on iNaturalist.
       i. Follow instructions in Module 1.2 Using iNaturalist
 3. As indicated in @fig-leafsampling, place the label in a paper bag. Record your information on the label including the unique ID number, date, location, and any other relevant information. This will be important for tracking your samples and linking them to your iNaturalist observation.
@@ -262,7 +276,7 @@ Label the @fig-Wateragar plate with your name and divide into six sections. Labe
 ![Water Agar Plates. Take a large water agar plate and divide it into six sections using a ruler and marker. Label each section with the unique ID number for the leaf sample you will be plating in that section. Figure created with BioRender.com.](images/WaterAgar.png){#fig-Wateragar fig-alt="Water agar plate division into sections and labeling." fig-align="center" lightbox="true"}
 
 
-1. Sanitize/sterilize all work surfaces. Wipe surfaces with ethanol. Choose a working location with the least amount of airflow to prevent contamination. If available, set up torches on either side of your work area with the flames aimed toward the middle of your workspace. The heat generated from the torches creates an the potential of airborne contaminants.
+1. Sanitize/sterilize all work surfaces. Wipe surfaces with ethanol. Choose a working location with the least amount of airflow to prevent contamination. 
 2. Sterilize tools (scalpel or hole punch and forceps). Use ethanol and allow to air dry.
 3. Cut leaf tissues. You may take as many cuttings from each leaf as desired. Be sure to label cuttings appropriately as described above. Cuttings should be ~1 cm.
 4. Surface sterilize leaf tissue. Using sterilized forceps (heat and cool as above), immerse each cutting in 10% bleach solution for 10 seconds.
@@ -270,7 +284,7 @@ Label the @fig-Wateragar plate with your name and divide into six sections. Labe
    b. Mix 1ml (1/4 teaspoon) household bleach with 500 ml (2 cups) sterilized water.
 5. Rinse leaf tissue. Transfer leaf cutting from bleach solution using forceps and swirl in sterile water or 70% ethanol to rinse. Let excess water drip off leaf cutting or place on clean kimwipes to dry.
 6. Add tissue to water agar. Place up to 6 leaf cuttings per plate of water agar labeled as described @fig-SamplesWaterAgar. The water agar plates are the larger plates that contain clear to whitish media. Use sterile technique. Be sure to sterilize forceps (heat with flame and cool) in between each leaf transfer.
-7. Seal Petri dish with Parafilm. This is a stretchy material similar to Saran Wrap. Cut a strip a little wider than the Petri dish. Remove the paper backing. Hold one end of the Parafilm strip on the lip of the Petri dish so that the gap between the lid and base is covered by the Parafilm. Keeping one end fixed with one hand, stretch and wrap the parafilm around the Petri dish, sealing the gap between the lid and base of the Petri dish. The stretching of the Parafilm will facilitate the seal, you will not need any tape to keep the Parafilm in place.
+7. Seal the Petri dish with Parafilm. This is a stretchy material similar to Saran Wrap. Cut a strip a little wider than the Petri dish. Remove the paper backing. Hold one end of the Parafilm strip on the lip of the Petri dish so that the gap between the lid and base is covered by the Parafilm. Keeping one end fixed with one hand, stretch and wrap the parafilm around the Petri dish, sealing the gap between the lid and base of the Petri dish. The stretching of the Parafilm will facilitate the seal, you will not need any tape to keep the Parafilm in place.
 8. Incubate at room temperature in the dark and examine for growth each day.
 
 ![Place Leaf Samples on Water Agar Plates. Take a large water agar plate and divide it into six sections using a ruler and marker. Place leaf samples in each section after surface sterilizing and rinsing in ethanol. Figure created with BioRender.com.](images/LeafSamplesWaterAgar.png){#fig-SamplesWaterAgar fig-alt="Place leaf samples on water agar plates." fig-align="center" lightbox="true"}
