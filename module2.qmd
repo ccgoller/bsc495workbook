@@ -18,6 +18,9 @@
 - [ ] Potato Dextrose Agar (PDA)
 - [ ] Forceps
 - [ ] Scalpel
+- [ ] 70% ethanol
+- [ ] Beaker or autoclavable container for cellophane and ethanol
+- [ ] Autoclave
 
 **Lab Prep:**
 
@@ -34,13 +37,13 @@ Suspend 39 grams Agar, Bacteriological in 1000 ml (1 L) distilled water. Heat to
 When the media is cool enough to handle with autoclave gloves, pour 60x15mm plates in a sterile environment. Do not let it cool too long as the media will solidify. Each 60x15mm plate holds approximately 8 ml media. If plates will be used immediately smaller amounts of media can be poured into plates. If plates will be stored, use larger amounts. Store plates in the original Petri dish sleeve in the refrigerator (~4 °C) until use.
 
 ::: {.callout-note}
-**Option: Adding Antibiotics:**
+**Adding Antibiotics:**
 Once your PDA has cooled, you may choose to add antibiotics to the media. Streptomycin (streptomycin sulfate) is commonly used at a concentration of 50mg/L in agar. Add the appropriate amount to your media once cool to the touch and before pouring plates.
 :::
 
 
 **Cellophane Plates:**
-Fungal tissue can be harvested from cellophane plates. Cut cellophane discs slightly smaller than the petri dish so that they lay flat on the PDA media. Using the bottom of the petri dish as a template, draw a circle on the cellophane and cut out discs on the inside of the line.
+Fungal tissue can be harvested from cellophane plates. Cut cellophane discs slightly smaller than the petri dish so that they lay flat on the PDA media. Using the bottom of the Petri dish as a template, draw a circle on the cellophane and cut out discs on the inside of the line.
 
 Place cellophane discs into an autoclavable container with water. Place each cellophane disc individually into the water and try to stagger them in the water. This staggering step ensures that you can more easily remove the discs from the water. Cover your container with foil and sterilize by autoclaving at 15 lbs. pressure at 121 °C for 15 minutes.
 
@@ -91,9 +94,11 @@ This project is part of the [Myco-Ed Fungal Genomics Education Project](https://
 - [ ] Parafilm
 - [ ] Fine-tip Sharpie
 - [ ] Ethanol for sterilization
+- [ ] Beaker or autoclavable container for ethanol
 - [ ] Scalpel
 - [ ] Ruler
 - [ ] Forceps
+- [ ] Autclave
 
 #### Part I - Subculturing Fungal Endophytes into Fungal Isolates
 Fungal cultures usually emerge as white fuzz from your leaf discs, however, the hyphae might be pigmented, such as a brown or greenish color. @fig-fungalhyphae depicts the fungal hyphae in brown and blue emerging from the green leaf tissue. The fungi are utilizing the nutrients available in the leaf tissue for growth as water agar does not contain nutrients. To promote the growth necessary for downstream analyses, it is essential to transfer the fungi to a growth medium that contains nutrients. For our exercise we are using Potato Dextrose Agar (PDA) as nutrient media. These are smaller Petri dishes and the media has a yellowish tint (compared to the larger Petri dishes containing the clear, or whitish, water agar from your initial isolation). This transfer step also allows for the separation of each fungal isolate to ensure pure cultures.
@@ -103,20 +108,20 @@ Fungal cultures usually emerge as white fuzz from your leaf discs, however, the 
 Fungal growth from the leaf cuttings may occur over the span of a few weeks, so you may have to transfer several times. Your fungal cultures will be most successful if you transfer them within a few days (1-3) from emergence or detection.
 
 
-1. Practice Sterile Technique. Wear gloves. Clean work surface with disinfectant. If available, wipe surfaces with 70% ethanol. Choose a working location with the least amount of airflow to prevent contamination. Decrease the potential of airborne contaminants falling onto your workspace or into your Petri dishes.
-2. Label a PDA Petri dish with the sample number and date for each isolate (described in Module 1.1 - Metadata). Always label along the bottom edge. This ensures the label stays with the fungus, even if the top lid falls off. Label the edge of the plate because you don't want to obscure light transmission through the plate. Also, mark lines on the bottom of the plate as shown in Figure 2 to record the growth rate. Be sure to transfer only one fungal isolate to each PDA petri dish.
-3. Use a stefilized scalpel. 
-4. Make a "plug". Cut a small chunk of water agar containing hyphae of target isolate using a sterilized scalpel. Transfer this plug of agar and hyphae to the PDA plate. Ideally, you will have the least amount of agar transferred to the new petri dish.
+1. **Practice Sterile Technique.** Wear gloves. Clean work surface with disinfectant. If available, wipe surfaces with 70% ethanol. Choose a working location with the least amount of airflow to prevent contamination. Decrease the potential of airborne contaminants falling onto your workspace or into your Petri dishes.
+2. **Label a PDA Petri dish with the sample number and date for each isolate** (described in Module 1.1 - Metadata). Always label along the bottom edge. This ensures the label stays with the fungus, even if the top lid falls off. Label the edge of the plate because you don't want to obscure light transmission through the plate. Also, mark lines on the bottom of the plate to record the growth rate. Be sure to transfer only one fungal isolate to each PDA Petri dish.
+3. Use a sterilized scalpel, forceps, and agar punch. 
+4. Make a "plug". Cut a small chunk of water agar containing hyphae of target isolate using a sterilized scalpel or agar punch. Transfer this plug of agar and hyphae to the PDA plate. Ideally, you will have the least amount of agar transferred to the new Petri dish.
    a. Work quickly and cleanly and consider your technique to prevent contamination. Remove Parafilm from the water agar plate.
    b. Tilt or lift the lid of the water agar petri dish as little as possible, try to keep the lid covering or hovering over the plate to prevent airborne contaminants.
    c. Using a sterile scalpel remove the chunk of agar from the target fungal isolate.
    d. Replace the lid of the water agar.
    e. Open the PDA Petri dish lid by slightly tilting the lid, or lifting the lid straight up. Place the agar chunk into the middle (or as mid-plate as possible) of the PDA petri dish. The agar will likely stick to the scalpel, so do your best to remove the chunk without contamination.
-   f. Close the lid of the PDA petri dish lid as quickly as possible. Seal with parafilm.
+   f. Close the lid of the PDA Petri dish lid as quickly as possible. Seal with parafilm.
 
 #### Part II – Measuring Growth Rates
 1. Design a data sheet to record growth.
-2. On the bottom of the plate, trace the edge of your fungal culture using a fine-tip Sharpie (Figures 3 and 4).
+2. On the bottom of the plate, trace the edge of your fungal culture using a fine-tip Sharpie.
 3. Measure, in mm, new growth at each of the eight edges along the lines (Figures 3 and 4)
 4. Average the eight measurements to get the average growth (Table 1).
 
