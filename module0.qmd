@@ -84,7 +84,7 @@ The umbrella project for MycoEd is the MycoEd Fungal Genomics Education Project.
 
 
 ::: {.callout-note}
-**Note:** If you do not have this option, please contact **Amy Honan** (amy.honan@oregonstate.edu) or **Andrew Wilson** (andrew.wilson@BotanicGardens.org) for assistance.
+If you do not have this option, please contact **Amy Honan** (amy.honan@oregonstate.edu) or **Andrew Wilson** (andrew.wilson@BotanicGardens.org) for assistance.
 :::
 
 

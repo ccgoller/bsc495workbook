@@ -72,12 +72,12 @@ From the dropdown menu. The Lat/Long is now shown. Click the copy button and pas
 
 You can also find latitude/longitude coordinates on Google Maps.
 
-####For Android phones: 
+#### For Android phones 
 1. Tap on the location. 
 2. Copy the latitutde/longitude coordinates.
 3. Paste the information. The text is automatically in decimal degree format.
 
-#### For the iPhones:
+#### For iPhones
 1. Open the Google Maps app. Tap the "black triangle in a circle" icon to zoom to your location.
 2. Long touch on your location. This should open a tab at the bottom of the screen.
 3. Scroll up. You should see the latitude and longitude coordinates of that position, looking something like this: (45.1234567, -122.1234567).
