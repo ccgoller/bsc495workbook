@@ -20,6 +20,10 @@
 - [ ] Scalpel
 - [ ] 70% ethanol
 - [ ] Beaker or autoclavable container for cellophane and ethanol
+- [ ] Parafilm
+- [ ] Ruler
+- [ ] Fine-tip Sharpie or marker for labeling plates
+- [ ] Paper towels/Kimwipes
 - [ ] Autoclave
 
 **Lab Prep:**
@@ -120,8 +124,11 @@ Fungal growth from the leaf cuttings may occur over the span of a few weeks, so 
    f. Close the lid of the PDA Petri dish lid as quickly as possible. Seal with parafilm.
 
 #### Part II – Measuring Growth Rates
-1. Design a data sheet to record growth.
-2. On the bottom of the plate, trace the edge of your fungal culture using a fine-tip Sharpie.
+1. Design a data sheet to record growth as indicated in @fig-measuregrowth.
+2. On the bottom of the plate, trace the edge of your fungal culture using a fine-tip Sharpie or marker.
+
+![Measure Growth on PDA Plates. Divide the plate into eight segments using a ruler and marker. Then measure the growth at each segment starting at the end of the water agar plug and ending at the edge of the growth. Image the plate from top and bottom. Record measurements and images in your lab notebook. Figure created with BioRender.com.](images/MeasureGrowthPDA.png){#fig-measuregrowth fig-alt="Measure Growth on PDA Plates by Dividing Plate into Eight Segments and Meauring from Agar Plug to Edge of Growth." fig-align="center" lightbox="true"}
+
 3. Measure, in mm, new growth at each of the eight edges along the lines (Figures 3 and 4)
 4. Average the eight measurements to get the average growth (Table 1).
 
@@ -144,4 +151,4 @@ Fungal growth from the leaf cuttings may occur over the span of a few weeks, so 
 5. Continue to measure average growth in mm 7 days from plating.
 6. Calculate the average growth rate (distance/time).
 7. Plot a graph of your fungal isolate(s) growth rate.
-8. Submit images and your data sheet and a graph of growth rates in your lab blog post for this project. Please take images to add to your blog post.
+8. Submit images and your data sheet and a graph of growth rates in your lab blog post for this project. Please take images to add to your lab notebook.
