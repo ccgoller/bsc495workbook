@@ -1,5 +1,9 @@
 # References {.unnumbered}
 
+## Workbook References
+
+- Honan, A., Wilson, A., Cobian, G., Branco, S., Mondo, S., Barry, K., Gremillion, S., Avis, P., Stewart, J., Dow, E., Knight, C., LaButti, K., Quandt, A., Talag, J., and Lofgren, L., 2025. Myco-Ed Protocols Booklet. protocols.io. https://doi.org/10.17504/protocols.io.rm7vzqd5xvx1/v1
+
 ## Module 7.1 References
 
 - Casselton, L.A., Olesnicky, N.S., 1998. Molecular Genetics of Mating Recognition in Basidiomycete Fungi. Microbiology and Molecular Biology Reviews, 62(1): 55-70. https://doi.org/10.1128/mmbr.62.1.55-70.1998
